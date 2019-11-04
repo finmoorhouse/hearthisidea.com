@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 html,
 body {
   font-family: sans-serif;
@@ -9,14 +11,15 @@ header {
   text-align: center;
 }
 .title {
-  font-family: "Recoleta";
+  font-family: "Open Sans";
+  font-weight:bold;
   font-size: 60px;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Karla";
+  font-family: "";
 
   line-height: 85%;
 }

@@ -1,6 +1,6 @@
 ---
 path: "/episodes/richard-holton"
-date: "2019-11-04"
+date: "2019-11-09"
 title: "01 — Richard Holton on addiction and desire"
 ---
 
