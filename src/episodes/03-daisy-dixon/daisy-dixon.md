@@ -2,6 +2,8 @@
 path: "/episodes/richard-holton"
 date: "2019-11-09"
 title: "03 — Daisy Dixon on art by bad people"
+audio: "https://traffic.libsyn.com/syntax/Syntax193.mp3"
+
 ---
 
 But I'm hopeful because I think there's an awakening taking place in  America. These are not whiners. We measure progress by how many people  can find a job that pays the mortgage; whether you can put a little  extra money away at the end of each month so you can someday watch your  child receive her college diploma. And today, as my call for a time  frame to remove our troops from Iraq has been echoed by the Iraqi  government and even the Bush Administration, even after we learned that  Iraq has a $79 billion surplus while we're wallowing in deficits, John  McCain stands alone in his stubborn refusal to end a misguided war. 

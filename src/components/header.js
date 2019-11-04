@@ -4,8 +4,8 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <h1 class="title">Vocal Thinkers</h1>
-    <div class="menu-wrapper">
+    <h1 className="title">Vocal Thinkers</h1>
+    <div className="menu-wrapper">
       <Link to="/">About</Link>
       <Link to="episodes">Episodes</Link>
     </div>
