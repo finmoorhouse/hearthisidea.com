@@ -5,7 +5,7 @@ body {
   font-family: sans-serif;
 }
 html {
-  border: 10px solid black;
+  /*border: 10px solid black;*/
 }
 header {
   text-align: center;
@@ -19,7 +19,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "";
+  font-family: "Open Sans";
 
   line-height: 85%;
 }
@@ -31,4 +31,13 @@ header a {
   margin: auto;
   display: flex;
   justify-content: space-between;
+}
+.episode-link{
+  padding-top:40px;
+  text-align: center;
+  
+}
+.episode-link a{
+  text-decoration: none;
+  color:#333;
 }
