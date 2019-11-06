@@ -1,0 +1,17 @@
+
+.react-h5-audio-player .flex{
+        box-shadow: none  !important;
+}
+.react-h5-audio-player .indicator{
+    background: black !important;
+    opacity: 1 !important;
+}
+.react-h5-audio-player .toggle-play-button{
+    background-color: black !important;
+}
+.react-h5-audio-player .pause-icon{
+    box-shadow: none !important;
+}
+.volumn{
+    border-bottom:15px solid black !important;
+}

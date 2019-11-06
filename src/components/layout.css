@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
 
 html,
 body {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 html {
   /*border: 10px solid black;*/
@@ -11,7 +11,7 @@ header {
   text-align: center;
 }
 .title {
-  font-family: "Open Sans";
+  font-family: "Merriweather";
   font-weight:bold;
   font-size: 60px;
 }
