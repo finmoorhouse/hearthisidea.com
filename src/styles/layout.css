@@ -18,15 +18,7 @@ header {
   text-align: center;
 }
 
-.title {
-  font-family: "Open Sans";
-  font-weight:300;
-  font-size: 50px;
-  color:#999;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom:29px;
-}
+
 .header-image{
   margin:auto;
   max-width: 100px;
@@ -38,18 +30,32 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Open Sans";
+  
   font-weight: bold;
-  line-height: 85%;
+  line-height: 120%;
   letter-spacing:-0.02em;
   color:#444;
+  margin-left:10%;
 }
 h1{
+  font-family: "Open Sans";
+  
   font-weight: 900;
   font-size: 50px;
 }
 h2{
   font-size:30px;
+  font-weight: 700;
+}
+.title {
+  font-family: "Open Sans";
+  font-weight:600;
+  font-size: 30px;
+  color:#999;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: left;
+  margin-top:-2px;
 }
 header a {
   text-decoration: none;
@@ -58,17 +64,18 @@ header a {
   color:#999;
   text-transform: capitalize;
   font-family: "Space Mono";
+  font-weight: normal;
 }
 .menu-wrapper {
-  font-family:"Open Sans","Merriweather";
-  max-width: 240px;
+  font-family:"Space Mono","Merriweather";
+  max-width: 600px;
   margin: auto;
   text-transform: uppercase;
-  margin-top:0px;
+  margin-top:30px;
   display: flex;
   justify-content: space-between;
   font-size: 22px;
-  font-weight: bold;
+  
 }
 .menu-wrapper a{
   color:#444;
