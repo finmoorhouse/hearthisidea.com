@@ -3,7 +3,8 @@ import { Link } from "gatsby"
 const PostLink = ({ post }) => (
   <div className='episode-link'>
     <Link to={post.frontmatter.path}>
-      <h3>{post.frontmatter.title} </h3>
+
+      <h3><span class='number'>{post.frontmatter.number}. </span>{post.frontmatter.title} </h3>
       <h4 class='date'>
       ({post.frontmatter.date.toUpperCase()})
       </h4>

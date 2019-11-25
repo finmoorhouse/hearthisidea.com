@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Source+Serif+Pro|Noto+Serif|Lora|Lato:800,900|Space+Mono|Open+Sans:300,400,700,800&display=swap');
+
+html,
+body {
+  font-family: "Merriweather","Noto Serif", "Georgia", serif;
+  background-color: #fff; /*#afc3c9;*/
+}
+p{
+  font-size: 18px;
+  line-height: 145%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+html {
+  /*border: 10px solid black;*/
+}
+header {
+  text-align: center;
+}
+
+.title {
+  font-family: "Open Sans";
+  font-weight:300;
+  font-size: 50px;
+  color:#999;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom:29px;
+}
+.header-image{
+  margin:auto;
+  max-width: 100px;
+}
+main{
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans";
+  font-weight: bold;
+  line-height: 85%;
+  letter-spacing:-0.02em;
+  color:#444;
+}
+h1{
+  font-weight: 900;
+  font-size: 50px;
+}
+h2{
+  font-size:30px;
+}
+header a {
+  text-decoration: none;
+}
+.date{
+  color:#999;
+  text-transform: capitalize;
+  font-family: "Space Mono";
+}
+.menu-wrapper {
+  font-family:"Open Sans","Merriweather";
+  max-width: 240px;
+  margin: auto;
+  text-transform: uppercase;
+  margin-top:0px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: bold;
+}
+.menu-wrapper a{
+  color:#444;
+}
+.episode-link{
+  padding-top:40px;
+  text-align: center;
+  
+}
+.episode-link a{
+  text-decoration: none;
+  color:#333;
+}
+.progress-bar{
+  height:200px;
+  background-color: red;
+}
+.line{
+  border:none;
+  border-bottom:1px solid #acacac;
+  width:200px;
+margin-top:20px;
+}
+.number{
+  font-family: "Space Mono";
+  color:#999;
+}

@@ -23,9 +23,9 @@ const Header = ({ siteTitle }) => {
   return (
     <header>
       <h1 className="title">Vocal Thinkers</h1>
-      <div class="header-image">
+      {/* <div class="header-image">
         <Img fluid={data.file.childImageSharp.fluid} />
-      </div>
+  </div> */}
       <div className="menu-wrapper">
         <Link to="/">About</Link>
         <Link to="episodes">Episodes</Link>

@@ -12,7 +12,7 @@ export default function Template({
   return (
     <Layout>
       <h1>{mdx.frontmatter.title}</h1>
-      <h2>{mdx.frontmatter.date}</h2>
+      <h2 class='date'>{mdx.frontmatter.date}</h2>
       <Player audioSrc={mdx.frontmatter.audio}></Player>
   
       <MDXRenderer>{mdx.body}</MDXRenderer>
