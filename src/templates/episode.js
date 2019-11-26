@@ -17,7 +17,7 @@ export default function Template({
   
       <MDXRenderer>{mdx.body}</MDXRenderer>
       
-      <Link to='/episodes'>&larr;	 Back to episodes</Link>
+      <Link class='back' to='/episodes'>&larr;	 Back to episodes</Link>
     </Layout>
   )
   

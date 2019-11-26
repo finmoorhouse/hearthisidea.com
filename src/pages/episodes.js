@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import PostLink from "../components/episode-link"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 const IndexPage = ({
   data: {
     allMdx: { edges },
@@ -10,7 +11,12 @@ const IndexPage = ({
   const Posts = edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
-  return <Layout>{Posts}</Layout>
+  return <Layout>
+    <SEO title="Episodes" />
+    <h1>Episodes</h1>
+    <hr className = "line"/>
+  {Posts}
+  </Layout>
 }
 export default IndexPage
 export const pageQuery = graphql`

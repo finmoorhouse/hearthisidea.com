@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => {
         
         <h1 className="title">Vocal Thinkers</h1>
 
-        <Link to="/">About</Link> / <Link to="episodes">Episodes</Link>
+        <Link to="/" className="push">About</Link> <span class='menu-slash'>/</span> <Link to="episodes">Episodes</Link>
       </div>
      {/* <hr class="line" /> */}
     </header>
