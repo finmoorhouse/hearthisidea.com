@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => {
   </div> */}
       <div className="menu-wrapper">
         
-        <h1 className="title">Vocal Thinkers</h1>
+        <h1 className="title">Hear This Idea</h1>
 
         <Link to="/" className="push">About</Link> <span class='menu-slash'>/</span> <Link to="episodes">Episodes</Link>
       </div>

@@ -56,8 +56,16 @@ h2{
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: left;
-  
+  user-select: none;
   margin-left: 0;
+}
+::selection {
+  color: white;
+  background: #333; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #333; /* Gecko Browsers */
+  color: white;
 }
 header a {
   text-decoration: none;
@@ -83,6 +91,7 @@ header a {
   font-size: 22px;
   padding-left:10px;
   padding-right:10px;
+  user-select: none;
 }
 .push{
   margin-left: auto;

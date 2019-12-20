@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Vocal Thinkers`,
+    title: `Hear This Idea`,
     description: `In-depth conversations with academics for an interested audience.`,
-    author: `Fin Moorhouse`,
+    author: `Fin Moorhouse and Luca Righetti`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,6 +15,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     //`gatsby-transformer-remark`,
+    `gatsby-remark-katex`,
     `gatsby-plugin-mdx`,
     `gatsby-plugin-sharp`,
     {
