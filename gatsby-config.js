@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Hear This Idea`,
+        short_name: `HTI`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -42,6 +42,21 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+      trackingId: "UA-44315602-3",
+       //Defines where to place the tracking script - `true` in the head and `false` in the body
+       head: true,
+      // exclude: [
+      //  "/portfolio/**",
+       //],
+     //  Setting this parameter is optional
+       anonymize: true,
+       //Setting this parameter is also optional
+       respectDNT: true,
       },
     },
 
