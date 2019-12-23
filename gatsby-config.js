@@ -50,9 +50,7 @@ module.exports = {
       trackingId: "UA-44315602-3",
        //Defines where to place the tracking script - `true` in the head and `false` in the body
        head: true,
-      // exclude: [
-      //  "/portfolio/**",
-       //],
+      
      //  Setting this parameter is optional
        anonymize: true,
        //Setting this parameter is also optional
