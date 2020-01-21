@@ -15,8 +15,27 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     //`gatsby-transformer-remark`,
-    `gatsby-remark-katex`,
-    `gatsby-plugin-mdx`,
+    `remark-math`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+            },
+          },
+          {
+            
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `ignore`
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
