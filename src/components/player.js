@@ -13,7 +13,7 @@ const Player = ({ audioSrc }) => (
         Your browser does not support audio.
     </audio>*/}
       <AudioPlayer
-    src="https://traffic.libsyn.com/syntax/Syntax100.mp3"
+    src= {audioSrc}
     onPlay={e => console.log("onPlay")}
     // other props here
   />
