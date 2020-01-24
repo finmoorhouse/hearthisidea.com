@@ -14,16 +14,16 @@ const IndexPage = () => (
       </p>
       <h2>Where to listen</h2>
       <div className = 'listen-container'>
-      <Link className='listen' to="">Spotify</Link>
-      <Link className='listen' to="">Pocket Casts</Link>
-      <Link className='listen' to="">Apple Podcasts</Link>
-      <Link className='listen' to="">Google Podcasts</Link>
+      <a className='listen' href="" target="_blank">Spotify</a>
+      <a className='listen' href="" target="_blank">Pocket Casts</a>
+      <a className='listen' href="" target="_blank">Apple Podcasts</a>
+      <a className='listen' href="" target="_blank">Google Podcasts</a>
       </div>
       <h2>Social media</h2>
-      <p>If you would like to get in touch with the show to suggest a guest or leave feedback, the best way to do that is currently through either Facebook or Twitter:</p>
+      <p className="introduction">If you would like to get in touch with the show to suggest a guest or leave feedback, the best way to do that is currently through either Facebook or Twitter:</p>
       <div className = 'listen-container'>
-      <Link className='listen' to="https://www.facebook.com/hearthisidea">Facebook</Link>
-      <Link className='listen' to="https://twitter.com/hearthisidea">Twitter</Link>
+      <a className='listen' href="https://www.facebook.com/hearthisidea" target="_blank">Facebook</a>
+      <a className='listen' href="https://twitter.com/hearthisidea" target="_blank">Twitter</a>
       </div>
     {/*<Link to="episodes">See more episodes</Link>*/}
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
