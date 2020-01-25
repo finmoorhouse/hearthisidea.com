@@ -6,7 +6,7 @@ const PostLink = ({ post }) => (
 
       <h2><span class='number'>{post.frontmatter.number}. </span>{post.frontmatter.title} </h2>
       <h4 class='date'>
-      ({post.frontmatter.date.toUpperCase()})
+      {post.frontmatter.date.toUpperCase()}
       </h4>
     </Link>
   </div>

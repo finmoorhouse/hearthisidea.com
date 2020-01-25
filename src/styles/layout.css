@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Source+Serif+Pro|Noto+Serif|Lora|Lato:800,900|Space+Mono|Open+Sans:300,400,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Source+Serif+Pro|Noto+Serif|Lora|Lato:800,900|Space+Mono:400,700|Open+Sans:300,400,700,800&display=swap');
 
 html,
 body {
@@ -197,4 +197,52 @@ margin-left:calc(50% - 120px);
 }
 .listen-container a{
   text-decoration: none;
+}
+
+@media all and (max-width:600px){
+  body{
+  font-size:17px;
+  }
+.title{
+  max-width:100px;
+  font-family: "Space Mono";
+  font-weight: bold;
+  font-size: 27px;
+color:rgba(247, 210, 3, 0.966);
+line-height: 92%;
+}
+.menu-wrapper{
+  margin-top:10px;
+  max-height: 120px;
+  padding-left:6%;
+  padding-right:6%;
+}
+h2{
+  font-size: 27px;
+margin-bottom: 10px;
+}
+h1{
+  margin-bottom:0;
+  font-size:38px;
+}
+.line{
+  margin-bottom:20px;
+}
+.date{
+  font-size:18px;
+  margin-top:0;
+}
+.episode-link{
+  padding-top: 0%;
+}
+.episode-title{
+  font-size:34px;
+}
+main{
+  padding-left:0;
+  padding-right:0;
+}
+.introduction{
+  font-size: 18px;
+}
 }

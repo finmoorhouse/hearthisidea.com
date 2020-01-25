@@ -13,7 +13,7 @@ export default function Template({
   
   return (
     <Layout>
-      <h1>{mdx.frontmatter.title}</h1>
+      <h1 className='episode-title'>{mdx.frontmatter.title}</h1>
       <h2 class='date'>{mdx.frontmatter.date}</h2>
       <Player audioSrc={mdx.frontmatter.audio}></Player>
       <div className="writeup">
