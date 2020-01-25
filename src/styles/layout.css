@@ -80,14 +80,21 @@ h2{
 }
 .title {
   font-family: "Open Sans";
-  font-weight:600;
+  /*font-weight:600;
   font-size: 30px;
-  color:#999;
+  color:#999;*/
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: left;
   user-select: none;
   margin-left: 0;
+
+
+  font-family: "Space Mono";
+  font-weight: bold;
+  font-size: 34px;
+color:rgba(247, 210, 3, 0.966);
+line-height: 92%;
 }
 ::selection {
   color: #444;
@@ -198,19 +205,27 @@ margin-left:calc(50% - 120px);
 .listen-container a{
   text-decoration: none;
 }
-
+@media all and (max-width:750px){
+  .title{
+    max-width:100px;
+  line-height: 92%;
+margin-left:10%;
+  /*font-weight: bold;
+  font-size: 27px;
+  font-family: "Space Mono";
+color:rgba(247, 210, 3, 0.966);*/
+  }
+}
+@media all and (max-width:500px){
+  .title{
+margin-left:0%;
+  }
+}
 @media all and (max-width:600px){
   body{
   font-size:17px;
   }
-.title{
-  max-width:100px;
-  font-family: "Space Mono";
-  font-weight: bold;
-  font-size: 27px;
-color:rgba(247, 210, 3, 0.966);
-line-height: 92%;
-}
+
 .menu-wrapper{
   margin-top:10px;
   max-height: 120px;

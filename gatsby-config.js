@@ -26,6 +26,7 @@ module.exports = {
               maxWidth: 960,
               linkImagesToOriginal: false,
               backgroundColor:`transparent`,
+              tracedSVG : true,
             },
           },
           {
