@@ -16,8 +16,8 @@ const IndexPage = () => (
       <div className = 'listen-container'>
       <a className='listen' href="https://open.spotify.com/show/442fxr9pe0tbDtqEikODch" target="_blank">Spotify</a>
       <a className='listen' href="https://pca.st/5bclatq6" target="_blank">Pocket Casts</a>
-      <Link className='listen' to='check-back'>Apple Podcasts</Link>
-      <Link className='listen' to='check-back'>Google Podcasts</Link>
+      <a className='listen' href="https://podcasts.apple.com/gb/podcast/hear-this-idea/id1496501781" target="_blank">Apple Podcasts</a>
+      <a className='listen' href="https://podcasts.google.com/?feed=aHR0cHM6Ly9waW5lY2FzdC5jb20vZmVlZC9oZWFyLXRoaXMtaWRlYQ" target="_blank">Google Podcasts</a>
       </div>
       <h2>Social media</h2>
       <p className="introduction">If you would like to get in touch with the show to suggest a guest or leave feedback, the best way to do that is currently through either Facebook or Twitter:</p>
