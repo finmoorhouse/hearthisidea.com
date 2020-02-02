@@ -179,6 +179,11 @@ background:none;
   font-family: "Space Mono";
   color:#999;
 }
+.obfuscate{
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-weight: bold;
+}
 .back{
 text-decoration: none;
 font-family: "Open Sans";
