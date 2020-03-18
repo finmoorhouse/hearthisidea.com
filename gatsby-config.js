@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Hear This Idea`,
-    description: `In-depth conversations with academics for an interested audience.`,
+    description: `New thinking from top academics at the University of Cambridge and beyond.`,
     author: `Fin Moorhouse and Luca Righetti`,
   },
   plugins: [
