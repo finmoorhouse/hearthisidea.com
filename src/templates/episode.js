@@ -6,6 +6,8 @@ import Img from 'gatsby-image';
 import  { Link } from "gatsby"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import "katex/dist/katex.min.css"
+import SEO from "../components/seo"
+
 export default function Template({
   data: {mdx}, // this prop will be injected by the GraphQL query below.
 }) {
@@ -13,6 +15,7 @@ export default function Template({
   
   return (
     <Layout>
+      <SEO  myFeaturedImage={mdx.frontmatter.featuredImage} />
       <h1 className='episode-title'>{mdx.frontmatter.title}</h1>
       <h2 class='date'>{mdx.frontmatter.date}</h2>
       <Player audioSrc={mdx.frontmatter.audio}></Player>
@@ -33,6 +36,13 @@ export const pageQuery = graphql`
         path
         audio
         title
+        featuredImage {
+          childImageSharp {
+            sizes(maxWidth: 630) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }

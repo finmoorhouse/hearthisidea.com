@@ -3,6 +3,9 @@ module.exports = {
     title: `Hear This Idea`,
     description: `New thinking from top academics at the University of Cambridge and beyond.`,
     author: `Fin Moorhouse and Luca Righetti`,
+    url:`https://www.hearthisidea.com`,
+    twitterUsername: `@hearthisidea`,
+    image: "/meta-image.jpg",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
