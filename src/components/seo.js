@@ -31,6 +31,7 @@ function SEO({ description, lang, meta, title, myFeaturedImage }) {
   const metaDescription = description || site.siteMetadata.description
   const featuredImageSrc = myFeaturedImage && myFeaturedImage.childImageSharp.sizes.src;
   const pageThumbnail = `${site.siteMetadata.url}${featuredImageSrc || site.siteMetadata.image}`;
+  const myTitle = title || site.siteMetadata.title
 
   return (
     <Helmet
@@ -46,7 +47,7 @@ function SEO({ description, lang, meta, title, myFeaturedImage }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: myTitle,
         },
         {
           property: `og:description`,
@@ -70,7 +71,7 @@ function SEO({ description, lang, meta, title, myFeaturedImage }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: myTitle,
         },
         {
           name: `twitter:description`,

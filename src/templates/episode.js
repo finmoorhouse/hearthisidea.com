@@ -15,7 +15,7 @@ export default function Template({
   
   return (
     <Layout>
-      <SEO  myFeaturedImage={mdx.frontmatter.featuredImage} />
+      <SEO title={mdx.frontmatter.title} myFeaturedImage={mdx.frontmatter.featuredImage} />
       <h1 className='episode-title'>{mdx.frontmatter.title}</h1>
       <h2 class='date'>{mdx.frontmatter.date}</h2>
       <Player audioSrc={mdx.frontmatter.audio}></Player>
