@@ -70,6 +70,10 @@ function SEO({ description, lang, meta, title, myFeaturedImage }) {
           content: site.siteMetadata.author,
         },
         {
+          name: `author`,
+          content: site.siteMetadata.author,
+        },
+        {
           name: `twitter:title`,
           content: myTitle,
         },
@@ -86,7 +90,7 @@ function SEO({ description, lang, meta, title, myFeaturedImage }) {
           content: pageThumbnail,
         },
         {
-          name : `og:image`,
+          property : `og:image`,
           content: pageThumbnail,
         },
         {
