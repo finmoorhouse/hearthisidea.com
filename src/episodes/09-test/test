@@ -1,0 +1,9 @@
+---
+number: "9"
+path: "/episodes/test"
+date: "2020-02-12"
+title: "Test"
+audio: ""
+featuredImage: "./diane-portrait.jpg"
+---
+<Bookshelf/>

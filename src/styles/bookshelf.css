@@ -1,0 +1,16 @@
+.bookshelf{
+    background: cyan;
+    display: flex;
+    max-width: 600px;
+    margin:auto;
+    height:400px;
+}
+.book{
+    display:flex;
+    position:relative;
+    background:purple;
+    max-width: 100px;
+    max-height: 250px;
+    margin:auto;
+    
+}

@@ -5,11 +5,15 @@ import Player from "../components/player"
 import Img from 'gatsby-image';
 import  { Link } from "gatsby"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { MDXProvider } from "@mdx-js/react"
 import "katex/dist/katex.min.css"
 import SEO from "../components/seo"
-
+import Bookshelf from "../components/bookshelf"
+const components = {Bookshelf}
 export default function Template({
+  
   data: {mdx}, // this prop will be injected by the GraphQL query below.
+
 }) {
 
   
@@ -20,7 +24,9 @@ export default function Template({
       <h2 class='date'>{mdx.frontmatter.date}</h2>
       <Player audioSrc={mdx.frontmatter.audio}></Player>
       <div className="writeup">
-      <MDXRenderer>{mdx.body}</MDXRenderer>
+        <MDXProvider components={components}>
+          <MDXRenderer>{mdx.body}</MDXRenderer>
+        </MDXProvider>
       </div>
       <Link class='back' to='/episodes'>&larr;	 Back to episodes</Link>
     </Layout>
