@@ -1,7 +1,7 @@
 .bookshelf{
-    background: cyan;
+    background: aliceblue;
     display: flex;
-    max-width: 600px;
+    max-width: 800px;
     margin:auto;
     height:400px;
 }
@@ -9,8 +9,8 @@
     display:flex;
     position:relative;
     background:purple;
-    max-width: 100px;
-    max-height: 250px;
+    width: 250px;
+    height:400px;
     margin:auto;
     
 }

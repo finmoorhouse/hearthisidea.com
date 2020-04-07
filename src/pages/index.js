@@ -1,8 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
-
+//import { Link } from "gatsby"
 import Layout from "../components/layout"
-
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -14,16 +12,16 @@ const IndexPage = () => (
       </p>
       <h2>Where to listen</h2>
       <div className = 'listen-container'>
-      <a className='listen' href="https://open.spotify.com/show/442fxr9pe0tbDtqEikODch" target="_blank">Spotify</a>
-      <a className='listen' href="https://pca.st/5bclatq6" target="_blank">Pocket Casts</a>
-      <a className='listen' href="https://podcasts.apple.com/gb/podcast/hear-this-idea/id1496501781" target="_blank">Apple Podcasts</a>
-      <a className='listen' href="https://podcasts.google.com/?feed=aHR0cHM6Ly9waW5lY2FzdC5jb20vZmVlZC9oZWFyLXRoaXMtaWRlYQ" target="_blank">Google Podcasts</a>
+      <a className='listen' href="https://open.spotify.com/show/442fxr9pe0tbDtqEikODch" target="_blank" rel="noopener noreferrer">Spotify</a>
+      <a className='listen' href="https://pca.st/5bclatq6" target="_blank" rel="noopener noreferrer">Pocket Casts</a>
+      <a className='listen' href="https://podcasts.apple.com/gb/podcast/hear-this-idea/id1496501781" target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
+      <a className='listen' href="https://podcasts.google.com/?feed=aHR0cHM6Ly9waW5lY2FzdC5jb20vZmVlZC9oZWFyLXRoaXMtaWRlYQ" target="_blank" rel="noopener noreferrer">Google Podcasts</a>
       </div>
       <h2>Social media</h2>
       <p className="introduction">If you would like to get in touch with the show to suggest a guest or leave feedback, email us at <span className='obfuscate'>moc.aedisi<span></span>htraeh@olleh</span>. You can also find us on Facebook and Twitter:</p>
       <div className = 'listen-container'>
-      <a className='listen' href="https://www.facebook.com/hearthisidea" target="_blank">Facebook</a>
-      <a className='listen' href="https://twitter.com/hearthisidea" target="_blank">Twitter</a>
+      <a className='listen' href="https://www.facebook.com/hearthisidea" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a className='listen' href="https://twitter.com/hearthisidea" target="_blank" rel="noopener noreferrer">Twitter</a>
       </div>
     {/*<Link to="episodes">See more episodes</Link>*/}
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>

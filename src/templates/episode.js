@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Player from "../components/player"
-import Img from 'gatsby-image';
+//import Img from 'gatsby-image';
 import  { Link } from "gatsby"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { MDXProvider } from "@mdx-js/react"
