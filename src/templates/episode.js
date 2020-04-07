@@ -8,8 +8,8 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { MDXProvider } from "@mdx-js/react"
 import "katex/dist/katex.min.css"
 import SEO from "../components/seo"
-import Bookshelf from "../components/bookshelf"
-const components = {Bookshelf}
+import Book from "../components/book"
+const components = {Book}
 export default function Template({
   
   data: {mdx}, // this prop will be injected by the GraphQL query below.
