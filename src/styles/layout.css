@@ -7,6 +7,8 @@ body {
   line-height: 185%;
   color: rgba(0, 0, 0, 0.82);
   font-size: 19px;
+  max-width: 100%;
+    overflow-x: hidden;
 }
 a{
 color:rgba(0, 0, 0, 0.82);
@@ -225,6 +227,9 @@ color:rgba(247, 210, 3, 0.966);*/
   .title{
 margin-left:0%;
   }
+  blockquote{
+    margin-left:0;
+  }
 }
 @media all and (max-width:600px){
   body{
@@ -265,4 +270,7 @@ main{
 .introduction{
   font-size: 18px;
 }
+}
+iframe{
+  max-width: 100%;
 }

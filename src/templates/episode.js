@@ -9,6 +9,8 @@ import { MDXProvider } from "@mdx-js/react"
 import "katex/dist/katex.min.css"
 import SEO from "../components/seo"
 import Book from "../components/book"
+import HeaderScroll from "../components/header-scroll"
+//const components = {Book,HeaderScroll}
 const components = {Book}
 export default function Template({
   
@@ -21,14 +23,14 @@ export default function Template({
     <Layout>
       <SEO title={mdx.frontmatter.title} myFeaturedImage={mdx.frontmatter.featuredImage} />
       <h1 className='episode-title'>{mdx.frontmatter.title}</h1>
-      <h2 class='date'>{mdx.frontmatter.date}</h2>
+      <h2 className='date'>{mdx.frontmatter.date}</h2>
       <Player audioSrc={mdx.frontmatter.audio}></Player>
       <div className="writeup">
         <MDXProvider components={components}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
       </div>
-      <Link class='back' to='/episodes'>&larr;	 Back to episodes</Link>
+      <Link className='back' to='/episodes'>&larr;	 Back to episodes</Link>
     </Layout>
   )
   

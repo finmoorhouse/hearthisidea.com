@@ -4,6 +4,8 @@
     border:1px solid red;*/
     display: flex;
     margin:auto;
+    margin-bottom:15px;
+    max-width:760px;
     margin-top:0; margin-bottom: 0;
 }
 

@@ -12,9 +12,9 @@ const Header = ({ siteTitle }) => {
         <Link to="/" className="push">
           About
         </Link>{" "}
-        <span class="menu-slash">/</span> <Link to="episodes">Episodes</Link>
+        <span className="menu-slash">/</span> <Link to="episodes">Episodes</Link>
       </div>
-      {/* <hr class="line" /> */}
+   
     </header>
   )
 }
