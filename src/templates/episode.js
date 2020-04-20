@@ -9,6 +9,7 @@ import { MDXProvider } from "@mdx-js/react"
 import "katex/dist/katex.min.css"
 import SEO from "../components/seo"
 import Book from "../components/book"
+import EpisodeLinks from "../components/episode-links"
 import HeaderScroll from "../components/header-scroll"
 //const components = {Book,HeaderScroll}
 const components = {Book}
@@ -25,6 +26,11 @@ export default function Template({
       <h1 className='episode-title'>{mdx.frontmatter.title}</h1>
       <h2 className='date'>{mdx.frontmatter.date}</h2>
       <Player audioSrc={mdx.frontmatter.audio}></Player>
+      <EpisodeLinks
+      direct={mdx.frontmatter.audio||"/"}
+      apple={mdx.frontmatter.apple||"https://podcasts.apple.com/gb/podcast/hear-this-idea/id1496501781"}
+      spotify={mdx.frontmatter.spotify||"https://open.spotify.com/show/442fxr9pe0tbDtqEikODch"}
+      google={mdx.frontmatter.google ||"https://podcasts.google.com/?feed=aHR0cHM6Ly9waW5lY2FzdC5jb20vZmVlZC9oZWFyLXRoaXMtaWRlYQ"} />
       <div className="writeup">
         <MDXProvider components={components}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
@@ -44,6 +50,9 @@ export const pageQuery = graphql`
         path
         audio
         title
+        apple
+        google
+        spotify
         featuredImage {
           childImageSharp {
             sizes(maxWidth: 1200) {
