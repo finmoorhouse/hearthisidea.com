@@ -10,7 +10,6 @@ import "katex/dist/katex.min.css"
 import SEO from "../components/seo"
 import Book from "../components/book"
 import EpisodeLinks from "../components/episode-links"
-import HeaderScroll from "../components/header-scroll"
 //const components = {Book,HeaderScroll}
 const components = {Book}
 export default function Template({
