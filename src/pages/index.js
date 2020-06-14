@@ -1,5 +1,5 @@
 import React from "react"
-//import { Link } from "gatsby"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -8,9 +8,10 @@ const IndexPage = () => (
     <SEO title="About" />
     <h1>About the show</h1>
     <hr className = "line"/>
-    <p className="introduction">Hear This Idea is a podcast showcasing new thinking from the University of Cambridge and beyond. It is hosted by two undergrad students, Fin and Luca. Each episode is an in-depth interview where we ask academics to explain their field and their research. Every episode also has an accompanying write-up that we publish right here on our website.
+    <p className="introduction">Hear This Idea is a podcast showcasing new thinking from the University of Cambridge and beyond. It is hosted by two undergrad students, Fin and Luca. Each episode is an in-depth interview where we ask academics to explain their field and their research. Every episode also has an accompanying write-up that we publish right here on our website. 
       </p>
       <h2>Where to listen</h2>
+
       <div className = 'listen-container'>
       <a className='listen' href="https://open.spotify.com/show/442fxr9pe0tbDtqEikODch" target="_blank" rel="noopener noreferrer">Spotify</a>
       <a className='listen' href="https://pca.st/5bclatq6" target="_blank" rel="noopener noreferrer">Pocket Casts</a>
@@ -23,7 +24,11 @@ const IndexPage = () => (
       <a className='listen' href="https://www.facebook.com/hearthisidea" target="_blank" rel="noopener noreferrer">Facebook</a>
       <a className='listen' href="https://twitter.com/hearthisidea" target="_blank" rel="noopener noreferrer">Twitter</a>
       </div>
+      <p className="introduction">
+        You can see some of our own recommendations <Link to='/recommendations'>here</Link>.
+        </p>
     {/*<Link to="episodes">See more episodes</Link>*/}
+    {/*Eventually a link to the library will go here.*/}
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
   </Layout>
 )
