@@ -1,7 +1,11 @@
+/*
 .recommendations  a{
     text-decoration: none;
     border-bottom:5px solid rgba(247, 210, 3, 0.3);
-    /*font-weight: bold;*/
     padding-bottom:0px;
     line-height: 8px;
+}
+*/
+.recommendations a {
+  font-weight: normal;
 }

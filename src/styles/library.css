@@ -1,0 +1,12 @@
+.library-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 15px;
+  align-items: stretch;
+  justify-content: center;
+  row-gap: 15px;
+}
+.book-link{
+    background: #f7d40c;
+    min-height: 200px;
+}

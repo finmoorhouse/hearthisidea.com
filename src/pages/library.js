@@ -1,24 +1,30 @@
 import React from "react"
 import { graphql } from "gatsby"
-import PostLink from "../components/episode-link"
+import BookLink from "../components/book-link"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-const EpisodesPage = ({
+import "../styles/library.css"
+
+
+const LibraryPage = ({
   data: {
     allMdx: { edges },
   },
 }) => {
-  const Posts = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
-  return <Layout>
-    <SEO title="Episodes" />
-    <h1>Episodes</h1>
-    <hr className = "line"/>
-  {Posts}
-  </Layout>
+  const Books = edges
+    .filter(edge => !!edge.node.frontmatter.date) // You can filter your Books based on some criteria
+    .map(edge => <BookLink key={edge.node.id} post={edge.node} />)
+  return (
+    <Layout>
+      <SEO title="Episodes" />
+      <h1>Library</h1>
+      <hr className="line" />
+      <p>Some text here introducing the library.</p>
+      <div className='library-container'>{Books}</div>
+    </Layout>
+  )
 }
-export default EpisodesPage
+export default LibraryPage
 export const pageQuery = graphql`
   query {
     allMdx(sort: { order: DESC, fields: [frontmatter___number] }) {

@@ -25,7 +25,7 @@ const IndexPage = () => (
       <a className='listen' href="https://twitter.com/hearthisidea" target="_blank" rel="noopener noreferrer">Twitter</a>
       </div>
       <p className="introduction">
-        You can see some of our own recommendations <Link to='/recommendations'>here</Link>.
+        You can see some of our own book, blog, and podcast recommendations <Link to='/recommendations'>here</Link>.
         </p>
     {/*<Link to="episodes">See more episodes</Link>*/}
     {/*Eventually a link to the library will go here.*/}
