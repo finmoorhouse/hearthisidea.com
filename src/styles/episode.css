@@ -1,0 +1,18 @@
+h5{
+    opacity: 0.6;
+    margin-left:20px;
+}
+.aside{
+    background:#f9f9fa;
+    display: flex;
+    flex-direction: row;
+}
+.aside p{
+    padding: 8px 20px 8px 10px;
+}
+.aside::before{
+    content: "💡";
+    padding-left:20px;
+    padding-top:26px;
+    font-size: 26px;
+}
