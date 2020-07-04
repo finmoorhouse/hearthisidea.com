@@ -17,6 +17,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-csv`,
     //`gatsby-transformer-remark`,
     `remark-math`,
     {
@@ -60,6 +61,13 @@ module.exports = {
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/src/episodes`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
       },
     },
     {

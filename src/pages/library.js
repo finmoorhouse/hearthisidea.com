@@ -8,11 +8,11 @@ import "../styles/library.css"
 
 const LibraryPage = ({
   data: {
-    allMdx: { edges },
+    allLibraryCsv: { edges },
   },
 }) => {
   const Books = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your Books based on some criteria
+    //.filter(edge => !!edge.node.frontmatter.date) // You can filter your Books based on some criteria
     .map(edge => <BookLink key={edge.node.id} post={edge.node} />)
   return (
     <Layout>
@@ -27,18 +27,15 @@ const LibraryPage = ({
 export default LibraryPage
 export const pageQuery = graphql`
   query {
-    allMdx(sort: { order: DESC, fields: [frontmatter___number] }) {
+    allLibraryCsv {
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            number
-            date(formatString: "MMMM DD, YYYY")
-            path
-            title
-            audio
-          }
+          author
+          image
+          link
+          name
+          title
         }
       }
     }

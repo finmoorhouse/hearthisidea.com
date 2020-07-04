@@ -1,10 +1,9 @@
 import React from "react"
 const BookLink = ({ post }) => (
-  <div className='book-link'>
-      {/*<h2><span className='number'>{parseInt(post.frontmatter.number, 10)}. </span>{post.frontmatter.title} </h2>
-      <h4 className='date'>
-      {post.frontmatter.date.toUpperCase()}
-</h4>*/}
+  <div className="book-link">
+    <h2>{post.title}</h2>
+    <h4>{post.name}</h4>
+    <h5>{post.link}</h5>
   </div>
 )
 export default BookLink
