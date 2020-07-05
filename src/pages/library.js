@@ -8,7 +8,7 @@ import "../styles/library.css"
 
 const LibraryPage = ({
   data: {
-    allLibraryCsv: { edges },
+    allLibraryJson: { edges },
   },
 }) => {
   const Books = edges
@@ -27,12 +27,18 @@ const LibraryPage = ({
 export default LibraryPage
 export const pageQuery = graphql`
   query {
-    allLibraryCsv {
+    allLibraryJson {
       edges {
         node {
           id
           author
-          image
+          image{
+            childImageSharp {
+              fluid(maxWidth: 300, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           link
           name
           title

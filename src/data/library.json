@@ -1,0 +1,299 @@
+[
+    {
+        "title": "Common women: Prostitution and sexuality in Medieval England",
+        "author": "Ruth Mazo Karas",
+        "name": "Dr Victoria Bateman",
+        "image": "./book-covers/book-victoria-1.jpg",
+        "link": "https://www.amazon.co.uk/Common-Women-Prostitution-Sexuality-Medieval/dp/0195124987/ref=sr_1_1?keywords=common+women&qid=1579181934&sr=8-1",
+        "type": "book",
+        "episode": 1
+      },
+      {
+        "title": "Greed, lust and gender: A History of Economic Ideas",
+        "author": "Nancy Folbre",
+        "name": "Dr Victoria Bateman",
+        "image": "./book-covers/book-victoria-2.jpg",
+        "link": "https://www.amazon.co.uk/Greed-Lust-Gender-History-Economic-ebook/dp/B005PUWTOU/ref=sr_1_1?crid=2AXS8BSP4ILFZ&keywords=greed+lust+and+gender&qid=1579181816&sprefix=greed+lust+an%2Cstripbooks%2C152&sr=8-1",
+        "type": "book",
+        "episode": 1
+      },
+      {
+        "title": "Gender and Economics",
+        "author": "Jane Humphries",
+        "name": "Dr Victoria Bateman",
+        "image": "./book-covers/book-victoria-3.jpg",
+        "link": "https://books.google.co.uk/books?id=36MEAQAAIAAJ&q=gender+and+economics&dq=gender+and+economics&hl=en&sa=X&ved=0ahUKEwiVzrHl8obnAhWPh1wKHejADiEQ6AEIKDAA",
+        "type": "book",
+        "episode": 1
+      },
+      {
+        "title": "The Brink",
+        "author": "Alison Klayman",
+        "name": "Tobias Cremer",
+        "image": "./book-covers/book-tobias-1.jpg",
+        "link": "https://letterboxd.com/film/the-brink-2019/",
+        "type": "film",
+        "episode": 2
+      },
+      {
+        "title": "The Road to Somewhere",
+        "author": "David Goodhart",
+        "name": "Tobias Cremer",
+        "image": "./book-covers/book-tobias-2.jpg",
+        "link": "https://www.goodreads.com/en/book/show/32446555",
+        "type": "book",
+        "episode": 2
+      },
+      {
+        "title": "Is Europe Christian?",
+        "author": "Olivier Roy",
+        "name": "Tobias Cremer",
+        "image": "./book-covers/book-tobias-3.jpg",
+        "link": "https://www.goodreads.com/book/show/48715693",
+        "type": "book",
+        "episode": 2
+      },
+      {
+        "title": "Reasons and Persons",
+        "author": "Derek Parfit",
+        "name": "Vasileios Kotsidis",
+        "image": "./book-covers/book-vas-1.jpg",
+        "link": "https://www.goodreads.com/book/show/327051.Reasons_and_Persons?from_search=true&qid=9VDJ9tTkj6&rank=1",
+        "type": "book",
+        "episode": 3
+      },
+      {
+        "title": "Formal Logic",
+        "author": "Richard C. Jeffrey",
+        "name": "Vasileios Kotsidis",
+        "image": "./book-covers/book-vas-2.jpg",
+        "link": "https://www.goodreads.com/book/show/829692.Formal_Logic?from_search=true&qid=44Pc3pDKu6&rank=2",
+        "type": "book",
+        "episode": 3
+      },
+      {
+        "title": "Why Free Will is Real",
+        "author": "Christian List",
+        "name": "Vasileios Kotsidis",
+        "image": "./book-covers/book-vas-3.jpg",
+        "link": "https://www.goodreads.com/book/show/42525004-why-free-will-is-real",
+        "type": "book",
+        "episode": 3
+      },
+      {
+        "title": "Improving immunisation coverage in rural India",
+        "author": "Banerjee, Duflo, Glennerster, & Kothari",
+        "name": "Tads Ciecierski-Holmes",
+        "image": "./book-covers/book-tads-1.jpg",
+        "link": "https://www.bmj.com/content/340/bmj.c2220",
+        "type": "paper",
+        "episode": 4
+      },
+      {
+        "title": "Behavioural Game Theory",
+        "author": "Colin Camerer",
+        "name": "Tads Ciecierski-Holmes",
+        "image": "./book-covers/book-tads-2.jpg",
+        "link": "https://www.amazon.co.uk/Behavioral-Game-Theory-Experiments-Interaction/dp/0691090394/ref=sr_1_1?keywords=Behavioural+Game+Theory&qid=1579202944&sr=8-1",
+        "type": "book",
+        "episode": 4
+      },
+      {
+        "title": "Medication Adherence",
+        "author": "Lawrence, Miller, & Flexner",
+        "name": "Tads Ciecierski-Holmes",
+        "image": "./book-covers/book-tads-3.jpg",
+        "link": "https://accp1.onlinelibrary.wiley.com/doi/abs/10.1002/jcph.862",
+        "type": "paper",
+        "episode": 4
+      },
+      {
+        "title": "Drug Addiction: Updating Actions to Habits",
+        "author": "Trevor W. Robbins",
+        "name": "Kent Berridge",
+        "image": "./book-covers/book-kent-2.jpg",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/16251991",
+        "type": "paper",
+        "episode": 5
+      },
+      {
+        "title": "Compulsion and choice in addiction",
+        "author": "Kent Berridge and Richard Holton",
+        "name": "Kent Berridge",
+        "image": "./book-covers/book-kent-1.jpg",
+        "link": "https://lsa.umich.edu/psych/research&labs/berridge/publications/2017%20Holton%20&%20Berridge%20Compulsions%20&%20choice%20in%20addiction%20chapt.pdf",
+        "type": "paper",
+        "episode": 5
+      },
+      {
+        "title": "Liking, Wanting and the Incentive-Sensitization Theory of Addiction",
+        "author": "Terry Robinson",
+        "name": "Kent Berridge",
+        "image": "./book-covers/book-kent-3.jpg",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5171207/",
+        "type": "paper",
+        "episode": 5
+      },
+      {
+        "title": "Animal Signals",
+        "author": "John Maynard Smith",
+        "name": "Dan Williams",
+        "image": "./book-covers/book-dan-2.jpg",
+        "link": "https://www.goodreads.com/book/show/1456011.Animal_Signals",
+        "type": "book",
+        "episode": 6
+      },
+      {
+        "title": "Beliefs as Signals",
+        "author": "Eric Funkhouser",
+        "name": "Dan Williams",
+        "image": "./book-covers/book-dan-3.jpg",
+        "link": "https://www.tandfonline.com/doi/full/10.1080/09515089.2017.1291929",
+        "type": "paper",
+        "episode": 6
+      },
+      {
+        "title": "The Elephant in the Brain",
+        "author": "Kevin Simler and Robin Hanson",
+        "name": "Dan Williams",
+        "image": "./book-covers/book-dan-1.jpg",
+        "link": "https://www.goodreads.com/book/show/28820444-the-elephant-in-the-brain?from_search=true&qid=ly841mUDHt&rank=1",
+        "type": "book",
+        "episode": 6
+      },
+      {
+        "title": "Market, State and People",
+        "author": "Diane Coyle",
+        "name": "Diane Coyle",
+        "image": "./book-covers/book-diane-1.jpg",
+        "link": "https://www.amazon.co.uk/gp/product/0691179263/ref=dbs_a_def_rwt_bibl_vppi_i0",
+        "type": "book",
+        "episode": 7
+      },
+      {
+        "title": "The Great Reversal",
+        "author": "Thomas Philippon",
+        "name": "Diane Coyle",
+        "image": "./book-covers/book-diane-2.jpg",
+        "link": "https://www.amazon.co.uk/Great-Reversal-Thomas-Philippon/dp/0674237544/ref=sr_1_1?keywords=the+great+reversal&qid=1582302104&s=books&sr=1-1",
+        "type": "book",
+        "episode": 7
+      },
+      {
+        "title": "Goliath",
+        "author": "Matt Stoller",
+        "name": "Diane Coyle",
+        "image": "./book-covers/book-diane-3.jpg",
+        "link": "https://www.amazon.co.uk/Goliath-100-year-Between-Monopoly-Populism/dp/1508292620",
+        "type": "book",
+        "episode": 7
+      },
+      {
+        "title": "Doing Good Better",
+        "author": "William MacAskill",
+        "name": "George Rosenfeld",
+        "image": "./book-covers/book-george-1.jpg",
+        "link": "https://www.goodreads.com/book/show/23398748-doing-good-better?from_search=true&qid=frfMyj9ENv&rank=2",
+        "type": "book",
+        "episode": 8
+      },
+      {
+        "title": "How Change Happens",
+        "author": "Cass Sunstein",
+        "name": "George Rosenfeld",
+        "image": "./book-covers/book-george-2.jpg",
+        "link": "https://80000hours.org/podcast/episodes/cass-sunstein-how-change-happens/",
+        "type": "book",
+        "episode": 8
+      },
+      {
+        "title": "Thinking, Fast and Slow",
+        "author": "Daniel Kahneman",
+        "name": "George Rosenfeld",
+        "image": "./book-covers/book-george-3.jpg",
+        "link": "https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow",
+        "type": "book",
+        "episode": 8
+      },
+      {
+        "title": "Replacing Guilt",
+        "author": "Nate Soares",
+        "name": "Neel Nanda",
+        "image": "./book-covers/book-neel-3.jpg",
+        "link": "http://mindingourway.com/guilt/",
+        "type": "book",
+        "episode": 9
+      },
+      {
+        "title": "80,000 Hours Key Idea Series",
+        "author": "80,000 Hours",
+        "name": "Neel Nanda",
+        "image": "./book-covers/book-neel-2.jpg",
+        "link": "https://80000hours.org/key-ideas/",
+        "type": "article",
+        "episode": 9
+      },
+      {
+        "title": "CFAR Participant Handbook",
+        "author": "Center for Applied Rationality",
+        "name": "Neel Nanda",
+        "image": "./book-covers/book-neel-1.jpg",
+        "link": "https://rationality.org/files/cfar-handbook.pdf",
+        "type": "online",
+        "episode": 9
+      },
+      {
+        "title": "The Mystery of Capital",
+        "author": "Hermando De Soto",
+        "name": "Toke Aidt",
+        "image": "./book-covers/book-toke-1.jpg",
+        "link": "https://www.amazon.co.uk/Mystery-Capital-Hernando-Soto/dp/0552999237",
+        "type": "book",
+        "episode": 10
+      },
+      {
+        "title": "The Grabbing Hand",
+        "author": "Andrei Shleifer and Robery Vishny",
+        "name": "Toke Aidt",
+        "image": "./book-covers/book-toke-2.jpg",
+        "link": "https://www.amazon.co.uk/Grabbing-Hand-Government-Pathologies-Their/dp/0674358872/ref=sr_1_1?dchild=1&keywords=The+Grabbing+Hand&qid=1587891885&s=books&sr=1-1",
+        "type": "book",
+        "episode": 10
+      },
+      {
+        "title": "Why Nations Fail",
+        "author": "Daron Acemoglu and James Robinson",
+        "name": "Toke Aidt",
+        "image": "./book-covers/book-toke-3.jpg",
+        "link": "https://www.amazon.co.uk/Why-Nations-Fail-Origins-Prosperity/dp/1846684307/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1587891922&sr=1-1",
+        "type": "book",
+        "episode": 10
+      },
+      {
+        "title": "Strangers Drowning",
+        "author": "Larissa MacFarquhar",
+        "name": "Eve McCormick",
+        "image": "./book-covers/book-eve-1.jpg",
+        "link": "https://www.goodreads.com/book/show/24611937-strangers-drowning",
+        "type": "book",
+        "episode": 11
+      },
+      {
+        "title": "The Precipice",
+        "author": "Toby Ord",
+        "name": "Eve McCormick",
+        "image": "./book-covers/book-eve-2.jpg",
+        "link": "https://www.goodreads.com/book/show/50485582-the-precipice",
+        "type": "book",
+        "episode": 11
+      },
+      {
+        "title": "When is your help special?",
+        "author": "Julia Wise",
+        "name": "Eve McCormick",
+        "image": "./book-covers/book-eve-3.jpg",
+        "link": "http://www.givinggladly.com/2012/06/when-is-your-help-special.html",
+        "type": "article",
+        "episode": 11
+      }
+   ]

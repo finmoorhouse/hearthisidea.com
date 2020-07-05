@@ -7,6 +7,7 @@
   row-gap: 15px;
 }
 .book-link{
-    background: #f7d40c;
+    /*background: #f7d40c;*/
     min-height: 200px;
+    border:1px solid darkolivegreen;
 }
