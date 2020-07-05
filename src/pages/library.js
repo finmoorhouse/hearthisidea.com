@@ -19,7 +19,7 @@ const LibraryPage = ({
       <SEO title="Episodes" />
       <h1>Library</h1>
       <hr className="line" />
-      <p>Some text here introducing the library.</p>
+      <p>Browse the book, article, and film recommendations of all our guests so far.</p>
       <div className='library-container'>{Books}</div>
     </Layout>
   )
@@ -42,6 +42,8 @@ export const pageQuery = graphql`
           link
           name
           title
+          type
+          episode
         }
       }
     }

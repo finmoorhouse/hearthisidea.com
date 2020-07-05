@@ -1,3 +1,7 @@
+.book-link * {
+  margin: 0;
+  padding: 0;
+}
 .library-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -6,8 +10,42 @@
   justify-content: center;
   row-gap: 15px;
 }
-.book-link{
-    /*background: #f7d40c;*/
-    min-height: 200px;
-    border:1px solid darkolivegreen;
+.book-link {
+  /*background: #f7d40c;
+    border:1px solid darkolivegreen;*/
+  min-height: 200px;
+  margin: 0 10px;
+}
+
+.book-link-image {
+  -moz-box-shadow: 6px 6px 40px -21px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 6px 40px -21px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 40px -21px rgba(0, 0, 0, 0.75);
+  margin-bottom: 20px;
+  bottom: 0;
+  /* HOVER OFF */
+  transition: bottom 0.5s ease;
+  -webkit-transition: bottom 0.5s ease;
+}
+.book-link-image:hover {
+  bottom: 10px;
+}
+.book-link-title {
+  font-weight: bold;
+}
+.book-link-author {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  line-height: 120%;
+  font-size: 17px;
+}
+.book-link-chosen {
+  margin-top: 10px;
+  opacity: 0.8;
+  line-height: 120%;
+  font-size: 17px;
+}
+.book-link-episode{
+  text-decoration: underline;
 }

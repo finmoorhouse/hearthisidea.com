@@ -6,7 +6,7 @@
         "image": "./book-covers/book-victoria-1.jpg",
         "link": "https://www.amazon.co.uk/Common-Women-Prostitution-Sexuality-Medieval/dp/0195124987/ref=sr_1_1?keywords=common+women&qid=1579181934&sr=8-1",
         "type": "book",
-        "episode": 1
+        "episode": "victoria"
       },
       {
         "title": "Greed, lust and gender: A History of Economic Ideas",
@@ -15,7 +15,7 @@
         "image": "./book-covers/book-victoria-2.jpg",
         "link": "https://www.amazon.co.uk/Greed-Lust-Gender-History-Economic-ebook/dp/B005PUWTOU/ref=sr_1_1?crid=2AXS8BSP4ILFZ&keywords=greed+lust+and+gender&qid=1579181816&sprefix=greed+lust+an%2Cstripbooks%2C152&sr=8-1",
         "type": "book",
-        "episode": 1
+        "episode": "victoria"
       },
       {
         "title": "Gender and Economics",
@@ -24,7 +24,7 @@
         "image": "./book-covers/book-victoria-3.jpg",
         "link": "https://books.google.co.uk/books?id=36MEAQAAIAAJ&q=gender+and+economics&dq=gender+and+economics&hl=en&sa=X&ved=0ahUKEwiVzrHl8obnAhWPh1wKHejADiEQ6AEIKDAA",
         "type": "book",
-        "episode": 1
+        "episode": "victoria"
       },
       {
         "title": "The Brink",
@@ -33,7 +33,7 @@
         "image": "./book-covers/book-tobias-1.jpg",
         "link": "https://letterboxd.com/film/the-brink-2019/",
         "type": "film",
-        "episode": 2
+        "episode": "tobias"
       },
       {
         "title": "The Road to Somewhere",
@@ -42,7 +42,7 @@
         "image": "./book-covers/book-tobias-2.jpg",
         "link": "https://www.goodreads.com/en/book/show/32446555",
         "type": "book",
-        "episode": 2
+        "episode": "tobias"
       },
       {
         "title": "Is Europe Christian?",
@@ -51,7 +51,7 @@
         "image": "./book-covers/book-tobias-3.jpg",
         "link": "https://www.goodreads.com/book/show/48715693",
         "type": "book",
-        "episode": 2
+        "episode": "tobias"
       },
       {
         "title": "Reasons and Persons",
@@ -60,7 +60,7 @@
         "image": "./book-covers/book-vas-1.jpg",
         "link": "https://www.goodreads.com/book/show/327051.Reasons_and_Persons?from_search=true&qid=9VDJ9tTkj6&rank=1",
         "type": "book",
-        "episode": 3
+        "episode": "vasilis"
       },
       {
         "title": "Formal Logic",
@@ -69,7 +69,7 @@
         "image": "./book-covers/book-vas-2.jpg",
         "link": "https://www.goodreads.com/book/show/829692.Formal_Logic?from_search=true&qid=44Pc3pDKu6&rank=2",
         "type": "book",
-        "episode": 3
+        "episode": "vasilis"
       },
       {
         "title": "Why Free Will is Real",
@@ -78,7 +78,7 @@
         "image": "./book-covers/book-vas-3.jpg",
         "link": "https://www.goodreads.com/book/show/42525004-why-free-will-is-real",
         "type": "book",
-        "episode": 3
+        "episode": "vasilis"
       },
       {
         "title": "Improving immunisation coverage in rural India",
@@ -87,7 +87,7 @@
         "image": "./book-covers/book-tads-1.jpg",
         "link": "https://www.bmj.com/content/340/bmj.c2220",
         "type": "paper",
-        "episode": 4
+        "episode": "tads"
       },
       {
         "title": "Behavioural Game Theory",
@@ -96,7 +96,7 @@
         "image": "./book-covers/book-tads-2.jpg",
         "link": "https://www.amazon.co.uk/Behavioral-Game-Theory-Experiments-Interaction/dp/0691090394/ref=sr_1_1?keywords=Behavioural+Game+Theory&qid=1579202944&sr=8-1",
         "type": "book",
-        "episode": 4
+        "episode": "tads"
       },
       {
         "title": "Medication Adherence",
@@ -105,7 +105,7 @@
         "image": "./book-covers/book-tads-3.jpg",
         "link": "https://accp1.onlinelibrary.wiley.com/doi/abs/10.1002/jcph.862",
         "type": "paper",
-        "episode": 4
+        "episode": "tads"
       },
       {
         "title": "Drug Addiction: Updating Actions to Habits",
@@ -114,16 +114,16 @@
         "image": "./book-covers/book-kent-2.jpg",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/16251991",
         "type": "paper",
-        "episode": 5
+        "episode": "kent"
       },
       {
-        "title": "Compulsion and choice in addiction",
+        "title": "Compulsion and Choice in Addiction",
         "author": "Kent Berridge and Richard Holton",
         "name": "Kent Berridge",
         "image": "./book-covers/book-kent-1.jpg",
         "link": "https://lsa.umich.edu/psych/research&labs/berridge/publications/2017%20Holton%20&%20Berridge%20Compulsions%20&%20choice%20in%20addiction%20chapt.pdf",
         "type": "paper",
-        "episode": 5
+        "episode":  "kent"
       },
       {
         "title": "Liking, Wanting and the Incentive-Sensitization Theory of Addiction",
@@ -132,7 +132,7 @@
         "image": "./book-covers/book-kent-3.jpg",
         "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5171207/",
         "type": "paper",
-        "episode": 5
+        "episode":  "kent"
       },
       {
         "title": "Animal Signals",
@@ -141,7 +141,7 @@
         "image": "./book-covers/book-dan-2.jpg",
         "link": "https://www.goodreads.com/book/show/1456011.Animal_Signals",
         "type": "book",
-        "episode": 6
+        "episode": "dan"
       },
       {
         "title": "Beliefs as Signals",
@@ -150,7 +150,7 @@
         "image": "./book-covers/book-dan-3.jpg",
         "link": "https://www.tandfonline.com/doi/full/10.1080/09515089.2017.1291929",
         "type": "paper",
-        "episode": 6
+        "episode":"dan"
       },
       {
         "title": "The Elephant in the Brain",
@@ -159,7 +159,7 @@
         "image": "./book-covers/book-dan-1.jpg",
         "link": "https://www.goodreads.com/book/show/28820444-the-elephant-in-the-brain?from_search=true&qid=ly841mUDHt&rank=1",
         "type": "book",
-        "episode": 6
+        "episode": "dan"
       },
       {
         "title": "Market, State and People",
@@ -168,7 +168,7 @@
         "image": "./book-covers/book-diane-1.jpg",
         "link": "https://www.amazon.co.uk/gp/product/0691179263/ref=dbs_a_def_rwt_bibl_vppi_i0",
         "type": "book",
-        "episode": 7
+        "episode": "diane"
       },
       {
         "title": "The Great Reversal",
@@ -177,7 +177,7 @@
         "image": "./book-covers/book-diane-2.jpg",
         "link": "https://www.amazon.co.uk/Great-Reversal-Thomas-Philippon/dp/0674237544/ref=sr_1_1?keywords=the+great+reversal&qid=1582302104&s=books&sr=1-1",
         "type": "book",
-        "episode": 7
+        "episode":  "diane"
       },
       {
         "title": "Goliath",
@@ -186,7 +186,7 @@
         "image": "./book-covers/book-diane-3.jpg",
         "link": "https://www.amazon.co.uk/Goliath-100-year-Between-Monopoly-Populism/dp/1508292620",
         "type": "book",
-        "episode": 7
+        "episode":  "diane"
       },
       {
         "title": "Doing Good Better",
@@ -195,7 +195,7 @@
         "image": "./book-covers/book-george-1.jpg",
         "link": "https://www.goodreads.com/book/show/23398748-doing-good-better?from_search=true&qid=frfMyj9ENv&rank=2",
         "type": "book",
-        "episode": 8
+        "episode": "george"
       },
       {
         "title": "How Change Happens",
@@ -204,7 +204,7 @@
         "image": "./book-covers/book-george-2.jpg",
         "link": "https://80000hours.org/podcast/episodes/cass-sunstein-how-change-happens/",
         "type": "book",
-        "episode": 8
+        "episode":"george"
       },
       {
         "title": "Thinking, Fast and Slow",
@@ -213,7 +213,7 @@
         "image": "./book-covers/book-george-3.jpg",
         "link": "https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow",
         "type": "book",
-        "episode": 8
+        "episode": "george"
       },
       {
         "title": "Replacing Guilt",
@@ -221,8 +221,8 @@
         "name": "Neel Nanda",
         "image": "./book-covers/book-neel-3.jpg",
         "link": "http://mindingourway.com/guilt/",
-        "type": "book",
-        "episode": 9
+        "type": "online",
+        "episode": "neel"
       },
       {
         "title": "80,000 Hours Key Idea Series",
@@ -231,7 +231,7 @@
         "image": "./book-covers/book-neel-2.jpg",
         "link": "https://80000hours.org/key-ideas/",
         "type": "article",
-        "episode": 9
+        "episode": "neel"
       },
       {
         "title": "CFAR Participant Handbook",
@@ -240,7 +240,7 @@
         "image": "./book-covers/book-neel-1.jpg",
         "link": "https://rationality.org/files/cfar-handbook.pdf",
         "type": "online",
-        "episode": 9
+        "episode": "neel"
       },
       {
         "title": "The Mystery of Capital",
@@ -249,7 +249,7 @@
         "image": "./book-covers/book-toke-1.jpg",
         "link": "https://www.amazon.co.uk/Mystery-Capital-Hernando-Soto/dp/0552999237",
         "type": "book",
-        "episode": 10
+        "episode": "toke"
       },
       {
         "title": "The Grabbing Hand",
@@ -258,7 +258,7 @@
         "image": "./book-covers/book-toke-2.jpg",
         "link": "https://www.amazon.co.uk/Grabbing-Hand-Government-Pathologies-Their/dp/0674358872/ref=sr_1_1?dchild=1&keywords=The+Grabbing+Hand&qid=1587891885&s=books&sr=1-1",
         "type": "book",
-        "episode": 10
+        "episode": "toke"
       },
       {
         "title": "Why Nations Fail",
@@ -267,7 +267,7 @@
         "image": "./book-covers/book-toke-3.jpg",
         "link": "https://www.amazon.co.uk/Why-Nations-Fail-Origins-Prosperity/dp/1846684307/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1587891922&sr=1-1",
         "type": "book",
-        "episode": 10
+        "episode": "toke"
       },
       {
         "title": "Strangers Drowning",
@@ -276,7 +276,7 @@
         "image": "./book-covers/book-eve-1.jpg",
         "link": "https://www.goodreads.com/book/show/24611937-strangers-drowning",
         "type": "book",
-        "episode": 11
+        "episode": "eve"
       },
       {
         "title": "The Precipice",
@@ -285,7 +285,7 @@
         "image": "./book-covers/book-eve-2.jpg",
         "link": "https://www.goodreads.com/book/show/50485582-the-precipice",
         "type": "book",
-        "episode": 11
+        "episode": "eve"
       },
       {
         "title": "When is your help special?",
@@ -294,6 +294,6 @@
         "image": "./book-covers/book-eve-3.jpg",
         "link": "http://www.givinggladly.com/2012/06/when-is-your-help-special.html",
         "type": "article",
-        "episode": 11
+        "episode": "eve"
       }
    ]
