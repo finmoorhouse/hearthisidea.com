@@ -4,7 +4,7 @@
 }
 .library-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(190px, 0.6fr));
   column-gap: 15px;
   align-items: stretch;
   justify-content: center;
@@ -13,15 +13,15 @@
 .book-link {
   /*background: #f7d40c;
     border:1px solid darkolivegreen;*/
-  min-height: 200px;
-  margin: 0 10px;
+  margin: 0 0;
   position: relative;
+  padding:0;
 }
 
 .book-link-image {
-  -moz-box-shadow: 8px 8px 20px -10px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 8px 8px 20px -10px rgba(0, 0, 0, 0.8);
-  box-shadow: 8px 8px 20px -10px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 8px 8px 30px -16px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 8px 8px 30px -16px rgba(0, 0, 0, 0.6);
+  box-shadow: 8px 8px 30px -16px rgba(0, 0, 0, 0.6);
   margin-bottom: 20px;
   bottom: 0;
   /* HOVER OFF */
@@ -35,7 +35,9 @@
   bottom: 10px;
 }
 .book-link-title {
+  margin-top:15px;
   font-weight: bold;
+  padding: 0 6px;
 }
 .book-link-author {
   margin-top: 5px;
@@ -55,23 +57,33 @@
 }
 .book-link-info{
   position: absolute;
-  top:0;
+  top:-10px;
   height: 100%;
+  width:100%;
   text-align: center;
   opacity: 0;
   transition: .5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .book-link-image__link{
+  
   display: block;
-  width: 100%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
 }
 .book-link:hover .book-link-image {
-  opacity: 0.2;
+  opacity: 0.3;
+  filter: blur(4px);
 }
 
 .book-link:hover .book-link-info {
   opacity: 1;
+}
+.book-link-line{
+  width:50%;
+  margin:0 auto;
+  border-bottom:3px solid #f7d412;
 }

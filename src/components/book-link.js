@@ -30,7 +30,7 @@ const BookLink = ({ post }) => {
           <Img
             className="book-link-image"
             alt={`${post.name}'s recommendation: '${post.title}' by ${post.author}.`}
-            fluid={post.image.childImageSharp.fluid}
+            fluid={{ ...post.image.childImageSharp.fluid, aspectRatio: 2/3}}
           />
         ) : (
           <h3>no image</h3>
@@ -38,11 +38,11 @@ const BookLink = ({ post }) => {
       </a>
       <div className="book-link-info">
         <h2>{emoji}</h2>
-        <h4 className="book-link-title">{post.title}</h4>
+        <h3 className="book-link-title">{post.title}</h3>
         <p className="book-link-author">
           {post.author}
         </p>
-        <hr class="line" />
+        <hr class="line book-link-line" />
         <p className="book-link-chosen">
           Episode:{" "}
           <Link to={`/episodes/${post.episode}`} className="book-link-episode">
