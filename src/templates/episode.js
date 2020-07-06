@@ -7,7 +7,7 @@ import  { Link } from "gatsby"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { MDXProvider } from "@mdx-js/react"
 import "katex/dist/katex.min.css"
-import "../styles/episode.css"
+import "../styles/episode.scss"
 import SEO from "../components/seo"
 import Book from "../components/book"
 import EpisodeLinks from "../components/episode-links"

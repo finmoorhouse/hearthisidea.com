@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/bookshelf.css"
+import "../styles/bookshelf.scss"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 

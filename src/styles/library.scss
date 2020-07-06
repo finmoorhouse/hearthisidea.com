@@ -8,14 +8,19 @@
   column-gap: 15px;
   align-items: stretch;
   justify-content: center;
-  row-gap: 15px;
+  row-gap: 10px;
+}
+@media all and (max-width: 600px) {
+  .library-container {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
 }
 .book-link {
   /*background: #f7d40c;
     border:1px solid darkolivegreen;*/
   margin: 0 0;
   position: relative;
-  padding:0;
+  padding: 0;
 }
 
 .book-link-image {
@@ -28,14 +33,17 @@
   transition: bottom 0.5s ease;
   -webkit-transition: bottom 0.5s ease;
   border-radius: 3px;
+  /*
   transition: .5s ease;
-  
+  */
 }
+/*
 .book-link-image:hover {
   bottom: 10px;
 }
+*/
 .book-link-title {
-  margin-top:15px;
+  margin-top: 15px;
   font-weight: bold;
   padding: 0 6px;
 }
@@ -52,38 +60,45 @@
   line-height: 120%;
   font-size: 17px;
 }
-.book-link-episode{
+.book-link-episode {
   text-decoration: underline;
 }
-.book-link-info{
+.book-link-info {
+  visibility: hidden;
+
   position: absolute;
-  top:-10px;
+  top: -10px;
   height: 100%;
-  width:100%;
+  width: 100%;
   text-align: center;
-  opacity: 0;
+  /*opacity: 0;*/
+  pointer-events: none;
+  /*
   transition: .5s ease;
+  */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.book-link-image__link{
-  
-  display: block;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+.book-link-image__link {
+  text-decoration: none;
 }
 .book-link:hover .book-link-image {
   opacity: 0.3;
   filter: blur(4px);
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .book-link:hover .book-link-info {
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
-.book-link-line{
-  width:50%;
-  margin:0 auto;
-  border-bottom:3px solid #f7d412;
+
+.book-link-line {
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 3px solid #f7d412;
 }

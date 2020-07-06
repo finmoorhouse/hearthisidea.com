@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/episode-links.css"
+import "../styles/episode-links.scss"
 
 const EpisodeLinks = (props) => {
 
