@@ -4,10 +4,6 @@ import { Link } from "gatsby"
 
 const BookLink = ({ post }) => {
   let emoji = "📚"
-  if (post.type == "film") {
-    emoji = "🎥"
-  }
-
   switch (post.type) {
     case "book":
       emoji = "📚"
@@ -24,10 +20,12 @@ const BookLink = ({ post }) => {
     case "article":
       emoji = "📰"
       break
+    default:
+      emoji = "📚"
   }
   return (
     <div className="book-link">
-      <a href={post.link} target="_blank" rel="noopener noreferrer">
+      <a href={post.link} target="_blank" rel="noopener noreferrer" className="book-link-image__link">
         {post.image ? (
           <Img
             className="book-link-image"
@@ -38,14 +36,20 @@ const BookLink = ({ post }) => {
           <h3>no image</h3>
         )}
       </a>
-      <h4 className="book-link-title">{post.title}</h4>
-      <p className="book-link-author">
-        {post.author} {emoji}
-      </p>
-      <hr class="line" />
-      <p className="book-link-chosen">
-        Episode: <Link to={`/episodes/${post.episode}`} className="book-link-episode">{post.name}</Link>
-      </p>
+      <div className="book-link-info">
+        <h2>{emoji}</h2>
+        <h4 className="book-link-title">{post.title}</h4>
+        <p className="book-link-author">
+          {post.author}
+        </p>
+        <hr class="line" />
+        <p className="book-link-chosen">
+          Episode:{" "}
+          <Link to={`/episodes/${post.episode}`} className="book-link-episode">
+            {post.name}
+          </Link>
+        </p>
+      </div>
     </div>
   )
 }

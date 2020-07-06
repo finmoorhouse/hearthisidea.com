@@ -15,17 +15,21 @@
     border:1px solid darkolivegreen;*/
   min-height: 200px;
   margin: 0 10px;
+  position: relative;
 }
 
 .book-link-image {
-  -moz-box-shadow: 6px 6px 40px -21px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 6px 6px 40px -21px rgba(0, 0, 0, 0.75);
-  box-shadow: 6px 6px 40px -21px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 8px 8px 20px -10px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 8px 8px 20px -10px rgba(0, 0, 0, 0.8);
+  box-shadow: 8px 8px 20px -10px rgba(0, 0, 0, 0.8);
   margin-bottom: 20px;
   bottom: 0;
   /* HOVER OFF */
   transition: bottom 0.5s ease;
   -webkit-transition: bottom 0.5s ease;
+  border-radius: 3px;
+  transition: .5s ease;
+  
 }
 .book-link-image:hover {
   bottom: 10px;
@@ -48,4 +52,26 @@
 }
 .book-link-episode{
   text-decoration: underline;
+}
+.book-link-info{
+  position: absolute;
+  top:0;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: .5s ease;
+}
+.book-link-image__link{
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.book-link:hover .book-link-image {
+  opacity: 0.2;
+}
+
+.book-link:hover .book-link-info {
+  opacity: 1;
 }

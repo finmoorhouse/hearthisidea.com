@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/library.css"
 
-
 const LibraryPage = ({
   data: {
     allLibraryJson: { edges },
@@ -19,8 +18,11 @@ const LibraryPage = ({
       <SEO title="Episodes" />
       <h1>Library</h1>
       <hr className="line" />
-      <p>Browse the book, article, and film recommendations of all our guests so far.</p>
-      <div className='library-container'>{Books}</div>
+      <p>
+        Browse the book, article, and film recommendations of all our guests so
+        far.
+      </p>
+      <div className="library-container">{Books}</div>
     </Layout>
   )
 }
@@ -32,7 +34,7 @@ export const pageQuery = graphql`
         node {
           id
           author
-          image{
+          image {
             childImageSharp {
               fluid(maxWidth: 300, quality: 80) {
                 ...GatsbyImageSharpFluid
