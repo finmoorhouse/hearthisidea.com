@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => {
           About
         </Link>{" "}
         <span className="menu-slash">/</span>{" "}
-        <Link to="episodes">Episodes</Link>
+        <Link to="/episodes">Episodes</Link>
       </div>
     </header>
   )

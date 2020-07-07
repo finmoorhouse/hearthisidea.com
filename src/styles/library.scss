@@ -9,6 +9,7 @@
   align-items: stretch;
   justify-content: center;
   row-gap: 10px;
+  margin-top:26px;
 }
 @media all and (max-width: 600px) {
   .library-container {
@@ -32,7 +33,7 @@
   /* HOVER OFF */
   transition: bottom 0.5s ease;
   -webkit-transition: bottom 0.5s ease;
-  border-radius: 3px;
+  border-radius: 4px;
   /*
   transition: .5s ease;
   */
@@ -65,7 +66,7 @@
 }
 .book-link-info {
   visibility: hidden;
-
+  pointer-events: none;
   position: absolute;
   top: -10px;
   height: 100%;
@@ -101,4 +102,14 @@
   width: 50%;
   margin: 0 auto;
   border-bottom: 3px solid #f7d412;
+}
+.library-filter-button{
+  border:none;
+  cursor: pointer;
+}
+@media all and (max-width:800px){
+  .library-filter-button{
+    font-size: 16px;
+    margin:6px;
+  }
 }

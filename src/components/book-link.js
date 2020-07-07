@@ -1,11 +1,9 @@
-import React, { useState } from "react"
+import React from "react"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 const BookLink = ({ post }) => {
-  let bookStyle = {
-    color: "black",
-  }
+
   let emoji = "📚"
   switch (post.type) {
     case "book":
@@ -30,8 +28,8 @@ const BookLink = ({ post }) => {
        Here's the toggle:
         style={bookVis ? { visibility: "visible" } : { visibility: "hidden" }}
         onClick={() => setBookVis(!bookVis)}
-        */
-  const [bookVis, setBookVis] = useState(true)
+        const [bookVis, setBookVis] = useState(true)
+       */
 
   return (
     <div className="book-link" >
