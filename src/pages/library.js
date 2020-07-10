@@ -62,7 +62,7 @@ const LibraryPage = ({
   }, [activeCategories])
   return (
     <Layout>
-      <SEO title="Episodes" />
+      <SEO title="Library" />
       <h1>Library</h1>
       <hr className="line" />
       <p>
