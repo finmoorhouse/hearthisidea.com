@@ -1,5 +1,4 @@
-<img src="static/hti-yellow.png" alt="HTI Header Image" style="zoom: 33%;" />
-
+![HTI Header Image](static/hti-yellow.png =200x200)
 # Hear This Idea
 
 This is the website for a podcast called 'Hear This Idea'. You can view it at [hearthisidea.com](https://www.hearthisidea.com).
