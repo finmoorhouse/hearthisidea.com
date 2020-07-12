@@ -1,4 +1,4 @@
-<img src="static/hti-yellow.png" alt="HTI Header Image" style="zoom: 33%;" />
+<img src="static/hti-yellow.png" alt="HTI Header Image" width="200" height="200"  />
 
 # Hear This Idea
 
@@ -6,15 +6,9 @@ This is the website for a podcast called 'Hear This Idea'. You can view it at [h
 
 The site is built with [GatsbyJS](https://www.gatsbyjs.org/).
 
-```bash
-gatsby new my-default-starter https://github.com/finmoorhouse/hearthisidea.com
-cd my-default-starter/
-gatsby develop
-```
-
 ## 🔍 Details
 
-- 🎨 Styles written in [Sass](https://sass-lang.com/) using [gatsby-plugin-sass](https://www.gatsbyjs.org/packages/gatsby-plugin-sass/).
+- 🎨 Styling in [Sass](https://sass-lang.com/) using [gatsby-plugin-sass](https://www.gatsbyjs.org/packages/gatsby-plugin-sass/).
 - ➕ LaTeX parsed with [gatsby-remark-katex](https://www.gatsbyjs.org/packages/gatsby-remark-katex/).
 - ✍️ Episodes written in [MDX](https://github.com/mdx-js/mdx).
 - 💾 Hosted with [Netlify](https://www.netlify.com/).
