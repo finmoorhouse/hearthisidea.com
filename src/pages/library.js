@@ -50,7 +50,7 @@ const LibraryPage = ({
     setBooks(
       edges
         .filter(edge => activeCategories[edge.node.type] === true) // You can filter your Books based on some criteria
-        .filter(edge => checkTags(edge.node.tags)) // Make this by tags
+        .filter(edge => checkTags(edge.node.tags))
         .map(edge => (
           <BookLink
             key={edge.node.id}
@@ -70,10 +70,6 @@ const LibraryPage = ({
         far. Hover over or tap on each image to see details, and click or tap on the
         title or guest's name to learn more. You can also use the buttons below to filter by category and medium: yellow indicates that the item is <i>included</i> in the filter, grey that it is <i>excluded</i>.
       </p>
-      
-      {/*
-      <h3>Filter by category and type:</h3>
-       This button should be made into a separate component maybe  */}
        <h3>Categories:</h3>
       <FilterButton
         handler={() => handler("economics")}

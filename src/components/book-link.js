@@ -24,12 +24,6 @@ const BookLink = ({ post }) => {
     default:
       emoji = "📚"
   }
-       /*
-       Here's the toggle:
-        style={bookVis ? { visibility: "visible" } : { visibility: "hidden" }}
-        onClick={() => setBookVis(!bookVis)}
-        const [bookVis, setBookVis] = useState(true)
-       */
 
   return (
     <div className="book-link" >

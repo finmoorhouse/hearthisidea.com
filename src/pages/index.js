@@ -91,8 +91,6 @@ const IndexPage = () => (
       You can also see some of our own book, blog, and podcast recommendations{" "}
       <Link to="/recommendations">here</Link>.
     </p>
-    {/*<Link to="episodes">See more episodes</Link>*/}
-    {/*Eventually a link to the library will go here.*/}
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
   </Layout>
 )
