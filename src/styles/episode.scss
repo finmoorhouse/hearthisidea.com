@@ -6,13 +6,18 @@ h5{
     background:#f9f9fa;
     display: flex;
     flex-direction: row;
+    padding:15px;
+    padding-right:17px;
+    border-radius: 4px;
+    color: lighten(black,25%);
 }
 .aside p{
     padding: 8px 20px 8px 10px;
 }
 .aside::before{
     content: "💡";
-    padding-left:20px;
+    padding-left:10px;
+    padding-right:20px;
     padding-top:26px;
     font-size: 26px;
 }
