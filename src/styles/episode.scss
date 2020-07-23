@@ -21,3 +21,13 @@ h5{
     padding-top:26px;
     font-size: 26px;
 }
+.episode-image_small{
+    width:80vw;
+    margin:50px auto;
+}
+@media all and (min-width:960px){
+    .episode-image_small{
+        width:46vw;
+        max-width: 600px;
+    }
+}
