@@ -25,6 +25,9 @@ h5{
     width:80vw;
     margin:50px auto;
 }
+.episode-image_small img{
+    max-width:80vw;
+}
 @media all and (min-width:960px){
     .episode-image_small{
         width:46vw;
