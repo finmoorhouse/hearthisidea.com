@@ -328,5 +328,65 @@
         "type": "article",
         "episode": "eve",
         "tags":["selfImprovement"]
+      },
+      {
+        "title": "Superforecasting",
+        "author": "Philip E. Tetlock & Dan Gardner",
+        "name": "Jaime Sevilla",
+        "image": "./book-covers/book-jaime-1.jpg",
+        "link": "https://www.goodreads.com/book/show/23995360-superforecasting",
+        "type": "book",
+        "episode": "jaime",
+        "tags":["economics"]
+      },
+      {
+        "title": "Understanding Cultural Persistence",
+        "author": "Nathan Nunn",
+        "name": "Jaime Sevilla",
+        "image": "./book-covers/book-jaime-2.jpg",
+        "link": "https://econpapers.repec.org/RAS/pnu17.htm",
+        "type": "article",
+        "episode": "jaime",
+        "tags":["economics"]
+      },
+      {
+        "title": "A History of Heterodox Economics",
+        "author": "Frederic Lee",
+        "name": "Carolina Alves",
+        "image": "./book-covers/book-carolina-1.jpg",
+        "link": "https://www.goodreads.com/book/show/7248202-a-history-of-heterodox-economics",
+        "type": "book",
+        "episode": "carolina",
+        "tags":["economics"]
+      },
+      {
+        "title": "Postcolonialism Meets Economics",
+        "author": "S. Charusheela & Eiman O. Zein-Elabdin",
+        "name": "Carolina Alves",
+        "image": "./book-covers/book-carolina-2.jpg",
+        "link": "https://www.goodreads.com/book/show/5602605-postcolonialism-meets-economics",
+        "type": "book",
+        "episode": "carolina",
+        "tags":["economics"]
+      },
+      {
+        "title": "A History of Heterodox Economics",
+        "author": "Frederic Lee",
+        "name": "Carolina Alves",
+        "image": "./book-covers/book-carolina-3.jpg",
+        "link": "https://www.goodreads.com/book/show/34896701-the-market",
+        "type": "book",
+        "episode": "carolina",
+        "tags":["economics"]
+      },
+      {
+        "title": "Lament for Economics",
+        "author": "Barbara Wootton",
+        "name": "Carolina Alves",
+        "image": "./book-covers/book-carolina-4.jpg",
+        "link": "https://www.goodreads.com/book/show/34896701-the-market",
+        "type": "book",
+        "episode": "carolina",
+        "tags":["economics"]
       }
    ]
