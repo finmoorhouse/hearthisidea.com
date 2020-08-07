@@ -16,5 +16,7 @@ The site is built with [GatsbyJS](https://www.gatsbyjs.org/).
 
 This thing is, and always will be, a work in progress! Any and all feedback is welcome — either through our [anonymous feedback form](https://forms.gle/TvDjN1f7wRgGokfy8), by emailing hello [at] hearthisidea [dot] com, or by filing an issue on GitHub.
 
+Given the MIT license, you're welcome to reuse and modify this code. However, some notes: firstly, I'm afraid I haven't made this to be legible or easily reworkable. At some point I may make a podcast-specific Gatsby theme (and maybe a tutorial to go with it). Secondly, I would be grateful if you could please credit [me](https://www.finmoorhouse.com/) and/or the original [site](https://www.hearthisidea.com/). Thanks!
+
 Made by [Fin Moorhouse](https://www.finmoorhouse.com/).
 
