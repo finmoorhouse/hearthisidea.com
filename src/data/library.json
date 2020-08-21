@@ -388,5 +388,35 @@
         "type": "book",
         "episode": "carolina",
         "tags":["economics"]
+      },
+      {
+        "title": "The Condemnation of Blackness",
+        "author": "Khalil Gibran Muhammad",
+        "name": "Jessie Munton",
+        "image": "./book-covers/book-jessie-1.jpg",
+        "link": "https://www.goodreads.com/book/show/7093931-the-condemnation-of-blackness",
+        "type": "book",
+        "episode": "jessie",
+        "tags":["sociology","history"]
+      },
+      {
+        "title": "Race After Technology",
+        "author": "Ruha Benjamin",
+        "name": "Jessie Munton",
+        "image": "./book-covers/book-jessie-2.jpg",
+        "link": "https://www.goodreads.com/book/show/42527493-race-after-technology",
+        "type": "book",
+        "episode": "jessie",
+        "tags":["sociology"]
+      },
+      {
+        "title": "The Rationality of Perception",
+        "author": "Susanna Siegel",
+        "name": "Jessie Munton",
+        "image": "./book-covers/book-jessie-3.jpg",
+        "link": "https://global.oup.com/academic/product/the-rationality-of-perception-9780198797081",
+        "type": "book",
+        "episode": "jessie",
+        "tags":["philosophy"]
       }
    ]
