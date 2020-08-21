@@ -28,6 +28,12 @@ h5{
 .episode-image_small img{
     max-width:80vw;
 }
+.episode-image_smaller{
+    width:40vw;
+    min-width: 280px;
+    margin:50px auto;
+}
+
 @media all and (min-width:960px){
     .episode-image_small{
         width:46vw;
