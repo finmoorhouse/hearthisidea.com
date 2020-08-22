@@ -97,6 +97,10 @@ function SEO({ description, lang, meta, title, myFeaturedImage }) {
           name:`image`,
           content: pageThumbnail,
         },
+        {
+          name:`monetization`,
+          content: "$ilp.uphold.com/4rHyDzRz66Dw",
+        },
       ].concat(meta)}
       
     />
