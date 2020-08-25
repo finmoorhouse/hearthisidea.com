@@ -99,7 +99,7 @@ function SEO({ description, lang, meta, title, myFeaturedImage }) {
         },
         {
           name:`monetization`,
-          content: "$ilp.uphold.com/4rHyDzRz66Dw",
+          content: `$ilp.uphold.com/4rHyDzRz66Dw`,
         },
       ].concat(meta)}
       
