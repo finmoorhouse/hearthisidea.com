@@ -410,13 +410,33 @@
         "tags":["sociology"]
       },
       {
-        "title": "The Rationality of Perception",
-        "author": "Susanna Siegel",
-        "name": "Jessie Munton",
-        "image": "./book-covers/book-jessie-3.jpg",
-        "link": "https://global.oup.com/academic/product/the-rationality-of-perception-9780198797081",
+        "title": "Reasons and Persons",
+        "author": "Derek Parfit",
+        "name": "Simon Beard",
+        "image": "./book-covers/book-simon-1.jpg",
+        "link": "https://www.goodreads.com/book/show/327051.Reasons_and_Persons",
         "type": "book",
-        "episode": "jessie",
+        "episode": "simon",
         "tags":["philosophy"]
+      },
+      {
+        "title": "The Dark Forest",
+        "author": "Liu Cixin",
+        "name": "Simon Beard",
+        "image": "./book-covers/book-simon-2.jpg",
+        "link": "https://www.goodreads.com/book/show/23168817-the-dark-forest",
+        "type": "book",
+        "episode": "simon",
+        "tags":["philosophy","fiction"]
+      },
+      {
+        "title": "Silent Spring",
+        "author": "Rachel Carson",
+        "name": "Simon Beard",
+        "image": "./book-covers/book-simon-3.jpg",
+        "link": "http://www.rachelcarson.org/SilentSpring.aspx",
+        "type": "book",
+        "episode": "simon",
+        "tags":["environment"]
       }
    ]

@@ -21,9 +21,11 @@ const LibraryPage = ({
     economics: true,
     psychology: true,
     sociology: true,
+    fiction: true,
     history: true,
     people: true,
     religion: true,
+    environment: true,
     selfImprovement: true,
     book: true,
     paper: true,
@@ -67,10 +69,12 @@ const LibraryPage = ({
       <hr className="line" />
       <p>
         Browse the book, article, and film recommendations of all our guests so
-        far. Hover over or tap on each image to see details, and click or tap on the
-        title or guest's name to learn more. You can also use the buttons below to filter by category and medium: yellow indicates that the item is <i>included</i> in the filter, grey that it is <i>excluded</i>.
+        far. Hover over or tap on each image to see details, and click or tap on
+        the title or guest's name to learn more. You can also use the buttons
+        below to filter by category and medium: yellow indicates that the item
+        is <i>included</i> in the filter, grey that it is <i>excluded</i>.
       </p>
-       <h3>Categories</h3>
+      <h3>Categories</h3>
       <FilterButton
         handler={() => handler("economics")}
         FilterName="Economics"
@@ -107,9 +111,19 @@ const LibraryPage = ({
         FilterValue={activeCategories.religion}
       />
       <FilterButton
+        handler={() => handler("environment")}
+        FilterName="Environment"
+        FilterValue={activeCategories.environment}
+      />
+      <FilterButton
         handler={() => handler("selfImprovement")}
         FilterName="Self-Improvement"
         FilterValue={activeCategories.selfImprovement}
+      />
+      <FilterButton
+        handler={() => handler("fiction")}
+        FilterName="Fiction"
+        FilterValue={activeCategories.fiction}
       />
       <h3>Medium</h3>
       <FilterButton
