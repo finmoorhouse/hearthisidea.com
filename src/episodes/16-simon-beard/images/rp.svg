@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="500" height="200">
+
+<!-- Daniel Méhkeri 2008/5/15. Créé avec un éditeur de texte. 
+
+     PAS DE COPYRIGHT. Tous droits renoncés. Faites ce que vous voulez avec.
+
+     NOT COPYRIGHTED. All rights renounced. Do whatever you want with it.
+  -->
+
+<title>Illustration of Derek Parfit's Mere Addition Paradox</title>
+
+<desc>
+The four situations, A, A+, B-, and B of the Mere Addition Paradox, illustrated as bars of different widths and heights with "water" between (in the case of A+ and B-), following Parfit's book _Reasons and Persons_, chapter 19.
+</desc>
+
+  <defs>
+       <path id="bar1" d="M-10,0 L-10,-100 L10,-100 L10,0 Z"/>
+       <path id="bar2" d="M-10,0 L-10,-50 L10,-50 L10,0 Z"/>
+       <path id="bar3" d="M-10,0 L-10,-85 L10,-85 L10,0 Z"/>
+       <path id="bar4" d="M-20,0 L-20,-85 L20,-85 L20,0 Z"/>
+       <path id="wave" fill="none" d="M-15,0 A15,15 0 0 0 -10,-10 A15,15 0 0 0 -5,0 A15,15 0 0 0 0,-10 A15,15 0 0 0 5,0 A15,15 0 0 0 10,-10 A15,15 0 0 0 15,0"/>
+       <g id="waves">
+         <use xlink:href="#wave" x="0" y="-2"/>
+         <use xlink:href="#wave" x="0" y="-12"/>
+         <use xlink:href="#wave" x="0" y="-22"/>
+         <use xlink:href="#wave" x="0" y="-32"/>
+         <use xlink:href="#wave" x="0" y="-42"/>
+       </g>
+  </defs>
+
+
+ <g transform="translate(250,150) scale(1.1)">
+
+  <g stroke="black" stroke-width="2" fill="white" font-size="25">
+   
+   <g id="Situation_A" transform="translate(-150,0)">
+     <use xlink:href="#bar1" x="0" y="0"/>
+     <text x="-10" y="25">A</text>
+   </g>
+   <g id="Situation_A_plus" transform="translate(-50,0)">
+     <use xlink:href="#bar1" x="-25" y="0"/>
+     <use xlink:href="#bar2" x="25" y="0"/>
+     <use xlink:href="#waves" x="0" y="0"/>
+     <text x="-10" y="25">A+</text>
+   </g>
+   <g id="Situation_B_minus" transform="translate(50,0)">
+     <use xlink:href="#bar3" x="-25" y="0"/>
+     <use xlink:href="#bar3" x="25" y="0"/>
+     <use xlink:href="#waves" x="0" y="0"/>
+     <text x="-10" y="25">B-</text>
+   </g>
+   <g id="Situation_B" transform="translate(150,0)">
+     <use xlink:href="#bar4" x="0" y="0"/>
+     <text x="-10" y="25">B</text>
+   </g>
+  </g>
+ </g>
+
+</svg>
+
+
+
