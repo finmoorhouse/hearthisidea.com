@@ -32,9 +32,34 @@ const LibraryPage = ({
     film: true,
     online: true,
   })
+  const media = ['book','paper','online','film']
   const handler = thing => {
     let newObject = activeCategories
-    newObject[thing] = !activeCategories[thing]
+    var keys = Object.keys(activeCategories);
+    let allTrue = true
+    keys.forEach(key => {
+      if (! activeCategories[key]){
+        allTrue = false;
+      }
+    })
+    if(allTrue){
+      if(media.includes(thing)){
+        media.forEach(medium => {
+          newObject[medium] = false;
+        })
+      }else{
+        keys.forEach(key => {
+          newObject[key] = false;
+        })
+        media.forEach(medium => {
+          newObject[medium] = true;
+        })
+      }
+      newObject[thing] = true
+    }
+    else{
+      newObject[thing] = !activeCategories[thing]
+    }
     setActiveCategories({ ...newObject })
   }
   useEffect(() => {
@@ -48,7 +73,6 @@ const LibraryPage = ({
       }
       return tagFilter
     }
-    console.log(activeCategories)
     setBooks(
       edges
         .filter(edge => activeCategories[edge.node.type] === true) // You can filter your Books based on some criteria
