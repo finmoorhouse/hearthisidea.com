@@ -9,7 +9,7 @@ const IndexPage = () => (
     <h1>About the show</h1>
     <hr className="line" />
     <p className="introduction">
-      Hear This Idea is a podcast showcasing new thinking in philosophy, the social sciences, and effective altruism — hosted by recent grads and long-time friends <a href="https://www.finmoorhouse.com" target="_blank" rel="noopener noreferrer">Fin</a> and <a href="https://www.lucarighetti.com" target="_blank" rel="noopener noreferrer">Luca</a>. In each (≈90 minute) conversation, we ask thinkers, founders, and academics to explain their field and their work. Our guest criteria are: we find them interesting, and we want an excuse to talk to them. Our approach to asking questions is: the <a href="https://www.perell.com/tweetstorms/get-wonky" target="_blank" rel="noopener noreferrer">wonkier</a> the better. For listeners wanting to get further into the weeds, we also write an in-depth accompanying article for each episode  — here on the <a href="https://www.hearthisidea.com/episodes" target="_blank" rel="noopener noreferrer">website</a>. You can browse all our guests' reading recommendations on our <Link to="/library">library page</Link>. 
+      Hear This Idea is a podcast showcasing new thinking in philosophy, the social sciences, and effective altruism — hosted by recent grads and long-time friends <a href="https://www.finmoorhouse.com" target="_blank" rel="noopener noreferrer">Fin</a> and <a href="https://www.lucarighetti.com" target="_blank" rel="noopener noreferrer">Luca</a>. In each (≈90 minute) conversation, we ask thinkers, founders, and academics to explain their field and their work. Our guest criteria are: we find them interesting, and we want an excuse to talk to them. Our approach to asking questions is: the <a href="https://www.perell.com/tweetstorms/get-wonky" target="_blank" rel="noopener noreferrer">wonkier</a> the better. We also get further into the weeds by writing an in-depth accompanying article <a href="https://www.hearthisidea.com/episodes" target="_blank" rel="noopener noreferrer">for each episode</a>. You can browse all our guests' reading recommendations on our <Link to="/library">library page</Link>. 
     </p>
     <h2>Where to listen</h2>
 
@@ -49,16 +49,15 @@ const IndexPage = () => (
     </div>
     <h2>Social media</h2>
     <p className="introduction">
-      If you would like to get in touch with the show to suggest a guest or
-      leave feedback, you can fill in our{" "}
+      We value feedback of any kind, and you can leave some through our{" "}
       <a
         href="https://forms.gle/TvDjN1f7wRgGokfy8"
         target="_blank"
         rel="noopener noreferrer"
       >
-        anonymous feedback form,
+        anonymous feedback form.
       </a>{" "}
-      or just email us at{" "}
+      Guest suggestions, love letters, and hate mail should be directed to{" "}
       <span className="obfuscate">
         moc.aedisi<span></span>htraeh@olleh
       </span>
