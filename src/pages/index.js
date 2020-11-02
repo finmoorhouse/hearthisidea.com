@@ -9,12 +9,7 @@ const IndexPage = () => (
     <h1>About the show</h1>
     <hr className="line" />
     <p className="introduction">
-      Hear This Idea is a podcast showcasing new thinking from the University of
-      Cambridge and beyond. It is hosted by two undergrad students, Fin and
-      Luca. Each episode is an in-depth interview where we ask academics to
-      explain their field and their research. Every episode also has an
-      accompanying write-up that we publish right here on our website.
-      You can browse all our guests' reading recommendations on our <Link to="/library">library page</Link>. 
+      Hear This Idea is a podcast showcasing new thinking in philosophy, the social sciences, and effective altruism — hosted by recent grads and long-time friends <a href="https://www.finmoorhouse.com" target="_blank" rel="noopener noreferrer">Fin</a> and <a href="https://www.lucarighetti.com" target="_blank" rel="noopener noreferrer">Luca</a>. In each (≈90 minute) conversation, we ask thinkers, founders, and academics to explain their field and their work. Our guest criteria are: we find them interesting, and we want an excuse to talk to them. Our approach to asking questions is: the <a href="https://www.perell.com/tweetstorms/get-wonky" target="_blank" rel="noopener noreferrer">wonkier</a> the better. For listeners wanting to get further into the weeds, we also write an in-depth accompanying article for each episode  — here on the <a href="https://www.hearthisidea.com/episodes" target="_blank" rel="noopener noreferrer">website</a>. You can browse all our guests' reading recommendations on our <Link to="/library">library page</Link>. 
     </p>
     <h2>Where to listen</h2>
 
@@ -61,7 +56,7 @@ const IndexPage = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        anonymous feedback form
+        anonymous feedback form,
       </a>{" "}
       or just email us at{" "}
       <span className="obfuscate">
@@ -88,7 +83,7 @@ const IndexPage = () => (
       </a>
     </div>
     <p className="introduction">
-      You can also see some of our own book, blog, and podcast recommendations{" "}
+      Finally, you can see our own book, blog, and podcast recommendations{" "}
       <Link to="/recommendations">here</Link>.
     </p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>

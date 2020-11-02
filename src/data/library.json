@@ -438,5 +438,25 @@
         "type": "book",
         "episode": "simon",
         "tags":["environment"]
+      },
+      {
+        "title": "On What Matters",
+        "author": "Derek Parfit",
+        "name": "Peter Singer",
+        "image": "./book-covers/book-peter-1.jpg",
+        "link": "https://www.goodreads.com/book/show/11106683-on-what-matters",
+        "type": "book",
+        "episode": "peter",
+        "tags":["philosophy"]
+      },
+      {
+        "title": "The Methods of Ethics",
+        "author": "Henry Sidgwick",
+        "name": "Peter Singer",
+        "image": "./book-covers/book-peter-2.jpg",
+        "link": "https://www.goodreads.com/book/show/851993.The_Methods_of_Ethics",
+        "type": "book",
+        "episode": "peter",
+        "tags":["philosophy"]
       }
    ]

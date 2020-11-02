@@ -47,6 +47,7 @@
   margin-top: 15px;
   font-weight: bold;
   padding: 0 6px;
+  font-size:25px;
 }
 .book-link-author {
   margin-top: 5px;
@@ -85,8 +86,8 @@
   text-decoration: none;
 }
 .book-link:hover .book-link-image {
-  opacity: 0.3;
-  filter: blur(4px);
+  opacity: 0;//0.3;
+  //filter: blur(4px);
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -101,7 +102,7 @@
 .book-link-line {
   width: 50%;
   margin: 0 auto;
-  border-bottom: 3px solid #f7d412;
+  border-bottom: 1px solid #f7d412;
 }
 .library-filter-button{
   border:none;
