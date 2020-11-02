@@ -57,7 +57,7 @@ const IndexPage = () => (
       >
         anonymous feedback form.
       </a>{" "}
-      Guest suggestions, love letters, and hate mail should be directed to{" "}
+      Guest suggestions, questions, and hate mail should be directed to{" "}
       <span className="obfuscate">
         moc.aedisi<span></span>htraeh@olleh
       </span>
@@ -83,7 +83,7 @@ const IndexPage = () => (
     </div>
     <p className="introduction">
       Finally, you can see our own book, blog, and podcast recommendations{" "}
-      <Link to="/recommendations">here</Link>.
+      <Link to="/recommendations">here</Link>. You can tip the show <a href="https://tips.pinecast.com/jar/hear-this-idea" target="_blank" rel="noopener noreferrer">here</a>.
     </p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
   </Layout>
