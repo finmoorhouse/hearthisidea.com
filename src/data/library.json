@@ -458,5 +458,65 @@
         "type": "book",
         "episode": "peter",
         "tags":["philosophy"]
+      },
+      {
+        "title": "Introduction to the Economics of Religion",
+        "author": "Laurence Iannaccone",
+        "name": "Sriya Iyer",
+        "image": "./book-covers/book-sriya-1-C.jpg",
+        "link": "https://www.jstor.org/stable/2564806",
+        "type": "paper",
+        "episode": "sriya",
+        "tags":["economics", "religion"]
+      },
+      {
+        "title": "The New Economics of Religion",
+        "author": "Sriya Iyer",
+        "name": "Sriya Iyer",
+        "image": "./book-covers/book-sriya-1-D.jpg",
+        "link": "https://www.aeaweb.org/articles?id=10.1257/jel.54.2.395",
+        "type": "paper",
+        "episode": "sriya",
+        "tags":["economics", "religion"]
+      },
+      {
+        "title": "The Economics of Religion in India",
+        "author": "Sriya Iyer",
+        "name": "Sriya Iyer",
+        "image": "./book-covers/book-sriya-1-B.jpg",
+        "link": "https://www.amazon.co.uk/Economics-Religion-India-Sriya-Iyer/dp/0674979648",
+        "type": "paper",
+        "episode": "sriya",
+        "tags":["economics", "religion"]
+      },
+      {
+        "title": "Islam and Economic Performance",
+        "author": "Timur Kuran",
+        "name": "Sriya Iyer",
+        "image": "./book-covers/book-sriya-1-A.jpg",
+        "link": "https://www.aeaweb.org/articles?id=10.1257/jel.20171243",
+        "type": "paper",
+        "episode": "sriya",
+        "tags":["economics", "religion"]
+      },
+      {
+        "title": "Revolt on the Nile",
+        "author": "Eric Chanay",
+        "name": "Sriya Iyer",
+        "image": "./book-covers/book-sriya-3.jpg",
+        "link": "https://www.onlinelibrary.wiley.com/doi/10.3982/ECTA10233",
+        "type": "book",
+        "episode": "sriya",
+        "tags":["economics"]
+      },
+      {
+        "title": "Persecution and Toleration",
+        "author": "Noel Johnson and Mark Koyama",
+        "name": "Sriya Iyer",
+        "image": "./book-covers/book-sriya-2.jpg",
+        "link": "https://persecutionandtoleration.com/",
+        "type": "book",
+        "episode": "sriya",
+        "tags":["economics", "religion"]
       }
    ]

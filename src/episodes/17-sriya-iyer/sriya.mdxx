@@ -1,0 +1,27 @@
+---
+number: "17"
+path: "/episodes/sriya"
+date: "2020-11-29"
+title: "Sriya Iyer on Something"
+audio: ""
+featuredImage: "images/simon_featured.jpg"
+spotify: ""
+apple: ""
+google: ""
+---
+
+![Sriya](images/sriya.jpg)
+
+## Book Recommendations 📚
+
+- Seminal papers in the Journal of Economic Literature
+  - [Introduction to the Economics of Religion](https://www.jstor.org/stable/2564806?seq=1) by Laurence Iannaccone
+  - [The New Economics of Religion](https://www.aeaweb.org/articles?id=10.1257/jel.54.2.395) by Sriya Iyer
+  - [Islam and Economic Performance](https://www.aeaweb.org/articles?id=10.1257/jel.20171243) by Timur Kuran
+- [Persecution and Toleration](https://persecutionandtoleration.com/) by Noel Johnson and Mark Koyama
+- [Revolt on the Nile](https://www.onlinelibrary.wiley.com/doi/10.3982/ECTA10233) by Eric Chaney
+
+<div className="bookshelf" > <Book url="https://www.goodreads.com/book/show/327051.Reasons_and_Persons" image="book-sriya-1"/> <Book url="https://www.goodreads.com/book/show/23168817-the-dark-forest" image="book-sriya-2"/> <Book url="http://www.rachelcarson.org/SilentSpring.aspx" image="book-sriya-3"/> </div>
+
+
+
