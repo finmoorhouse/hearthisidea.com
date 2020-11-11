@@ -29,10 +29,11 @@ const LibraryPage = ({
     selfImprovement: true,
     book: true,
     paper: true,
+    article: true,
     film: true,
     online: true,
   })
-  const media = ['book','paper','online','film']
+  const media = ['book','paper','online','film','article']
   const handler = thing => {
     let newObject = activeCategories
     var keys = Object.keys(activeCategories);
@@ -159,6 +160,11 @@ const LibraryPage = ({
         handler={() => handler("paper")}
         FilterName="Paper"
         FilterValue={activeCategories.paper}
+      />
+      <FilterButton
+        handler={() => handler("article")}
+        FilterName="Article"
+        FilterValue={activeCategories.article}
       />
       <FilterButton
         handler={() => handler("online")}

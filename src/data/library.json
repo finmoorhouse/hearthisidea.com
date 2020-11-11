@@ -518,5 +518,35 @@
         "type": "book",
         "episode": "sriya",
         "tags":["economics", "religion"]
+      },
+      {
+        "title": "Wittgenstein (1993)",
+        "author": "Derek Jarman",
+        "name": "Nikhil Krishnan",
+        "image": "./book-covers/book-nikhil-1.jpg",
+        "link": "https://letterboxd.com/film/wittgenstein/",
+        "type": "film",
+        "episode": "nikhil",
+        "tags":["philosophy", "people"]
+      },
+      {
+        "title": "Discussion of Linguistic Philosophy",
+        "author": "Bernard Williams and Bryan Magee",
+        "name": "Nikhil Krishnan",
+        "image": "./book-covers/book-nikhil-2.jpg",
+        "link": "https://youtu.be/IVY6t-DaeZw",
+        "type": "film",
+        "episode": "nikhil",
+        "tags":["philosophy"]
+      },
+      {
+        "title": "English Philosophy in the Fifties",
+        "author": "Jonathan Rée",
+        "name": "Nikhil Krishnan",
+        "image": "./book-covers/book-nikhil-3.jpg",
+        "link": "https://www.radicalphilosophy.com/article/english-philosophy-in-the-fifties",
+        "type": "article",
+        "episode": "nikhil",
+        "tags":["philosophy", "history"]
       }
    ]
