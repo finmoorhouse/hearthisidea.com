@@ -49,6 +49,7 @@
     "start": "npm run develop",
     "prod": "npm run build; npm run build:lambda",
     "start:lambda": "netlify-lambda serve functions",
+    "build:lambda": "netlify-lambda build functions",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
