@@ -35,7 +35,6 @@
     "remark-math": "^2.0.1"
   },
   "devDependencies": {
-    "airtable": "^0.10.1",
     "dotenv": "^8.2.0",
     "netlify-lambda": "^2.0.1",
     "prettier": "^1.19.1"
