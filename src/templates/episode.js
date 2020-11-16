@@ -9,6 +9,7 @@ import { MDXProvider } from "@mdx-js/react"
 import "katex/dist/katex.min.css"
 import "../styles/episode.scss"
 import SEO from "../components/seo"
+import Rate from "../components/rate-article"
 import Book from "../components/book"
 import EpisodeLinks from "../components/episode-links"
 //const components = {Book,HeaderScroll}
@@ -36,6 +37,7 @@ export default function Template({
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
       </div>
+      {/*<Rate />*/}
       <Link className='back' to='/episodes'>&larr;	 Back to episodes</Link>
     </Layout>
   )
