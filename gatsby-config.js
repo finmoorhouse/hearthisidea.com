@@ -3,7 +3,7 @@ module.exports = {
     title: `Hear This Idea`,
     description: `New thinking from top academics at the University of Cambridge and beyond.`,
     author: `Fin Moorhouse and Luca Righetti`,
-    url:`https://www.hearthisidea.com`,
+    url: `https://www.hearthisidea.com`,
     twitterUsername: `@hearthisidea`,
     image: "/meta-image.jpg",
   },
@@ -32,17 +32,17 @@ module.exports = {
             options: {
               maxWidth: 960,
               linkImagesToOriginal: false,
-              backgroundColor:`transparent`,
-             // tracedSVG : true,
+              backgroundColor: `transparent`,
+              // tracedSVG : true,
             },
           },
           {
-            
             resolve: `gatsby-remark-katex`,
             options: {
-              strict: `ignore`
+              strict: `ignore`,
             },
           },
+          `gatsby-remark-slug`,
           `gatsby-remark-copy-linked-files`,
         ],
       },
@@ -83,14 +83,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-      trackingId: "UA-44315602-3",
-       //Defines where to place the tracking script - `true` in the head and `false` in the body
-       head: true,
-      
-     //  Setting this parameter is optional
-       anonymize: true,
-       //Setting this parameter is also optional
-       respectDNT: true,
+        trackingId: "UA-44315602-3",
+        //Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+
+        //  Setting this parameter is optional
+        anonymize: true,
+        //Setting this parameter is also optional
+        respectDNT: true,
       },
     },
 

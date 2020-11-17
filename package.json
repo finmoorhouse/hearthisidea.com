@@ -16,9 +16,11 @@
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-sass": "^2.3.10",
     "gatsby-plugin-sharp": "^2.8.0",
+    "gatsby-remark-autolink-headers": "^2.5.0",
     "gatsby-remark-copy-linked-files": "^2.3.11",
     "gatsby-remark-images": "^3.2.2",
     "gatsby-remark-katex": "^3.2.1",
+    "gatsby-remark-slug": "^0.1.0",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-csv": "^2.3.9",
     "gatsby-transformer-json": "^2.4.10",
@@ -36,7 +38,6 @@
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
-    "netlify-lambda": "^2.0.1",
     "prettier": "^1.19.1"
   },
   "keywords": [
