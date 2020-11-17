@@ -4,14 +4,14 @@ const Rate = props => {
   return (
     <form
       action="/thanks-for-rating"
-      name="Article Rating"
+      name="article-rating"
       method="POST"
       data-netlify="true"
     >
       <input type="hidden" name="form-name" value="rate" />
 
       <label for="rating">Your rating:</label>
-      <select type="text" id="rating" name="rating">
+      <select type="text" id="rating" name="article-rating">
         <option value="1">⭐</option>
         <option value="2">⭐⭐</option>
         <option value="3">⭐⭐⭐</option>
