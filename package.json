@@ -37,6 +37,7 @@
     "react-h5-audio-player": "^1.2.3",
     "react-helmet": "^5.2.1",
     "react-katex": "^2.0.2",
+    "react-star-picker": "^2.0.4",
     "remark-math": "^2.0.1"
   },
   "devDependencies": {

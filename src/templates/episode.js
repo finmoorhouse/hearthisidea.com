@@ -9,7 +9,7 @@ import { MDXProvider } from "@mdx-js/react"
 import "katex/dist/katex.min.css"
 import "../styles/episode.scss"
 import SEO from "../components/seo"
-import Rate from "../components/rate-article"
+import Rate from "../components/rating-form"
 import Book from "../components/book"
 import TableOfContents from "../components/table-of-contents"
 import EpisodeLinks from "../components/episode-links"
@@ -51,9 +51,10 @@ export default function Template({
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
       </div>
-      {/*<Rate />*/}
+      <Rate episode={mdx.frontmatter.number}/>
+
       <Link className="back" to="/episodes">
-        &larr; Back to episodes
+        &larr; See more episodes
       </Link>
     </Layout>
   )

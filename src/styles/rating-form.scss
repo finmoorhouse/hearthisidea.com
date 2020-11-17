@@ -1,0 +1,35 @@
+.rating-form {
+    font-family: "Open Sans", sans-serif;
+  text-align: center;
+  summary {
+    outline: 0;
+  }
+  .rating-button {
+    background: rgba(255, 227, 67, 0.82);
+    padding: 13px;
+    margin: 13px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    border:none;
+    cursor: pointer;
+    /*font-weight: bold;*/
+  }
+  textarea{
+      border:2px solid #d3d3d3;
+      width:90%;
+      max-width:500px;
+  }
+  textarea:focus{
+      outline: 5px solid gold;
+  }
+  margin-bottom: 40px;
+  .rating-hr{
+      max-width: 400px;
+  }
+  .DefaultStarComponent.addSelection{
+      color:gold;
+  }
+  .StarPickerButton{
+      margin:0 0px;
+  }
+}

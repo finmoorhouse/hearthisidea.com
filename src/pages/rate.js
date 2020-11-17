@@ -7,9 +7,8 @@ import SEO from "../components/seo"
 const NotFoundPage = () => (
   <Layout>
     <SEO title="Thanks" />
-    <h1>Thanks for rating!</h1>
-    <p>Cheers.</p>
-    <Rate />
+    <h1>Testing the rating form</h1>
+    <Rate episode="test" />
     <Link className='back' to='/'>&larr;	 Back to /about</Link>
   </Layout>
 )

@@ -94,7 +94,7 @@ h3 {
   font-family: "Space Mono";
   font-weight: bold;
   font-size: 34px;
-  color: rgba(247, 210, 3, 0.966);
+  color: gold;//rgba(247, 210, 3, 0.966);
   line-height: 92%;
 }
 ::selection {
@@ -183,14 +183,17 @@ h2 .date {
   font-weight: bold;
 }
 .back {
+  display: block;
   text-decoration: none;
+  position: relative;
+  margin:0;
   font-family: "Open Sans";
   text-align: center;
   color: #999;
-  font-size: 30px;
-
+  font-size: 25px;
+  width:100%;
   font-weight: 700;
-  margin-left: calc(50% - 120px);
+  //margin-left: calc(50% - 120px);
 }
 .listen-container {
   display: flex;
