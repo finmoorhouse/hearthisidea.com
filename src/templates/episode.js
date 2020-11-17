@@ -73,6 +73,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         audio
+        number
         title
         apple
         google
