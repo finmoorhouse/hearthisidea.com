@@ -7,6 +7,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.5.8",
     "@mdx-js/react": "^1.5.8",
+    "airtable": "^0.10.1",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-google-analytics": "^2.2.2",
@@ -26,6 +27,8 @@
     "gatsby-transformer-json": "^2.4.10",
     "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.4.4",
+    "katex": "^0.12.0",
+    "netlify-lambda": "^2.0.1",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
@@ -51,6 +54,8 @@
     "start": "npm run develop",
     "start:lambda": "netlify-lambda serve functions",
     "build:lambda": "netlify-lambda build functions",
+    "debug:lambda": "netlify-lambda serve functions --config ./webpack.config.js",
+    "prod": "npm run build; npm run build:lambda",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },

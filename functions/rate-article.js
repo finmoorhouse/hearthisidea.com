@@ -11,17 +11,20 @@ var base = Airtable.base(process.env.AIRTABLE_ID)
 exports.handler = function(event, context, callback) {
   const allRecords = []
   base('Main')
-    .select({
-      maxRecords: 100,
-      view: 'all'
-    })
-    .eachPage(
-      function page(records, fetchNextPage) {
-        records.forEach(function(record) {
-          allRecords.push(record)
-        })
-        fetchNextPage()
-      },
+  .create([
+    {
+      "fields": {
+        "Date": "2020-08-28",
+        "Notes": "This is a test of Airtable."
+      }
+    },
+    {
+      "fields": {
+        "Date": "2020-08-29",
+        "Notes": "This was posted in the future!"
+      }
+    }
+  ],
       function done(err) {
         if (err) {
           callback(err)

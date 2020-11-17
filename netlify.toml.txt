@@ -1,0 +1,5 @@
+// This should not be active!
+
+[build]
+    functions = "functions-compiled"
+    Command = "npm run prod"
