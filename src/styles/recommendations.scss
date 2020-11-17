@@ -6,6 +6,11 @@
     line-height: 8px;
 }
 */
-.recommendations a {
+.recommendations {
+  a {
   font-weight: normal;
+  }
+  .anchor{
+    display:none;
+  }
 }

@@ -17,9 +17,10 @@ function renderItems(items, level) {
 }
 const TableOfContents = props => {
   return (
-    <details>
+    <details class='episode-table-of-contents'>
       <summary>Table of Contents</summary>
-      <ol>{renderItems(props.items, 1)}</ol>
+      {renderItems(props.items, 1)}
+      <hr/>
     </details>
   )
 }

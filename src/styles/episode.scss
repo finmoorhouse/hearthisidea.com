@@ -1,43 +1,127 @@
-h5{
-    opacity: 0.6;
-    margin-left:20px;
+h5 {
+  opacity: 0.6;
+  margin-left: 20px;
 }
-.aside{
-    background:#f9f9fa;
-    display: flex;
-    flex-direction: row;
-    padding:15px;
-    padding-right:17px;
-    border-radius: 4px;
-    color: lighten(black,25%);
+.aside {
+  background: #f9f9fa;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  padding-right: 17px;
+  border-radius: 4px;
+  color: lighten(black, 25%);
 }
-.aside p{
-    padding: 8px 20px 8px 10px;
+.aside p {
+  padding: 8px 20px 8px 10px;
 }
-.aside::before{
-    content: "💡";
-    padding-left:10px;
-    padding-right:20px;
-    padding-top:26px;
-    font-size: 26px;
+.aside::before {
+  content: "💡";
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 26px;
+  font-size: 26px;
 }
-.episode-image_small{
-    width:80vw;
-    margin:50px auto;
+.episode-image_small {
+  width: 80vw;
+  margin: 50px auto;
 }
-.episode-image_small img{
-    max-width:80vw;
+.episode-image_small img {
+  max-width: 80vw;
 }
-.episode-image_smaller{
-    width:40vw;
-    min-width: 280px;
-    max-width: 400px;
-    margin:50px auto;
+.episode-image_smaller {
+  width: 40vw;
+  min-width: 280px;
+  max-width: 400px;
+  margin: 50px auto;
 }
 
-@media all and (min-width:960px){
-    .episode-image_small{
-        width:46vw;
-        max-width: 600px;
+@media all and (min-width: 960px) {
+  .episode-image_small {
+    width: 46vw;
+    max-width: 600px;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .writeup {
+    h2,
+    h3 {
+      &:hover {
+        a {
+          svg {
+            visibility: visible;
+          }
+        }
+      }
     }
+    .anchor {
+      display: block;
+      float: left;
+      padding-right: 40px;
+      position: relative;
+      left: -8px;
+      margin-left: -20px;
+      margin-right: -40px;
+      bottom: 4px;
+
+      svg {
+        fill: #facd07;
+        visibility: hidden;
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+@media all and (max-width: 600px) {
+  .writeup {
+    h2,
+    h3 {
+      position: relative;
+      &:hover {
+        a {
+          svg {
+            visibility: hidden;
+          }
+        }
+      }
+    }
+    .anchor {
+      svg {
+        visibility: hidden;
+      }
+    }
+  }
+  .anchor {
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    display: block;
+  }
+}
+@media all and (min-width: 1000px) {
+  .writeup {
+    .anchor {
+      padding-right: 40px;
+      left: -20px;
+      margin-left: -20px;
+      margin-right: -40px;
+      bottom: 1px;
+    }
+  }
+}
+.episode-table-of-contents {
+background: none;
+ol{
+    padding-left:25px;
+}
+summary {
+    text-align: center;
+    font-family: "Open Sans";
+    &:hover{
+        cursor: pointer;
+    }
+}
+margin-bottom: 30px;
 }
