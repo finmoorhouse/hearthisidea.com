@@ -8,10 +8,10 @@ const Rate = props => {
       method="POST"
       data-netlify="true"
     >
-      <input type="hidden" name="form-name" value="rate" />
+      <input type="hidden" name="form-name" value="article-rating" />
 
-      <label for="rating">Your rating:</label>
-      <select type="text" id="rating" name="article-rating">
+      <label for="stars">Your rating:</label>
+      <select type="text" id="rating" name="stars">
         <option value="1">⭐</option>
         <option value="2">⭐⭐</option>
         <option value="3">⭐⭐⭐</option>
