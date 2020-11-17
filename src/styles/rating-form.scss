@@ -1,5 +1,5 @@
 .rating-form {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   summary {
     outline: 0;
@@ -10,30 +10,30 @@
     margin: 13px;
     font-family: "Open Sans", sans-serif;
     font-size: 22px;
-    border:none;
+    border: none;
     cursor: pointer;
     /*font-weight: bold;*/
   }
-  textarea{
-      border:2px solid #d3d3d3;
-      width:90%;
-      max-width:500px;
+  textarea {
+    border: 2px solid #d3d3d3;
+    width: 90%;
+    max-width: 500px;
   }
-  textarea:focus{
-      outline: 5px solid gold;
+  textarea:focus {
+    outline: 5px solid gold;
   }
-  margin-bottom: 40px;
-  .rating-hr{
-      max-width: 400px;
+  margin-bottom: 10px;
+  .DefaultStarComponent.addSelection {
+    color: gold;
   }
-  .DefaultStarComponent.addSelection{
-      color:gold;
+  .StarPickerButton {
+    margin: 0 0px;
   }
-  .StarPickerButton{
-      margin:0 0px;
-  }
-  .dv-star-rating{
+  .dv-star-rating {
     font-size: 36px;
-    display:block;
+    display: block;
   }
+}
+.rating-hr {
+  max-width: 400px;
 }

@@ -19,21 +19,20 @@ const Rate = props => {
 
   return (
     <form
-      action="/thanks-for-rating"
+      action={props.redirectUrl || '/thanks-for-rating'}
       name="article-rating"
       method="POST"
       data-netlify="true"
       className="rating-form"
     >
-      <hr class="rating-hr" />
       <input type="hidden" name="form-name" value="article-rating" />
       <input type="hidden" name="episode" value={props.episode} />
       <label for="stars">Your rating:</label>
       <input type="hidden" name="stars" value={starRating} />
-  
+
       {/*<StarPicker onChange={onChange} value={rating|| 0} halfStars="true" />*/}
-      <br/>
-   
+      <br />
+      {/* Ideally the button should only appear once a rating has been made */}
       <StarRatingComponent
         starColor="gold"
         name="rate1"
@@ -42,13 +41,16 @@ const Rate = props => {
         value={starRating}
         onStarClick={onStarChange}
       />
+
       <details>
         <summary>Further comments</summary>
         <textarea name="comments" rows="4"></textarea>
       </details>
-      <button class="rating-button" type="submit">
-        📨 Send Feedback
-      </button>
+      {starRating && (
+        <button class="rating-button" type="submit">
+          📨 Send this rating
+        </button>
+      ) }
     </form>
   )
 }

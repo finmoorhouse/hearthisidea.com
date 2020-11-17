@@ -27,7 +27,7 @@ export default function Template({
       <h1 className="episode-title">{mdx.frontmatter.title}</h1>
       <h2 className="date">{mdx.frontmatter.date}</h2>
       <Player audioSrc={mdx.frontmatter.audio}></Player>
-     
+
       <EpisodeLinks
         direct={mdx.frontmatter.audio || "/"}
         apple={
@@ -43,7 +43,11 @@ export default function Template({
           "https://podcasts.google.com/?feed=aHR0cHM6Ly9waW5lY2FzdC5jb20vZmVlZC9oZWFyLXRoaXMtaWRlYQ"
         }
       />
-       {mdx?.tableOfContents?.items && (
+      <details className="episode-rate-dropdown">
+        <summary>Already listened? Click here to rate the episode.</summary>
+        <Rate episode={mdx.frontmatter.number} redirectUrl={mdx.frontmatter.path} />
+      </details>
+      {mdx?.tableOfContents?.items && (
         <TableOfContents items={mdx.tableOfContents.items} />
       )}
       <div className="writeup">
@@ -51,7 +55,8 @@ export default function Template({
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
       </div>
-      <Rate episode={mdx.frontmatter.number}/>
+      <hr className="rating-hr" />
+      <Rate episode={mdx.frontmatter.number} />
 
       <Link className="back" to="/episodes">
         &larr; See more episodes
