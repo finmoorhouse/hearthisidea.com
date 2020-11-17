@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-hear-this-idea",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A podcast website running on Gatsby. Based on gatsby-starter-default.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Fin Moorhouse <admin@hearthisidea.com>",
   "dependencies": {
     "@mdx-js/mdx": "^1.5.8",
     "@mdx-js/react": "^1.5.8",
