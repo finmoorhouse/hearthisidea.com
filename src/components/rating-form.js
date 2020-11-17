@@ -1,9 +1,18 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import StarPicker from "react-star-picker"
 import "../styles/rating-form.scss"
 
 
 const Rate = props => {
+useEffect(()=>{
+  import ("react-star-picker")
+  .then((StarPicker) => {
+    this.StarPicker = StarPicker;
+  })
+  .catch((error) => console.error(error));
+
+
+})
   const [rating, setRating] = useState(null)
 
   const onChange = value => {
