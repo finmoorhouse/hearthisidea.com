@@ -45,7 +45,7 @@ export default function Template({
       />
       <details className="episode-rate-dropdown">
         <summary>Already listened? Click here to rate the episode.</summary>
-        <Rate episode={mdx.frontmatter.number} redirectUrl={mdx.frontmatter.path} />
+        <Rate episode={mdx.frontmatter.number} redirectUrl={mdx.frontmatter.path} ratingOf="audio"/>
       </details>
       {mdx?.tableOfContents?.items && (
         <TableOfContents items={mdx.tableOfContents.items} />
@@ -56,7 +56,7 @@ export default function Template({
         </MDXProvider>
       </div>
       <hr className="rating-hr" />
-      <Rate episode={mdx.frontmatter.number} />
+      <Rate episode={mdx.frontmatter.number} ratingOf="write-up"/>
 
       <Link className="back" to="/episodes">
         &larr; See more episodes
