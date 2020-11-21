@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Fin Moorhouse <admin@hearthisidea.com>",
   "dependencies": {
+    "@loadable/component": "^5.14.1",
     "@mdx-js/mdx": "^1.5.8",
     "@mdx-js/react": "^1.5.8",
     "airtable": "^0.10.1",

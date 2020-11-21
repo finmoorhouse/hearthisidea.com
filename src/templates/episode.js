@@ -44,7 +44,7 @@ export default function Template({
         }
       />
       <details className="episode-rate-dropdown">
-        <summary>Already listened? Click here to rate the episode.</summary>
+        <summary>Finished listening? Click here to rate the episode.</summary>
         <Rate episode={mdx.frontmatter.number} redirectUrl={mdx.frontmatter.path} ratingOf="audio"/>
       </details>
       {mdx?.tableOfContents?.items && (
