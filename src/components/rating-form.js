@@ -8,9 +8,18 @@ const encode = data => {
     .join('&')
 }
 
+const onSubmit = () => {
+  alert("Form submitted.")
+}
+
+const Rate = props => {
+
+const [errorMessage, setErrorMessage] = useState(null)
+const [successMessage, setSuccessMessage] = useState(null)
+
 const handleSubmit = e => {
  
-    fetch('/', {
+    fetch(props.redirectUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
@@ -20,19 +29,19 @@ const handleSubmit = e => {
     })
       .then(res => {
         if (res.ok) {
-          console.log("ok")
+          setSuccessMessage("Feedback received, thanks.")
         } else {
           throw Error(
-            `Something went wrong and your message was not sent! 🤯 ${res.status} ${res.message}`
+            `${res.status} ${res.message}`
           )
         }
       })
-      .catch(error => alert(error))
+      .catch(error => setErrorMessage(`Looks like there was a problem receiving the form on our end. Sorry! 🤯`))
   
-  
+  e.preventDefault()
 }
 
-const Rate = props => {
+
   
   const [rating, setRating] = useState(null)
 
@@ -83,6 +92,8 @@ const Rate = props => {
           📨 Send this rating
         </button>
       ) }
+      {errorMessage && <p>{errorMessage.toString()}</p>}
+      {successMessage && <p>{successMessage.toString()}</p>}
     </form>
   )
 }
