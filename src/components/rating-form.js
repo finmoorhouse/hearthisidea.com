@@ -23,7 +23,9 @@ const Rate = props => {
       body: encode({
         "form-name": "article-rating",
         stars: rating,
-        feedback: feedback,
+        episode: props.episode,
+        ratingOf: props.ratingOf,
+        comments: feedback,
       }),
     })
       .then(res => {
