@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
-import StarPicker from "react-star-picker"
-import StarRatingComponent from "./star-picker"
+//import StarPicker from "react-star-picker"
+import StarPicker from "./star-picker"
 import "../styles/rating-form.scss"
 const encode = data => {
   return Object.keys(data)
@@ -39,12 +39,13 @@ const Rate = props => {
   const onChange = value => {
     setRating(value)
   }
-  
+  /*
   const [starRating, setStarRating] = useState(null)
 
   const onStarChange = value => {
     setStarRating(value)
   }
+  */
 
   // action={props.redirectUrl || '/thanks-for-rating'} 
   return (
