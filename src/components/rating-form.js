@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 //import StarPicker from "react-star-picker"
 import StarPicker from "./star-picker"
 import "../styles/rating-form.scss"
@@ -8,9 +8,7 @@ const encode = data => {
     .join("&")
 }
 
-const onSubmit = () => {
-  alert("Form submitted.")
-}
+
 
 const Rate = props => {
   const [errorMessage, setErrorMessage] = useState(null)
@@ -24,20 +22,20 @@ const Rate = props => {
         "form-name": "article-rating",
         stars: rating,
         episode: props.episode,
-        ratingOf: props.ratingOf,
+        "rating-of": props.ratingOf,
         comments: feedback,
       }),
     })
       .then(res => {
         if (res.ok) {
-          setSuccessMessage("Feedback received, thanks.")
+          setSuccessMessage("Feedback received. Thank you!")
         } else {
           throw Error(`${res.status} ${res.message}`)
         }
       })
       .catch(error =>
         setErrorMessage(
-          `Looks like there was a problem receiving the form on our end. Sorry! 🤯`
+          `Looks like there was a problem receiving the form on our end. Sorry!`
         )
       )
 
@@ -46,7 +44,6 @@ const Rate = props => {
   const [feedback, setFeedback] = useState(null)
   const handleFeedback = event => {
     setFeedback(event.target.value)
-    console.log(feedback)
   }
 
   const [rating, setRating] = useState(null)
@@ -78,7 +75,7 @@ const Rate = props => {
       <input type="hidden" name="stars" value={rating} />
 
       <br />
-      <StarPicker onChange={onChange} value={rating || 0} halfStars="true" />
+      <StarPicker onChange={onChange} value={rating || 0} halfStars="true" size={46}/>
       {/* Ideally the button should only appear once a rating has been made */}
       {/*<StarRatingComponent
         starColor="gold"
@@ -98,13 +95,13 @@ const Rate = props => {
           onChange={handleFeedback}
         ></textarea>
       </details>
-      {rating && (
+      {(rating && ! (successMessage)) && (
         <button class="rating-button" type="submit">
           📨 Send this rating
         </button>
       )}
-      {errorMessage && <p>{errorMessage.toString()}</p>}
-      {successMessage && <p>{successMessage.toString()}</p>}
+      {errorMessage && <p className='error-message'>{errorMessage.toString()}</p>}
+      {successMessage && <p className='success-message'>{successMessage.toString()}</p>}
     </form>
   )
 }

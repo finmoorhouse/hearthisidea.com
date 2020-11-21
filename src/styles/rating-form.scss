@@ -20,11 +20,14 @@
     max-width: 500px;
   }
   textarea:focus {
-    outline: 5px solid gold;
+    outline: 5px solid #ffe44b;
   }
   margin-bottom: 10px;
+  .DefaultStarComponent{
+    color:#eeeeee;
+  }
   .DefaultStarComponent.addSelection {
-    color: gold;
+    color: #ffe44b;
   }
   .StarPickerButton {
     margin: 0 0px;
@@ -33,7 +36,11 @@
     font-size: 36px;
     display: block;
   }
+  .StarPicker{
+    --star-size:100px;
+  }
 }
+
 .rating-hr {
   max-width: 400px;
 }
