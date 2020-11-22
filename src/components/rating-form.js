@@ -20,9 +20,9 @@ const Rate = props => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": "article-rating",
+        'rating-of':  props.ratingOf,
         stars: rating,
         episode: props.episode,
-        "rating-of": props.ratingOf,
         comments: feedback,
       }),
     })
