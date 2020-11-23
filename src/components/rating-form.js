@@ -86,7 +86,7 @@ const Rate = props => {
         onStarClick={onStarChange}
       />*/}
 
-      <details>
+      <details open>
         <summary>Further comments</summary>
         <textarea
           name="comments"
