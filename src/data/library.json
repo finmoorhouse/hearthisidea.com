@@ -548,5 +548,105 @@
         "type": "article",
         "episode": "nikhil",
         "tags":["philosophy", "history"]
+      },
+      {
+        "title": "The ACE Blog",
+        "author": "Animal Charity Evaluators",
+        "name": "Leah Edgerton",
+        "image": "./book-covers/book-ace-1.jpg",
+        "link": "https://animalcharityevaluators.org/blog/",
+        "type": "online",
+        "episode": "ace",
+        "tags":["animals"]
+      },
+      {
+        "title": "Vox's Future Perfect Podcast",
+        "author": "Vox",
+        "name": "Leah Edgerton",
+        "image": "./book-covers/book-ace-2.jpg",
+        "link": "https://www.vox.com/future-perfect-podcast",
+        "type": "audio",
+        "episode": "ace",
+        "tags":["animals","environment","economics"]
+      },
+      {
+        "title": "Farm Animal Welfare Newsletter",
+        "author": "Open Philanthropy",
+        "name": "Leah Edgerton",
+        "image": "./book-covers/book-ace-3.jpg",
+        "link": "https://www.openphilanthropy.org/farm-animal-welfare-newsletter-archive",
+        "type": "online",
+        "episode": "ace",
+        "tags":["animals"]
+      },
+      {
+        "title": "Clean Meat",
+        "author": "Paul Shapiro",
+        "name": "Bruce Friedrich",
+        "image": "./book-covers/book-bruce-1.jpg",
+        "link": "https://www.notion.so/hearthisidea/Bruce-Friedrich-726c9efe04e64bbfa1da16ca9d551d7d#7f89cbec3d72424bb36f3089caea9881",
+        "type": "book",
+        "episode": "bruce",
+        "tags":["animals","economics"]
+      },
+      {
+        "title": "Enlightenment Now",
+        "author": "Steven Pinker",
+        "name": "Bruce Friedrich",
+        "image": "./book-covers/book-bruce-2.jpg",
+        "link": "https://www.goodreads.com/book/show/35696171-enlightenment-now",
+        "type": "book",
+        "episode": "bruce",
+        "tags":["philosophy","sociology","history"]
+      },
+      {
+        "title": "Sapiens",
+        "author": "Yuval Noah Harari",
+        "name": "Bruce Friedrich",
+        "image": "./book-covers/book-bruce-3.jpg",
+        "link": "https://www.goodreads.com/book/show/23692271-sapiens",
+        "type": "book",
+        "episode": "bruce",
+        "tags":["history","philosophy","sociology"]
+      },
+      {
+        "title": "Homo Deus",
+        "author": "Yuval Noah Harari",
+        "name": "Bruce Friedrich",
+        "image": "./book-covers/book-bruce-4.jpg",
+        "link": "https://www.goodreads.com/book/show/31138556-homo-deus",
+        "type": "book",
+        "episode": "bruce",
+        "tags":["history","philosophy","sociology"]
+      },
+      {
+        "title": "The Great Silence",
+        "author": "Milan M. Ćirković",
+        "name": "Thomas Moynihan",
+        "image": "./book-covers/book-tom-1.jpg",
+        "link": "https://www.goodreads.com/en/book/show/36794252",
+        "type": "book",
+        "episode": "tom",
+        "tags":["philosophy"]
+      },
+      {
+        "title": "Reforging the Great Chain of Being",
+        "author": "Simo Knuuttila",
+        "name": "Thomas Moynihan",
+        "image": "./book-covers/book-tom-2.jpg",
+        "link": "https://link.springer.com/book/10.1007/978-94-015-7662-8",
+        "type": "book",
+        "episode": "tom",
+        "tags":["history","philosophy"]
+      },
+      {
+        "title": "The World, the Flesh & the Devil",
+        "author": "J.D. Bernal",
+        "name": "Thomas Moynihan",
+        "image": "./book-covers/book-tom-3.jpg",
+        "link": "https://www.goodreads.com/book/show/564107.The_World_the_Flesh_the_Devil",
+        "type": "book",
+        "episode": "tom",
+        "tags":["philosophy","sociology"]
       }
    ]

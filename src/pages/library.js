@@ -24,6 +24,7 @@ const LibraryPage = ({
     fiction: true,
     history: true,
     people: true,
+    animals: true,
     religion: true,
     environment: true,
     selfImprovement: true,
@@ -32,33 +33,33 @@ const LibraryPage = ({
     article: true,
     film: true,
     online: true,
+    audio: true,
   })
-  const media = ['book','paper','online','film','article']
+  const media = ["book", "paper", "online", "film", "article", "audio"]
   const handler = thing => {
     let newObject = activeCategories
-    var keys = Object.keys(activeCategories);
+    var keys = Object.keys(activeCategories)
     let allTrue = true
     keys.forEach(key => {
-      if (! activeCategories[key]){
-        allTrue = false;
+      if (!activeCategories[key]) {
+        allTrue = false
       }
     })
-    if(allTrue){
-      if(media.includes(thing)){
+    if (allTrue) {
+      if (media.includes(thing)) {
         media.forEach(medium => {
-          newObject[medium] = false;
+          newObject[medium] = false
         })
-      }else{
+      } else {
         keys.forEach(key => {
-          newObject[key] = false;
+          newObject[key] = false
         })
         media.forEach(medium => {
-          newObject[medium] = true;
+          newObject[medium] = true
         })
       }
       newObject[thing] = true
-    }
-    else{
+    } else {
       newObject[thing] = !activeCategories[thing]
     }
     setActiveCategories({ ...newObject })
@@ -96,10 +97,10 @@ const LibraryPage = ({
         Browse the book, article, and film recommendations of all our guests so
         far. Hover over or tap on each image to see details, and click or tap on
         the title or guest's name to learn more. You can also use the buttons
-        below to filter by category and medium: yellow indicates that the item
+        below to filter by topic and medium: yellow indicates that the item
         is <i>included</i> in the filter, grey that it is <i>excluded</i>.
       </p>
-      <h3>Categories</h3>
+      <h3>Topics</h3>
       <FilterButton
         handler={() => handler("economics")}
         FilterName="Economics"
@@ -141,6 +142,11 @@ const LibraryPage = ({
         FilterValue={activeCategories.environment}
       />
       <FilterButton
+        handler={() => handler("animals")}
+        FilterName="Animals"
+        FilterValue={activeCategories.animals}
+      />
+      <FilterButton
         handler={() => handler("selfImprovement")}
         FilterName="Self-Improvement"
         FilterValue={activeCategories.selfImprovement}
@@ -175,6 +181,11 @@ const LibraryPage = ({
         handler={() => handler("film")}
         FilterName="Film"
         FilterValue={activeCategories.film}
+      />
+      <FilterButton
+        handler={() => handler("audio")}
+        FilterName="Audio"
+        FilterValue={activeCategories.audio}
       />
       {Books.length > 0 ? (
         <div className="library-container">{Books}</div>
