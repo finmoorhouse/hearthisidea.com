@@ -648,5 +648,35 @@
         "type": "book",
         "episode": "tom",
         "tags":["philosophy","sociology"]
+      },
+      {
+        "title": "How to Create a Vegan World",
+        "author": "Tobias Leenaert",
+        "name": "Sebastian Joy",
+        "image": "./book-covers/book-sebastian-1.jpg",
+        "link": "https://www.goodreads.com/book/show/35468340-how-to-create-a-vegan-world",
+        "type": "book",
+        "episode": "sebastian",
+        "tags":["animals"]
+      },
+      {
+        "title": "The Lean Startup",
+        "author": "Eric Ries",
+        "name": "Sebastian Joy",
+        "image": "./book-covers/book-sebastian-2.jpg",
+        "link": "https://www.goodreads.com/book/show/10127019-the-lean-startup",
+        "type": "book",
+        "episode": "sebastian",
+        "tags":["selfImprovement"]
+      },
+      {
+        "title": "Leaders Eat Last",
+        "author": "Simon Sinek",
+        "name": "Sebastian Joy",
+        "image": "./book-covers/book-sebastian-3.jpg",
+        "link": "https://www.goodreads.com/book/show/16144853-leaders-eat-last",
+        "type": "book",
+        "episode": "sebastian",
+        "tags":["selfImprovement"]
       }
    ]
