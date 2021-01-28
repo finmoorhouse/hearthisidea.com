@@ -678,5 +678,35 @@
         "type": "book",
         "episode": "sebastian",
         "tags":["selfImprovement"]
+      },
+      {
+        "title": "Animal Liberation",
+        "author": "Peter Singer",
+        "name": "Marcus Daniell",
+        "image": "./book-covers/book-marcus-1.jpg",
+        "link": "https://www.goodreads.com/book/show/29380.Animal_Liberation",
+        "type": "book",
+        "episode": "marcus",
+        "tags":["animals", "philosophy"]
+      },
+      {
+        "title": "Meditations",
+        "author": "Marcus Aurelius",
+        "name": "Marcus Daniell",
+        "image": "./book-covers/book-marcus-2.jpg",
+        "link": "https://www.goodreads.com/book/show/30659.Meditations",
+        "type": "book",
+        "episode": "marcus",
+        "tags":["selfImprovement", "philosophy"]
+      },
+      {
+        "title": "Moral letters to Lucilius",
+        "author": "Seneca",
+        "name": "Marcus Daniell",
+        "image": "./book-covers/book-marcus-3.jpg",
+        "link": "https://www.goodreads.com/book/show/46257635-moral-letters-to-lucilius",
+        "type": "book",
+        "episode": "marcus",
+        "tags":["selfImprovement","philosophy"]
       }
    ]

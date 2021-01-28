@@ -1,0 +1,41 @@
+---
+number: "23"
+path: "/episodes/marcus"
+date: "2021-02-08"
+title: "Marcus Daniell on High Impact Athletes, Communicating EA, and the Purpose of Sport"
+audio: ""
+featuredImage: "images/marcus_featured.jpg"
+spotify: ""
+apple: ""
+google: ""
+---
+
+
+
+<div class='aside'>
+<div>
+Thanks for listening! We'd love to hear what you thought about it — email us at hello@hearthisidea.com or leave a rating below. You can help more people discover the podcast by <a href='https://twitter.com/intent/tweet?text=Check out Hear This Idea, a podcast showcasing new thinking in philosophy, the social sciences, and effective altruism! &url=https://www.hearthisidea.com via @hearthisidea&' about='_blank'>tweeting about it</a>. And, if you want to support the show more directly, consider <a href='https://tips.pinecast.com/jar/hear-this-idea'>leaving us a tip</a>.
+</div>
+</div>
+
+## Marcus' Recommendations 📚
+
+- [Animal Liberation](https://www.goodreads.com/book/show/29380.Animal_Liberation) by Peter Singer
+- [Meditations](https://www.goodreads.com/book/show/30659.Meditations)  by Marcus Aurelius
+- [Moral letters to Lucilius](https://www.goodreads.com/book/show/46257635-moral-letters-to-lucilius) by Seneca
+- The 80,000 Hours [Key Ideas Series](https://80000hours.org/key-ideas/)
+  - Also available as a [podcast episode](https://80000hours.org/podcast/episodes/ben-todd-key-ideas-of-80000hours/).
+- The [High Impact Athletes](https://highimpactathletes.org/) website
+
+
+
+<div className="bookshelf" > <Book url="https://www.goodreads.com/book/show/29380.Animal_Liberation" image="book-marcus-1"/> <Book url="https://www.goodreads.com/book/show/30659.Meditations" image="book-marcus-2"/> <Book url="https://www.goodreads.com/book/show/46257635-moral-letters-to-lucilius" image="book-marcus-3"/> </div><br/>
+
+
+
+<div class='aside'>
+<div>
+Thanks for listening <i>and</i> reading the write-up! We'd love to hear what you thought about it — email us at hello@hearthisidea.com or leave a rating below. You can help more people discover the podcast by <a href='https://twitter.com/intent/tweet?text=Check out Hear This Idea, a podcast showcasing new thinking in philosophy, the social sciences, and effective altruism! &url=https://www.hearthisidea.com via @hearthisidea&' about='_blank'>tweeting about it</a>. And, if you want to support the show more directly, consider <a href='https://tips.pinecast.com/jar/hear-this-idea'>leaving us a tip</a>.
+</div>
+</div>
+
