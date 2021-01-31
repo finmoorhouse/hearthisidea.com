@@ -8,6 +8,7 @@
 const path = require(`path`)
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
+  //Change line below to switch between old and new episode template.
   const blogPostTemplate = path.resolve(`src/templates/episode.js`)
   const blogListTemplate = path.resolve(`src/pages/episodes.js`)
   const result = await graphql(`

@@ -1,5 +1,57 @@
-.link-plain{
-    border:none !important;
-    padding: 0;
-    margin:0;
+.link-plain {
+  border: none !important;
+  padding: 0;
+  margin: 0;
+}
+header {
+  position: relative;
+  z-index: 2;
+}
+.menu-wrapper {
+  font-family: "Space Mono";
+  max-width: 800px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin: auto;
+  text-transform: uppercase;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+  user-select: none;
+}
+.menu-wrapper a {
+  color: #999;
+  display: inline-block;
+  line-height: 1.2;
+}
+.menu-slash {
+  color: #999;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.menu-wrapper [aria-current] {
+  border-bottom: 2px solid black;
+  color: #222;
+}
+.header_transparent {
+  background: #222;
+  height: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 0px !important;
+  position: relative;
+  top: 40px;
+  a {
+    color: white;
+  }
+}
+@media all and (max-width: 750px) {
+  .header_transparent {
+    top:70px;
+  }
 }

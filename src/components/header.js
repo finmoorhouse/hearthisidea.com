@@ -6,10 +6,10 @@ import "../styles/header.scss"
 //import Img from "gatsby-image"
 //import { useStaticQuery, graphql } from "gatsby"
 
-const Header = ({ siteTitle }) => {
+const Header = ({ siteTitle, onTransparent }) => {
   return (
     <header>
-      <div className="menu-wrapper">
+      <div className={'menu-wrapper ' + (onTransparent && 'header_transparent')}>
         <Link to="/" className="link-plain">
           <h1 className="title">Hear This Idea</h1>
         </Link>

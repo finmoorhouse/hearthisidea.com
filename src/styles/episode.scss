@@ -2,6 +2,53 @@ h5 {
   opacity: 0.6;
   margin-left: 20px;
 }
+.cover-image{
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  /*padding:100px 0;*/
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom:20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.cover-image__text{
+  width:70vw;
+  margin:auto;
+  /*background:rgba(14, 14, 14, 0.5);
+  border-radius: 10px;*/
+}
+.cover-image__wrapper{
+  background:rgba($color: #000000, $alpha: 0.4);
+  background:linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 75%,  rgba(0,0,0,0.7) 100%);
+  width: 100%;
+  flex:1;
+  padding:150px 0 50px 0;
+  top:0;
+}
+@media all and (max-width: 750px) {
+  .cover-image__wrapper{
+    padding-top:140px;
+    background:linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 65%,  rgba(0,0,0,0.8) 100%);
+  }
+  .cover-image__date{
+padding-top:20px;
+  }
+}
+.cover-image__title{
+  /*background-color: rgba(243, 183, 17, 0.616);*/
+  color:white;
+}
+.cover-image__title--highlight{
+  /*applies to a <mark> component*/
+  background: rgba(243, 183, 17, 0.616);
+}
+.cover-image__date{
+color:whitesmoke;
+}
 .aside {
   background: #f9f9fa;
   display: flex;

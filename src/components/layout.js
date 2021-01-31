@@ -12,7 +12,7 @@ import 'normalize.css'
 import Header from "./header"
 import "../styles/layout.scss"
 
-const Layout = ({ children }) => {
+const Layout = (props) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title} onTransparent={props.onTransparent}/>
       <div
         style={{
           margin: `0 auto`,
@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main >{children}</main>
+        <main >{props.children}</main>
         <footer></footer>
       </div>
     </>
