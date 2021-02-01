@@ -86,9 +86,9 @@ export default function Template({
           ratingOf="audio"
         />
       </details>
-      {mdx?.tableOfContents?.items && (
+      {mdx?.tableOfContents?.items ? (
         <TableOfContents items={mdx.tableOfContents.items} />
-      )}
+      ) : <br/>}
       <div className="writeup">
         <MDXProvider components={components}>
           <MDXRenderer>{mdx.body}</MDXRenderer>

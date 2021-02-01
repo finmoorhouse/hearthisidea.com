@@ -20,7 +20,7 @@ const TableOfContents = props => {
     <details className='episode-table-of-contents'>
       <summary>Table of Contents</summary>
       {renderItems(props.items, 1)}
-      <hr/>
+      
     </details>
   )
 }

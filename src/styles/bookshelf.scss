@@ -18,8 +18,8 @@
   padding-right: 10px;
   bottom: 0;
   /* HOVER OFF */
-  transition:  0.5s ease;
-  -webkit-transition:  0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
 }
 /*.book:hover {
   bottom: 10px;
@@ -38,99 +38,101 @@
 */
 
 /* 3D book */
+@media all and (min-width: 800px) {
+  .book-3d {
+    /*perspective: 6000px;*/
+    width: 200px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+  }
+  .book-3d a img {
+    overflow: hidden;
+    border-radius: 0 4px 4px 0;
+  }
 
-.book-3d {
-  /*perspective: 6000px;*/
-  width: 200px;
-  height: 300px;
-  position: relative;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-
+  .book-3d:hover,
+  .book-3d:focus {
+    transform: rotateY(-28deg);
+    /*bottom: 4px;*/
+  }
+  .book-no3d:hover,
+  .book-no3d:focus {
+    bottom: 8px;
+    /*bottom: 4px;*/
+  }
+  .book:hover .afterBook,
+  .book:focus .afterBook {
+    height: 294px;
+    top: 3px;
+  }
+  .book-3d > :first-child {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    transform: translateZ(25px);
+    background: none;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  .book-3d::before {
+    position: absolute;
+    content: " ";
+    left: 0;
+    top: 5px;
+    width: 48px;
+    height: 290px;
+    transform: translateX(172px) rotateY(90deg);
+    background: linear-gradient(
+      90deg,
+      #fff 0%,
+      #d8d8d8 5%,
+      #fff 10%,
+      #d8d8d8 15%,
+      #fff 20%,
+      #d8d8d8 25%,
+      #fff 30%,
+      #d8d8d8 35%,
+      #fff 40%,
+      #d8d8d8 45%,
+      #fff 50%,
+      #d8d8d8 55%,
+      #fff 60%,
+      #d8d8d8 65%,
+      #fff 70%,
+      #d8d8d8 75%,
+      #fff 80%,
+      #d8d8d8 85%,
+      #fff 90%,
+      #d8d8d8 95%,
+      #fff 100%
+    );
+  }
+  .afterBook {
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    content: " ";
+    width: 198px;
+    height: 300px;
+    transform: translateZ(-25px);
+    /*background-color: #333333;*/
+    border-radius: 4px;
+    overflow: hidden;
+    -moz-box-shadow: 10px 10px 61px -21px rgba(0, 0, 0, 0.75),
+      inset 0 0 0 1000px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 10px 10px 61px -21px rgba(0, 0, 0, 0.75),
+      inset 0 0 0 1000px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 10px 61px -21px rgba(0, 0, 0, 0.75),
+      inset 0 0 0 1000px rgba(0, 0, 0, 0.15);
+  }
 }
-.book-3d a img {
-  overflow: hidden;
-  border-radius: 0 4px 4px 0;
-}
-
-.book-3d:hover,
-.book-3d:focus {
-  transform: rotateY(-28deg);
-  /*bottom: 4px;*/
-}
-.book-no3d:hover,
-.book-no3d:focus {
-  bottom:8px;
-  /*bottom: 4px;*/
-}
-.book:hover .afterBook,
-.book:focus .afterBook,
-{
-  height:294px;
-  top:3px;
-}
-.book-3d > :first-child {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 300px;
-  transform: translateZ(25px);
-  background: none;
-  overflow: hidden;
-  border-radius: 3px;
-}
-.book-3d::before {
-  position: absolute;
-  content: " ";
-  left: 0;
-  top: 5px;
-  width: 48px;
-  height: 290px;
-  transform: translateX(172px) rotateY(90deg);
-  background: linear-gradient(
-    90deg,
-    #fff 0%,
-    #d8d8d8 5%,
-    #fff 10%,
-    #d8d8d8 15%,
-    #fff 20%,
-    #d8d8d8 25%,
-    #fff 30%,
-    #d8d8d8 35%,
-    #fff 40%,
-    #d8d8d8 45%,
-    #fff 50%,
-    #d8d8d8 55%,
-    #fff 60%,
-    #d8d8d8 65%,
-    #fff 70%,
-    #d8d8d8 75%,
-    #fff 80%,
-    #d8d8d8 85%,
-    #fff 90%,
-    #d8d8d8 95%,
-    #fff 100%
-  );
-}
-.afterBook {
-  transition: 0.5s ease;
-  -webkit-transition: 0.5s ease;
-  position: absolute;
-  top: 0;
-  left: 2px;
-  content: " ";
-  width: 198px;
-  height: 300px;
-  transform: translateZ(-25px);
-  /*background-color: #333333;*/
-  border-radius: 4px;
-  overflow: hidden;
-  -moz-box-shadow: 10px 10px 61px -21px rgba(0, 0, 0, 0.75), inset 0 0 0 1000px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 10px 10px 61px -21px rgba(0, 0, 0, 0.75), inset 0 0 0 1000px rgba(0, 0, 0, 0.15);
-  box-shadow: 10px 10px 61px -21px rgba(0, 0, 0, 0.75), inset 0 0 0 1000px rgba(0, 0, 0, 0.15);
-}
-.book-no3d a{
+.book-no3d a {
   -moz-box-shadow: 10px 10px 61px -21px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 61px -21px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 61px -21px rgba(0, 0, 0, 0.75);
