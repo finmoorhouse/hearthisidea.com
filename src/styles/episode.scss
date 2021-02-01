@@ -2,52 +2,61 @@ h5 {
   opacity: 0.6;
   margin-left: 20px;
 }
-.cover-image{
+.cover-image {
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
   /*padding:100px 0;*/
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  
 }
-.cover-image__text{
-  width:70vw;
-  margin:auto;
+.cover-image__text {
+  width: 70vw;
+  margin: auto;
   /*background:rgba(14, 14, 14, 0.5);
   border-radius: 10px;*/
 }
-.cover-image__wrapper{
-  background:rgba($color: #000000, $alpha: 0.4);
-  background:linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 75%,  rgba(0,0,0,0.7) 100%);
+.cover-image__wrapper {
+  background: rgba($color: #000000, $alpha: 0.4);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.3) 75%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
   width: 100%;
-  flex:1;
-  padding:150px 0 50px 0;
-  top:0;
+  flex: 1;
+  padding: 150px 0 50px 0;
+  top: 0;
 }
 @media all and (max-width: 750px) {
-  .cover-image__wrapper{
-    padding-top:140px;
-    background:linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 65%,  rgba(0,0,0,0.8) 100%);
+  .cover-image__wrapper {
+    padding-top: 140px;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.3) 65%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
   }
-  .cover-image__date{
-padding-top:20px;
+  .cover-image__date {
+    padding-top: 20px;
   }
 }
-.cover-image__title{
+.cover-image__title {
   /*background-color: rgba(243, 183, 17, 0.616);*/
-  color:white;
+  color: white;
 }
-.cover-image__title--highlight{
+.cover-image__title--highlight {
   /*applies to a <mark> component*/
   background: rgba(243, 183, 17, 0.616);
 }
-.cover-image__date{
-color:whitesmoke;
+.cover-image__date {
+  color: whitesmoke;
 }
 .aside {
   background: #f9f9fa;
@@ -158,27 +167,33 @@ color:whitesmoke;
     }
   }
 }
-.episode-table-of-contents, .episode-rate-dropdown {
-background: none;
-ol{
-    padding-left:25px;
-}
-summary {
-    outline:0;
+.episode-table-of-contents,
+.episode-rate-dropdown {
+  background: none;
+  ol {
+    padding-left: 25px;
+  }
+  summary {
+    outline: 0;
     text-align: center;
     font-family: "Open Sans";
-    &:hover{
-        cursor: pointer;
+    &:hover {
+      cursor: pointer;
     }
+  }
+  margin-bottom: 30px;
 }
-margin-bottom: 30px;
+.episode-rate-dropdown {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
-.episode-rate-dropdown{
-  margin-bottom:10px;
-  margin-top:10px;
-}
-.episode-table-of-contents{
+.episode-table-of-contents {
   border-radius: 8px;
-  background: #e9e9e9;
-  padding:30px;
+  background: #f1f1f1;
+  padding: 20px 25px 22px 25px;
+
+}
+.episode-table-of-contents ol {
+  column-width: 300px;
+  column-gap: 40px;
 }

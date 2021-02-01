@@ -12,7 +12,7 @@ const Book = props => {
         <img src={mySrc} objectfit="cover" objectPosition="50% 50%" alt="" />
       </a>
       {
-        props.spineColor &&  <div className='afterBook' style={{backgroundColor: props.spineColor,}}></div>
+        props.spineColor && <div className='afterBook' style={{backgroundColor: props.spineColor,}}></div> 
       }
    
     </div>

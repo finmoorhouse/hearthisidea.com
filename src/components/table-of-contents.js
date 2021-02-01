@@ -17,7 +17,7 @@ function renderItems(items, level) {
 }
 const TableOfContents = props => {
   return (
-    <details className='episode-table-of-contents'>
+    <details open className='episode-table-of-contents'>
       <summary>Table of Contents</summary>
       {renderItems(props.items, 1)}
       
