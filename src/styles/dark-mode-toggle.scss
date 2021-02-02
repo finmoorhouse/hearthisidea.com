@@ -1,0 +1,84 @@
+@import "variables.scss";
+$night-color: darkblue;
+$light-color: aliceblue;
+$size: 100px;
+
+.dark-mode-toggle {
+  transform: scale(0.4);
+  background: none;
+  height: 80px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  padding-left: 15px;
+  margin-left: 7px;
+  position: relative;
+}
+.toggle-dark {
+  //background: $light-color;
+  .moon-cover {
+    background: $light-color;
+  }
+}
+.toggle-light {
+  // background: $night-color;
+  .moon-cover {
+    background: $night-color;
+  }
+}
+.circle {
+  top: -12px;
+  border-radius: 50%;
+  position: absolute;
+  height: $size;
+  width: $size;
+  display: block;
+  background: none;
+  transition: all 400ms;
+  box-shadow: inset calc(100px * 0.33) calc(100px * -0.25) 0;
+  color: var(--hti-yellow);
+  transition-delay: 0.3s;
+  &.sun {
+    transition-delay: 0s;
+    top: -10px;
+    color: var(--hti-yellow);
+    transform: scale(0.55);
+    box-shadow: inset calc(100px * 0.7) calc(100px * -0.7) 0 10px;
+  }
+}
+.sun-rays {
+  top: -10px;
+  transition: all 300ms;
+  transition-delay: 0s;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  color: var(--hti-yellow);
+  width: $size;
+  height: $size;
+
+  --d: 44px;
+  --dn: calc(var(--d) * -1);
+  --r: calc(var(--d) * 1.41421);
+  --rn: calc(var(--r) * -1);
+  --ray-scale: -43px;
+  box-shadow: var(--dn) var(--dn) 0 var(--ray-scale),
+    var(--d) var(--dn) 0 var(--ray-scale), var(--dn) var(--d) 0 var(--ray-scale),
+    var(--d) var(--d) 0 var(--ray-scale), var(--r) 0px 0 var(--ray-scale),
+    0px var(--r) 0 var(--ray-scale), var(--rn) 0px 0 var(--ray-scale),
+    0px var(--rn) 0 var(--ray-scale);
+  &.hiding {
+    transform: scale(0.55);
+    opacity: 0;
+  }
+  &.shining {
+    transition-delay: 0.3s;
+
+    transform: scale(0.75);
+  }
+}
+@media all and (max-width: 1000px) {
+  .dark-mode-toggle {
+    display: none;
+  }
+}

@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .rating-form {
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -15,16 +17,18 @@
     /*font-weight: bold;*/
   }
   textarea {
-    border: 2px solid #d3d3d3;
+    border: 2px solid var(--tertiary-bg);
     width: 90%;
     max-width: 500px;
+    background:var(--secondary-bg);
+    color:var(--primary-text);
   }
   textarea:focus {
     outline: 5px solid #ffe44b;
   }
   margin-bottom: 10px;
   .DefaultStarComponent{
-    color:#eeeeee;
+    color:var(--tertiary-bg);
   }
   .DefaultStarComponent.addSelection {
     color: #ffe44b;

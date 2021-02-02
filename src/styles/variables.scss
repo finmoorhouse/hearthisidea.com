@@ -1,0 +1,24 @@
+/* Light Mode */
+:root {
+    --primary-bg: white;
+    --off-bg: #f9f9fa;
+    --primary-text: rgba(0, 0, 0, 0.82);
+    --primary-accent: gold;
+    --secondary-bg: #f1f1f1;
+    --tertiary-bg: #d3d3d3;
+    --quaternary-bg: #999;
+    --transparent-text: rgba(0, 0, 0, 0.12);
+    --hti-yellow: rgb(255, 227, 67);
+}
+/* Dark Mode */
+:root.dark{
+    --primary-bg: #16181c;
+    --off-bg: #1c1c1f;
+    --primary-text: rgba(255, 255, 255, 0.82);
+    --primary-accent: gold;
+    --secondary-bg: #252525;
+    --tertiary-bg: #3f3f3f;
+    --quaternary-bg: rgb(185, 185, 185);
+    --transparent-text: rgba(255, 255, 255, 0.12);
+}
+

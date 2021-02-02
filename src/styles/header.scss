@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .link-plain {
   border: none !important;
   padding: 0;
@@ -25,7 +27,7 @@ header {
   user-select: none;
 }
 .menu-wrapper a {
-  color: #999;
+  color: var(--quaternary-bg);
   display: inline-block;
   line-height: 1.2;
 }
@@ -35,8 +37,8 @@ header {
   margin-right: 5px;
 }
 .menu-wrapper [aria-current] {
-  border-bottom: 2px solid black;
-  color: #222;
+  border-bottom: 2px solid var(--primary-text);
+  color: var(--primary-text);
 }
 .header_transparent {
   background: #222;

@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import "../styles/header.scss"
+import DarkModeToggle from "./dark-mode-toggle"
 
 //import Img from "gatsby-image"
 //import { useStaticQuery, graphql } from "gatsby"
@@ -9,7 +10,9 @@ import "../styles/header.scss"
 const Header = ({ siteTitle, onTransparent }) => {
   return (
     <header>
-      <div className={'menu-wrapper ' + (onTransparent && 'header_transparent')}>
+      <div
+        className={"menu-wrapper " + (onTransparent && "header_transparent")}
+      >
         <Link to="/" className="link-plain">
           <h1 className="title">Hear This Idea</h1>
         </Link>
@@ -18,6 +21,7 @@ const Header = ({ siteTitle, onTransparent }) => {
         </Link>{" "}
         <span className="menu-slash">/</span>{" "}
         <Link to="/episodes">Episodes</Link>
+          <DarkModeToggle />
       </div>
     </header>
   )

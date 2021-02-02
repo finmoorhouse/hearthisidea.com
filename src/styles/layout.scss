@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Space+Mono:400,700|Open+Sans:300,400,700,800&display=swap");
+@import 'variables.scss';
 
 html,
 body {
   font-family: "Merriweather", "Noto Serif", "Georgia", serif;
-  background-color: #fff; /*#afc3c9;*/
+  background-color: var(--primary-bg); /*#afc3c9;*/
   line-height: 185%;
-  color: rgba(0, 0, 0, 0.82);
+  color: var(--primary-text);
   font-size: 19px;
   max-width: 100%;
   overflow-x: hidden;
 }
 a {
-  color: rgba(0, 0, 0, 0.82);
+  color: var(--primary-text);
   text-decoration-thickness: 1.3px;
 }
 
@@ -22,7 +23,7 @@ header {
   text-align: center;
 }
 hr {
-  background: rgba(0, 0, 0, 0.12);
+  background: var(--transparent-text);
   border: none;
   height: 3px;
 }
@@ -32,10 +33,10 @@ hr {
   margin-bottom: 60px;
 }
 blockquote {
-  color: rgba(0, 0, 0, 0.58);
+  opacity:0.62;
   /*font-style: italic;*/
   font-style: oblique;
-  border-left: 4px solid rgba(0, 0, 0, 0.12);
+  border-left: 4px solid var(--transparent-text);
   padding-left: 18px;
 }
 .progress-bar {
@@ -64,7 +65,7 @@ h4 {
   letter-spacing: -0.02em;
 }
 h1 {
-  color: #444;
+  opacity:0.9;
 
   font-weight: 900;
   font-size: 50px;
@@ -99,17 +100,17 @@ h3 {
 }
 ::selection {
   color: #444;
-  background: rgba(255, 227, 67, 0.82); /* WebKit/Blink Browsers */
+  background: var(--hti-yellow); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: rgba(255, 227, 67, 0.82); /* Gecko Browsers */
+  background: var(--hti-yellow); /* Gecko Browsers */
   color: #444;
 }
 header a {
   text-decoration: none;
 }
 .date {
-  color: #999;
+  color: var(--quaternary-bg);
   text-transform: capitalize;
   font-family: "Space Mono";
   font-weight: normal;
@@ -132,12 +133,13 @@ h2 .date {
 }
 .episode-link a {
   text-decoration: none;
-  color: #333;
+  color: var(--primary-text);
 }
 
 .line {
   border: none;
-  border-bottom: 3px solid #eee;
+  border-bottom: 3px solid var(--tertiary-bg);
+  opacity:0.6;
   width: 200px;
   margin-top: 20px;
   margin-left: 0;
@@ -169,9 +171,12 @@ h2 .date {
 .listen-container {
   display: flex;
   flex-wrap: wrap;
+  a {
+    color: #16181c;
+  }
 }
 .listen {
-  background: rgba(255, 227, 67, 0.82);
+  background: var(--hti-yellow);
   padding: 13px;
   margin: 13px;
   font-family: "Open Sans", sans-serif;

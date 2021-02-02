@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 h5 {
   opacity: 0.6;
   margin-left: 20px;
@@ -59,13 +61,12 @@ h5 {
   color: whitesmoke;
 }
 .aside {
-  background: #f9f9fa;
+  background: var(--off-bg);
   display: flex;
   flex-direction: row;
   padding: 15px;
   padding-right: 17px;
   border-radius: 4px;
-  color: lighten(black, 25%);
 }
 .aside p {
   padding: 8px 20px 8px 10px;
@@ -189,7 +190,7 @@ h5 {
 }
 .episode-table-of-contents {
   border-radius: 8px;
-  background: #f1f1f1;
+  background: var(--secondary-bg);
   padding: 20px 25px 22px 25px;
 
 }

@@ -1,44 +1,53 @@
+@import "variables.scss";
 
-.react-h5-audio-player .flex{
-        box-shadow: none  !important;
-}
-.react-h5-audio-player .indicator{
-    background: rgb(243, 197, 45) /*rgba(0,0,0,0.82)*/ !important;
-    opacity: 1 !important;
-}
-.react-h5-audio-player .toggle-play-button{
-    background-color: rgba(0, 0, 0, 0.82) !important;
-}
-.react-h5-audio-player .pause-icon{
-    box-shadow: none !important;
-}
-.volumn{
-    border-bottom:15px solid black !important;
-}
-.toggle-play-button{
-   
-   margin-bottom:10px;
+
+.react-h5-audio-player {
+  --button-color: #333;
+  margin-bottom: 40px;
+  .flex {
+    background: var(--primary-bg) !important;
   }
-  .audio-info{
-    margin-top:10px;
-  }
-  .pause-icon{
-    margin-left:3.5px;
-    margin-top:2.5px;
-    border-left: 4px solid white !important;
-    height:14px !important;
-    width:6px !important;
-    background: rgba(0, 0, 0, 0.82) !important;
-    border-right:4px solid white !important;
 }
-  
-  .progress-bar{
-    height:200px;
-    
-  }
-  .volume-controls{
-    display:none;
-  }
-  .react-h5-audio-player{
-      margin-bottom:40px;
-  }
+.react-h5-audio-player .flex {
+  box-shadow: none !important;
+}
+.react-h5-audio-player .indicator {
+  background: rgb(243, 197, 45) /*rgba(0,0,0,0.82)*/ !important;
+  opacity: 1 !important;
+}
+.react-h5-audio-player .toggle-play-button {
+  background-color: var(--primary-accent) !important;
+}
+.react-h5-audio-player .pause-icon {
+  box-shadow: none !important;
+}
+.volumn {
+  border-bottom: 15px solid var(--primary-text) !important;
+}
+.toggle-play-button {
+  margin-bottom: 10px;
+}
+.audio-info {
+  margin-top: 10px;
+}
+.play-icon{
+border-left: 20px solid var(--button-color) !important;
+}
+.pause-icon {
+  margin-left: 3.5px;
+  margin-top: 2.5px;
+  border-left: 4px solid var(--button-color) !important;
+  height: 14px !important;
+  width: 6px !important;
+  background: var(--button-color) !important;
+  border-right: 4px solid var(--button-color) !important;
+}
+
+.progress-bar {
+  height: 200px;
+  background: var(--tertiary-bg) !important;
+  opacity: 0.8;
+}
+.volume-controls {
+  display: none;
+}
