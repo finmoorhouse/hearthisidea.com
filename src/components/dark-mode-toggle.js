@@ -2,7 +2,7 @@ import React, { useCallback, useState } from "react"
 import "../styles/dark-mode-toggle.scss"
 
 const DarkModeToggle = () => {
-  if (typeof window === 'undefined') {
+    if (typeof window === 'undefined') {
     // Never server-side render this, since we can't determine
     // the correct initial state until we get to the client.
     // Alternatively, use a loading placeholder here.

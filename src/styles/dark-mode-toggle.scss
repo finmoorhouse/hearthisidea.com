@@ -4,6 +4,7 @@ $light-color: aliceblue;
 $size: 100px;
 
 .dark-mode-toggle {
+  outline: none;
   transform: scale(0.4);
   background: none;
   height: 80px;
