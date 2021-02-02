@@ -21,10 +21,7 @@ export default function Template({
   let sources = null
   if (mdx.frontmatter.backgroundImage) {
     sources = [
-      mdx.frontmatter.backgroundImage.childImageSharp.fluid,
-      {
-        ...mdx.frontmatter.backgroundImage.childImageSharp.fluid,
-      },
+      mdx.frontmatter.backgroundImage.childImageSharp.fluid
     ]
   }
   let heroBanner
@@ -126,7 +123,7 @@ export const pageQuery = graphql`
         }
         backgroundImage {
           childImageSharp {
-            fluid(maxWidth: 1920, quality: 50) {
+            fluid(maxWidth: 1280, quality: 50) {
               ...GatsbyImageSharpFluid
             }
           }
