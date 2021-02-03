@@ -1,6 +1,4 @@
 @import "variables.scss";
-$night-color: darkblue;
-$light-color: aliceblue;
 $size: 100px;
 
 .dark-mode-toggle {
@@ -15,18 +13,7 @@ $size: 100px;
   margin-left: 7px;
   position: relative;
 }
-.toggle-dark {
-  //background: $light-color;
-  .moon-cover {
-    background: $light-color;
-  }
-}
-.toggle-light {
-  // background: $night-color;
-  .moon-cover {
-    background: $night-color;
-  }
-}
+
 .circle {
   top: -12px;
   border-radius: 50%;
@@ -78,8 +65,17 @@ $size: 100px;
     transform: scale(0.75);
   }
 }
-@media all and (max-width: 1000px) {
+@media all and (max-width: 900px) {
   .dark-mode-toggle {
-    display: none;
+    margin-right: 45px;
+  }
+}
+@media all and (max-width: 500px) {
+  .dark-mode-toggle {
+    margin-right: 25px;
+
+    transform: scale(0.35);
+    padding-left: 0;
+  //  top: -24px;
   }
 }

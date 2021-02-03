@@ -22,8 +22,8 @@ header {
   align-items: center;
   justify-content: flex-start;
   font-size: 24px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 40px;
+  padding-right: 12px;
   user-select: none;
 }
 .menu-wrapper a {
@@ -52,8 +52,19 @@ header {
     color: white;
   }
 }
+
 @media all and (max-width: 750px) {
+  .menu-wrapper{
+    margin-top:0px;
+  }
   .header_transparent {
     top:70px;
+  }
+}
+@media all and (max-width: 500px) {
+  .menu-wrapper{
+    font-size: 20px;
+    margin-top: 0;
+    justify-content: space-between;
   }
 }

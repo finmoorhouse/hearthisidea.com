@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Space+Mono:400,700|Open+Sans:300,400,700,800&display=swap");
-@import 'variables.scss';
+@import "variables.scss";
 
 html,
 body {
@@ -33,7 +33,7 @@ hr {
   margin-bottom: 60px;
 }
 blockquote {
-  opacity:0.62;
+  opacity: 0.62;
   /*font-style: italic;*/
   font-style: oblique;
   border-left: 4px solid var(--transparent-text);
@@ -65,7 +65,7 @@ h4 {
   letter-spacing: -0.02em;
 }
 h1 {
-  opacity:0.9;
+  opacity: 0.9;
 
   font-weight: 900;
   font-size: 50px;
@@ -91,11 +91,10 @@ h3 {
   text-align: left;
   user-select: none;
   margin-left: 0;
-
   font-family: "Space Mono";
   font-weight: bold;
   font-size: 34px;
-  color: gold;//rgba(247, 210, 3, 0.966);
+  color: gold; //rgba(247, 210, 3, 0.966);
   line-height: 92%;
 }
 ::selection {
@@ -127,7 +126,11 @@ h2 .date {
 .push {
   margin-left: auto;
 }
-
+@media all and (max-width: 500px) {
+  .push {
+    margin-left: 0;
+  }
+}
 .episode-link {
   padding-top: 10px;
 }
@@ -139,7 +142,7 @@ h2 .date {
 .line {
   border: none;
   border-bottom: 3px solid var(--tertiary-bg);
-  opacity:0.6;
+  opacity: 0.6;
   width: 200px;
   margin-top: 20px;
   margin-left: 0;
@@ -159,12 +162,12 @@ h2 .date {
   display: block;
   text-decoration: none;
   position: relative;
-  margin:0;
+  margin: 0;
   font-family: "Open Sans";
   text-align: center;
   color: #999;
   font-size: 25px;
-  width:100%;
+  width: 100%;
   font-weight: 700;
   //margin-left: calc(50% - 120px);
 }
@@ -200,6 +203,7 @@ color:rgba(247, 210, 3, 0.966);*/
 @media all and (max-width: 500px) {
   .title {
     margin-left: 0%;
+    font-size: 28px;
   }
   blockquote {
     margin-left: 0;
@@ -220,7 +224,7 @@ color:rgba(247, 210, 3, 0.966);*/
     font-size: 32px;
     margin-bottom: 10px;
   }
-  h3{
+  h3 {
     font-size: 26px;
   }
   h1 {
@@ -251,12 +255,12 @@ color:rgba(247, 210, 3, 0.966);*/
 iframe {
   max-width: 100%;
 }
-.anchor{
-  display:none;
+.anchor {
+  display: none;
 }
-.error-message{
-  color:#d02929;
+.error-message {
+  color: #d02929;
 }
-.success-message{
-  opacity:0.5;
+.success-message {
+  opacity: 0.5;
 }

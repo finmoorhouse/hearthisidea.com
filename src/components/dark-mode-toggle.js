@@ -2,15 +2,17 @@ import React, { useCallback, useState } from "react"
 import "../styles/dark-mode-toggle.scss"
 
 const DarkModeToggle = () => {
-    if (typeof window === 'undefined') {
+  let myTheme = null
+  if (!(typeof window === "undefined")) {
     // Never server-side render this, since we can't determine
     // the correct initial state until we get to the client.
-    // Alternatively, use a loading placeholder here.
-    return null;
+    myTheme = window.__theme
   }
-  const [checked, setChecked] = useState(window.__theme === "dark")
+  const [checked, setChecked] = useState(myTheme === "dark")
   const onChange = useCallback(e => {
-    window.__setPreferredTheme(checked ? "light" : "dark")
+    if (!(typeof window === "undefined")) {
+      window.__setPreferredTheme(checked ? "light" : "dark")
+    }
     setChecked(!checked)
   })
 
