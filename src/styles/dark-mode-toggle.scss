@@ -73,9 +73,8 @@ $size: 100px;
 @media all and (max-width: 500px) {
   .dark-mode-toggle {
     margin-right: 25px;
-
     transform: scale(0.35);
     padding-left: 0;
-  //  top: -24px;
+   top: -25px;
   }
 }

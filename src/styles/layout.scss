@@ -178,6 +178,10 @@ h2 .date {
     color: #16181c;
   }
 }
+html *{
+  transition: background-color 0.4s, color 0.4s, text-decoration 0.4s, background 0.4s, border-bottom 0.4s;
+
+}
 .listen {
   background: var(--hti-yellow);
   padding: 13px;

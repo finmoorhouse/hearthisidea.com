@@ -21,7 +21,7 @@ const EpisodesPage = ({
 export default EpisodesPage
 export const pageQuery = graphql`
   query {
-    allMdx(sort: { order: DESC, fields: [frontmatter___number] }) {
+    allMdx(sort: { order: DESC, fields: [frontmatter___number] }, filter: { frontmatter: { status: { eq: "live" } } }) {
       edges {
         node {
           id
@@ -32,6 +32,7 @@ export const pageQuery = graphql`
             path
             title
             audio
+            status
           }
         }
       }
