@@ -54,6 +54,7 @@ export default function Template({
       <SEO
         title={mdx.frontmatter.title}
         myFeaturedImage={mdx.frontmatter.featuredImage}
+        description={mdx.frontmatter.description || null}
       />
 
       {heroBanner}
@@ -109,6 +110,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         audio
+        description
         number
         title
         apple

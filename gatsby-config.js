@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Hear This Idea`,
-    description: `New thinking from top academics at the University of Cambridge and beyond.`,
+    description: `New thinking in philosophy, the social sciences, and effective altruism.`,
     author: `Fin Moorhouse and Luca Righetti`,
     url: `https://www.hearthisidea.com`,
     twitterUsername: `@hearthisidea`,
