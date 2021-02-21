@@ -708,5 +708,35 @@
         "type": "book",
         "episode": "marcus",
         "tags":["selfImprovement","philosophy"]
+      },
+      {
+        "title": "Mindful Economics",
+        "author": "Roland Bénabou and Jean Tirole",
+        "name": "Julia Schvets",
+        "image": "./book-covers/book-julia-1.jpg",
+        "link": "https://scholar.princeton.edu/sites/default/files/rbenabou/files/mindful_economics_jep_2016.pdf",
+        "type": "paper",
+        "episode": "julia",
+        "tags":["psychology","economics"]
+      },
+      {
+        "title": "Psychology and Economics: Evidence from the Field",
+        "author": "Stefano DellaVigna",
+        "name": "Julia Schvets",
+        "image": "./book-covers/book-julia-2.jpg",
+        "link": "https://www.aeaweb.org/articles?id=10.1257/jel.47.2.315",
+        "type": "paper",
+        "episode": "julia",
+        "tags":["psychology","economics"]
+      },
+      {
+        "title": "Crime and Punishment",
+        "author": "Fyodor Dostoyevsky",
+        "name": "Julia Schvets",
+        "image": "./book-covers/book-julia-3.jpg",
+        "link": "https://www.goodreads.com/book/show/7144.Crime_and_Punishment",
+        "type": "book",
+        "episode": "julia",
+        "tags":["fiction"]
       }
    ]
