@@ -9,7 +9,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, myFeaturedImage }) {
+function SEO({ description, lang, meta, title, myFeaturedImage, myStaticFeaturedImage }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -29,7 +29,7 @@ function SEO({ description, lang, meta, title, myFeaturedImage }) {
 
   const metaDescription = description || site.siteMetadata.description
   const featuredImageSrc = myFeaturedImage && myFeaturedImage.childImageSharp.sizes.src;
-  const pageThumbnail = `${site.siteMetadata.url}${featuredImageSrc || site.siteMetadata.image}`;
+  const pageThumbnail = `${site.siteMetadata.url}${featuredImageSrc || (myStaticFeaturedImage || site.siteMetadata.image)}`;
   const myTitle = title || site.siteMetadata.title
 
   return (
