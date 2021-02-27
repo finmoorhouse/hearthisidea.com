@@ -738,5 +738,25 @@
         "type": "book",
         "episode": "julia",
         "tags":["fiction"]
+      },
+      {
+        "title": "Capital in the Twenty-First Century",
+        "author": "Thomas Piketty",
+        "name": "Eva Vivalt",
+        "image": "./book-covers/book-eva-2.jpg",
+        "link": "https://www.goodreads.com/book/show/18736925-capital-in-the-twenty-first-century",
+        "type": "book",
+        "episode": "eva",
+        "tags":["economics"]
+      },
+      {
+        "title": "Bayesian Data Analysis",
+        "author": "Andrew Gellman",
+        "name": "Eva Vivalt",
+        "image": "./book-covers/book-eva-1.jpg",
+        "link": "https://www.goodreads.com/book/show/619590.Bayesian_Data_Analysis?from_search=true&from_srp=true&qid=qjwhbppEBo&rank=1",
+        "type": "book",
+        "episode": "eva",
+        "tags":["economics"]
       }
    ]
