@@ -90,7 +90,7 @@ const LibraryPage = ({
   }, [activeCategories])
   return (
     <Layout>
-      <SEO title="Library" myFeaturedImage="/library.jpg"/>
+      <SEO title="Library" myStaticFeaturedImage="/library.jpg"/>
       <h1>Library</h1>
       <hr className="line" />
       <p>
