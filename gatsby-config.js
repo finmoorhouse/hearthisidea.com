@@ -104,7 +104,7 @@ module.exports = {
         // Either `code` or `selfHostUrl` is required.
         // REQUIRED IF USING HOSTED GOATCOUNTER! https://[my_code].goatcounter.com
         code: "hearthisidea",
-        head: true,
+        head: false,
         pixel: true,
       },
     },
