@@ -115,9 +115,9 @@ header a {
   font-weight: normal;
   font-size: 22px;
 }
-.episode-link h2 {
-  margin-top: 14px;
-}
+// .episode-link h2 {
+//   margin-top: 14px;
+// }
 h2 .date {
   font-size: 30px;
   margin-top: -10px;
@@ -131,9 +131,9 @@ h2 .date {
     margin-left: 0;
   }
 }
-.episode-link {
-  padding-top: 10px;
-}
+// .episode-link {
+//   padding-top: 10px;
+// }
 .episode-link a {
   text-decoration: none;
   color: var(--primary-text);
@@ -267,4 +267,12 @@ iframe {
 }
 .success-message {
   opacity: 0.5;
+}
+button{
+  border:none;
+}
+.centered-text{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }

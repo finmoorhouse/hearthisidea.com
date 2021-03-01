@@ -99,6 +99,7 @@ module.exports = {
     //     //Setting this parameter is also optional
     //     respectDNT: true,
     //   },
+    {
       resolve: `gatsby-plugin-goatcounter`,
       options: {
         // Either `code` or `selfHostUrl` is required.
