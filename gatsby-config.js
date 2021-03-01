@@ -87,18 +87,18 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-44315602-3",
-        //Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: true,
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: "UA-44315602-3",
+    //     //Defines where to place the tracking script - `true` in the head and `false` in the body
+    //     head: true,
 
-        //  Setting this parameter is optional
-        anonymize: true,
-        //Setting this parameter is also optional
-        respectDNT: true,
-      },
+    //     //  Setting this parameter is optional
+    //     anonymize: true,
+    //     //Setting this parameter is also optional
+    //     respectDNT: true,
+    //   },
       resolve: `gatsby-plugin-goatcounter`,
       options: {
         // Either `code` or `selfHostUrl` is required.
