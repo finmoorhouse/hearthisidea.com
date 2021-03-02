@@ -44,6 +44,12 @@
   padding: 0;
   height: 100%;
 }
+.align-bg-bottom::before {
+  background-position-y: bottom !important;
+}
+.align-bg-bottom::after {
+  background-position-y: bottom !important;
+}
 .episode-link h2 {
   margin-top: 0;
   color: white;
@@ -53,7 +59,7 @@
 }
 .episode-link--container {
   padding: 0;
-  min-height: 220px;
+  min-height: 240px;
   border-radius: 18px;
   display: inline-block;
   overflow: hidden;
@@ -109,7 +115,7 @@
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 .number-big {
-  font-size: 80px;
+  font-size: 70px;
   margin: 0;
   position: absolute;
   z-index: 3;
@@ -119,6 +125,7 @@
   top: -6px;
   right: 14px;
   mix-blend-mode: screen;
+  font-weight: normal;
 }
 @media all and (max-width: 964px) {
   .episode-list--grid {

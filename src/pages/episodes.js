@@ -1,23 +1,68 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 import PostLink from "../components/episode-link"
 import Layout from "../components/layout"
 //import Filters from "../components/episode-list-filters"
 import SEO from "../components/seo"
-const EpisodesPage = ({
-  data: {
-    allMdx: { edges },
-  },
-}) => {
-  const Posts = edges
+const EpisodesPage = ({ data }) => {
+
+// Filter stuff --
+  // const [activeCategories, setActiveCategories] = useState({
+  //   philosophy: true,
+  //   economics: true,
+  //   psychology: true,
+  //   animals: true,
+  //   ea: true,
+  //   longtermism: true
+  // })
+  // const handler = thing => {
+  //   let newObject = activeCategories
+  //   var keys = Object.keys(activeCategories)
+  //   let allTrue = true
+  //   keys.forEach(key => {
+  //     if (!activeCategories[key]) {
+  //       allTrue = false
+  //     }
+  //   })
+  //   if (allTrue) {
+    
+  //       keys.forEach(key => {
+  //         newObject[key] = false
+  //       })
+
+  //     newObject[thing] = true
+  //   } else {
+  //     newObject[thing] = !activeCategories[thing]
+  //   }
+  //   setActiveCategories({ ...newObject })
+  // }
+
+
+
+  const Metadata = data.allEpisodesJson.edges
+  let MetadataDict = Object.assign(
+    {},
+    ...Metadata.map(x => ({
+      [x.node.number]: { align: x.node.align, color: x.node.color },
+    }))
+  )
+  const Posts = data.allMdx.edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+    .map(function(edge) {
+      let MetaObject = MetadataDict[edge.node.frontmatter.number.toString()]
+      let align = "center"
+      if (MetaObject) {
+        align = MetaObject["align"]
+      }
+      return <PostLink key={edge.node.id} post={edge.node} align={align} />
+    })
   return (
     <Layout>
       <SEO title="Episodes" />
       <h1 className="centered-text">Episodes</h1>
       <hr className="line centered-text" />
-     {/* <Filters /> */}
+      {/* <Filters /> */}
+
       <div className="episode-list--grid_container">
         <div className="episode-list--grid">{Posts}</div>
       </div>
@@ -34,7 +79,6 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
           frontmatter {
             number
             date(formatString: "MMMM DD, YYYY")
@@ -49,6 +93,15 @@ export const pageQuery = graphql`
               }
             }
           }
+        }
+      }
+    }
+    allEpisodesJson {
+      edges {
+        node {
+          number
+          align
+          color
         }
       }
     }

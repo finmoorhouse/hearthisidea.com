@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
-export default function PostLink({ post }) {
+export default function PostLink({ post, id, align }) {
   let sources = null
   if (post.frontmatter.backgroundImage) {
     sources = [post.frontmatter.backgroundImage.childImageSharp.fluid]
@@ -13,7 +13,7 @@ export default function PostLink({ post }) {
       to={post.frontmatter.path}
     >
       <BackgroundImage
-        className="episode-link--background-image"
+        className={`episode-link--background-image align-bg-${align}`}
         backgroundColor={`#222222`}
         fluid={sources}
         preserveStackingContext={true}

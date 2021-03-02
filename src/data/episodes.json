@@ -1,0 +1,52 @@
+[
+  {
+    "number": "04",
+    "align": "bottom",
+    "color": "#71a592"
+  },
+  {
+    "number": "01",
+    "align": "top",
+    "color": "#192bc6"
+  },
+  {
+    "number": "06",
+    "align": "bottom",
+    "color": "#192bc6"
+  },
+  {
+    "number": "08",
+    "align": "bottom",
+    "color": "#192bc6"
+  },
+  {
+    "number": "12",
+    "align": "bottom",
+    "color": "#192bc6"
+  },
+  {
+    "number": "19",
+    "align": "bottom",
+    "color": "#192bc6"
+  },
+  {
+    "number": "17",
+    "align": "bottom",
+    "color": "#192bc6"
+  },
+  {
+    "number": "21",
+    "align": "center",
+    "color": "#192bc6"
+  },
+  {
+    "number": "23",
+    "align": "bottom",
+    "color": "#192bc6"
+  },
+  {
+    "number": "24",
+    "align": "bottom",
+    "color": "#192bc6"
+  }
+]
