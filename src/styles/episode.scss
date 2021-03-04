@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 h5 {
   opacity: 0.6;
@@ -18,6 +18,7 @@ h5 {
 }
 .cover-image__text {
   width: 70vw;
+  max-width: 1100px;
   margin: auto;
   /*background:rgba(14, 14, 14, 0.5);
   border-radius: 10px;*/
@@ -100,6 +101,7 @@ h5 {
 }
 
 @media all and (min-width: 600px) {
+
   .writeup {
     h2,
     h3 {
@@ -130,6 +132,9 @@ h5 {
   }
 }
 @media all and (max-width: 600px) {
+  .cover-image__text {
+    width: 85vw;
+  }
   .writeup {
     h2,
     h3 {
@@ -192,7 +197,6 @@ h5 {
   border-radius: 8px;
   background: var(--secondary-bg);
   padding: 20px 25px 22px 25px;
-
 }
 .episode-table-of-contents ol {
   column-width: 300px;
