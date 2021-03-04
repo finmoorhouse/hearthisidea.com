@@ -5,39 +5,29 @@ import Layout from "../components/layout"
 //import Filters from "../components/episode-list-filters"
 import SEO from "../components/seo"
 const EpisodesPage = ({ data }) => {
-
-// Filter stuff --
+  // Filter stuff --
   // const [activeCategories, setActiveCategories] = useState({
   //   philosophy: true,
   //   economics: true,
   //   psychology: true,
   //   animals: true,
   //   ea: true,
-  //   longtermism: true
+  //   longtermism: true,
   // })
   // const handler = thing => {
   //   let newObject = activeCategories
-  //   var keys = Object.keys(activeCategories)
-  //   let allTrue = true
-  //   keys.forEach(key => {
-  //     if (!activeCategories[key]) {
-  //       allTrue = false
-  //     }
-  //   })
-  //   if (allTrue) {
-    
-  //       keys.forEach(key => {
-  //         newObject[key] = false
-  //       })
+  //   //var keys = Object.keys(activeCategories)
 
-  //     newObject[thing] = true
-  //   } else {
-  //     newObject[thing] = !activeCategories[thing]
-  //   }
+  //   newObject[thing] = !activeCategories[thing]
+
   //   setActiveCategories({ ...newObject })
+  //   console.log(newObject)
+  //   console.log(activeCategories)
   // }
-
-
+  // const updateFilters = topic => {
+  //   console.log("Filters updated." + topic)
+  //   handler(topic)
+  // }
 
   const Metadata = data.allEpisodesJson.edges
   let MetadataDict = Object.assign(
@@ -48,6 +38,11 @@ const EpisodesPage = ({ data }) => {
   )
   const Posts = data.allMdx.edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+    .filter(function(edge) {
+      // This is currently a dumpster fire!
+      let MetaObject = MetadataDict[edge.node.frontmatter.number.toString()]
+      return true
+    })
     .map(function(edge) {
       let MetaObject = MetadataDict[edge.node.frontmatter.number.toString()]
       let align = "center"
@@ -61,8 +56,7 @@ const EpisodesPage = ({ data }) => {
       <SEO title="Episodes" />
       <h1 className="centered-text">Episodes</h1>
       <hr className="line centered-text" />
-      {/* <Filters /> */}
-
+      {/* <Filters parentFunction={updateFilters} activeTopics={activeCategories} /> */}
       <div className="episode-list--grid_container">
         <div className="episode-list--grid">{Posts}</div>
       </div>

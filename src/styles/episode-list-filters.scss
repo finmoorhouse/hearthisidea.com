@@ -6,4 +6,9 @@
     padding-right: 18px;
     margin-left: 5px;
     margin-right: 5px;
+    transition: none;
+}
+.inactive{
+    background: grey;
+    color:rgba(255,255,255,0.6);
 }

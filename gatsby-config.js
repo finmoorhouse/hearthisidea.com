@@ -115,3 +115,4 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+// To add: https://www.youtube.com/watch?v=hbT9gKRMAZU

@@ -27,6 +27,9 @@
 .toggle-play-button {
   margin-bottom: 10px;
 }
+.toggle-play-button > * {
+  transition: none;
+}
 .audio-info {
   margin-top: 10px;
 }

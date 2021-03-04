@@ -1,13 +1,13 @@
 [
   {
-    "number": "04",
-    "align": "bottom",
-    "color": "#71a592"
-  },
-  {
     "number": "01",
     "align": "top",
     "color": "#192bc6"
+  },
+  {
+    "number": "04",
+    "align": "bottom",
+    "color": "#71a592"
   },
   {
     "number": "06",
