@@ -4,19 +4,19 @@ path: "/episodes/julia"
 date: "2021-01-25"
 title: "Julia Schvets on Overconfidence, Rank Incentives, and Lab vs Field Experiments"
 audio: ""
-featuredImage: "images/julia_featured.png"
-backgroundImage: "images/running.webp"
+featuredImage: "images/julia-featured.png"
+backgroundImage: "images/fischer-spassky.webp"
 spotify: ""
 apple: ""
 google: ""
-status: "wip"
+status: "live"
 ---
 
 [Julia Shvets](http://juliashvets.com/) is an Economist at the University of Cambridge and fellow at Christ's College. Her research focuses primarily on micro- and behavioural economics: exploring why people make the decisions they make.
 
 In this interview we discuss two of her recent papers. The first is about "overconfidence" — why people often think they are better than they have any reason to be. The second is on "rank incentives" — that is, how much people are inherently motivated by social prestige. We also explore many of the challenges that this research faces, especially what biases lab experiments might have.
 
-In the article below, we summarise and illustrate these key ideas; providing both more detail and further readings for listeners who want to find out more.
+In the article below, we summarise and illustrate these key ideas; providing both more detail and further reading for listeners who want to find out more.
 
 ![Portrait](images/julia.jpeg)
 
@@ -60,7 +60,7 @@ Thus, for all the value that lab experiments add, it is crucial to observe these
 
 ## Overconfidence
 
-The first of Julia's papers we discuss is "[Persistent overconfidence and biased memory: Evidence from managers](https://static1.squarespace.com/static/57bf5311197aea28a6b5c1f0/t/5d0b432f1b89af00016ebad3/1561019187408/Overconfidence_Huffman_Raymond_Shvets_05_03_19.pdf)" (2019).
+The first of Julia's papers we discuss is "[Persistent overconfidence and biased memory: Evidence from managers](https://static1.squarespace.com/static/57bf5311197aea28a6b5c1f0/t/5d0b432f1b89af00016ebad3/1561019187408/Overconfidence_Huffman_Raymond_Shvets_05_03_19.pdf)" (2019), co-authored with [David Huffman](http://www.dbhuffman.com/) (University of Pittsburg) and [Collin Raymond](https://krannert.purdue.edu/directory/bio.php?username=raymondc&username=raymondc) (University of Purdue) .
 
 Overconfidence is a well-documented phenomenon and is frequently cited by psychologists. Perhaps most famously, [Svenson's (1981)](https://www.sciencedirect.com/science/article/abs/pii/0001691881900056?via%3Dihub) found that 93% of American drivers think they are better than the median. In popular culture, we can also think of the radio show [A Prairie Home Companion](https://en.wikipedia.org/wiki/A_Prairie_Home_Companion). Here the fictional town Lake Wobegon is a place "where all the women are strong, all the men are good-looking, and all the children are above average."
 
@@ -144,11 +144,11 @@ To test these explanations for overconfidence, Julia and her co-authors joined u
 
 The firm uses this performance in "tournament" to rank these managers and pay them a bonus according to their quintile. Managers thus have a clear incentive to pay attention to their rank, since doing so will be useful in securing higher compensation.
 
-Additionally, the firm gives managers detailed feedback every quarter, including information about their performance and the distribution of other managers' performance. As Julia describes:
+Additionally, the firm gives managers detailed feedback every week, including information about their performance and the distribution of other managers' performance. As Julia describes:
 
 > Managers are practically bombarded with information about their rank. This is what we thought was so interesting about this data. When we looked at it, when we saw the incentive scheme worked, how much information the managers were getting, how central this competition was to their daily work — we realised that this was a very good testing ground for whether there was overconfidence in the field.
 
-To test for overconfidence, the authors then ask the managers to forecast their rank for the next quarter. Managers get a small financial reward for accurate guesses, incentivising them further. The authors then compared these results with the actual data.
+To test for overconfidence, the authors then ask the managers to forecast their rank for the next quarter. Managers get a financial reward for accurate guesses, incentivising them further. On average, the managers earned $40 for an hour of experiments, which is unusually large compared to standard lab experiments with students. This was required to be comeasurate with the managers’ opportunity cost of time. The authors then compared these results with the actual data.
 
 Doing this, Julia notes that as a group, managers indeed appear overconfident. Only 10% predict they will end up in the worst quintile, roughly 20% said they would be in each of the intermediate quintiles, and 33% thought they would achieve the top quintile. These findings are similar to the American driving statistic we mentioned earlier — most people might believe they are better than average, but this implies at least some people are wrong.
 
@@ -198,11 +198,11 @@ To frame this in economic terms, we are interested to see if rank enters the uti
 
 ### Julia's Evidence on Rank Effects
 
-Julia pointed out that a quirk in her data allowed her to test for the "rank effect" directly. Recall that manager's bonuses get determined by their quintile. This fact means that if rank and financial incentives aren't directly correlated — instead, their relationship follows a step-wise pattern. As Julia notes:
+Julia pointed out that a quirk in her data allowed her to test for the "rank effect". To calculate the manager's bonus, the firm divides the ranking into bands, with all managers in the same band getting the same bonus. This fact means that if rank and financial incentives aren't smoothly or directly correlated — instead, their relationship follows a step-wise pattern. As Julia notes:
 
 > [Financial incentives] increase when you are near the boundary, then they fall as you get into the middle, and then again they increase when you are near the boundary. This allows us to separately test for the effect of rank and the effect of incentives.
 
-We can also see this in the diagram below. If people care only about rank incentives, then being close to a "boundary" shouldn't matter that much — the difference in rank is only marginal. But if people care about financial incentives, then these boundaries should be critical — as they make or break what bonus you end up getting. Thus, seeing how much effort "oscillates" with boundaries can give us a direct measure of rank effects.
+We can also see this in the diagram below. Financial incentives oscillate with rank, and so if effort depends on rank only through the financial incentives, effort should also oscillate with rank.  If, on the other hand, Julia observed a different relationship between effort and rank, then effort cannot be entirely attributed to the financial incentives, and must be due to direct effect of rank on people’s utility. In other words, if people care only about rank incentives, then being close to a pay "boundary" shouldn't matter that much — the difference in rank is only marginal. But if people care only about financial incentives, then these boundaries should be critical — as they make or break what bonus you end up getting. Thus, seeing how much effort does or doesn't "oscillate" with boundaries can give us a direct measure of rank effects.
 
 ![Profit rank and score](images/profit-rank.png)
 
@@ -218,9 +218,11 @@ All of this suggests that rank does indeed enter the utility function directly. 
 
 > A priori, it's not clear what is the direction of ranks effects. Suppose your employer told you that out of 200 people and you ranked 180th in the last quarter. How do you feel about this information?
 
-In economic terms, we are interested to see if the utility from rank is *convex* or *concave*. If it is convex, people will have a desire to catch-up; if it is concave, people will desire to give up. We can show this in the diagram below:
+In economic terms, we are interested to see if the utility from rank is *convex* or *concave*. If you tell someone they are far behind the others, the ‘convex’ person would give up, while the ‘concave’ one would try to catch up. We can show this in the diagrams below:
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/faa873c4-efcc-4b1d-b6db-40cc87d2859b/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/faa873c4-efcc-4b1d-b6db-40cc87d2859b/Untitled.png)
+![Concave function](images/concave.png)
+
+![Convex function](images/convex.png)
 
 To test for this, Julia looks at any difference in how much effort people exert according to their rank. She finds that there is no discouragement at the bottom. If anything, there appears to some complacency at the top and the biggest increase in effort at the bottom.
 
@@ -232,9 +234,9 @@ To get at this further, Julia unpacks what sort of "effort" managers apply. Rank
 
 ### Motivations for Rank Effects
 
-Why do managers care so much about their rank, even in cases where there is no apparent financial incentive to do so? A straightforward explanation would be that people inherently care about prestige.
+Why do managers care so much about their rank, even in cases where there is no apparent financial incentive to do so?
 
-But Julia also asks us to consider some alternative explanations. The economists Nöldeke and Samuelson [proposed](https://www.jstor.org/stable/3598826?casa_token=0yLuUJpHQaYAAAAA%3AW5XC7qigw4BD1cj7AcE8I0oTSaAmTf8bzeY1qpdVzqroN386HqgAOInuFR4QFKe8nLDMToH5n-6Pw-6jEoJXQYQMOCo5jV_l8KG5p-HYBsYAccRf-yRX&seq=1#metadata_info_tab_contents) that a person's relative standing in a group (i.e. rank) contains useful, action-guiding information. As Julia explains:
+Julia also asks us to consider some explanations which try to understand why this might be the case. The economists Nöldeke and Samuelson [proposed](https://www.jstor.org/stable/3598826?casa_token=0yLuUJpHQaYAAAAA%3AW5XC7qigw4BD1cj7AcE8I0oTSaAmTf8bzeY1qpdVzqroN386HqgAOInuFR4QFKe8nLDMToH5n-6Pw-6jEoJXQYQMOCo5jV_l8KG5p-HYBsYAccRf-yRX&seq=1#metadata_info_tab_contents) that a person's relative standing in a group (i.e. rank) contains useful, action-guiding information. As Julia explains:
 
 > Back in prehistoric times, it was important to look at what other people were doing before you decided because that's how you collected information about the environment. So if your neighbour was working a lot on their land, you concluded that the conditions were such that the harvest would be a good one. So, in turn, you work a lot on your land [...] Observationally this looks like keeping up with the Joneses — I am working hard because my neighbour is working hard, and I want to keep up with them. But fundamentally, the reason was you are trying to *learn* about the environment.
 
@@ -282,7 +284,7 @@ Thank you to Julia Shvets for her time.
 - Clearer Thinking's [Overconfidence Analyzer](https://programs.clearerthinking.org/overconfidence_analyzer.html)
 - Robin Hanson's [blog posts](https://www.overcomingbias.com/tag/overconfidence) on overconfidence (there's lots of them!)
 - Kevin Simler & Robin Hanson's [The Elephant in the Brain](https://www.elephantinthebrain.com/) explores similar examples of irrationality in the real world.
-- Other working paper's on rank incentives — [here](https://faculty.wharton.upenn.edu/wp-content/uploads/2012/07/rankincentives_1.pdf), [here](https://dash.harvard.edu/bitstream/handle/1/4415904/Zeckhauser%20Rank%20Incentive.pdf), and [here](https://www.sciencedirect.com/science/article/abs/pii/S0047272712000436).
+- Other papers on rank incentives — [here](https://faculty.wharton.upenn.edu/wp-content/uploads/2012/07/rankincentives_1.pdf) and [here](https://www.sciencedirect.com/science/article/abs/pii/S0047272712000436).
 
 <div class='aside'>
 <div>
