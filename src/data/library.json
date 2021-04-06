@@ -758,5 +758,35 @@
         "type": "book",
         "episode": "eva",
         "tags":["economics"]
+      },
+      {
+        "title": "The Pursuit of Unhappiness: The Elusive Psychology of Well-Being",
+        "author": "Daniel M. Haybron",
+        "name": "Anna Alexandrova",
+        "image": "./book-covers/book-anna-1.jpg",
+        "link": "https://www.goodreads.com/book/show/4948737-the-pursuit-of-unhappiness",
+        "type": "book",
+        "episode": "anna",
+        "tags":["psychology"]
+      },
+      {
+        "title": "Hunting Causes and Using Them",
+        "author": "Andrew Gellman",
+        "name": "Anna Alexandrova",
+        "image": "./book-covers/book-anna-2.jpg",
+        "link": "https://www.goodreads.com/book/show/552618.Hunting_Causes_and_Using_Them",
+        "type": "book",
+        "episode": "anna",
+        "tags":["philosophy"]
+      },
+      {
+        "title": "Uses of Value Judgments in Science",
+        "author": "Elizabeth Anderson",
+        "name": "Anna Alexandrova",
+        "image": "./book-covers/book-anna-3.jpg",
+        "link": "http://web.mit.edu/~sgrp/2006/no1/AndersonUVJS.pdf",
+        "type": "paper",
+        "episode": "anna",
+        "tags":["philosophy"]
       }
    ]
