@@ -1,22 +1,22 @@
 ---
 number: "27"
 path: "/episodes/eva"
-date: "2021-04-05"
+date: "2021-04-12"
 title: "Eva Vivalt on Evidence-Based Policy and Forecasting Social Science"
-audio: ""
+audio: "https://pinecast.com/listen/bdc14049-63b0-4e82-bcc0-b8c8ac3bf38b.mp3"
 featuredImage: "images/eva_featured.png"
 backgroundImage: "images/eva_bg.png"
 spotify: ""
 apple: ""
 google: ""
-status: "wip"
+status: "live"
 ---
 
 [Eva Vivalt](https://evavivalt.com/) is an Assistant Professor in Economics at the University of Toronto. Her work is focused on reducing barriers to evidence-based decision-making, global priorities research, and cash transfers.
 
-In this episode, we discuss Eva's work on causal inference and forecasting in the social sciences. We begin by discussing how surprisingly few studies in development economics tend to generalise across different contexts and the challenges this creates for global health interventions. We touch upon the differences between "internal" and "external" validity, how academic studies affects beliefs and potential consequences for longtermism.
+In this episode, we discuss Eva's work on causal inference and forecasting in the social sciences. We begin by discussing how surprisingly little studies in development economics tend to generalise across different contexts and the challenges this creates for global health interventions. We touch upon the differences between "internal" and "external" validity, how academic studies affect beliefs and potential consequences for longtermism.
 
-The second part of our discussion is about forecasting and Eva's involvement in setting up the Social Science Prediction Platform. This site tests the ability of researchers to guess the results of studies in advance accurately. Eva talks about how this opens up a fascinating opportunity to spot the most novel studies and how this might help combat the bias against null results in academia.
+The second part of our discussion is about forecasting and Eva's involvement in setting up the Social Science Prediction Platform joint with [Stefano DellaVigna](https://eml.berkeley.edu/~sdellavi/index.html). This site tests the ability of researchers to guess the results of studies in advance accurately. Eva talks about how this opens up a fascinating opportunity to spot the most novel studies and how this might help combat the bias against null results in academia.
 
 In the article below, we summarise and illustrate these key ideas, providing more detail and further readings for listeners who want to find out more.
 
@@ -121,7 +121,7 @@ Essentially, we can think of El Niño as an "additional context" $C$, which crea
 
 One way to solve this problem is to run a new set of RCTs altogether and try just to measure $\delta_1$. But doing this at the large scale that MK did is very expensive, and long-term results are still coming out [20 years later](https://www.nber.org/papers/w27611). An alternative way is to be careful when interpreting these results in other contexts. For example, GiveWell still uses MK's studies but [discount](https://docs.google.com/spreadsheets/d/16XOOB1oWse1ICbF0OVXUYtwWwpvG3mxAAQ6LYAAndQU/edit#gid=472531943) their findings by 13% and [explicitly adjust](https://docs.google.com/document/d/18G1ibple0cSP5qk9dCyru_MLe6ghc8qbIqC1ryJCi3o/edit#) for countries' different worm burdens. Thereby GiveWell essentially tries to estimate what $\delta_3$ is and tease out $\delta_1$ accordingly.
 
-![Aid Grade](images/aidgrade.jpg)
+![AidGrade](images/aidgrade.jpg)
 
 #####  Giving out deworming tablets (Source: [The Good Life Orphanage](https://www.flickr.com/photos/63905858@N00/27273663902/in/photostream/))
 
@@ -141,7 +141,7 @@ We can imagine lots of other cases too. If an intervention boosts people wages j
 
 Additionally, we might also consider how implementing the policy itself changes as a programme becomes larger. Typically, small pilot schemes are run by academics and NGOs, highly motivated and skilled in this specific domain. When governments scale these up, we can imagine how these become less effective as bureaucracy is introduced. [Bold et al. (2013)](https://ideas.repec.org/p/csa/wpaper/2013-04.html) provide an interesting case study of this, where the same intervention has a positive effect when NGO-led but zero effects when government-led.
 
-(Eva also mentions how an alternative reason might be that academics and NGOs are also more incentivised to get significant results, so there might be more p-hacking or specification searching at play. NGOs also typically run studies with smaller samples, which are generally more affected by outliers that drive up effects)
+(Eva also mentions how an alternative reason might be that academics and NGOs are also more incentivised to get significant results, so they might put more effort into delivering an intensive treatment. NGOs also typically run studies with smaller samples, which are generally more affected by outliers that drive up effects)
 
 Fortunately, as Eva mentions, there are many organisations focused on precisely this issue of scaling up policy interventions. [Y-RISE](https://yrise.yale.edu/) is an excellent resource for listeners who are interested in more on this!
 
@@ -155,13 +155,9 @@ In particular, researchers have paid a lot of attention to internal validity. If
 
 However, just because internal validity is necessary doesn't mean it is sufficient. As we have seen, lots of things can go wrong if you have poor external validity. And in some ways, this is an easier mistake for policymakers because external validity is not as apparent a concept. As we will see, Eva pushes for researchers to pay more attention to these external validity concerns too.
 
-Eva also briefly reflects on how sometimes these two concepts are at odds. In her study on basic income, she talks about some of the design issues she had to make early on when deciding whether to include homeless people in the sample:
-
-> This was essentially a question of internal versus external validity. In some sense, it would be more externally valid to include [homeless people]. But the costs of including them would mean that we might lose a little bit on the internal validity side because, with the additional costs, we would have a smaller sample and get less precise estimates. So there are actually some real-world trade-offs between the two that people often don't realise.
-
 This trade-off is a common critique we hear about RCTs in general. Because RCTs are very good at fully randomising treatment and control groups, they are often treated as a "gold standard" for internal validity. However, as [Young (2018)](https://personal.lse.ac.uk/YoungA/ChannellingFisherQJE.pdf) points out, RCTs are very expensive to run and hence tend to have small sample sizes. This aspect makes them more susceptible to outlier observations, particularly for heterogeneous effects, and thus often predict poorly out of sample even when unbiased.
 
-## "[How Much Can We Generalise From Impact Evaluations?](https://academic.oup.com/jeea/article-abstract/18/6/3045/5908781?redirectedFrom=fulltext)"
+## [How Much Can We Generalise From Impact Evaluations?](https://academic.oup.com/jeea/article-abstract/18/6/3045/5908781) (2020 Paper)
 
 ### Collecting data in development economics
 
@@ -169,22 +165,24 @@ Eva's critical insight into this external validity question is measurable and te
 
 > I thought we have all these results; it would be great to synthesise them and say more about what works in a systematic way because any one study is probably not going to have a complete picture. I didn't quite understand the extent to which any one study doesn't have much of a picture at all.
 
-Eva set out to do this when she founded [Aid Grade](https://www.aidgrade.org/), creating a data set of 15,000+ estimates from 600+ papers on 20 types of interventions in international development. Plotting out these meta-analyses, we get the following figure (click [here](https://www.aidgrade.org/meta-analysis) for an interactive version):
+Eva set out to do this when she founded [AidGrade](https://www.aidgrade.org/), creating a data set of 15,000+ estimates from 600+ papers on 20 types of interventions in international development. Plotting out these meta-analyses, we get the following figure (click [here](https://www.aidgrade.org/meta-analysis) for an interactive version):
 
 ![Variation](images/variation.png)
 
 ### Measuring external validity
 
-The next critical insight is that we don't have to treat external validity as some binary choice which either does or does not hold in a study. Instead, we can be much more precise and look at just how much results tend to generalise. This [paper](https://academic.oup.com/jeea/article-abstract/18/6/3045/5908781?redirectedFrom=fulltext) lays out Eva's methodology, where she uses two measures that were developed initially by [Gelman and Carlin (2014)](https://journals.sagepub.com/doi/10.1177/1745691614551642):
+The next critical insight is that we don't have to treat external validity as some binary choice which either does or does not hold in a study. Instead, we can be much more precise and look at just how much results tend to generalise. This [paper](https://academic.oup.com/jeea/article-abstract/18/6/3045/5908781?redirectedFrom=fulltext) lays out Eva's methodology. She expands two measures that were developed by [Gelman and Carlin (2014)](https://journals.sagepub.com/doi/10.1177/1745691614551642) to looks at whether studies replicate in the *same* setting — that is a measure of *internal* validity. These measures are as follows: 
 
 - **Type S error:** the probability of an estimate being in the wrong direction
 - **Type M error:** the factor by which the magnitude of an effect might be overestimated
 
-A Type S error essentially looks to see if, based on other studies, our inference about different study's results will have the correct sign. For example, if all the papers suggest that deworming pills increase children's height, then a Type S error will occur if a new paper finds it to have a negative effect.
+Eva's insight was that we build on these concepts to quantify whether studies replicate in different setting — that is a measure *external* validity. This gave us a new way to test generalisability using a Bayesian model (see Eva's paper for more details on how this works).
+
+A Type S error essentially looks to see if, based on other studies, our inference about different study's results will have the correct sign. For example, in the context of external validity, if all the papers suggest that deworming pills increase children's height, then a Type S error will occur if a new paper finds it to have a negative effect.
 
 This criterion might feel like a low bar, especially since we can reasonably think that all of the 20 interventions listed will at least do *some* good. But Eva shows that a surprising amount of studies fail even this test: "an inference about another study will have the correct sign about 61% of the time for the median intervention–outcome pair". In other words, **when existing evidence suggests that an intervention is good, in almost 40% of cases, it ends up hurting people (or vice versa).**
 
-A Type M error is similar but instead looks to see how far apart our "inferred" mean is from the study's actual mean. For example, if all the papers suggest that deworming pills will increase children's weight by $X$ standard units, but a new paper finds a significant effect of $Y$, our Type M error will be of size $\frac{Y}{X}$. That is how much the study "exaggerates" from the supposed true effect. In really extreme cases, $Y$ might even fall outside any sort of confidence interval that we can construct around $X$.
+A Type M error is similar but instead looks to see how far apart our "inferred" mean is from the study's actual mean. For example, in the context of external validity, if all the papers suggest that deworming pills will increase children's weight by $X$ standard units, but a new paper finds a significant effect of $Y$, our Type M error will be of size $\frac{Y}{X}$. That is how much the study "exaggerates" from the supposed true effect. In really extreme cases, $Y$ might even fall outside any sort of confidence interval that we can construct around $X$.
 
 Again, the results are pretty shocking. "If trying to predict the treatment effect of a similar study using only the mean treatment effect in an intervention–outcome combination, the median ratio of the root-mean-squared error (pMSE) to that mean is 2.49 across intervention–outcome combinations". In other words, **when you predict a result in a new setting based on existing evidence, you'll likely be wrong by an average of 250%.** For example, if the past data on deworming suggests that it will increase children's weight by an average of +0.75kg, you should expect that a new study will be anywhere between -1.1kg to +2.6kg. Regarding confidence intervals, Eva found that one paper's confidence interval will only contain the mean of a similar study 53% of the time.
 
@@ -214,7 +212,7 @@ Eva also notes that her results also shouldn't just be seen as doom and gloom. I
 
 > The fact that we can't generalise very well from one context to another doesn't say we should give up the whole enterprise. It says that we should have more local studies if that's the way you want to go. If you need certainty, then you should be doing more studies, not less.
 
-There are some steps that researchers can take to help improve this situation. One is to better communicate to policymakers (and the public at large) about interpreting results. The impact evaluations briefs that policymakers see are much shorter than the academic papers they are based on. Eva notes that major publications like the World Development Report or Campbell Collaborations do not include essential information on contexts, study design, or even standard errors.
+There are some steps that researchers can take to help improve this situation. One is to better communicate to policymakers (and the public at large) about interpreting results. The impact evaluations briefs that policymakers see are much shorter than the academic papers they are based on. Eva notes that major publications like the World Development Report often do not include essential information on contexts, study design, or even standard errors.
 
 Other times, the information is, in fact, not even presented in the original study. In AidGrade's dataset, 20% of papers did not make it clear what type of organisation implemented the program, 25% failed to report how much time had elapsed from the intervention to the collection of data, and fewer than 10% reported a causal chain by which an intervention was thought to work. As we have seen, though, this information can be vital for decision-makers when interpreting the evidence.
 
@@ -248,7 +246,7 @@ Firstly, if academics are pretty good at forecasting studies in advance, we can 
 
 Whilst Eva notes that these forecasts are not perfect, they can still be instrumental:
 
-> If you are using [forecasts] in a more principled way, I think they are certainly going to be somewhat informative. I am personally of the belief that if your data source is at least partially informative, then use it. We know it's not 100% correct — nothing is 100%. But if it's partly getting you in the direction, absolutely use it.
+> If you are using [forecasts] in a more principled way, I think they are certainly going to be somewhat informative. I am personally of the belief that if your data source is at least partially informative, then use it. We know it's not 100% correct — nothing is 100%. But if it's partly getting you in the right direction, absolutely use it.
 
 This is a similar effort to other projects that attempt to crowdsource opinions on meta-science. For example, in the wake of the [replication crisis](https://en.wikipedia.org/wiki/Replication_crisis), many organisations have attempted to gather expert opinions to predict what social science studies are robust — as trying to replicate all of them is way too large an undertaking. DARPA's [SCORE](https://www.darpa.mil/program/systematizing-confidence-in-open-research-and-evidence) Project is the most major undertaking, but there are also other [replication markets](https://www.replicationmarkets.com/) that anyone can get involved with (see [here](https://fantasticanachronism.com/2020/09/11/whats-wrong-with-social-science-and-how-to-fix-it/?fbclid=IwAR2-LOl4Cfu63h6GhzI1RWhyqK9dUYFREA2hLpdg1A5tkNPhFmwOXUzZlD8#:~:text=What's Wrong with Social Science,Reading 2578 Papers | Fantastic Anachronism) for a discussion of results).
 
@@ -304,8 +302,8 @@ Whilst there are many challenges in coming up with good forecasting models, Eva 
 
 ### Resources
 
-- Eva's [website](https://evavivalt.com/)
-- Aid Grade's [website](https://www.aidgrade.org/)
+- Eva's [website](https://evavivalt.com/) — do get in touch if you are interested in this work (especially, but not exclusively, if you have web development or ML skills)
+- AidGrade's [website](https://www.aidgrade.org/)
 - SSPP's [website](https://socialscienceprediction.org/) — Grad students can earn a $25 Amazon gift card!
 - [Covid-19 Model Challenges](https://eos.wzb.eu/ipi/shiny-covid-crowdsourcing/)
 - [Article](https://fantasticanachronism.com/2020/09/11/whats-wrong-with-social-science-and-how-to-fix-it/) on DARPA's SCORE Project
