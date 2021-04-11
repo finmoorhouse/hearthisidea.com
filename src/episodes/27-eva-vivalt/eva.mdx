@@ -6,9 +6,9 @@ title: "Eva Vivalt on Evidence-Based Policy and Forecasting Social Science"
 audio: "https://pinecast.com/listen/bdc14049-63b0-4e82-bcc0-b8c8ac3bf38b.mp3"
 featuredImage: "images/eva_featured.png"
 backgroundImage: "images/eva_bg.png"
-spotify: ""
-apple: ""
-google: ""
+spotify: "https://open.spotify.com/episode/5fvfr2MBuNJf5ocP66c889?si=80181725ec024032"
+apple: "https://podcasts.apple.com/gb/podcast/27-eva-vivalt-on-evidence-based-policy-forecasting/id1496501781?i=1000516570267"
+google: "https://tinyurl.com/8bcc7err"
 status: "live"
 ---
 
@@ -85,9 +85,9 @@ External validity is "the ability to predict results outside of the sample". Her
 
 > You can have a perfectly internally valid study, but it's only valid for that one thing that happened, and it's already in the past. Even if you were to redo it in the same setting, it's not clear that you would necessarily get the same results because, if nothing else, you would have hoped that the previous treatment had changed something.
 
-For example, suppose you run a deworming programme in a rural Kenyan village. You [find](https://cega.berkeley.edu/assets/cega_research_projects/1/Identifying-Impacts-on-Education-and-Health-in-the-Presence-of-Treatment-Externalities.pdf) that this treatment ($T$) has outstanding effects on people's health ($Y$). Does this mean that running the same treatment in a UK village will produce similar benefits? Clearly not — hookworms aren't a problem in the UK, so deworming won't have an effect. Note that by the same logic running the same treatment in the *same* Kenyan village again will likely produce lower results, as we have eliminated most of the hookworms the first time.
+For example, suppose you run an anti-malaria bed nets programme in a rural Kenyan village. You find that this treatment ($T$) has outstanding effects on people's health ($Y$). Does this mean that running the same treatment in a UK village will produce similar benefits? Clearly not — malaria isn't a problem in the UK, so bed-nets won't have an effect. Note that by the same logic running the same treatment in the *same* Kenyan village again will likely produce lower results, as people will already now have bed nets from the first time.
 
-These examples are perhaps oversimplified, but we see an important point. What matters for the effectiveness of a deworming programme are the baseline rates. If there are not many worms, to begin with, then deworming will not have much of an effect. So will running the same treatment in a *different* Kenyan village produce similar benefits? It's not apparent that it will! It could be that the baseline worm infection rate is very different.
+These examples are perhaps oversimplified, but we see an important point. What greatly matters for the effectiveness of the bed-nets programme are the baseline rates. If there is not much malaria to begin with, then bed nets will not have much of an effect. So will running the same treatment in a *different* Kenyan village produce similar benefits? It's not apparent that it will! It could be that the baseline malaria infection rate is very different, such as the village being on a higher altitude.
 
 One of Eva's [papers](https://evavivalt.com/wp-content/uploads/2015/05/aer20151015.pdf) shows how we can think of external validity as linked to the idea of "Heterogenous Treatment Effects". In our case, we can't say that deworming just has one underlying treatment effect; it fundamentally changes with context. We could get lots of different results about the same intervention that are all internally valid but still different.
 
@@ -95,13 +95,14 @@ Again we start by trying to estimate the treatment effect using this basic equat
 
 $Y=\beta_0+\beta_1T+e$
 
-We run this experiment in two contexts, one with additional context $C$ and one without. This context is somehow linked to our treatment $T$ (e.g. the baseline hookworm rate matters for deworming effectiveness but differs in two villages). So our "true" equation is actually:
+We run this experiment in two contexts, one with additional context $C$ and one without. This context is somehow linked to our treatment $T$ (e.g. the baseline malaria rate matters for bed net effectiveness but differs in two villages). So our "true" equation is actually:
 
 $Y=\delta_0+\delta_1T+\delta_2C+\delta_3T*C+\epsilon$
 
-Note that if $C=0$, then $Y=\delta_0+\delta_1T+\epsilon$
+- Note that if $C=0$, then $Y=\delta_0+\delta_1T+\epsilon$
 
-Note that if $C=1$, then $Y=(\delta_0+\delta_2)+(\delta_1+\delta_3)T+\epsilon$
+- Note that if $C=1$, then $Y=(\delta_0+\delta_2)+(\delta_1+\delta_3)T+\epsilon$
+
 
 In our first study, this additional context doesn't matter ($C=0$), so our "original" treatment effect is $\delta_1$. Estimating this using our basic equation is internally valid (as we get $\hat{\beta}_0=\delta_0; \hat{\beta}_1=\delta_1$).
 
@@ -109,17 +110,15 @@ In our second study, this additional context does matter ($C=1$), so our "altern
 
 So in both studies, our basic estimation is internally valid but get different results. The underlying treatment effect is heterogeneous across the two contexts. Just running the experiment in one context and then assuming it will generalise in the other would give us misleading results.
 
-Going back to our example of deworming in rural Kenyan villages, we can now use this framework better understand the infamous '[worm wars](https://blogs.worldbank.org/impactevaluations/worm-wars-anthology)'. This academic debate was essentially about whether the original findings by [Miguel & Kremer (2004)](https://cega.berkeley.edu/assets/cega_research_projects/1/Identifying-Impacts-on-Education-and-Health-in-the-Presence-of-Treatment-Externalities.pdf) — which showed that deworming was one of the most cost-effective interventions to boost education and health outcomes — are accurate and generalisable across different contexts.
+We can use this framework better understand lots of academic debates, such as the so-called '[worm wars](https://blogs.worldbank.org/impactevaluations/worm-wars-anthology)'. This discussion was essentially about whether the original findings by [Miguel & Kremer (2004)](https://cega.berkeley.edu/assets/cega_research_projects/1/Identifying-Impacts-on-Education-and-Health-in-the-Presence-of-Treatment-Externalities.pdf) — which showed that deworming was one of the most cost-effective interventions to boost education and health outcomes — are generalisable across different contexts. The debate mattered a great deal because MK's findings are widely used as the benchmark for deworming interventions. For example, GiveWell directly cites MK as why they have deworming charities as four of their [top recommendations](https://www.givewell.org/charities/top-charities).
 
-The debate mattered a great deal because MK's findings are widely used as the benchmark for deworming interventions. GiveWell directly cites MK as why they have deworming charities as four of their [top recommendations](https://www.givewell.org/charities/top-charities).
+<div class='aside'><div>Note: In our episode with Eva, we did not actually discuss the worm wars. This example here is just to illustrate external validity in the "real world", not an actual discussion of the results. For listeners interested in this topic, you can find good discussions of this <a href='https://blog.givewell.org/2017/01/04/how-thin-the-reed-generalizing-from-worms-at-work/'>here</a> and <a href='https://blog.givewell.org/2017/01/04/how-thin-the-reed-generalizing-from-worms-at-work/'>here</a>.</div></div>
 
-There are many interesting statistical rabbit-holes that the "worm wars" delve into, and really this whole saga deserves its own episode (other podcasts have already done this, like [here](https://play.acast.com/s/rationallyspeaking/rationally-speaking-180---david-roodman-on-the-worm-wars) and [here](https://www.globaldispatchespodcast.com/the-worm-wars/)). However, one aspect particularly worth highlighting for our context is the [El Niño](https://en.wikipedia.org/wiki/El_Niño) aspect.
+One aspect particularly worth highlighting for external validity is the role of [El Niño](https://en.wikipedia.org/wiki/El_Niño). When MK did their RCT in Kenya, they ran the experiment during a time of extraordinary flooding caused by the El Niño climate pattern (which happens about once every five years). This fact meant that villages in the study had abnormally high hookworm infection rates, [possibly](https://blog.givewell.org/2012/12/05/revisiting-the-case-for-developmental-effects-of-deworming/#ExtValidity) up two-three times the standard rate. Hence, there is a reason to believe that deworming would have been unusually effective during the study and not generalise to the broader contexts that GiveWell cares about.
 
-When MK did their RCT in Kenya, they ran the experiment during a time of extraordinary flooding caused by the El Niño climate pattern (which happens about once every five years). This fact meant that villages in the study had abnormally high infection rates, [possibly](https://blog.givewell.org/2012/12/05/revisiting-the-case-for-developmental-effects-of-deworming/#ExtValidity) up two-three times the standard rate. Hence, there is a reason to believe that deworming would have been unusually effective during the study and not generalise to the broader contexts that GiveWell cares about.
+Essentially, we can think of El Niño as an "additional context" $C$, which creates a heterogeneous treatment effect. MK ended up measuring $\delta_3+\delta_1$, when most NGOs and governments are interested in $\delta_1$. Relying on El Nino estimates could overstate the actual treatment effect by $\delta_3$. This upwards bias may or may not be enough that deworming isn't one of the most cost-effective interventions out there.
 
-Essentially, we can think of El Niño as an "additional context" $C$, which creates a heterogeneous treatment effect. MK ended up measuring $\delta_3+\delta_1$, when most NGOs and governments are interested in $\delta_1$. Relying on El Nino estimates could overstate the actual treatment effect by $\delta_3$, which is potentially enough of an upwards bias that deworming isn't one of the most cost-effective interventions out there.
-
-One way to solve this problem is to run a new set of RCTs altogether and try just to measure $\delta_1$. But doing this at the large scale that MK did is very expensive, and long-term results are still coming out [20 years later](https://www.nber.org/papers/w27611). An alternative way is to be careful when interpreting these results in other contexts. For example, GiveWell still uses MK's studies but [discount](https://docs.google.com/spreadsheets/d/16XOOB1oWse1ICbF0OVXUYtwWwpvG3mxAAQ6LYAAndQU/edit#gid=472531943) their findings by 13% and [explicitly adjust](https://docs.google.com/document/d/18G1ibple0cSP5qk9dCyru_MLe6ghc8qbIqC1ryJCi3o/edit#) for countries' different worm burdens. Thereby GiveWell essentially tries to estimate what $\delta_3$ is and tease out $\delta_1$ accordingly.
+One way to solve this problem is to run a new set of RCTs altogether and try just to measure $\delta_1$. But doing this at the large scale that MK did is very expensive and takes a long time (we still have results coming out [20 years later](https://www.nber.org/papers/w27611)). Moreover, the MK study does have lots of interesting and useful information, which we don't just want to discard. An alternative way is to be careful when interpreting these findings in other contexts. For example, GiveWell uses MK's studies but [adjust](https://docs.google.com/spreadsheets/d/16XOOB1oWse1ICbF0OVXUYtwWwpvG3mxAAQ6LYAAndQU/edit#gid=472531943) their results by 13% and [explicitly account](https://docs.google.com/document/d/18G1ibple0cSP5qk9dCyru_MLe6ghc8qbIqC1ryJCi3o/edit#) for countries' different worm burdens. Thereby GiveWell essentially tries to estimate what $\delta_3$ is and tease out $\delta_1$ accordingly. Doing so, they still conclude that deworming is one of the most cost-effective interventions in global health.
 
 ![AidGrade](images/aidgrade.jpg)
 
@@ -284,11 +283,11 @@ Another crucial part of the project is the so-called "stacking" approach. The pr
 
 To give an illustrative example, suppose that I want to develop a model that can predict people's wages $Y$. If I only include a single variable, university attendance, then this will have a certain amount of weight assigned to it:
 
-$Y=\beta_0+\beta_1\text{University}+\epsilon$
+$ Y=\beta_0+\beta_1\text{University}+\epsilon $
 
 If I add an almost identical variable, like a bachelor's degree, I don't add much new explanatory power, and the weight gets split up between the two variables. If everyone who attended university also has a bachelors degree, then by definition $\beta'_1+\beta'_2=\beta_1$. So our original university variable gets less weight $\beta'_1<\beta_1$.
 
-$Y=\beta'_0+\beta'_1\text{Univeristy}+\beta'_2\text{Bachelor}+\epsilon'$
+$ Y=\beta'_0+\beta'_1\text{Univeristy}+\beta'_2\text{Bachelor}+\epsilon$
 
 More generally, we can imagine that adding variables that are correlated will decrease their respective weights. For example, adding school attendance is not identical to university (increasing our model's overall explanatory power) but still somewhat linked (decreasing the total weight given to university).
 
