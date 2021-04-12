@@ -22,7 +22,6 @@ const DarkModeToggle = () => {
         className={
           "dark-mode-toggle" + (checked ? " toggle-dark" : " toggle-light")
         }
-        amIChecked={checked}
         onClick={onChange}
       >
         <span className={"circle" + (checked ? " sun" : " moon")}></span>
