@@ -9,7 +9,7 @@ const IndexPage = () => (
     <h1>About the show</h1>
     <hr className="line" />
     <p className="introduction">
-      Hear This Idea is a podcast showcasing new thinking in philosophy, the social sciences, and effective altruism — hosted by recent grads and long-time friends <a href="https://www.finmoorhouse.com" target="_blank" rel="noopener noreferrer">Fin</a> and <a href="https://www.lucarighetti.com" target="_blank" rel="noopener noreferrer">Luca</a>. In each (≈90 minute) conversation, we ask thinkers, founders, and academics to explain their field and their work. Our guest criteria are: we find them interesting, and we want an excuse to talk to them. Our approach to asking questions is: the <a href="https://www.perell.com/tweetstorms/get-wonky" target="_blank" rel="noopener noreferrer">wonkier</a> the better. We also get further into the weeds by writing an in-depth accompanying article <a href="https://www.hearthisidea.com/episodes" target="_blank" rel="noopener noreferrer">for each episode</a>. You can browse all our guests' reading recommendations on our <Link to="/library">library page</Link>. 
+      Hear This Idea is a podcast showcasing new thinking in philosophy, the social sciences, and effective altruism. It's hosted by long-time friends <a href="https://www.finmoorhouse.com" target="_blank" rel="noopener noreferrer">Fin</a> and <a href="https://www.lucarighetti.com" target="_blank" rel="noopener noreferrer">Luca</a>, currently both research scholars at the <a href="https://www.fhi.ox.ac.uk/" target="_blank" rel="noopener noreferrer">Future of Humanity Institute</a>. Our guest criteria are: we find them interesting, and we want an excuse to talk to them. Our approach to asking questions is: the <a href="https://www.perell.com/tweetstorms/get-wonky" target="_blank" rel="noopener noreferrer">wonkier</a> the better. We write an in-depth accompanying article <a href="https://www.hearthisidea.com/episodes" target="_blank" rel="noopener noreferrer">for each episode</a>, which goes beyond the interview with reflections, reading recommendations, and extra research. You can browse all our guests' reading recommendations on our <Link to="/library">library page</Link>. 
     </p>
     <h2>Where to listen</h2>
 
@@ -83,7 +83,7 @@ const IndexPage = () => (
     </div>
     <p className="introduction">
       Finally, you can see our own book, blog, and podcast recommendations{" "}
-      <Link to="/recommendations">here</Link>. You can tip the show <a href="https://tips.pinecast.com/jar/hear-this-idea" target="_blank" rel="noopener noreferrer">here</a>.
+      <Link to="/recommendations">here</Link>. You can tip the show <Link to="/donate">here</Link> (thanks).
     </p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
   </Layout>
