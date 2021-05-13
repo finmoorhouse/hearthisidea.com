@@ -788,5 +788,35 @@
         "type": "paper",
         "episode": "anna",
         "tags":["philosophy"]
+      },
+      {
+        "title": "Are Ideas Getting Harder to Find?",
+        "author": "Nicholas Bloom et al.",
+        "name": "Phil Trammell",
+        "image": "./book-covers/book-phil-1.jpg",
+        "link": "https://www.aeaweb.org/articles?id=10.1257/aer.20180338",
+        "type": "paper",
+        "episode": "phil",
+        "tags":["economics"]
+      },
+      {
+        "title": "Introduction to Modern Economic Growth",
+        "author": "Daron Acemoğlu",
+        "name": "Phil Trammell",
+        "image": "./book-covers/book-phil-2.jpg",
+        "link": "https://www.goodreads.com/book/show/6766763-introduction-to-modern-economic-growth",
+        "type": "book",
+        "episode": "phil",
+        "tags":["economics"]
+      },
+      {
+        "title": "Are We Approaching an Economic Singularity?",
+        "author": "William D. Nordhaus",
+        "name": "Phil Trammell",
+        "image": "./book-covers/book-phil-3.jpg",
+        "link": "https://www.nber.org/system/files/working_papers/w21547/w21547.pdf",
+        "type": "paper",
+        "episode": "phil",
+        "tags":["economics"]
       }
    ]
