@@ -42,6 +42,7 @@
     "react-katex": "^2.0.2",
     "react-star-picker": "^2.0.4",
     "react-star-rating-component": "^1.4.1",
+    "remark-html-katex": "^3.0.0",
     "remark-math": "^2.0.1"
   },
   "devDependencies": {

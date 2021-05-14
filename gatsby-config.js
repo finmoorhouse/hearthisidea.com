@@ -26,6 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
+        remarkPlugins: [ require('remark-math'), require('remark-html-katex') ] ,
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -45,12 +46,12 @@ module.exports = {
             },
           },
           `gatsby-remark-copy-linked-files`,
-          {
+         /* {
             resolve: `gatsby-remark-katex`,
             options: {
               strict: `ignore`,
             },
-          },
+          }, */
         ],
       },
     },
