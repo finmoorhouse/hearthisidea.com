@@ -1,0 +1,252 @@
+---
+number: "29"
+path: "/episodes/phil"
+date: "2021-05-12"
+title: "Phil Trammell on Economic Growth under Transformative AI"
+audio: ""
+featuredImage: "images/phil_featured.jpg"
+backgroundImage: "images/phil_background.jpg"
+spotify: ""
+apple: ""
+google: ""
+status: "live"
+---
+
+[Phil Trammell](https://philiptrammell.com/) is a graduate student in economics at the Oxford University and a research associate at the [Global Priorities Institute](https://globalprioritiesinstitute.org/).
+
+<div class="episode-image_smaller">
+<img  src="/images/phil.jpg" alt="Phil Trammell" />
+</div>
+
+How will AI change the way the economy works? Will it make us richer or leave us unemployed? Can AI increase the rate of technological discoveries and, if so, are there any limits to how quickly this might unfold?
+
+These are just some of the big questions that Phil Trammell and Anton Korinek explore in their latest [working paper](https://philiptrammell.com/static/economic_growth_under_transformative_ai.pdf). It does a great job summarising and explaining the vast range of possibilities out there. The authors wrote the article to be accessible to people without a background in macroeconomics.
+
+However, for readers who might be intimidated by a sixty-page document, this write-up will try to highlight some of the key ideas more informally. Hopefully, it should also help build a baseline understanding of some economic terms and notations, making the working paper more approachable.
+
+
+<div class='aside'>
+<div>
+Thanks for listening! We'd love to hear what you thought about it — email us at hello@hearthisidea.com or leave a rating below. You can help more people discover the podcast by <a href='https://twitter.com/intent/tweet?text=Check out Hear This Idea, a podcast showcasing new thinking in philosophy, the social sciences, and effective altruism! &url=https://www.hearthisidea.com via @hearthisidea&' about='_blank'>tweeting about it</a>. And, if you want to support the show more directly, consider <a href='https://tips.pinecast.com/jar/hear-this-idea'>leaving us a tip</a>.
+</div>
+</div>
+
+## Phil's Recommendations 📚
+
+- [Are Ideas Getting Harder to Find?](https://www.aeaweb.org/articles?id=10.1257/aer.20180338) by Nicholas Bloom et al.
+- [Introduction to Modern Economic Growth](https://www.goodreads.com/book/show/6766763-introduction-to-modern-economic-growth) by Daron Acemoğlu
+- [Are We Approaching an Economic Singularity?](https://www.nber.org/system/files/working_papers/w21547/w21547.pdf) by William D. Nordhaus
+
+
+
+<div className="bookshelf" > <Book url="https://www.aeaweb.org/articles?id=10.1257/aer.20180338" image="book-phil-1" spineColor='#444444'/> <Book url="https://www.goodreads.com/book/show/6766763-introduction-to-modern-economic-growth" image="book-phil-2" spineColor='#22231d'/> <Book url="https://www.nber.org/system/files/working_papers/w21547/w21547.pdf" image="book-phil-3" spineColor='#181818'/> </div><br/>
+
+
+
+## A toy model of the economy
+
+Before we can start looking at how AI might transform the economy, we need first to understand how the economy works — or rather how economists represent it in the model.
+The simplest way to do this is to treat all output as a single, homogeneous good. We will call this $Y$.
+
+To produce this output, we also need inputs. Economists think of two main **factors of production**: labour $L$ and capital $K$. Labour involves all the hours that *humans* work; capital involves all the physical stuff that might help, including factories, tools, desks, etc. In addition to these inputs, we also have technology $A$. This concept is more ethereal, whereby technology includes anything that can make $L$ and $K$ more productive. Examples include scientific ideas, efficient factory processes, or entrepreneurship.
+
+Putting this together, we can say that output is some function of its inputs. The more challenging problem is trying to work out what function this is.
+
+$Y=f(A,K,L)$
+
+Perhaps the most frequently used example is the **Cobb-Douglas Production Function**. This function is our supply equation. We will use this formulation:
+
+$ \alpha ????? $
+
+$ Y=AK^{ \alpha }L^{1- \alpha} $
+
+Let us work out what this equation implies about the economy. The first (and most obvious) thing to note is that output is increasing in its inputs. More capital, labour, or technology means that we can produce more output—nothing surprising there.
+
+Secondly, we multiply these inputs together. If we set any input to zero, then we will have no output at all — regardless of how much we have of the rest. For example, if we had lots of machines but no people to use them, then we're not going to be able to produce anything at all. More generally, we will find it optimal to use a mix of $K$ and $L$. This characteristic makes intuitive sense:
+
+> Capital and Labour are complements. So each worker gets more done with a better desk or better equipment in the factory. And obviously, desks and equipment are more useful when there are people to use them.
+
+What exact mix is optimal will depend on our parameter $\alpha$ (which also matter for a bunch of [other things](https://en.wikipedia.org/wiki/Cobb%E2%80%93Douglas_production_function) that we won't get into here).
+
+![](https://upload.wikimedia.org/wikipedia/commons/c/c6/Cobb_douglas.png)
+
+Thirdly, we can also see how much each marginal amount of $K$ and $L$ contribute. Under perfect competition, we should assume that factors get paid their marginal rates. As Phil explains:
+
+> At a time, capital and labour are each paid their marginal product. So that's how much extra output gets produced by adding one more worker to the system, holding the capital fixed. That'll be the going wage. And likewise, how much extra output gets produced by adding a bit of capital, that'll be the interest rate you get.
+
+This insight can give us a way to work out what determines wages $w$ and capital rents $r$ from our supply equation. We do so by differentiating and then rearranging things a bit:
+$$w = \dfrac{dY}{dK}=\alpha AK^{\alpha-1}L^{1-\alpha}$$
+$$= \alpha AK^{\alpha-1}L^{1-\alpha} * \dfrac{K}{K}$$
+$$= \alpha AK^{\alpha}L^{1-\alpha} * \dfrac{1}{K}$$
+$$= \alpha \dfrac{Y}{K}$$
+
+And likewise for labour:
+$$r = \dfrac{dY}{dL}= (1-\alpha) \dfrac{Y}{L}$$
+
+There is an inverse relationship between how much a factor gets paid and how much of it exists relative to other inputs. Again, this makes intuitive sense. If labour is scarce and the bottleneck in production, it becomes highly valuable — and vice versa. If there is more capital than workers, wages are high, and rents are low; if there is not much capital per worker, wages are low, and rents are high. Note that a rise in technology benefits both workers and owners of capital.
+
+(Looking at $w$, we see that when there is lots of $L$, the denominator increases by more than the numerator; when there is lots of $K$ or $A$, only the numerator grows).
+
+Now, we can also write a demand-side equation for our economy. If every worker gets paid $w$ and every capital owner receives $r$, then in total:
+$$Y=rK+wL$$
+
+Substituting in our equation for wages and rents, we can try and solve this equation. What we find is that, in equilibrium, supply equals demand. Neat!
+$$Y=\alpha \dfrac{Y}{K}K + (1-\alpha) \dfrac{Y}{L}L$$
+$$= \alpha Y + (1-\alpha) Y$$
+$$= Y$$
+
+For our purposes, this should be enough to draw on some interesting intuitions regarding AI. It should hopefully also help understand what the notation means. Of course, the models that economists use are much more complicated. At the moment, our economy is pretty static, and we have no idea how and why our factor inputs might increase over time (think population growth, capital accumulation, technological discoveries etc.). 
+
+If you are interested in learning more, the first "proper" model that undergraduates get taught is the [Solow-Swan Model](https://en.wikipedia.org/wiki/Solow%E2%80%93Swan_model), and my favourite online explanation of this comes from [EconomiCurtis](https://sites.google.com/site/economicurtis/intermediatemacro/solow). I'd also recommend Jones' [Introduction to Economic Growth](https://www.goodreads.com/book/show/764899.Introduction_to_Economic_Growth) as a concise and accessible textbook on this.
+
+## Thinking about growth trajectories
+
+Separately from this toy model, let us also think about what we mean by a "transformative" effect on the economy. First, it's worth keeping in my mind just how unusual our current growth rate already is. Whilst we usually don't think of a 2-3% annual rise in GDP as being particularly significant, by historical standards, the fact that it has been positive at all and consistently so is unusual. The graph below shows how the Industrial Revolution marks a clear paradigm shift in our growth trajectory. We discuss this in our very first episode with [Victoria Bateman](https://hearthisidea.com/episodes/victoria).
+
+```html
+<iframe src="https://ourworldindata.org/grapher/gdp-per-capita-maddison-2020?country=IDN~ARG~KOR~FRA~GBR~USA~AUT~IND~CHN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+```
+
+Let us now consider how this growth trajectory could change even further. Phil gives us three cases, which he believes would count as transformative:
+
+* The long-run growth rate increases
+* The growth rate itself increases without bound (Type I growth singularity)
+* Growth carries on so quickly that output approaches an asymptote — infinite output infinite time (Type II growth singularity)
+
+At first glance, we might dismiss any growth singularity as infeasible — irrespective of how impactful AI might be. Economists are typically wary of anything that breaks from the past few centuries of observations. Many of these trends have been semi-formalized, such as the [Kaldor facts](https://en.wikipedia.org/wiki/Kaldor%27s_facts), and growth models typically try to satisfy those.
+
+But given that the past few centuries have been so unusual in human history, we may be putting misplaced trust in expecting these trends to continue. Note that this can go both ways. Growth *could* explode as a singularity; growth *could* completely stagnate. The point is instead that we should perhaps be more open to thinking about growth trajectories that look very different to the present day.
+
+One obvious critique is that we cannot grow forever, at least not literally, until the end of the universe. As Phil explains, in many cases, it's just a matter of interpreting the models correctly and the assumptions they make:
+
+> It's physically impossible for there to be infinite output infinite time [...] but so is constant exponential growth. In fact, so is constant output with no growth. The universe will end at some point. So these are all impossible. I think the interesting point is that these all seem like paths that the growth trajectory could resemble, at least until we start running into some constraint that these growth models didn't have to consider historically. So if the bottleneck ends up being a natural resource constraint that isn't currently binding, like if we run out of stone.
+
+It is also hard to know when these resource constraints become binding; many people have predicted this would happen within our lifetimes, but are now widely seen as false flags. See [The Population Bomb](https://www.populationmedia.org/wp-content/uploads/2009/07/Population-Bomb-Revisited-Paul-Ehrlich-20096.pdf) or [The Club of Rome](https://en.wikipedia.org/wiki/The_Limits_to_Growth). [Nordhaus et al. (1992)](https://www.semanticscholar.org/paper/Lethal-model-2%3A-the-limits-to-growth-revisited.-Nordhaus/c549d69b2912f7105a691a96c48eeca23c5fe6a7?p2df) have an excellent discussion of this. They make the point that "just because boys have mistakenly cried 'wolf' in the past does not mean that the woods are safe". Nor does it mean that we can ignore huge obstacles to climate change. 
+
+However, techno-optimists believe that these obstacles are surmountable. Thinking into the far future, many concepts that currently seem Sci-Fi may help us overcome these constraints — such as [asteroid mining](https://en.wikipedia.org/wiki/Asteroid_mining), [space colonization](https://en.wikipedia.org/wiki/Space_colonization), or even [dyson spheres](https://en.wikipedia.org/wiki/Dyson_sphere). The future will be weird. Robin Hanson highlights this point in his [analysis](https://ieeexplore.ieee.org/abstract/document/4531461) of a growth singularity.
+
+As Phil further notes, there is nothing inherent about an economy growing to sustain a maximum of 2%:
+
+> It seems mistaken to me to write off these growth explosions as economists currently seem to be doing. Long-run growth has accelerated if you take the long view like we already in a sort of Type I singularity, where the growth rate has been increasing [...]. There's no deep theoretical reason why growth can't be much faster. Lots of processes in the world self replicate at more than 2% a year. If you put mould in a Petri dish, it will grow at more than 2% a year.
+
+## AI as a technology shock
+
+Now let us consider how we can use our toy model to think about how AI might impact the economy. As previously mentioned, our toy model does not explain where growth comes from (because it is too simplified). It could be an increase in $A$, $K$, or $L$. We have not yet looked at how much each of these inputs has historically mattered. Phil gives us some insight into this question:
+
+> Capital accumulation on its own can't sustain growth because labour is too important a part of the production process. So the idea is if you keep the current technology the same, but give everyone bigger and bigger desks, as capital per worker goes to infinity like that, output just rises a bit — to some upper bound \[...\]
+> But in the developed world, we've seen exponential growth. So what must be going on is we've not just increased capital. Yet, the rise in labour is not enough to explain this (and cannot explain the increase in GDP *per* capita). So what happened?
+
+The answer is that technology — also known as Total Factor Productivity — has rapidly increased. A famous paper by [Caselli (2005)](https://www.nber.org/papers/w10828) found that technology accounts for around 60% of differences in incomes across countries today.
+
+Perhaps the most obvious way AI might affect the economy is to increase the stock of technology $A$. From our toy model, we can see that this will have an unambiguously good effect:
+
+* Output will rise
+  * $[\uparrow]Y=[\uparrow]AK^{\alpha}L^{1-\alpha}$
+* Wages will rise since AI makes workers more productive and thus more valuable
+  * $[\uparrow]w=(1-\alpha) \dfrac{[\uparrow]Y}{L}$
+* Capital rents will rise, meaning that people with stocks (or pensions) also benefit
+  * $[\uparrow]r=\alpha \dfrac{[\uparrow]Y}{K}$ 
+
+But is this enough to be considered a transformative effect? A one time increase in technology will also only have a one time effect on the economy. So it is hard to imagine how this will give rise to the singularity scenarios that Phil outlined. It might just be another step in staying on our business-as-usual 2% growth trajectory, following other innovations like the washing machine and polio vaccine. A good paper on this is [Acemoglu and Restrepo (2018)](https://www.nber.org/papers/w24196).
+Some economists have even argued that new technologies like AI will fail to have the kind of significant impact on the economy that earlier inventions — like the internal combustion engine and electricity — did. See Gordon's [The Rise and Fall of American Growth](https://press.princeton.edu/books/hardcover/9780691147727/the-rise-and-fall-of-american-growth) for more on this.
+
+## AI as substituting for labour
+
+If AI as a simple technology isn't enough to have the transformative consequences that we discussed, can it affect the economy through other channels? Perhaps the channel that has received the most media attention is automation.  AI can make machines get better at the tasks that humans do. A great example is the BBC's [job risk calculator](https://www.bbc.co.uk/news/technology-34066941), which highlighted that 35% of current jobs in the UK are at high risk of computerization over the following 20 years.
+
+In our toy model, capital accumulation was not enough for sustained growth, because at some point, it gets bottlenecked by labour. This result was because capital and labour are complements. But what if AI gets so good that it can start substituting for labour instead? 
+
+We can expand our equation to account for this, introducing a so-called "constant elasticity of substitution" (f you want to understand the maths behind see [here](https://en.wikipedia.org/wiki/Constant_elasticity_of_substitution)):
+$$Y=A(\alpha K^{\gamma}+(1-\alpha)L^{\gamma})^{\dfrac{1}{\gamma}}$$
+
+Note that when $\gamma=0$ we get back our original equation, whereby $K$ and $L$ are perfect complements:
+$$\ln (Y)=\ln (A)+\frac{1}{\gamma} \ln \left(\alpha K^{\gamma}+(1-\alpha) L^{\gamma}\right)$$
+$$\lim _{\gamma \rightarrow 0} \ln (Y)=\ln (A)+\alpha \ln (K)+(1-\alpha) \ln (L) .$$
+$$Y=AK^{\alpha}L^{1-\alpha}$$
+
+And when $\gamma=1$ we $K$ and $L$ become perfect substitutes. Now $\alpha K$ and $(1-\alpha)L$ are completely interchangeable:
+$$Y=A(\alpha K^{1}+(1-\alpha)L^{1})^{\dfrac{1}{1}}$$
+$$Y=A(\alpha K+(1-\alpha)L)$$
+
+(*Tangent:* Another way to think about this has Robot AI as a separate factor input altogether. If a Robot $R$ can do everything a human can do, then we can rewrite our equation 
+$Y=AK^{\alpha}(L+R)^{1-\alpha}$)
+
+### AI as an imperfect substitute
+
+As Phil describes, even if the elasticity of substitution is permanently raised just somewhat above zero ($\gamma>0$) and machines become *imperfect* substitutes for labour, then capital accumulation is sufficient for exponential output growth. Labour is no longer a bottleneck, and we don't need a constant flow of ideas either.
+
+So the total pie will keep on growing. But will workers benefit from this, given that robots will end up outnumbering humans by a huge amount under this scenario? As long as this substitution remains imperfect ($\gamma<1$), it appears so. Again, we take a derivative to find the marginal product of labour, which will be what determines the wage:
+$$Y=A(\alpha K^{\gamma}+(1-\alpha)L^{\gamma})^{\dfrac{1}{\gamma}}$$
+$$w=\dfrac{dY}{dL}=(1−\alpha)AL^{\gamma−1}((1−\alpha)L^{\gamma}+aK^{\gamma})^{\dfrac{1}{\gamma}−1}$$
+
+This maths may look complicated, but the only thing that matters for our purposes is that so long as $0\leq\gamma<1$, an increase in $K$ increases $w$ too. That is, having more robots benefits human workers! Intuitively, human workers do still complement robots, even if just a little. And having a human worker is super valuable precisely because they can make use of so many robots.
+
+### AI as a perfect substitute
+
+This case changes drastically when robots become *perfect* substitutes for labour. It no longer makes sense to use a mix of inputs — you should only use whatever input is cheapest (a so-called corner solution). If $w<r$, then businesses will only hire workers. And if $w>r$, then businesses will only hire robots.
+$$Y=A(\alpha K+(1-\alpha)L)$$
+$$w=\dfrac{dY}{dL}=A(1-\alpha)$$
+$$r=\dfrac{dY}{dK}=A(\alpha)$$
+$$\text{If } \alpha<\dfrac{1}{2} \text{ then } w<r \text{ so only use }L; \text{if } \alpha>\dfrac{1}{2} \text{ then } w>r \text{ so only use }K $$
+
+Presumably, as advances in AI continue, we will reach a point whereby robots become cheaper than labour. [Hanson (2001)](http://mason.gmu.edu/~rhanson/aigrow.pdf) describes this as "crossing the robotics cost threshold", whereby at first human wages will rise, but this will also increase the incentive to replace them, meaning that eventually "wages fall as fast as computers prices do now".
+
+### Social consequences
+
+Of course, in real life, labour isn't homogenous, and we might imagine AI having a different impact across sectors. Phil notes that
+
+> "The central theme, if anything, of the literature on the economics of AI in general has been its likely impact on the distribution of wages."
+
+However, we may also want to generally consider what a world looks like without much use for human labour. Concerns around a rise in inequality (between wage labourers and owners of capitals) have led many to advocate for a [universal basic income](https://en.wikipedia.org/wiki/Universal_basic_income), broader distributions of shares, and even a [robot tax](http://www.nber.org/papers/w23806). Many people have discussed (and criticized) these concepts, so there is rich literature out there to explore.
+
+## AI as increasing the rate of discovery
+
+Another way through which AI may be transformative is by changing the way we make future discoveries. This idea is in line with [Griliches's (1957)](https://www.jstor.org/stable/1905380?seq=1) "inventing a method of invention". We have already seen examples of this phenomenon in the real world, such as [AI advancing science in protein folding](https://www.theguardian.com/technology/2020/nov/30/deepmind-ai-cracks-50-year-old-problem-of-biology-research). Rather than AI replacing labour, it can also solve the growth bottleneck, creating a stream of such technological discoveries. Phil describes this logic in our interview as follows:
+
+> Where does labour augmenting technology even come from? It presumably doesn't fall out of the sky. Somehow or other people make it. People think up ways to reorganize the factory or something so people can do 2% more work than they could last year. And if AI can speed up that process, then that's a whole new path to growth.
+
+A great hope here is that we might get a form of "recursive self-improvement". AI might make discoveries, which in turn help AI make even more discoveries. However, this virtuous cycle is not a given. AI would have to get better but get better at a rate *faster* at which the task gets more challenging. 
+
+> What you need for this AI recursive self-improvement thing to produce a singularity is positive research feedback. To a first approximation, you need the "*standing on the shoulders of giants*" effect to outweigh the "*fishing out*" effect. And we have no idea what these effects will be when we have AI that is as smart as AI researchers and is flexible.
+
+The same challenge exists for humans when we think about whether ideas are getting harder to find. This insight is at the core of Romer's famous model "[endogenous technological change](https://www.jstor.org/stable/2937632?seq=1)". On the one hand, we may be "standing on the shoulders of giants", whereby breakthroughs in the past greatly spill over to help with innovation in the present. [Scotchmer (1991)](https://www.aeaweb.org/articles?id=10.1257/jep.5.1.29) is a classic exploration of this idea (as are many articles related to the notion of "learning by doing"). On the other hand, we may be "fishing out" ideas, wherein advances can still be made, but only at an ever increasingly costly rate. [Bloom et al. (2020)](https://www.aeaweb.org/articles?id=10.1257/aer.20180338) is a recent and rare empirical investigation into this. Here the authors find the following:
+
+> The number of researchers required today to achieve the famous doubling of computer chip density [Moore's Law] is more than 18 times larger than the number required in the early 1970s.
+
+Whether AI (and we) can overcome these challenges remains an open question. 
+
+## Conclusion and Further Readings
+
+Now that we have taken a whistle stop of the growth and AI literature, we suggest you also check out Phil's [working paper](https://philiptrammell.com/static/economic_growth_under_transformative_ai.pdf). It goes into these concepts in much more detail. Additionally, we hope you find the links below useful.
+
+Thank you to Phil Trammell for his time.
+
+### Economic Growth
+
+* Our World in Data's [facts](https://ourworldindata.org/economic-growth) about economic growth and [argument](https://ourworldindata.org/what-is-economic-growth) for why it matters 
+* Acemoglu, Daron. ["Introduction to economic growth."](https://www.sciencedirect.com/science/article/pii/S0022053112000245?casa_token=50B6czkuctoAAAAA:_PMoqSNzuFSrSEYIFdIIs0A7OqYTR1vJ84x4GPhz_br1iwL9oA9MhDc3xkaM9_PQlZ8ivL5RZ4k) _Journal of economic theory_ 147.2 (2012): 545-550.
+* Roodman's "[Modeling the human trajectory](https://www.openphilanthropy.org/blog/modeling-human-trajectory)"
+
+### Impact of AI
+
+* Hanson, Robin, (2008), ["The Economics of the Singularity,"](http://ieeexplore.ieee.org/abstract/document/4531461/) _IEEE Spectrum_, 45 (6).
+* Aghion, Philippe, Benjamin Jones and Charles I. Jones (2017), ["AI and Economic Growth,"](https://web.stanford.edu/~chadj/AI.pdf) _Economics of Artificial Intelligence_ (forthcoming).
+* Nordhaus, William (2015), ["Are We Approaching an Economic Singularity? Information Technology and the Future of Economic Growth,"](http://cowles.yale.edu/sites/default/files/files/pub/d20/d2021.pdf) Working Paper, No. w21547, NBER.
+
+### Automation
+
+* Autor, David H. (2015), "[Why Are There Still So Many Jobs? The History and Future of Workplace Automation](https://economics.mit.edu/files/10865)," _Journal of Economic Perspectives_, Summer, 29(3), 3–30.
+* Acemoglu, Daron and Pascual Restrepo (2019), [“The Wrong Kind of AI? Artificial Intelligence and the Future of Labor Demand,"](https://www.nber.org/papers/w25682?utm_campaign=ntwh&utm_medium=email&utm_source=ntwg14) Working Paper No.25682, NBER.
+* Guerreiro, Joao, Sergio Rebelo, Pedro Teles (2017), ["Should Robots be Taxed?"](http://www.nber.org/papers/w23806) Working Paper, No.23806, NBER.
+
+### Challenges to Growth
+
+* Nordhaus, William D., Robert N. Stavins, and Martin L. Weitzman. ["Lethal model 2: The limits to growth revisited."](https://www.brookings.edu/wp-content/uploads/1992/06/1992b_bpea_nordhaus_stavins_weitzman.pdf) _Brookings papers on economic activity_ 1992.2 (1992): 1-59.
+* Gordon, R. J. (2016). ["The rise and fall of American growth: The US standard of living since the civil war,"](https://press.princeton.edu/books/hardcover/9780691147727/the-rise-and-fall-of-american-growth). Princeton University Press.
+* Bloom, Nicholas, Charles I. Jones, John Van Reenen, and Michael Webb. 2020. ["Are Ideas Getting Harder to Find?"](https://www.aeaweb.org/articles?id=10.1257/aer.20180338) American Economic Review, 110 (4): 1104-44.
+
+<div class='aside'>
+<div>
+Thanks for listening <i>and</i> reading the write-up! We'd love to hear what you thought about it — email us at hello@hearthisidea.com or leave a rating below. You can help more people discover the podcast by <a href='https://twitter.com/intent/tweet?text=Check out Hear This Idea, a podcast showcasing new thinking in philosophy, the social sciences, and effective altruism! &url=https://www.hearthisidea.com via @hearthisidea&' about='_blank'>tweeting about it</a>. And, if you want to support the show more directly, consider <a href='https://tips.pinecast.com/jar/hear-this-idea'>leaving us a tip</a>.
+</div>
+</div>

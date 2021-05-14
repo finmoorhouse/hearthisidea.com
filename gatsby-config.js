@@ -37,12 +37,6 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-katex`,
-            options: {
-              strict: `ignore`,
-            },
-          },
-          {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
               icon: `
@@ -51,6 +45,12 @@ module.exports = {
             },
           },
           `gatsby-remark-copy-linked-files`,
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `ignore`,
+            },
+          },
         ],
       },
     },
