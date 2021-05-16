@@ -126,6 +126,25 @@ table th {
   max-width: 400px;
   margin: 50px auto;
 }
+.episode-image_variable {
+  width: 40vw;
+  min-width: 280px;
+  margin: 50px auto;
+}
+
+.eiv-400{
+  max-width: 400px;
+}
+.eiv-500{
+  max-width: 500px;
+}
+.eiv-300{
+  max-width: 300px;
+}
+.eiv-600{
+  max-width: 600px;
+}
+
 
 @media all and (min-width: 960px) {
   .episode-image_small {
