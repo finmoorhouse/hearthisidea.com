@@ -818,5 +818,35 @@
         "type": "paper",
         "episode": "phil",
         "tags":["economics"]
+      },
+      {
+        "title": "The Greatest Show on Earth",
+        "author": "Richard Dawkins",
+        "name": "Isabelle Boemeke",
+        "image": "./book-covers/book-isabelle-1.jpg",
+        "link": "https://www.goodreads.com/book/show/6117055-the-greatest-show-on-earth",
+        "type": "book",
+        "episode": "isabelle",
+        "tags":["animals"]
+      },
+      {
+        "title": "Our Inner Ape",
+        "author": "Frans de Waal",
+        "name": "Isabelle Boemeke",
+        "image": "./book-covers/book-isabelle-2.jpg",
+        "link": "https://www.goodreads.com/book/show/257106.Our_Inner_Ape",
+        "type": "book",
+        "episode": "isabelle",
+        "tags":["animals"]
+      },
+      {
+        "title": "The Beginning of Infinity",
+        "author": "David Deutsch",
+        "name": "Isabelle Boemeke",
+        "image": "./book-covers/book-isabelle-3.jpg",
+        "link": "https://www.goodreads.com/book/show/10483171-the-beginning-of-infinity",
+        "type": "book",
+        "episode": "isabelle",
+        "tags":["philosophy"]
       }
    ]
