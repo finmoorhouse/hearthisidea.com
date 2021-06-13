@@ -53,5 +53,9 @@
     "number": "28",
     "align": "bottom",
     "color": "#192bc6"
+  },
+  {
+    "number": "31",
+    "align": "top"
   }
 ]

@@ -848,5 +848,55 @@
         "type": "book",
         "episode": "isabelle",
         "tags":["philosophy"]
+      },
+      {
+        "title": "How to Avoid a Climate Disaster",
+        "author": "Bill Gates",
+        "name": "Armond Cohen",
+        "image": "./book-covers/book-armond-1.jpg",
+        "link": "https://www.goodreads.com/book/show/52275335-how-to-avoid-a-climate-disaster",
+        "type": "book",
+        "episode": "armond",
+        "tags":["environment"]
+      },
+      {
+        "title": "A Bright Future",
+        "author": "Joshua S. Goldstein and Staffan A. Qvist",
+        "name": "Armond Cohen",
+        "image": "./book-covers/book-armond-2.jpg",
+        "link": "http://www.brightfuturebook.com/",
+        "type": "book",
+        "episode": "armond",
+        "tags":["environment"]
+      },
+      {
+        "title": "Michael Cembalest's Annual Energy Paper",
+        "author": "Michael Cembalest",
+        "name": "Armond Cohen",
+        "image": "./book-covers/book-armond-3.jpg",
+        "link": "https://privatebank.jpmorgan.com/gl/en/insights/investing/eotm/annual-energy-paper",
+        "type": "paper",
+        "episode": "armond",
+        "tags":["environment"]
+      },
+      {
+        "title": "Energy Transitions: History, Requirements, Prospects",
+        "author": "Vaclav Smil",
+        "name": "Armond Cohen",
+        "image": "./book-covers/book-armond-4.jpg",
+        "link": "https://www.goodreads.com/book/show/8110056-energy-transitions",
+        "type": "book",
+        "episode": "armond",
+        "tags":["environment"]
+      },
+      {
+        "title": "Sustainable Energy – without the hot air",
+        "author": "David MacKay",
+        "name": "Armond Cohen",
+        "image": "./book-covers/book-armond-5.jpg",
+        "link": "https://www.withouthotair.com/",
+        "type": "book",
+        "episode": "armond",
+        "tags":["environment"]
       }
    ]
