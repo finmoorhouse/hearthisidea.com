@@ -9,7 +9,10 @@ const IndexPage = () => (
     <h1>About the show</h1>
     <hr className="line" />
     <p className="introduction">
-      Hear This Idea is a podcast showcasing new thinking in philosophy, the social sciences, and effective altruism. It's hosted by long-time friends <a href="https://www.finmoorhouse.com" target="_blank" rel="noopener noreferrer">Fin</a> and <a href="https://www.lucarighetti.com" target="_blank" rel="noopener noreferrer">Luca</a>, currently both research scholars at Oxford University's <a href="https://www.fhi.ox.ac.uk/" target="_blank" rel="noopener noreferrer">Future of Humanity Institute</a>. Our guest criteria are: we find them interesting, and we want an excuse to talk to them. We write an in-depth accompanying article <a href="https://www.hearthisidea.com/episodes" target="_blank" rel="noopener noreferrer">for each episode</a>, which goes beyond the interview with reflections, reading recommendations, and extra research. You can browse all our guests' recommendations on our <Link to="/library">library page</Link> and our own recommendations <Link to="/recommendations">here</Link>. 
+      Hear This Idea is a podcast showcasing new thinking in philosophy, the social sciences, and effective altruism. It's hosted by long-time friends <a href="https://www.finmoorhouse.com" target="_blank" rel="noopener noreferrer">Fin</a> and <a href="https://www.lucarighetti.com" target="_blank" rel="noopener noreferrer">Luca</a>, currently both research scholars at Oxford University's <a href="https://www.fhi.ox.ac.uk/" target="_blank" rel="noopener noreferrer">Future of Humanity Institute</a>. Our guest criteria are: we find them interesting, and we want an excuse to talk to them. 
+    </p>
+    <p className="introduction">
+      We write an in-depth accompanying article <a href="https://www.hearthisidea.com/episodes" target="_blank" rel="noopener noreferrer">for each episode</a>, which goes beyond the interview with reflections, reading recommendations, and extra research. You can browse all our guests' recommendations on our <Link to="/library">library page</Link> and our own recommendations <Link to="/recommendations">here</Link>. 
     </p>
     <h2>Where to listen</h2>
 
