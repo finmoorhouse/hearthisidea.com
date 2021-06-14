@@ -74,19 +74,19 @@ const IndexPage = () => (
     <div className="listen-container">
       <a
         className="listen"
-        href="https://www.facebook.com/hearthisidea"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Facebook
-      </a>
-      <a
-        className="listen"
         href="https://twitter.com/hearthisidea"
         target="_blank"
         rel="noopener noreferrer"
       >
         Twitter
+      </a>
+      <a
+        className="listen"
+        href="https://www.facebook.com/hearthisidea"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Facebook
       </a>
     </div>
     <p className="introduction">
