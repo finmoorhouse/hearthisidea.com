@@ -898,5 +898,35 @@
         "type": "book",
         "episode": "armond",
         "tags":["environment"]
+      },
+      {
+        "title": "Energy Challenge Report",
+        "author": "Matthew Ives, Luca Righetti et al.",
+        "name": "Matt Ives",
+        "image": "./book-covers/book-matt-1.jpg",
+        "link": "https://site.energychallenge.info/",
+        "type": "paper",
+        "episode": "matt",
+        "tags":["environment", "economics"]
+      },
+      {
+        "title": "The Complexity Economics Revolution",
+        "author": "J. Doyne Farmer",
+        "name": "Matt Ives",
+        "image": "./book-covers/book-matt-2.jpg",
+        "link": "https://static1.squarespace.com/static/54afc2eae4b0fb47dcb12dd5/t/60cb24cb4bcca0585fe38f3d/1623925964305/complexity+economics+revolution+intro+June+12+2021.pdf",
+        "type": "book",
+        "episode": "matt",
+        "tags":["economics"]
+      },
+      {
+        "title": "Thinking in Systems: A Primer ",
+        "author": " Donella H. Meadows and Diana Wright",
+        "name": "Matt Ives",
+        "image": "./book-covers/book-matt-3.jpg",
+        "link": "https://www.goodreads.com/book/show/3828902-thinking-in-systems",
+        "type": "book",
+        "episode": "matt",
+        "tags":["economics"]
       }
    ]
