@@ -920,13 +920,43 @@
         "tags":["economics"]
       },
       {
-        "title": "Thinking in Systems: A Primer ",
-        "author": " Donella H. Meadows and Diana Wright",
+        "title": "Thinking in Systems: A Primer",
+        "author": "Donella H. Meadows and Diana Wright",
         "name": "Matt Ives",
         "image": "./book-covers/book-matt-3.jpg",
         "link": "https://www.goodreads.com/book/show/3828902-thinking-in-systems",
         "type": "book",
         "episode": "matt",
+        "tags":["economics"]
+      },
+      {
+        "title": "Black Reconstruction in America 1860-1880",
+        "author": "W.E.B. Du Bois",
+        "name": "Jeffrey Sachs",
+        "image": "./book-covers/book-sachs-1.jpg",
+        "link": "https://www.goodreads.com/book/show/184612.Black_Reconstruction_in_America_1860_1880",
+        "type": "book",
+        "episode": "sachs",
+        "tags":["economics","history"]
+      },
+      {
+        "title": "Essays in Persuasion",
+        "author": "John Maynard Keynes",
+        "name": "Jeffrey Sachs",
+        "image": "./book-covers/book-sachs-2.jpg",
+        "link": "https://www.goodreads.com/book/show/368291.Essays_in_Persuasion",
+        "type": "book",
+        "episode": "sachs",
+        "tags":["philosophy"]
+      },
+      {
+        "title": "Nichomachean Ethics ",
+        "author": "Aristotle",
+        "name": "Jeffrey Sachs",
+        "image": "./book-covers/book-sachs-3.jpg",
+        "link": "https://www.goodreads.com/book/show/229349.Nichomachean_Ethics",
+        "type": "book",
+        "episode": "sachs",
         "tags":["economics"]
       }
    ]
