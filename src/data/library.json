@@ -950,7 +950,7 @@
         "tags":["philosophy"]
       },
       {
-        "title": "Nichomachean Ethics ",
+        "title": "Nichomachean Ethics",
         "author": "Aristotle",
         "name": "Jeffrey Sachs",
         "image": "./book-covers/book-sachs-3.jpg",
@@ -958,5 +958,45 @@
         "type": "book",
         "episode": "sachs",
         "tags":["economics"]
+      },
+      {
+        "title": "Intelligent Life in the Universe",
+        "author": "Carl Sagan and Iosif Samuilovich Shklovsky",
+        "name": "Anders Sandberg",
+        "image": "./book-covers/book-anders-1.jpg",
+        "link": "https://www.goodreads.com/book/show/275567.Intelligent_Life_in_the_Universe",
+        "type": "book",
+        "episode": "anders",
+        "tags":["science"]
+      },
+      {
+        "title": "The Drake Equation",
+        "author": "Douglas A. Vakoch (ed.)",
+        "name": "Anders Sandberg",
+        "image": "./book-covers/book-anders-2.jpg",
+        "link": "https://www.cambridge.org/core/books/drake-equation/D253393BB6E6506F328A30D8293CFAC7",
+        "type": "book",
+        "episode": "anders",
+        "tags":["science"]
+      },
+      {
+        "title": "Last and First Men/Star Maker",
+        "author": "Olaf Stapledon",
+        "name": "Anders Sandberg",
+        "image": "./book-covers/book-anders-3.jpg",
+        "link": "https://www.goodreads.com/book/show/564325.Last_and_First_Men_Star_Maker",
+        "type": "book",
+        "episode": "anders",
+        "tags":["fiction"]
+      },
+      {
+        "title": "Great Mambo Chicken And The Transhuman Condition",
+        "author": "Ed Regis",
+        "name": "Anders Sandberg",
+        "image": "./book-covers/book-anders-4.jpg",
+        "link": "https://www.goodreads.com/book/show/665412.Great_Mambo_Chicken_And_The_Transhuman_Condition",
+        "type": "book",
+        "episode": "anders",
+        "tags":["history","selfImprovement"]
       }
    ]

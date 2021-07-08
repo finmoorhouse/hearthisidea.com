@@ -28,6 +28,7 @@ const LibraryPage = ({
     religion: true,
     environment: true,
     selfImprovement: true,
+    science: true,
     book: true,
     paper: true,
     article: true,
@@ -155,6 +156,11 @@ const LibraryPage = ({
         handler={() => handler("fiction")}
         FilterName="Fiction"
         FilterValue={activeCategories.fiction}
+      />
+      <FilterButton
+        handler={() => handler("science")}
+        FilterName="Science"
+        FilterValue={activeCategories.science}
       />
       <h3>Medium</h3>
       <FilterButton
