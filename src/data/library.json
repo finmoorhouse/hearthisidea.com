@@ -930,6 +930,76 @@
         "tags":["economics"]
       },
       {
+        "title": "Journal of Controversial Ideas",
+        "author": "McMahan, Minerva, and Singer (eds.)",
+        "name": "Francesca Minerva",
+        "image": "./book-covers/book-francesca-1.jpg",
+        "link": "https://journalofcontroversialideas.org/",
+        "type": "online",
+        "episode": "francesca",
+        "tags":["philosophy"]
+      },
+      {
+        "title": "Academic Freedom",
+        "author": "Conrad Russell",
+        "name": "Francesca Minerva",
+        "image": "./book-covers/book-francesca-2.jpg",
+        "link": "https://www.goodreads.com/book/show/1301846.Academic_Freedom",
+        "type": "book",
+        "episode": "francesca",
+        "tags":["philosophy","sociology"]
+      },
+      {
+        "title": "The Ethics of Cryonics",
+        "author": "Francesca Minerva",
+        "name": "Francesca Minerva",
+        "image": "./book-covers/book-francesca-3.jpg",
+        "link": "https://www.goodreads.com/book/show/40409140-the-ethics-of-cryonics",
+        "type": "book",
+        "episode": "francesca",
+        "tags":["philosophy"]
+      },
+      {
+        "title": "Euthanasia and cryothanasia",
+        "author": "Francesca Minerva and Anders Sandberg",
+        "name": "Francesca Minerva",
+        "image": "./book-covers/book-francesca-4.jpg",
+        "link": "https://philpapers.org/rec/MINEAC",
+        "type": "paper",
+        "episode": "francesca",
+        "tags":["philosophy"]
+      },
+      {
+        "title": "Survival of the Prettiest",
+        "author": "Nancy L. Etcoff",
+        "name": "Francesca Minerva",
+        "image": "./book-covers/book-francesca-5.jpg",
+        "link": "https://www.goodreads.com/book/show/106860.Survival_of_the_Prettiest",
+        "type": "book",
+        "episode": "francesca",
+        "tags":["sociology"]
+      },
+      {
+        "title": "The Beauty Bias: The Injustice of Appearance in Life and Law",
+        "author": "Deborah L. Rhode",
+        "name": "Francesca Minerva",
+        "image": "./book-covers/book-francesca-6.jpg",
+        "link": "https://www.goodreads.com/book/show/8072734-the-beauty-bias",
+        "type": "book",
+        "episode": "francesca",
+        "tags":["sociology","psychology"]
+      },
+      {
+        "title": "Beauty Pays: Why Attractive People Are More Successful",
+        "author": "Daniel S. Hamermesh",
+        "name": "Francesca Minerva",
+        "image": "./book-covers/book-francesca-7.jpg",
+        "link": "https://www.goodreads.com/book/show/11505511-beauty-pays",
+        "type": "book",
+        "episode": "francesca",
+        "tags":["sociology"]
+      },
+      {
         "title": "Black Reconstruction in America 1860-1880",
         "author": "W.E.B. Du Bois",
         "name": "Jeffrey Sachs",
