@@ -81,7 +81,7 @@ export const pageQuery = graphql`
             status
             backgroundImage {
               childImageSharp {
-                fluid(maxWidth: 600, quality: 50) {
+                fluid(maxWidth: 600, quality: 70) {
                   ...GatsbyImageSharpFluid
                 }
               }

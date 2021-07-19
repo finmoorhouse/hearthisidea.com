@@ -125,7 +125,7 @@ export const pageQuery = graphql`
         }
         backgroundImage {
           childImageSharp {
-            fluid(maxWidth: 1200, quality: 50) {
+            fluid(maxWidth: 1400, quality: 65) {
               ...GatsbyImageSharpFluid
             }
           }
