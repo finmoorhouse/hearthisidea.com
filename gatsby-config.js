@@ -88,18 +88,38 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: "UA-44315602-3",
-    //     //Defines where to place the tracking script - `true` in the head and `false` in the body
-    //     head: true,
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-KKM6HXS",
+        // https://www.gatsbyjs.com/plugins/gatsby-plugin-google-tagmanager/
+        // Include GTM in development.
+        //
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: true,
+  
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        //
+        // Defaults to null
+        defaultDataLayer: { platform: "gatsby" },
 
-    //     //  Setting this parameter is optional
-    //     anonymize: true,
-    //     //Setting this parameter is also optional
-    //     respectDNT: true,
-    //   },
+        // Defaults to false
+        enableWebVitalsTracking: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-44315602-3",
+        //Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        //  Setting this parameter is optional
+        anonymize: true,
+        //Setting this parameter is also optional
+        respectDNT: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-goatcounter`,
       options: {
