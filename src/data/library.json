@@ -1068,5 +1068,15 @@
         "type": "book",
         "episode": "anders",
         "tags":["history","selfImprovement"]
+      },
+      {
+        "title": "Mind Children: The Future of Robot and Human Intelligence",
+        "author": "Hans Moravec",
+        "name": "Anders Sandberg",
+        "image": "./book-covers/book-anders-5.jpg",
+        "link": "https://www.goodreads.com/book/show/648195.Mind_Children",
+        "type": "book",
+        "episode": "anders",
+        "tags":["science", "philosophy"]
       }
    ]
