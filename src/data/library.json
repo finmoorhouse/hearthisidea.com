@@ -1078,5 +1078,45 @@
         "type": "book",
         "episode": "anders",
         "tags":["science", "philosophy"]
+      },
+      {
+        "title": "Key Ideas Series",
+        "author": "80,000 Hours",
+        "name": "Ben Todd",
+        "image": "./book-covers/book-ben-2.jpg",
+        "link": "https://80000hours.org/key-ideas/",
+        "type": "book",
+        "episode": "ben",
+        "tags":["selfImprovement","philosophy"]
+      },
+      {
+        "title": "Career Planning Guide",
+        "author": "80,000 Hours",
+        "name": "Ben Todd",
+        "image": "./book-covers/book-ben-1.jpg",
+        "link": "https://80000hours.org/career-planning/",
+        "type": "book",
+        "episode": "ben",
+        "tags":["selfImprovement"]
+      },
+      {
+        "title": "Alex Berger on improving global health",
+        "author": "80,000 Hours",
+        "name": "Ben Todd",
+        "image": "./book-covers/book-ben-3.jpg",
+        "link": "https://80000hours.org/podcast/episodes/alexander-berger-improving-global-health-wellbeing-clear-direct-ways/",
+        "type": "audio",
+        "episode": "ben",
+        "tags":["philosophy","economics"]
+      },
+      {
+        "title": "Ben's futuristic Spotify playlist",
+        "author": "Various artists",
+        "name": "Ben Todd",
+        "image": "./book-covers/book-ben-4.jpg",
+        "link": "https://open.spotify.com/playlist/5yKyxzF12kh9fk6MNi8vYT?si=44ba1d729ca946f8",
+        "type": "book",
+        "episode": "ben",
+        "tags":["science"]
       }
    ]
