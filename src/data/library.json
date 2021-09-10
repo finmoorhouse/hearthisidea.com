@@ -1118,5 +1118,45 @@
         "type": "book",
         "episode": "ben",
         "tags":["science"]
+      },
+      {
+        "title": "The Problem of Political Authority",
+        "author": "Michael Huemer",
+        "name": "Bryan Caplan",
+        "image": "./book-covers/book-bryan-1.jpg",
+        "link": "https://www.goodreads.com/book/show/15794037-the-problem-of-political-authority",
+        "type": "book",
+        "episode": "bryan",
+        "tags":["philosophy"]
+      },
+      {
+        "title": "How to Win Friends and Influence People",
+        "author": "Dale Carnegie",
+        "name": "Bryan Caplan",
+        "image": "./book-covers/book-bryan-2.jpg",
+        "link": "https://www.goodreads.com/book/show/4865.How_to_Win_Friends_and_Influence_People",
+        "type": "book",
+        "episode": "bryan",
+        "tags":["psychology","selfImprovement"]
+      },
+      {
+        "title": "The Disaster Artist",
+        "author": "Dir. James Franco",
+        "name": "Bryan Caplan",
+        "image": "./book-covers/book-bryan-3.jpg",
+        "link": "https://letterboxd.com/film/the-disaster-artist/",
+        "type": "book",
+        "episode": "bryan",
+        "tags":["people","fiction"]
+      },
+      {
+        "title": "Hairspray",
+        "author": "",
+        "name": "Bryan Caplan",
+        "image": "./book-covers/book-bryan-4.jpg",
+        "link": "https://en.wikipedia.org/wiki/Hairspray_(musical)",
+        "type": "film",
+        "episode": "bryan",
+        "tags":["fiction"]
       }
    ]
