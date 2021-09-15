@@ -1,0 +1,347 @@
+import { Link } from "gatsby"
+import SEO from "../components/seo"
+import Layout from "../components/layout"
+import "../styles/recommendations.scss"
+
+<Layout>
+<SEO title="Advice" myStaticFeaturedImage="/library.jpg"/>
+<h1>Advice for Other Podcasters</h1>
+<hr className="line" />
+<div className="advice">
+
+Since beginning this podcast in November 2019, a few people have reached out to ask for advice about starting their own podcast, or something similar.
+
+In this page, discuss our process, give some general advice, offer some technical details, and talk about a few of our mistakes.
+
+## Our process, in brief
+
+In total, we estimate that an average episode currently takes about 20 combined hours to make, from conception to sharing. Here’s how that breaks down for us.
+
+### Arranging the interview
+
+We have a database of potential guests, about 100 names long. From this, we’ll choose some names near the top of the list to email. The criteria we use aren’t especially well-defined. Mostly, we ask ourselves: how much would we both like to spend a combined day of our lives speaking to and listening back to this person? Secondarily: are they promoting a book right now? Is there some other special reason to speak to them soon? Are they in town and potentially available for an in-person interview? And does their work fit with a ‘mini-series’ or streak of episodes that we have in mind, focusing on a particular topic?
+
+Then we send an invitation email. They’re roughly structured like this:
+
+- Introducing ourselves and the podcast
+- A sentence or two explaining what specific piece of the person’s work we appreciate
+- The main ask, in brief
+- Some specific example questions, demonstrating that we’ve already engaged with the person’s work
+- More details about the podcast (likely duration, audience demographics, prep required)
+
+Per guest who says yes to an interview, we probably spend about **2 hours** reading their work and writing the email. If the person gets back with a yes, we’ll arrange a date and begin preparing questions. We’ll send the guest a calendar invite, with a link to the video call if the interview is remote.
+
+For each guest, one of us typically takes a lead on questions and editing. That person will spend roughly **2 hours** reading more of the guest’s work, and drafting questions in a google doc. The other person will check over the questions and add any of their own.
+
+So, by the time we have an interview arranged and questions prepared, we’ve spent about **4 hours**.
+
+### Conducting the interview
+
+Most of our interviews are remote. About half an hour before the interview, we’ll find a room and set up our mics and laptops. We’ll then go through the questions we’ve written and roughly separate out who should ask what.
+
+We use [Zencastr](https://www.zencastr.com/), a video call platform which captures the guest’s audio locally (so it doesn’t get compressed before it’s recorded). When the guest arrives on the call, we’ll give a brief (2-3 minute) overview of what to expect. This means saying:
+
+- That our emphasis is on relatively long-form answers from yourself, so feel free to digress from the original question.
+- That we edit these interviews, so feel free to repeat answers and take your time to think. Just make sure you leave a small pause so it’s easier to slice up in the edit.
+- That you are welcome to listen back to the whole thing before we publish and suggest things to cut.
+- Who is a likely typical listener of this interview.
+- That we expect to take X minutes, but that it’s no problem if we need to finish up earlier.
+
+Then we hit record and begin the interview.
+
+If our questions have (say) three sections, and we know we have 90 minutes with the guest, we’ll aim to keep each section within half an hour, unless it’s going especially well. We almost always skip questions. We also move the question order around, if what the guest is saying naturally leads on to a question that we had planned to talk about later on.
+
+At the end of the interview, we’ll thank the guest, and remind them that we’ll send them an email with the edited interview and write-up before we publish it, as a courtesy in case they want to listen through and suggest changes or omissions.
+
+Pointing out in advance of the interview that retakes are ok, and that the guest has control over what ultimately to cut, makes for a far more relaxed and exploratory interview. But be careful the guest doesn’t constantly use retakes, as a crutch. This will again begin to sound less spontaneous and natural.
+
+From beginning to set up, to being packed and finished, an interview will take about **2.5 hours** on average.
+
+### Editing
+
+We currently use [Reaper](https://www.reaper.fm/) for our editing, and in the past we’ve used [Audition](https://www.adobe.com/uk/products/audition.html) and [Audacity](https://www.audacityteam.org/). An easy edit — where the interview flowed smoothly — will mostly just involve removing incidental chatter, especially long pauses, coughs, stutters, etc. Sometimes, interviews get tangled: we’ll ask a question about an earlier section or the guest will remember a point they meant to make. This requires some rearrangement, which can be quite tricky. We also cut entire questions or sections we felt didn’t go as well as the rest of the interview, or which seemed to just repeat previous answers (almost always our fault for asking the wrong question). On average, we probably cut about 25% of an interview for this reason.
+
+After the main edit, we’ll record the intro and outro. This means spending half an hour or so sketching out how we want to introduce the episode, and then recording it. This often requires multiple takes — it’s surprising how tricky it is to sound natural when what you’re doing is so contrived!
+
+In addition to editing the episode, we also apply post-production: EQ and compression in particular. When everything’s finished, we render to a mono mp3 file, normally in 96kbps.
+
+We sometimes add chapter markers, when we think they’re likely to come in useful. We use an app called [Forecast](https://overcast.fm/forecast) for this.
+
+In all, the edit takes about 4 times the length of the interview itself; so about **8 hours** for a 120 minute interview. But we expect this is unusually long, since we edit in more unnecessary detail than most podcasts!
+
+We then send the audio file to the other person to listen through (on double speed) in order to perform a sanity check.
+
+### Write-up
+
+Once the edit is done, we’ll put together the write-up. Until recently, our write-ups were very long, but nowadays they’re simpler: a collection of useful links, images, and resources mentioned in the interview. We made the change because fewer people read the entire write-up compared to listened to the episode, the write-ups took at least as long to put together as the entire episode record + edit, and at least two thirds of the value of a long write-up can be condensed to a shorter list of links and quotes.
+
+To make the write-up, we listen through the episode in full again (double speed), transcribing the best quotes and noting down links to find. We have tried making notes for the write-up in the same pass as the edit, but doing two passes actually feels a bit more effective: less backtracking because you forgot to note something.
+
+As part of this stage, we also add the guest’s reading recommendations to [our library](https://hearthisidea.com/library/), and to the write-up itself. That means adding the titles, links, etc. to a .json file of all the recommendations; and collecting images of the covers. If a cover doesn’t exist (e.g. if the guest recommends a paper), we’ll make our own.
+
+At this point, we send the audio file and a PDF version of the write-up to the guest by email, to check if they want to listen or read through and suggest changes. Normally, they’ll be happy for it to be published without checking. When the guest indicates they’re happy, we’ll upload the episode to our podcast host and schedule for it to be released on the next Monday.
+
+All this takes about **4.5 hours**.
+
+### Sharing
+
+When the write-up is finished, we’ll upload it to the website. We include an image in the page that Twitter and other websites use as the preview image when the link gets shared, which includes our logo and the guest’s name. For example:
+
+<div class="episode-image_variable max-600">
+
+![Share image](../images/advice/share-image.png)
+
+</div>
+
+Luca and I will then draft some text for the Twitter post, and schedule the tweet to be sent at the right time. We make sure the tweet gets sent a couple hours after the episode is scheduled to go live, because there’s a delay before the episode is picked up (and sometimes rehosted) by the podcast platforms like Apple Podcasts. We also post to Facebook, but these posts tend to do less well.
+
+At this point, we email the guest to say thank you, and to share the link to the episode on our website.
+
+This all takes about **1 hour**. This takes us to the full **20 hours**.
+
+We rarely take less than 20 hours and often more, so that’s more of a modal than a mean estimate.
+
+## General advice
+
+In this section, we’ll try to give some generally applicable advice about each step of this process.
+
+### Arranging interviews
+
+[Here’s an example email](https://docs.google.com/document/d/1O93_MDVsfDX4HO_j9d3kZFAFN7jslYqWBIJ0XY3NtmQ/edit?usp=sharing), which Luca sent to Gillian Hadfield.
+
+Here are some things we look out for when drafting emails, especially when approaching guests who put a high premium on their time or are otherwise harder to secure:
+
+- The best way to differentiate yourself from most journalists emailing potential guests is to demonstrate that you’ve actually read or engaged with their work. Therefore, read the guest’s work if you haven’t already. This could easily take more than an hour. Yes, the time you spend might be ‘sunk’ if the person says no. But in expectation, it’s totally worth it, because it makes it so much more likely they’ll say yes.
+- Don’t unnecessarily fawn or kowtow to the guest unless it’s genuine. This doesn’t increase the chance they’ll say yes, and probably only serves to signal that you don’t expect the guest to say yes on the merits of the interview itself. If you are a genuine mega-fan, be specific about why, as above.
+- Don’t over-elaborate. You can send details if the person responds.
+
+One thing we learned is that prospective guests are surprisingly likely to say yes, even when you’re a small podcast.
+
+That could be because it’s hard to gauge the listenership of a podcast, and most guests are going to feel uncomfortable asking directly. Therefore, if you have (i) a decent (10+) archive of episodes, and (ii) a professional-looking online presence (i.e. a thoughtfully designed website), and (iii) 10 listeners per episode, you’re going to be hard to tell apart from a podcast with 10,000 listeners per episode.
+
+Plus, if you’re asking to interview someone who doesn’t often do podcast interviews, it can just be flattering for them that somebody has expressed an interest in their work — people like the opportunity to talk about what they spend their lives thinking about! This is especially the case with academics who don’t often write or speak for a general audience: it’s easy to overlook how few opportunities some people get to explain the work they’re passionate about.
+
+If you’re doing your podcast (or similar) to precipitate some kind of change — i.e. you care about people acting on some of the ideas you share — then note that the composition of your audience is crucially important for the expected impact of your show. Think in terms of orders of magnitude rather than precise numbers: suppose you care about informing people’s choice of career. Then one motivated and interest-aligned recent graduate might be worth 1,000 ‘general audience’ listeners in terms of expected impact (I think). Who’s in your audience can therefore be a factor for whether an EA-inclined guest says yes to being on your show.
+
+Some obvious advice which we’re only beginning to fully internalise: if you ask politely and succinctly, you might as well sometimes be really optimistic with who you choose to email. The only meaningful cost is the time cost of getting familiar with the guest’s work in order to write a well-informed email. But if you really do find the guest interesting, then reading their work is hardly time fully wasted.
+
+Lastly, follow-up emails: not replying is often a polite way to reject a request for an interview without lying about having a full schedule or being honest about the interview not being quite worth your time. We tend to send one follow-up if you hear nothing back after a fortnight or so, and no more. The follow-up should just briefly ask whether the guest saw the previous email — you don’t need to restate or reinforce the case for appearing on your show, but you can mention you’re happy to answer any questions the guest had. More controversially: *don’t* ‘split the difference’ and say something to the effect that you’d be happy to do half an hour if 90 minutes is too long (etc.). If that really is a deciding factor, the guest will probably ask.
+
+### Conducting interviews
+
+[Here’s a link](https://docs.google.com/document/d/1Mu5Y_3k642p1AASAPVkp_JjI3tD8ZovQx49C9g3bKsc/edit?usp=sharing) to an example question sheet (the one we wrote for Gillian Hadfield). When we did the interview, we crossed off questions we’d asked, and left comments on the doc about what to skip, what we’re especially keen to ask, etc. The blue bullets are notes for our own use — we delete them from the copy we send to the guest.
+
+When we’re doing remote interviews, we use a ‘finger system’ to delegate questions. If I raise a finger, it means I’d like to make a point about what the guest is currently saying. If I raise a hand, it means I’m keen to ask the next question. The other person can respond with a finger or hand of his own to ‘override’ my request, if he thinks he has something better or more urgent to say.
+
+Listening back to recordings of your voice is not comfortable. Excepting experienced speakers, you will probably notice that your speech is filled with tics, filler or crutch words, stutters, ‘um’s, and other disfluencies — more than you expected. One strategy is simply to slow down. Deliberately drawing out your sentences mitigates against filling space with ‘like’s and ‘um’s while you work to turn your next thought into words. [Embrace pauses](https://hbr.org/2018/08/how-to-stop-saying-um-ah-and-you-know), too. You can easily cut these out in post, but often they’re actually best kept in. Another strategy is replacement: I know someone who used to say ‘like’ very often. For a few weeks, he made a protracted effort at turning his ‘like’s into ‘now’s. Now he sounds like he knows where he’s heading, even when he’s stumbling over words.
+
+On the other hand, don’t aim to entirely eliminate filler words. The main reason is that fully eliminating filler words is really effortful and that effort would distract from the content of what you’re saying. Filler words are not randomly distributed in speech: 60%–70% of the pauses fall at the break between clauses, and that actually gives clues about syntactic structure. [Brennan & Schober (2001)](https://psycnet.apa.org/record/2001-00042-007) demonstrated that listeners can exploit this informational value of disfluencies to comprehend speech with disfluencies *faster* and more accurately than speech without them. Filler words can be used to [signal politeness](https://www.independent.co.uk/life-style/um-filler-words-discourse-markers-why-use-er-you-know-a7665721.html), and some amount of disfluency [aids recall](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3134332/).
+
+You should also gesture with your hands if you do so in normal conversation. [Rauscher et al. (1996)](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.7479&rep=rep1&type=pdf) found an increase in disfluencies when gesturing was prevented. As well as that, [Rob Wiblin points out](https://docs.google.com/document/d/1GKu_eHf7xr-iHqpI29l7dfekiuBLlCG7v240dQiBnS0/edit?usp=sharing) that exaggerated gestures and facial expressions can make you sound more animated.
+
+Speech and writing [are different](https://www.mtholyoke.edu/acad/intrel/speech/differences.htm): verbal conversation involves short, often incomplete sentences. Reading aloud a well-constructed passage of nonfiction writing will sound turgid and unnatural. This might be why some people find it harder to engage with audiobooks compared to podcasts. The upshot is that you should almost never write out a question (or monologue) and read it verbatim. It just won’t sound right.
+
+You should also avoid what I’ll call ‘sandwich questions’. These are where the core of the question is flanked by useless speech, there to fill space or sound verbose for the sake of it. Consider:
+
+> Mm, yeah. That’s really interesting. I like that framing. I guess one other thing you might be interested in is whether there are examples from recent history which could be useful to build on here. So I was wondering, **what precedents do we have for regulatory markets?** Maybe an example could be EU’s “right to be forgotten”, or medical device standards. But I’d be really curious to hear if there are any that stand out for you.
+
+Without loss of meaning, this can become:
+
+> What precedents do we have for regulatory markets?
+
+A major crime here is partly answering your question yourself straight after you ask them. That sounds odd but it’s very natural to guess at the answer to a question immediately after you ask it. This relegates the interviewee to the role of agreeing with you rather than explaining something new to you. Don’t feel a pressure to show you know the answers in advance: asking the right kind of questions is just as good an indication that you know your stuff.
+
+The heavyweight champion of concise, meaning-dense interviewing is [Tyler Cowen](https://conversationswithtyler.com/).
+
+If you’ve prepared the direction of a conversation with the interviewee in advance, you could even get away with questions as brief as “what about X”? Spencer Greenberg does this well on his [Clearer Thinking podcast](https://www.clearerthinking.org/podcast).
+
+Sometimes, you might want to hear the guest talk about something but a pointed question would either sound unnatural or would yield a too-specific answer. Here, there are ways to (politely) just open-endedly tell your guest to speak about something: you can use imperatives as well as questions. Tim Ferriss does a good job at these “say something about X” half-questions [on his podcast](https://tim.blog/podcast/).
+
+Here are my favourite tips from [Tyler Cowen’s advice](https://marginalrevolution.com/marginalrevolution/2021/06/how-do-you-ask-good-questions.html) for asking good questions:
+
+- Highly specific questions are better on average.
+- It is often better to preface a question with a confession of some sort, or with information from yourself. That sets a standard for the respondent. Set that standard high!
+- With any possible question, ask yourself in advance: can the person being asked the question respond too easily in a vague and not very useful way? “Why did you write a book about Napoleon? Well, let me tell you, French history always fascinated me.” etc. If that is the kind of slop you might get back in response, try making the question more pointed or more specific.
+
+Rob Wiblin (of the 80K podcast) has written some [excellent interview advice](https://docs.google.com/document/d/1GKu_eHf7xr-iHqpI29l7dfekiuBLlCG7v240dQiBnS0/edit?usp=sharing) also. Here are my favourite tips:
+
+- Explain in the first minute why anyone would care about this interview.
+- It's OK for the guest to know the questions ahead of time, but they shouldn't script answers. Guests can refer to notes from time to time, but definitely not all the time.
+- [It] is important to be willing to pushback on specific arguments. It’s easy to feel obliged to politely nod your head to things you completely disagree with, but the episode will be far richer if you can get past that awkwardness. Sincere and informed disagreement is among the most engaging things to listen to.
+- A common mistake is to put down lots of questions you'd love to know the answer to, but which they don't have a practical chance of knowing the answer to (e.g. maybe nobody knows the answer). This leaves them no really good options (i.e. refuse to answer, or answer a different question, or pretend to know the answer).
+- If you’re worried that the episode will resemble a talk they’ve given a million times, consider reaching out to people who have hosted that talk, and asking for permission to use the audio. If you put a 10-15 minute talk at the start of your episode, you can dive straight into the new questions/topics that you want to cover.
+- Listeners love [...] specific data / numbers.
+
+### Building a website and social media presence
+
+A solid online presence is very useful, maybe necessary, for getting traction early on (without relying on luck). You might aim to be meaningfully active on social media, spin up an attractive website, design a simple and recognisable logo, and put enough relevant text and info on your website to feed the SEO spirit animals. Getting the basics right doesn’t need to take a lot of time or demand technical know-how.
+
+Pick a name that is short and memorable. If you’re unsure, call it ‘The [Your (Organisation) Name] Podcast’. Buy a domain that is the shortest version of that name. Ideally the name itself, but maybe something like [name-podcast.com] if [name.com] isn’t available. You can use [Google domains](https://domains.google.com/registrar) or [Netlify](https://www.netlify.com/) for this.
+
+Then get a website up and running. Something simple is not only easiest but positively desirable. Julia Galef’s podcast, [Rationally Speaking](http://rationallyspeakingpodcast.org), is one of the most popular (and best) shows in the ‘rationalism/effective altruism’ podcast world. The website isn’t trying to sell the show to you, it’s giving you just the right amount of information to know what to expect, and just the right amount of detail to [find an episode](http://rationallyspeakingpodcast.org/past-episodes/), subscribe to the show, or contact Julia.
+
+Specifically, here’s a decent default structure for your site:
+
+- Homepage
+	- Title, logo, and tagline
+  - A 1–2 paragraph description of what the show is about, and what the listener can expect
+  - Links to find the show on major podcast platforms (Apple Podcasts, Spotify, Google Podcasts, etc.)
+  - Social media links
+- Episodes page
+	- A comprehensive list of episodes, generally ordered from newest to oldest
+- Contact page
+	- Either an email address or a form
+
+I’ll say some technical things later, but there isn’t a clearly best or easiest way to set up a site like this. Even drag-and-drop-style website builders are very good these days and likely more than enough for starting out.
+
+You might also consider adding a sub-page for each episode, maybe with a transcript. This is good for [SEO](https://developers.google.com/search/docs/beginner/seo-starter-guide). 
+
+You’ll want to take some time to design a logo. No paid software required — something like [Figma](https://www.figma.com/) should be fine. The key here is that you’re designing for a 2cm×2cm square: keep it simple and recognisable while squinting. Just text is fine.
+
+The most useful social media account to have is Twitter. Pick up the shortest + most memorable username associated with your podcast name as soon as possible.
+
+Primarily, you want to use social media as a vehicle for sharing episodes. But the lessons from Austin Kleon’s book [Show Your Work](https://austinkleon.com/show-your-work/) apply also: your social media accounts can be a place for sharing snippets from interviews that you in fact found the most curious or shareworthy, or even things you come across while preparing for an interview. Do also freely promote other podcasts and particular episodes which you enjoyed. This is a positive-sum game.
+
+You might also consider getting a YouTube channel up and running, and setting up a pipeline for painlessly uploading your interviews as videos. Most likely, this’ll mean making a template, with some of your podcast branding and maybe a guest photo, onto which you can drag and drop your interview audio. I am aware that at the time of writing our podcast doesn’t yet have a YouTube channel!
+
+### Gathering feedback
+
+We are still slowly learning the importance of gathering and acting on feedback.
+
+At minimum, you want to set up an obvious means by which people can give constructive feedback if and when they want to. So at least list an email address on your website. The option of anonymity makes critical feedback easier to solicit. [Google forms](https://www.google.co.uk/forms/about/) work fine.
+
+In general, it’s hard to perfectly predict the demographics of the audience that you eventually get. And if your show ends up being useful or enjoyable for people, sometimes this is for reasons that you didn’t perfectly anticipate. Just because you didn’t invent those reasons doesn’t mean you shouldn’t lean into them once you learn about them through feedback.
+
+You may find that what you’re doing should instead be a blog, or a YouTube channel, or something entirely different. A good book about iterating on feedback is Eric Ries’ [The Lean Startup](http://theleanstartup.com/). 
+
+A note about the podcast landscape: it is far more saturated than [10, 5, even 3 years ago](https://www.statista.com/chart/10713/podcast-listeners-in-the-united-states/). Because of the relatively low barrier to entry, competition for listens is fierce. Subscribers by podcast follow a power-law distribution: about half of all listens are to the top 1% of most-listened-to podcasts, and very few listens (< 10%) are to podcasts which aren’t in the top 10%. [This page](https://a16z.com/2019/05/23/podcast-ecosystem-investing-2019/) has some interesting details.
+
+One more thing: don’t get into podcasting because you want to make [money](https://www.axios.com/podcast-business-booming-few-making-money-d560010b-538f-472f-bf9d-3ea8deb97488.html) from it. You won’t, at least not directly!
+
+## Technical advice and details
+
+In this section, we’ll give some more particular details on how we make episodes. Equipment, software, etc.
+
+Most of our organisation gets done through [Notion](https://www.notion.so), which is in general worth looking into if you haven’t yet. We’re currently on a free education plan. We used to use Notion more religiously, tracking and ticking off every item of an episode’s lifespan. But we’ve since pared it back to the aspects we find Notion is most useful for. Here’s our sidebar:
+
+<div class="episode-image_variable max-600">
+
+![Notion sidebar](../images/advice/notion.png)
+
+</div>
+
+One of these uses is collecting ideas for future guests. As mentioned, these live in a big database, which we add to whenever a new guest idea occurs to us. We select from here to choose who to email next. We both rate each guest idea and take the average score as a guide of who to email.
+
+We also use the task-tracking app [Todoist](https://todoist.com/) to track invites as well as one-off tasks, like improvements to the website and buying equipment.
+
+### Conducting Interviews
+
+You obviously don’t want to be sleepy when you’re interviewing someone, so don’t eat a large meal immediately beforehand. Sugary snacks, before or during, will make sure you’re energised but not full. Apparently [acidic](https://www.voiceoverxtra.com/article.htm?id=hs8jgh22) foods should be avoided because they dry up your mouth (so no green apples etc). Bananas are good. Bring water obviously, and something caffeinated if you need. But drinking too much coffee is bad — you’ll get frantic and more likely to ramble and speak too fast. If you need coffee, consider also taking [l-theanine](https://www.amazon.co.uk/s?k=l-theanine) to get rid of some of the jitters.
+
+Bring a notebook and a pen. You can use this to jot down points you want to pick up on later, or to draft the structure of your next question while the guest is speaking. Pen and paper is quieter and less obtrusive than a keyboard. It is also less rude if you are conducting an interview in-person.
+
+Mic placement: this will vary slightly by which mic you use, but in general you want your mouth to be close to the mic — about 6 inches or one hand’s width away. That way your voice is isolated: the volume of your voice is much louder than anything in the background. [Here is a useful guide](https://www.buzzsprout.com/blog/mic-technique-podcasting) to mic technique.
+
+If you have control over which environment you record in, go for rooms with few hard surfaces (like windows and whiteboards) and many soft surfaces (like curtains). Even hanging a couple blankets on the walls will help absorb some unwanted reverb. All else equal, I find smaller rooms sound better. Probably all this isn’t worth worrying too much about, but for what it’s worth [this post explains](https://castos.com/acoustic-treatment-for-podcasting/) ‘acoustic treatment’. A more important and obvious point is to avoid external noise. Take a moment to listen for any background hums which don’t normally consciously register — fans, air conditioning units, electronic hums. Eliminate these if it’s not too much trouble.
+
+Here was our setup for the [Anders episode](https://www.hearthisidea.com/episodes/anders):
+
+
+![Studio](../images/advice/studio.jpg)
+
+In general, wear headphones. The main advantage is that you can monitor your own voice on the fly, and make positional adjustments. This is especially useful if you’re conducting remote interviews, since you want to be able to isolate the guest’s audio from your own when editing. For this reason, ask the guest to wear headphones if possible also.
+
+If you can or must set the sample rate for your editing program, 44.1kHz is good.
+
+If you’re recording with a laptop, make sure the input is actually set to the mic you have plugged in. This might not happen by default!
+
+### Sound equipment
+
+We have two primary mics. Fin uses a [Shure SMV7](https://www.shure.com/en-GB/products/microphones/mv7), and Luca uses a [Rode Procaster](http://www.rode.com/microphones/procaster). The Shure plugs directly into a laptop, but the Rode needs to go via a pre-amplifier and an audio interface. We use the [Cloudlifter CL-1](https://www.amazon.co.uk/gp/product/B004MQSV04/) as a preamp, and the [Focusrite Scarlett](https://www.amazon.co.uk/Focusrite-Scarlett-Solo-Audio-Interface/dp/B07QR6Z1JBhttps://www.amazon.co.uk/Focusrite-Scarlett-Solo-Audio-Interface/dp/B07QR6Z1JB) as the audio interface. Approximate prices:
+
+- Shure mic: £200
+- Rode mic: £140
+- Cloudlifter: £140
+- Scarlett: £140
+- USB and XLR cables: £30
+- Total: £650
+
+This is pricey, of course, and like anything you get diminishing returns with extra spending on audio equipment. If you’re starting out and want to spend less than this, you might consider a cheaper, direct-to-USB mic:
+
+- [Blue Yeti](https://www.bluemic.com/products/yeti/) (£110)
+- [Audio-Technica AT2020USB+](https://www.amazon.co.uk/dp/B00B5ZX9FM/) (£124)
+- [Rode NT-USB](https://www.amazon.co.uk/dp/B00KQPGRRE) (£140)
+- [Rode Podcaster](http://www.rode.com/microphones/podcaster) (£180)
+- [Blue Yeti Nano](https://www.bluemic.com/products/yeti-nano/) (£100 ish) — the Yeti’s little brother
+- [Blue Snowball](https://www.bluemic.com/en-gb/products/snowball/) (£50)
+
+You might also find [this Reddit post](https://www.reddit.com/r/letsplay/comments/1brvu4/a_few_microphone_options_for_those_in_need_low/) useful.
+
+If instead you have a ≤ £1000 budget and you just care about sound quality, the ‘industry standard’ mic you see on Joe Rogan etc. is the [Shure SM7B](https://www.shure.com/en-GB/products/microphones/sm7b) (c. £350). You’ll need that plus a preamp and sound recorder (or 2 mics if you plan to speak to people).
+
+If you don’t want to use a laptop in your interviews, you’ll need a dedicated sound recorder. We used to use the [Tascam DR-60DMKII](https://www.tascam.eu/en/dr-60dmkii) but you might be better off with a Zoom recorder — best is probably the [Podtrak P4](https://zoomcorp.com/en/gb/podcast-recorders/podcast-recorders/podtrak-p4/), but the [H5](https://zoomcorp.com/en/gb/handheld-recorders/handheld-recorders/h5/) is good also. You can plug any XLR mic into this, including the SM7B and Procaster.
+
+If you also care about portability and price, consider going for the kind of ‘dynamic’ microphone that is used for stage performances. There’s a ‘go-to’ option here, which is the [Shure SM58](https://www.shure.com/en-GB/products/microphones/sm58). It sounds great, it’s £100, and by all accounts it’s practically unbreakable. I’m fairly confident this is what the [80,000 Hours podcast](https://80000hours.org/podcast/) uses.
+
+A $100 setup with good mic technique will sound better than a $1,000 setup with bad technique.
+
+### Software and editing
+
+For remote interviews, we use [Zencastr](https://zencastr.com/). It lets you video call one or multiple guests, and then records their audio. Unlike if you were to just record your screen on a Zoom call or something, Zencastr records the guest’s audio *locally*, so it doesn’t get compressed as it’s streamed across the internet. We are very happy with the generous [free plan](https://zencastr.com/pricing) and that will likely be enough for you too. Other similar remote podcast tools are available: [Squadcast](https://squadcast.fm/) and [Riverside](https://riverside.fm/) stand out.
+
+One note about Zencastr: after you finish a recording, Zencastr will prompt your guest’s browser to begin uploading their audio to the Zencastr servers. This will take something like 2-10 seconds. If your guest closes their browser immediately after you finish the recording (e.g. if you only finish the recording after saying goodbye), the upload may get interrupted and you won't get their audio. This has led to a couple of very close calls, where the guest’s browser fails to finish uploading before they quit the tab. Luckily, this is recoverable. When this happened to us (twice…) we urgently contacted the guest and asked them to re-open the link they were on, and click a button to retry the upload. The solution is just to say your thank yous and goodbyes after finishing the recording (this doesn’t hang up the call), or at least ask the guest to keep the tab open for 30 seconds after saying goodbye. You have been warned!
+
+For editing our episodes, we currently use a program called [Reaper](https://www.reaper.fm/). It’s extraordinarily fully-featured and [not too expensive](https://www.reaper.fm/purchase.php). They also have a generous and indefinitely extendable free trial. You’ll want to spend some time (about an hour) setting up various plugins and keyboard shortcuts. It’s a faff, but it’ll probably speed up your workflow by something like 25%. We both used [this excellent guide](https://podigy.co/the-complete-guide-to-podcast-editing/). If you don’t want to work through all of it, just focus on the section explaining how to set up keyboard shortcuts. Here’s a [400-page ‘up and running’ guide](https://dlz.reaper.fm/userguide/ReaperUserGuide622c.pdf) to Reaper if you need some bedtime reading.
+
+Before we switched to Reaper, we used [Audition](https://www.adobe.com/uk/products/audition.html) (packaged with the Adobe suite) and [Audacity](https://www.audacityteam.org/download/) (free). They both did a fine job, but Reaper is better.
+
+Some software-agnostic editing advice: first, [normalise](https://en.wikipedia.org/wiki/Audio_normalization) your tracks before you begin to cut them up. This means boosting the volume by a fixed amount. The peak gain for each speaker should be roughly the same; around -1dB (decibels are measured on a log scale so can be negative). Cut the speaker who isn’t speaking, so any shuffling or background noise doesn’t intrude. At some point, you might want to add (i) a compressor and (ii) an equaliser. Compression is volume control that’s dynamic over time; damping the loud sounds and boosting the quiet sounds (e.g. when the guest moves away from the mic). This makes the whole thing sound more level and ‘listenable’. Equalisers can boost or dampen specific frequency bands. This can be useful for masking annoying background noises or room resonances, as well as for making voices sound ‘warmer’ — more like an old-school radio announcer. [This article](https://medium.com/@drew.arigadas/eq-and-compression-for-podcasters-who-have-never-used-them-before-206500b1562c) gives more detail. It’s easy to overdo compression and EQ, but done well they can make the difference between sounding amateurish and professional.
+
+[This article](https://bettermarketing.pub/so-you-want-to-edit-and-mix-your-own-podcast-but-dont-know-where-to-start-9b7a99ac9fa3) gives a good general overview to editing podcasts.
+
+You’ll need to find a podcast host. In essence, a podcast is an RSS feed which lists metadata (title, description) and points to the audio file for each episode. Episodes are served and listed automatically by podcast hosts, and podcast players will just listen to the RSS feed for new episodes. You *could* do this all manually by self-hosting your episodes or paying for an AWS bucket or something, but nobody does because that would be insane. There are plenty of really excellent options here: [Podbean](https://www.podbean.com/), [Transistor](https://transistor.fm/), [Buzzsprout](https://www.buzzsprout.com/), [Simplecast](https://simplecast.com/). [Here is an article](https://www.podcastinsights.com/best-podcast-hosting/) comparing them. We use a site called [Pinecast](https://pinecast.com/), which we’re really happy with, although the pricing has gone up a little since we joined. When you’re starting out, and likely for some time afterwards, you probably won’t need to pay more than $10 per month. One thing to check for is whether your host (+ the pricing tier you’re on) enforces some promotional line in your show notes. Note that you can normally switch hosts fairly easily.
+
+To get social media sites to recognise ‘share preview’ images, you need to include some meta tags in the html. Twitter has some [specific ones](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image), and Facebook uses the [Open Graph protocol](https://ogp.me/). To make these images, we first find a fitting image with a [Creative Commons](https://creativecommons.org/) license. The best site I know of for this is [Unsplash](https://unsplash.com/). The [Public Domain Review](https://publicdomainreview.org/) is also very fun. We prepare these images in [Figma](https://www.figma.com/).
+
+For more technical image manipulation we use [Photoshop](https://www.photoshop.com/). For instance, to edit and sometimes create from scratch the book covers which feature in our [library](https://www.hearthisidea.com/library) and on each [episode page](https://www.hearthisidea.com/episodes).
+
+Our write-ups are stored as markdown files, for which we use [Typora](https://typora.io/).
+
+One last general-purpose piece of technical advice: [back everything up](https://www.google.com/search?q=amazon+2tb+hard+drive). This is not podcast-specific advice. Imagine having the opportunity to make a carbon copy of your house for the event of a fire — choosing not to take it would be inexplicably reckless!
+
+### Website
+
+You have lots of options for making a website. If you’re not a technical person, some website builders will hold your hand throughout the process. [Squarespace](https://www.squarespace.com/) is good if slightly pricey. I have less experience with [Wix](https://www.wix.com/) but I believe it’s fine.
+
+One notch up on the technical-sophistication-required ladder is [WordPress](https://en-gb.wordpress.org/download/), which should probably be the default for most people. But make sure you use WordPress dot org, the open-source software, not WordPress dot com, the for-profit host. You’ll separately need to find a host for your WP site (WP is just the software). There’s an insane number of [options](https://www.wpbeginner.com/wordpress-hosting/).
+
+You might instead consider making a ‘static site’ — meaning a site that doesn’t need to be generated by a server whenever a new user visits. Static sites are fast to load, and inexpensive to host. In fact, [Netlify](https://www.netlify.com/) will host static sites for free up to a certain amount of traffic (which we’re not close to surpassing). [GitHub Pages](https://pages.github.com/) is another excellent free option. But normally this requires some amount of technical hand-muddying, so it’s a trade-off.
+
+For what it’s worth, [Hear This Idea](https://hearthisidea.com/) is built using a static site generator called [GatsbyJS](https://www.gatsbyjs.com/), which is built on [ReactJS](https://reactjs.org/). It’s open-source and [available to view on GitHub](https://github.com/finmoorhouse/hearthisidea.com). You can fork it, or make a pull request if you spot an issue.
+
+For analytics we use [Google Analytics](https://analytics.google.com/analytics/web/) (though we require about 5% of its feature set). We used to use [GoatCounter](https://www.goatcounter.com/), which is a very simple privacy-aware alternative to GA. Recommended! To track which links people click on our site we use [Google Tag Manager](https://tagmanager.google.com/), which needs to be set up separately from GA. There’s also a way to find out (i) what people search to find you on Google; and (ii) which pages elsewhere on the web link to your website: [Google Search Console](https://search.google.com/search-console/about). It’s tremendously useful.
+
+## Our mistakes
+
+We’ll keep adding to this section as we keep making mistakes.
+
+- For our in-person interview with [Matt Ives](https://hearthisidea.com/episodes/matt), we set up the mic and plugged it into the laptop but failed to set the correct input, meaning the laptop only picked up its internal audio. Sorry Matt!
+- On two occasions, we nearly lost all the guest’s audio from a remote interview. We salvaged the audio both times, but we got lucky.
+- On one occasion, our guest was tired, and had an unexpectedly tight schedule. The interview wasn’t as good as it could have been for these reasons, and we decided not to release it. This was fully our fault and we should have just rearranged the interview.
+- On another occasion, I (Fin) got too caffeinated and started rambling and interjecting over Luca and the guest a bit too much. On the bright side, this is when the hand raising system was born.
+
+## More useful links
+
+- David Perell — [How I Produce a Podcast](https://perell.com/essay/how-i-produce-a-podcast/)
+- Michael Seibel (Y Combinator) — [Product Development Cycle Fundamentals](https://www.ycombinator.com/library/4e-product-development-cycle-fundamentals)
+- Buzzsprout — [How to promote your podcast on social media](https://www.youtube.com/watch?v=Ln168wR1YiM)
+- [Some data about the podcast ecosystem](https://a16z.com/2019/05/23/podcast-ecosystem-investing-2019/) from a16z
+- Tyler Cowen: [How do you ask good questions?](https://marginalrevolution.com/marginalrevolution/2021/06/how-do-you-ask-good-questions.html)
+- Advice from Rob Wiblin
+	- [Thoughts on why more people should make long-form interview podcasts](https://docs.google.com/document/d/1w213jquEXKBmfNnGqHGtBwRq98pLFTkbIXEBYuJVpgs/edit?usp=sharing)
+	- [Our data suggest people keep listening to podcasts even if they’re very long](https://medium.com/@robertwiblin/our-data-suggests-people-keep-listening-to-podcasts-even-if-theyre-very-long-483dcfc77c02)
+	- [What we've learned about doing interviews and podcasts](https://docs.google.com/document/d/1GKu_eHf7xr-iHqpI29l7dfekiuBLlCG7v240dQiBnS0/edit?usp=sharing)
+
+</div>
+</Layout>
+

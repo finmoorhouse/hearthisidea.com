@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const DonatePage = () => (
   <Layout>
-    <SEO title="Donate" />
+    <SEO title="Donate" myStaticFeaturedImage="/donate.jpg"/>
     <h1>Leave a tip</h1>
     <hr className="line" />
     <p className="introduction">
