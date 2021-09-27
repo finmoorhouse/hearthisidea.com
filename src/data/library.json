@@ -1158,5 +1158,35 @@
         "type": "film",
         "episode": "bryan",
         "tags":["fiction"]
+      },
+      {
+        "title": "The Collapse of Complex Societies",
+        "author": "Joseph Tainter",
+        "name": "Gillian Hadfield",
+        "image": "./book-covers/book-gillian-1.jpg",
+        "link": "https://www.goodreads.com/book/show/8211037-the-collapse-of-complex-societies",
+        "type": "book",
+        "episode": "gillian",
+        "tags":["economics","history"]
+      },
+      {
+        "title": "The Grammar of Society",
+        "author": "Cristina Bicchieri",
+        "name": "Gillian Hadfield",
+        "image": "./book-covers/book-gillian-2.jpg",
+        "link": "https://www.goodreads.com/book/show/398264.The_Grammar_of_Society",
+        "type": "book",
+        "episode": "gillian",
+        "tags":["sociology","economics"]
+      },
+      {
+        "title": "Klara and the Sun",
+        "author": "Kazuo Ishiguro",
+        "name": "Gillian Hadfield",
+        "image": "./book-covers/book-gillian-3.jpg",
+        "link": "https://www.goodreads.com/book/show/54120408-klara-and-the-sun",
+        "type": "book",
+        "episode": "gillian",
+        "tags":["fiction"]
       }
    ]
