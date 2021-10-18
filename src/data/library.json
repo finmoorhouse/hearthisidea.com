@@ -1188,5 +1188,35 @@
         "type": "book",
         "episode": "gillian",
         "tags":["fiction"]
+      },
+      {
+        "title": "The Vulnerable World Hypothesis",
+        "author": "Nick Bostrom",
+        "name": "Christoph Winter",
+        "image": "./book-covers/book-christoph-1.jpg",
+        "link": "https://www.nickbostrom.com/papers/vulnerable.pdf",
+        "type": "paper",
+        "episode": "christoph",
+        "tags":["philosophy"]
+      },
+      {
+        "title": "The Weirdest People in the World",
+        "author": "Joseph Henrich",
+        "name": "Christoph Winter",
+        "image": "./book-covers/book-christoph-2.jpg",
+        "link": "https://www.goodreads.com/en/book/show/51710349",
+        "type": "book",
+        "episode": "christoph",
+        "tags":["psychology","sociology","history"]
+      },
+      {
+        "title": "The Case for Strong Longtermism",
+        "author": "Will MacAskill and Hilary Greaves",
+        "name": "Christoph Winter",
+        "image": "./book-covers/book-christoph-3.jpg",
+        "link": "https://globalprioritiesinstitute.org/hilary-greaves-william-macaskill-the-case-for-strong-longtermism-2/",
+        "type": "paper",
+        "episode": "christoph",
+        "tags":["philosophy"]
       }
    ]
