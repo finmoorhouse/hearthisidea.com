@@ -1218,5 +1218,45 @@
         "type": "paper",
         "episode": "christoph",
         "tags":["philosophy"]
+      },
+      {
+        "title": "Soul Dust",
+        "author": "Nicholas Humphrey",
+        "name": "Keith Frankish",
+        "image": "./book-covers/book-keith-3.jpg",
+        "link": "https://www.goodreads.com/book/show/9751599-soul-dust",
+        "type": "book",
+        "episode": "keith",
+        "tags":["philosophy"]
+      },
+      {
+        "title": "Consciousness Explained",
+        "author": "Daniel Dennett",
+        "name": "Keith Frankish",
+        "image": "./book-covers/book-keith-1.jpg",
+        "link": "https://www.goodreads.com/book/show/2069.Consciousness_Explained",
+        "type": "book",
+        "episode": "keith",
+        "tags":["philosophy"]
+      },
+      {
+        "title": "Sweet Dreams",
+        "author": "Daniel Dennett",
+        "name": "Keith Frankish",
+        "image": "./book-covers/book-keith-2.jpg",
+        "link": "https://www.goodreads.com/book/show/2070.Sweet_Dreams",
+        "type": "book",
+        "episode": "keith",
+        "tags":["philosophy"]
+      },
+      {
+        "title": "A course on illusionism",
+        "author": "Keith Frankish",
+        "name": "Keith Frankish",
+        "image": "./book-covers/book-keith-5.jpg",
+        "link": "https://www.youtube.com/playlist?list=PLhgvALi0LQGXIA7cKNmGNTiQ7dpS-7dLw",
+        "type": "film",
+        "episode": "keith",
+        "tags":["philosophy"]
       }
    ]
