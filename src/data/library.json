@@ -1258,5 +1258,15 @@
         "type": "film",
         "episode": "keith",
         "tags":["philosophy"]
+      },
+      {
+        "title": "The Conscious Mind",
+        "author": "David Chalmers",
+        "name": "Keith Frankish",
+        "image": "./book-covers/book-keith-6.jpg",
+        "link": "https://www.goodreads.com/en/book/show/144960",
+        "type": "book",
+        "episode": "keith",
+        "tags":["philosophy"]
       }
    ]
