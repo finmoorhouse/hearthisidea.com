@@ -19,6 +19,7 @@ const DarkModeToggle = () => {
   return (
     <>
       <button
+      aria-label = "Dark mode toggle"
         className={
           "dark-mode-toggle" + (checked ? " toggle-dark" : " toggle-light")
         }
