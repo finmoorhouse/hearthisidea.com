@@ -55,7 +55,7 @@ const IndexPage = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        More
+        Other Apps
       </a>
     </div>
     <h2>Social media</h2>
@@ -93,7 +93,7 @@ const IndexPage = () => (
       </a>
     </div>
     <p className="introduction">
-      Finally, you can tip the show <Link to="/donate">here</Link>.
+      Finally, you can <Link to="/donate">tip the show here</Link>.
     </p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
   </Layout>
