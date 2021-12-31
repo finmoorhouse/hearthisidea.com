@@ -1,26 +1,22 @@
 @import "variables.scss";
 
+.plyr {
+  --plyr-color-main: #fddb45;
+  --plyr-audio-controls-background: var(--primary-bg);
+  --plyr-audio-control-color: var(--primary-text);
+}
+.plyr__progress {
+  cursor: pointer;
+}
+
 
 .react-h5-audio-player {
   --button-color: #333;
   margin-bottom: 40px;
   .flex {
-    background: var(--primary-bg) !important;
   }
 }
-.react-h5-audio-player .flex {
-  box-shadow: none !important;
-}
-.react-h5-audio-player .indicator {
-  background: rgb(243, 197, 45) /*rgba(0,0,0,0.82)*/ !important;
-  opacity: 1 !important;
-}
-.react-h5-audio-player .toggle-play-button {
-  background-color: var(--primary-accent) !important;
-}
-.react-h5-audio-player .pause-icon {
-  box-shadow: none !important;
-}
+
 .volumn {
   border-bottom: 15px solid var(--primary-text) !important;
 }
@@ -33,8 +29,8 @@
 .audio-info {
   margin-top: 10px;
 }
-.play-icon{
-border-left: 20px solid var(--button-color) !important;
+.play-icon {
+  border-left: 20px solid var(--button-color) !important;
 }
 .pause-icon {
   margin-left: 3.5px;
