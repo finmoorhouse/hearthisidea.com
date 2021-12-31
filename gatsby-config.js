@@ -26,7 +26,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        remarkPlugins: [ require('remark-math'), require('remark-html-katex') ] ,
+
+        //remarkPlugins: [ require('remark-math')],
+
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -45,13 +47,14 @@ module.exports = {
               elements: [`h2`, `h3`],
             },
           },
-          `gatsby-remark-copy-linked-files`,
-         /* {
-            resolve: `gatsby-remark-katex`,
+          {
+            resolve: `gatsby-remark-images`,
             options: {
-              strict: `ignore`,
+              maxWidth: 1600,
             },
-          }, */
+          },
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-katex`,
         ],
       },
     },
@@ -120,16 +123,7 @@ module.exports = {
         respectDNT: true,
       },
     },
-    {
-      resolve: `gatsby-plugin-goatcounter`,
-      options: {
-        // Either `code` or `selfHostUrl` is required.
-        // REQUIRED IF USING HOSTED GOATCOUNTER! https://[my_code].goatcounter.com
-        code: "hearthisidea",
-        head: false,
-        pixel: true,
-      },
-    },
+
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

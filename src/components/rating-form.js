@@ -71,8 +71,8 @@ const Rate = props => {
       <input type="hidden" name="form-name" value="article-rating" />
       <input type="hidden" name="episode" value={props.episode} />
       <input type="hidden" name="rating-of" value={props.ratingOf} />
-      <label for="stars">Your rating:</label>
-      <input type="hidden" name="stars" value={rating} />
+      <label for="stars" htmlFor="stars">Your rating:</label>
+      <input type="hidden" name="stars" value={rating} id="stars"/>
 
       <br />
       <StarPicker onChange={onChange} value={rating || 0} halfStars="true" size={46}/>

@@ -1,15 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="About" />
+    <Seo title="About" />
     <h1>About the show</h1>
     <hr className="line" />
     <p className="introduction">
-      Hear This Idea is a podcast showcasing new thinking in philosophy, the social sciences, and effective altruism. It's hosted by long-time friends <a href="https://www.finmoorhouse.com" target="_blank" rel="noopener noreferrer">Fin</a> and <a href="https://www.lucarighetti.com" target="_blank" rel="noopener noreferrer">Luca</a>, currently both research scholars at Oxford University's <a href="https://www.fhi.ox.ac.uk/" target="_blank" rel="noopener noreferrer">Future of Humanity Institute</a>. Our guest criteria are: we find them interesting, and we want an excuse to talk to them. 
+      Hear This Idea is a podcast about ideas that matter — showcasing new thinking in philosophy, the social sciences, and effective altruism. It's hosted by long-time friends <a href="https://www.finmoorhouse.com" target="_blank" rel="noopener noreferrer">Fin</a> and <a href="https://www.lucarighetti.com" target="_blank" rel="noopener noreferrer">Luca</a>. Fin is a Research Scholar at Oxford University's <a href="https://www.fhi.ox.ac.uk/" target="_blank" rel="noopener noreferrer">Future of Humanity Institute</a>, and Luca is a Research Fellow at <a href="https://openphilanthropy.org/" target="_blank" rel="noopener noreferrer">Open Philanthropy</a>. Our guest criteria are: we find them interesting, and we want an excuse to talk to them. 
     </p>
     <p className="introduction">
       We write an in-depth accompanying article <a href="https://www.hearthisidea.com/episodes" target="_blank" rel="noopener noreferrer">for each episode</a>, which goes beyond the interview with reflections, reading recommendations, and extra research. You can browse all our guests' recommendations on our <Link to="/library">library page</Link> and <Link to="/recommendations">our own recommendations</Link> too. 
@@ -51,11 +51,19 @@ const IndexPage = () => (
       </a>
       <a
         className="listen"
+        href="https://www.youtube.com/channel/UC4PUKlWKfBOojMBnb9P5thw"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube
+      </a>
+      <a
+        className="listen"
         href="https://pnc.st/s/hear-this-idea"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Other Apps
+        Other Podcast Apps
       </a>
     </div>
     <h2>Social media</h2>

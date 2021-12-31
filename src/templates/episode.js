@@ -8,7 +8,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
 import "katex/dist/katex.min.css"
 import "../styles/episode.scss"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Rate from "../components/rating-form"
 import Book from "../components/book"
 import TableOfContents from "../components/table-of-contents"
@@ -42,7 +42,6 @@ export default function Template({
         <div className="cover-image__wrapper">
           <div className="cover-image__text">
             <h1 className="cover-image__title">{mdx.frontmatter.title}</h1>
-
             <h2 className="date cover-image__date">{mdx.frontmatter.date}</h2>
           </div>
         </div>
@@ -51,7 +50,7 @@ export default function Template({
   }
   return (
     <Layout onTransparent={sources ? true : false}>
-      <SEO
+      <Seo
         title={mdx.frontmatter.title}
         myFeaturedImage={mdx.frontmatter.featuredImage}
         description={mdx.frontmatter.description || null}
@@ -118,8 +117,8 @@ export const pageQuery = graphql`
         spotify
         featuredImage {
           childImageSharp {
-            sizes(maxWidth: 1200) {
-              ...GatsbyImageSharpSizes
+            fixed(width: 1200) {
+              ...GatsbyImageSharpFixed
             }
           }
         }

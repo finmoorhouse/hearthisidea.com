@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react"
+import React, { useState } from "react"
 import "../styles/dark-mode-toggle.scss"
 
 const DarkModeToggle = () => {
@@ -9,17 +9,17 @@ const DarkModeToggle = () => {
     myTheme = window.__theme
   }
   const [checked, setChecked] = useState(myTheme === "dark")
-  const onChange = useCallback(e => {
+  const onChange = () => {
     if (!(typeof window === "undefined")) {
       window.__setPreferredTheme(checked ? "light" : "dark")
     }
     setChecked(!checked)
-  })
+  }
 
   return (
     <>
       <button
-      aria-label = "Dark mode toggle"
+        aria-label="Dark mode toggle"
         className={
           "dark-mode-toggle" + (checked ? " toggle-dark" : " toggle-light")
         }

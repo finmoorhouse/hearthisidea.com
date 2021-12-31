@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { graphql } from "gatsby"
+import Seo from "../components/seo"
 import PostLink from "../components/episode-link"
 import Layout from "../components/layout"
-//import Filters from "../components/episode-list-filters"
-import SEO from "../components/seo"
+//import Filters from "../components/episode-list-filters"eo from "../components/seo"
 const EpisodesPage = ({ data }) => {
   // Filter stuff --
   // const [activeCategories, setActiveCategories] = useState({
@@ -40,7 +40,7 @@ const EpisodesPage = ({ data }) => {
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .filter(function(edge) {
       // This is currently a dumpster fire!
-      let MetaObject = MetadataDict[edge.node.frontmatter.number.toString()]
+      //let MetaObject = MetadataDict[edge.node.frontmatter.number.toString()]
       return true
     })
     .map(function(edge) {
@@ -53,7 +53,7 @@ const EpisodesPage = ({ data }) => {
     })
   return (
     <Layout>
-      <SEO title="Episodes" />
+      <Seo title="Episodes" />
       <h1 className="centered-text">Episodes</h1>
       <hr className="line centered-text" />
       {/* <Filters parentFunction={updateFilters} activeTopics={activeCategories} /> */}

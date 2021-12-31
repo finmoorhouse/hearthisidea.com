@@ -16,9 +16,6 @@ a {
   text-decoration-thickness: 1.3px;
 }
 
-html {
-  /*border: 10px solid black;*/
-}
 header {
   text-align: center;
 }
@@ -34,7 +31,6 @@ hr {
 }
 blockquote {
   opacity: 0.62;
-  /*font-style: italic;*/
   font-style: oblique;
   border-left: 4px solid var(--transparent-text);
   padding-left: 18px;
@@ -83,9 +79,6 @@ h3 {
 }
 .title {
   font-family: "Open Sans";
-  /*font-weight:600;
-  font-size: 30px;
-  color:#999;*/
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: left;
@@ -115,9 +108,6 @@ header a {
   font-weight: normal;
   font-size: 22px;
 }
-// .episode-link h2 {
-//   margin-top: 14px;
-// }
 h2 .date {
   font-size: 30px;
   margin-top: -10px;
@@ -131,9 +121,6 @@ h2 .date {
     margin-left: 0;
   }
 }
-// .episode-link {
-//   padding-top: 10px;
-// }
 .episode-link a {
   text-decoration: none;
   color: var(--primary-text);
@@ -169,7 +156,6 @@ h2 .date {
   font-size: 25px;
   width: 100%;
   font-weight: 700;
-  //margin-left: calc(50% - 120px);
 }
 .listen-container {
   display: flex;
@@ -178,9 +164,11 @@ h2 .date {
     color: #16181c;
   }
 }
-html *{
-  transition: background-color 0.4s, color 0.4s, text-decoration 0.4s, background 0.4s, border-bottom 0.4s;
-
+$transition-time: 0s;
+html * {
+  transition: background-color $transition-time, color $transition-time,
+    text-decoration $transition-time, background $transition-time,
+    border-bottom $transition-time;
 }
 .listen {
   background: var(--hti-yellow);
@@ -188,7 +176,6 @@ html *{
   margin: 13px;
   font-family: "Open Sans", sans-serif;
   font-size: 22px;
-  /*font-weight: bold;*/
 }
 .listen-container a {
   text-decoration: none;
@@ -198,10 +185,6 @@ html *{
     max-width: 100px;
     line-height: 92%;
     margin-left: 10%;
-    /*font-weight: bold;
-  font-size: 27px;
-  font-family: "Space Mono";
-color:rgba(247, 210, 3, 0.966);*/
   }
 }
 @media all and (max-width: 500px) {
@@ -268,10 +251,10 @@ iframe {
 .success-message {
   opacity: 0.5;
 }
-button{
-  border:none;
+button {
+  border: none;
 }
-.centered-text{
+.centered-text {
   text-align: center;
   margin-left: auto;
   margin-right: auto;

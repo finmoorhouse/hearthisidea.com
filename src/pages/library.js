@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 import BookLink from "../components/book-link"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import "../styles/library.scss"
 import FilterButton from "../components/filter-button"
 
@@ -88,10 +88,10 @@ const LibraryPage = ({
           />
         ))
     )
-  }, [activeCategories])
+  }, [activeCategories, edges])
   return (
     <Layout>
-      <SEO title="Library" myStaticFeaturedImage="/library.jpg"/>
+      <Seo title="Library" myStaticFeaturedImage="/library.jpg"/>
       <h1>Library</h1>
       <hr className="line" />
       <p>
