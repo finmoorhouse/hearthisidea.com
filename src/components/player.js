@@ -32,6 +32,7 @@ const Player = function({ audioSrc }) {
 
 
   // Hopefully plyr-react will support SSR rendering soon. Until then, here is a kludgy fix.
+  // I should probably switch to loadable/component as I have done for star-picker.
   // https://github.com/chintan9/plyr-react/issues/668
   
   const ClientSideOnlyLazy = React.lazy(() => import("./sub-player"))

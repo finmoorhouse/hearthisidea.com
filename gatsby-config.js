@@ -9,9 +9,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-sass`,
-    `gatsby-transformer-sharp`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,13 +19,10 @@ module.exports = {
     },
     `gatsby-transformer-csv`,
     `gatsby-transformer-json`,
-    //`gatsby-transformer-remark`,
-    `remark-math`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-
-        //remarkPlugins: [ require('remark-math')],
+        remarkPlugins: [require("remark-math")],
 
         gatsbyRemarkPlugins: [
           {
@@ -58,6 +53,9 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -100,7 +98,7 @@ module.exports = {
         //
         // Defaults to false meaning GTM will only be loaded in production.
         includeInDevelopment: true,
-  
+
         // datalayer to be set before GTM is loaded
         // should be an object or a function that is executed in the browser
         //
@@ -123,7 +121,6 @@ module.exports = {
         respectDNT: true,
       },
     },
-
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
