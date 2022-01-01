@@ -9,17 +9,14 @@
   cursor: pointer;
 }
 
-
 .react-h5-audio-player {
   --button-color: #333;
   margin-bottom: 40px;
-  .flex {
-  }
+}
+.fallback-player {
+  height: 52px;
 }
 
-.volumn {
-  border-bottom: 15px solid var(--primary-text) !important;
-}
 .toggle-play-button {
   margin-bottom: 10px;
 }
