@@ -75,7 +75,7 @@ table tr {
   padding: 0;
 }
 table tr:nth-child(2n) {
-  background-color: var(--off-bg)
+  background-color: var(--off-bg);
 }
 table tr th {
   background-color: var(--primary-bg);
@@ -130,28 +130,30 @@ table th {
   width: 40vw;
   min-width: 280px;
   margin: 50px auto;
+  img {
+    border-radius: 5px;
+  }
 }
 
-.eiv-400{
+.eiv-400 {
   max-width: 400px;
 }
-.eiv-500{
+.eiv-500 {
   max-width: 500px;
 }
-.eiv-300{
+.eiv-300 {
   max-width: 300px;
 }
-.eiv-600{
+.eiv-600 {
   max-width: 600px;
 }
-.eiv-700{
+.eiv-700 {
   max-width: 700px;
 }
-.max-600{
+.max-600 {
   width: 80vw;
   max-width: 600px;
 }
-
 
 @media all and (min-width: 960px) {
   .episode-image_small {

@@ -890,7 +890,7 @@
         "tags":["environment"]
       },
       {
-        "title": "Sustainable Energy – without the hot air",
+        "title": "Sustainable Energy - without the hot air",
         "author": "David MacKay",
         "name": "Armond Cohen",
         "image": "./book-covers/book-armond-5.jpg",
@@ -1268,5 +1268,56 @@
         "type": "book",
         "episode": "keith",
         "tags":["philosophy"]
+      },
+      {
+        "title": "Feeding Everyone No Matter What",
+        "author": "David Denkenberger",
+        "name": "Mike Hinge",
+        "image": "./book-covers/book-mike-1.jpg",
+        "link": "https://www.goodreads.com/book/show/25395278-feeding-everyone-no-matter-what",
+        "type": "book",
+        "episode": "mike",
+        "tags":["economics"]
+      },
+      {
+        "title": "Energy and Civilisation",
+        "author": "Vaclav Smil",
+        "name": "Mike Hinge",
+        "image": "./book-covers/book-mike-2.jpg",
+        "link": "https://www.goodreads.com/book/show/31850765-energy-and-civilization",
+        "type": "book",
+        "episode": "mike",
+        "tags":["economics"]
+      },
+      {
+        "title": "Estimating Deaths in a Nuclear War",
+        "author": "Neil Halloran",
+        "name": "Mike Hinge",
+        "image": "./book-covers/book-mike-3.jpg",
+        "link": "https://www.youtube.com/watch?v=bIAF7kBbGKk",
+        "type": "book",
+        "episode": "mike",
+        "tags":["economics"]
+      },
+      {
+        "title": "Nuclear Winter Responses to Nuclear War Between the United States and Russia",
+        "author": "Coupe et al.",
+        "name": "Mike Hinge",
+        "image": "./book-covers/book-mike-4.jpg",
+        "link": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JD030509",
+        "type": "book",
+        "episode": "mike",
+        "tags":["economics"]
+      },
+      {
+        "title": "Command and Control",
+        "author": "Eric Schlosser",
+        "name": "Mike Hinge",
+        "image": "./book-covers/book-mike-5.jpg",
+        "link": "https://www.goodreads.com/book/show/6452798-command-and-control",
+        "type": "book",
+        "episode": "mike",
+        "tags":["economics"]
       }
+      
    ]
