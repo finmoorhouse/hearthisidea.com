@@ -1318,6 +1318,65 @@
         "type": "book",
         "episode": "mike",
         "tags":["economics"]
+      },
+      {
+        "title": "",
+        "author": "",
+        "name": "",
+        "image": "./book-covers/book-glen-1.jpg",
+        "link": "",
+        "type": "book",
+        "episode": "glen",
+        "tags":["economics"]
+      },
+      {
+        "title": "",
+        "author": "",
+        "name": "",
+        "image": "./book-covers/book-glen-1.jpg",
+        "link": "",
+        "type": "book",
+        "episode": "glen",
+        "tags":["economics"]
+      },
+      {
+        "title": "",
+        "author": "",
+        "name": "",
+        "image": "./book-covers/book-glen-1.jpg",
+        "link": "",
+        "type": "book",
+        "episode": "glen",
+        "tags":["economics"]
+      },
+      {
+        "title": "",
+        "author": "",
+        "name": "",
+        "image": "./book-covers/book-glen-1.jpg",
+        "link": "",
+        "type": "book",
+        "episode": "michael",
+        "tags":["economics"]
+      },
+      {
+        "title": "",
+        "author": "",
+        "name": "",
+        "image": "./book-covers/book-michael-1.jpg",
+        "link": "",
+        "type": "book",
+        "episode": "michael",
+        "tags":["economics"]
+      },
+      {
+        "title": "",
+        "author": "",
+        "name": "",
+        "image": "./book-covers/book-michael-1.jpg",
+        "link": "",
+        "type": "book",
+        "episode": "michael",
+        "tags":["economics"]
       }
-      
    ]

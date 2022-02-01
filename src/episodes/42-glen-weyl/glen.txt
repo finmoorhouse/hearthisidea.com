@@ -1,0 +1,40 @@
+---
+number: "42"
+path: "/episodes/glen"
+date: "2022-01-15"
+title: "Glen Weyl on Quadratic Funding and Radical Exchange"
+audio: ""
+featuredImage: "images/michael-share.png"
+backgroundImage: "images/michael-bg.png"
+spotify: ""
+apple: ""
+google: ""
+status: "live"
+---
+
+Glen Weyl is...
+
+<div class="episode-image_variable max-600">
+
+![Michael Bhaskar](images/glen.webp)
+
+</div>
+
+##### Image credit: WIRED Magazine
+
+## Glen's recommendations
+- [How Taiwan’s Unlikely Digital Minister Hacked the Pandemic](https://www.wired.com/story/how-taiwans-unlikely-digital-minister-hacked-the-pandemic/) (WIRED magazine)
+- Why I am a Pluralist by Glen Weyl (forthcoming)
+
+- [Quadratic Payments: A Primer](https://vitalik.ca/general/2019/12/07/quadratic.html) by Vitalik Buterin
+
+<div className="bookshelf" > <Book url="https://www.goodreads.com/book/show/25395278-feeding-everyone-no-matter-what" image="book-mike-1" spineColor="#06070c"/> <Book url="https://www.goodreads.com/book/show/31850765-energy-and-civilization" image="book-mike-2" spineColor="#008a84"/> <Book url="https://www.youtube.com/watch?v=bIAF7kBbGKk" image="book-mike-3" spineColor="#3f435e"/> </div><br/>
+
+## Resources
+
+## Transcript
+
+(Copy from otter AI here)
+
+
+
