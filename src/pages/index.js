@@ -2,17 +2,64 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import "../styles/index.scss"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="About" />
     <h1>About the show</h1>
     <hr className="line" />
-    <p className="introduction">
-      Hear This Idea is a podcast about ideas that matter — showcasing new thinking in philosophy, the social sciences, and effective altruism. It's hosted by long-time friends <a href="https://www.finmoorhouse.com" target="_blank" rel="noopener noreferrer">Fin</a> and <a href="https://www.lucarighetti.com" target="_blank" rel="noopener noreferrer">Luca</a>. Hear This Idea is now an entirely personal project and not affiliated with our current employers. Our guest criteria are: we find them interesting, and we want an excuse to talk to them. 
+    <p className="introduction introduction_tagline">
+      Hear This Idea is a podcast about ideas that matter — showcasing new
+      thinking in philosophy, the social sciences, and effective altruism.
     </p>
     <p className="introduction">
-      We write an in-depth accompanying article <a href="https://www.hearthisidea.com/episodes" target="_blank" rel="noopener noreferrer">for each episode</a>, which goes beyond the interview with reflections, reading recommendations, and extra research. You can browse all our guests' recommendations on our <Link to="/library">library page</Link> and <Link to="/recommendations">our own recommendations</Link> too. 
+      The hosts are long-time friends{" "}
+      <a
+        href="https://www.finmoorhouse.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Fin
+      </a>{" "}
+      and{" "}
+      <a
+        href="https://www.lucarighetti.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Luca
+      </a>
+      . Luca is a Research Fellow at{" "}
+      <a
+        href="https://openphilanthropy.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open Philanthropy
+      </a>
+      , and Fin is a Research Scholar at the{" "}
+      <a
+        href="https://www.fhi.ox.ac.uk"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Future of Humanity Institute
+      </a>
+      . <sup>*</sup>
+    </p>
+    <p className="introduction">
+      We write an accompanying article{" "}
+      <a
+        href="https://www.hearthisidea.com/episodes"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        for each episode
+      </a>
+        {" "}which includes a full transcript, reading
+      recommendations, and as many links as we can find. You can browse all our guests'
+      recommendations on our <Link to="/library">library page</Link>.
     </p>
     <h2>Where to listen</h2>
 
@@ -102,6 +149,12 @@ const IndexPage = () => (
     </div>
     <p className="introduction">
       Finally, you can <Link to="/donate">tip the show here</Link>.
+    </p>
+    <hr />
+    <p className="small-print">
+    <sup>*</sup>
+      {" "}Small print: Hear This Idea is an entirely personal project, and is
+      not affiliated with our current employers!
     </p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
   </Layout>
