@@ -1320,63 +1320,73 @@
         "tags":["economics"]
       },
       {
-        "title": "",
-        "author": "",
-        "name": "",
-        "image": "./book-covers/book-glen-1.jpg",
-        "link": "",
-        "type": "book",
-        "episode": "glen",
-        "tags":["economics"]
-      },
-      {
-        "title": "",
-        "author": "",
-        "name": "",
-        "image": "./book-covers/book-glen-1.jpg",
-        "link": "",
-        "type": "book",
-        "episode": "glen",
-        "tags":["economics"]
-      },
-      {
-        "title": "",
-        "author": "",
-        "name": "",
-        "image": "./book-covers/book-glen-1.jpg",
-        "link": "",
-        "type": "book",
-        "episode": "glen",
-        "tags":["economics"]
-      },
-      {
-        "title": "",
-        "author": "",
-        "name": "",
-        "image": "./book-covers/book-glen-1.jpg",
-        "link": "",
-        "type": "book",
-        "episode": "michael",
-        "tags":["economics"]
-      },
-      {
-        "title": "",
-        "author": "",
-        "name": "",
+        "title": "Idea Machines Podcast",
+        "author": "Ben Reinhardt",
+        "name": "Michael",
         "image": "./book-covers/book-michael-1.jpg",
-        "link": "",
+        "link": "https://benjaminreinhardt.com/podcast/",
+        "type": "online",
+        "episode": "michael",
+        "tags":["economics"]
+      },
+      {
+        "title": "What’s New Under the Sun",
+        "author": "Matt Clancy",
+        "name": "Michael",
+        "image": "./book-covers/book-michael-2.jpg",
+        "link": "https://mattsclancy.substack.com/",
+        "type": "online",
+        "episode": "michael",
+        "tags":["economics"]
+      },
+      {
+        "title": "The Great Stagnation",
+        "author": "Tyler Cowen",
+        "name": "Michael",
+        "image": "./book-covers/book-michael-3.jpg",
+        "link": "https://en.wikipedia.org/wiki/The_Great_Stagnation",
         "type": "book",
         "episode": "michael",
         "tags":["economics"]
       },
       {
-        "title": "",
-        "author": "",
-        "name": "",
-        "image": "./book-covers/book-michael-1.jpg",
-        "link": "",
+        "title": "The Dawn of Everything: A New History of Humanity",
+        "author": "David Graeber and David Wengrow",
+        "name": "Michael",
+        "image": "./book-covers/book-michael-4.jpg",
+        "link": "https://www.goodreads.com/en/book/show/56269264",
         "type": "book",
         "episode": "michael",
-        "tags":["economics"]
+        "tags":["history"]
+      },
+      {
+        "title": "What we owe the future",
+        "author": "Will MacAskill",
+        "name": "Habiba",
+        "image": "./book-covers/book-habiba-1.jpg",
+        "link": "https://www.youtube.com/watch?v=vCpFsvYI-7Y",
+        "type": "online",
+        "episode": "habiba",
+        "tags":["philosophy"]
+      },
+      {
+        "title": "Planning a high impact career",
+        "author": "Banjamin Todd",
+        "name": "Habiba",
+        "image": "./book-covers/book-ben-2.jpg",
+        "link": "https://80000hours.org/career-planning/summary/",
+        "type": "online",
+        "episode": "habiba",
+        "tags":["selfImprovement"]
+      },
+      {
+        "title": "Be more ambitious",
+        "author": "Banjamin Todd",
+        "name": "Habiba",
+        "image": "./book-covers/book-habiba-3.jpg",
+        "link": "https://80000hours.org/articles/be-more-ambitious/",
+        "type": "online",
+        "episode": "habiba",
+        "tags":["selfImprovement"]
       }
    ]
