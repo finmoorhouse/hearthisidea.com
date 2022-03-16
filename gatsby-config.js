@@ -9,7 +9,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -19,6 +18,12 @@ module.exports = {
     },
     `gatsby-transformer-csv`,
     `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `hearthisidea.com`,
+      },
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -89,38 +94,38 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: "GTM-KKM6HXS",
-        // https://www.gatsbyjs.com/plugins/gatsby-plugin-google-tagmanager/
-        // Include GTM in development.
-        //
-        // Defaults to false meaning GTM will only be loaded in production.
-        includeInDevelopment: true,
+    // {
+    //   resolve: "gatsby-plugin-google-tagmanager",
+    //   options: {
+    //     id: "GTM-KKM6HXS",
+    //     // https://www.gatsbyjs.com/plugins/gatsby-plugin-google-tagmanager/
+    //     // Include GTM in development.
+    //     //
+    //     // Defaults to false meaning GTM will only be loaded in production.
+    //     includeInDevelopment: true,
 
-        // datalayer to be set before GTM is loaded
-        // should be an object or a function that is executed in the browser
-        //
-        // Defaults to null
-        defaultDataLayer: { platform: "gatsby" },
+    //     // datalayer to be set before GTM is loaded
+    //     // should be an object or a function that is executed in the browser
+    //     //
+    //     // Defaults to null
+    //     defaultDataLayer: { platform: "gatsby" },
 
-        // Defaults to false
-        enableWebVitalsTracking: true,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-44315602-3",
-        //Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: true,
-        //  Setting this parameter is optional
-        anonymize: true,
-        //Setting this parameter is also optional
-        respectDNT: true,
-      },
-    },
+    //     // Defaults to false
+    //     enableWebVitalsTracking: true,
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: "UA-44315602-3",
+    //     //Defines where to place the tracking script - `true` in the head and `false` in the body
+    //     head: true,
+    //     //  Setting this parameter is optional
+    //     anonymize: true,
+    //     //Setting this parameter is also optional
+    //     respectDNT: true,
+    //   },
+    // },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
