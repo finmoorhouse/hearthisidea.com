@@ -20,7 +20,7 @@ const IndexPage = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Fin
+        Fin Moorhouse
       </a>{" "}
       and{" "}
       <a
@@ -28,7 +28,7 @@ const IndexPage = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Luca
+        Luca Righetti
       </a>
       . Luca is a Research Fellow at{" "}
       <a
@@ -56,10 +56,10 @@ const IndexPage = () => (
         rel="noopener noreferrer"
       >
         for each episode
-      </a>
-        {" "}which includes a full transcript, reading
-      recommendations, and as many links as we can find. You can browse all our guests'
-      recommendations on our <Link to="/library">library page</Link>.
+      </a>{" "}
+      which includes a full transcript, reading recommendations, and as many
+      links as we can find. You can browse all our guests' recommendations on
+      our <Link to="/library">library page</Link>.
     </p>
     <h2>Where to listen</h2>
 
@@ -147,14 +147,51 @@ const IndexPage = () => (
         Facebook
       </a>
     </div>
+    <h2>The team</h2>
     <p className="introduction">
-      Finally, you can <Link to="/donate">tip the show here</Link>.
+      This show is made possible by our amazing producer and editor{" "}
+      <a
+        href="https://www.jasoncotrebil.com/en/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Jason Cotrebil
+      </a>
+      .
+    </p>
+    <p className="introduction">
+      Big thanks also to{" "}
+      <a
+        href="https://www.linkedin.com/in/claudia-moorhouse-584077206/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Claudia
+      </a>{" "}
+      for creating full transcripts of each episode.
+    </p>
+    <h2>Support the show</h2>
+    <p className="introduction">
+      The best way to support the show is to leave an honest rating on{" "}
+      <a
+        href="https://podcasts.apple.com/gb/podcast/hear-this-idea/id1496501781"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Apple Podcasts
+      </a>, {" "}
+      <a
+        href="https://open.spotify.com/show/442fxr9pe0tbDtqEikODch"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Spotify
+      </a>, or elsewhere. Written reviews are especially appreciated. You can also <Link to="/donate">tip the show here</Link>.
     </p>
     <hr />
     <p className="small-print">
-    <sup>*</sup>
-      {" "}Small print: Hear This Idea is an entirely personal project, and is
-      not affiliated with our current employers!
+      <sup>*</sup> Small print: Hear This Idea is an entirely personal project,
+      and is not affiliated with our current employers!
     </p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
   </Layout>
