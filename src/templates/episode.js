@@ -84,7 +84,7 @@ export default function Template({
         />
       </details>
       {mdx?.tableOfContents?.items ? (
-        <TableOfContents items={mdx.tableOfContents.items} />
+        <TableOfContents items={mdx.tableOfContents.items} episodePath={mdx.frontmatter.path}  />
       ) : <br/>}
       <div className="writeup">
         <MDXProvider components={components}>
