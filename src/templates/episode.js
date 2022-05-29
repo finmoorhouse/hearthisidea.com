@@ -49,6 +49,7 @@ export default function Template({
     )
   }
   return (
+    <div>
     <Layout onTransparent={sources ? true : false}>
       <Seo
         title={mdx.frontmatter.title}
@@ -98,6 +99,7 @@ export default function Template({
         &larr; See more episodes
       </Link>
     </Layout>
+    </div>
   )
 }
 export const pageQuery = graphql`

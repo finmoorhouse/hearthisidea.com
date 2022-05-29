@@ -9,8 +9,9 @@ const path = require(`path`)
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
   //Change line below to switch between old and new episode template.
-  const blogPostTemplate = path.resolve(`src/templates/episode.js`)
-  const blogListTemplate = path.resolve(`src/pages/episodes.js`)
+  // const blogPostTemplate = path.resolve(`src/templates/episode.js`)
+  const blogListTemplate = path.resolve(`src/pages/episodes/index.js`)
+  const blogPostTemplate = path.resolve(`src/pages/episodes/{mdx.slug}.js`)
   const result = await graphql(`
     {
       allMdx(
@@ -51,8 +52,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   result.data.allMdx.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
+      slug: node.frontmatter.path,
       component: blogPostTemplate,
       context: {}, // additional data can be passed via context
     })
   })
 }
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
+  if (node.internal.type === 'Mdx') {
+    let slug = node.frontmatter.path || createFilePath({ node, getNode })
+    createNodeField({
+      node,
+      name: 'slug',
+      value: slug,
+    })
+  }
+}
+ 
+ 
