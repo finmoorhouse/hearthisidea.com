@@ -59,6 +59,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   })
 }
 
+// node helps us assign slug to relavant page 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === 'Mdx') {

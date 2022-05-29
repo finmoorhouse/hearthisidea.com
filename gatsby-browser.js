@@ -10,12 +10,11 @@
 // }
 exports.onRouteUpdate = ({ location }) => scroll(location)
 
+// function that helps with remembering scroll history, continue reading where you left off
+
 const scroll = (location) => {
     const item = document.querySelectorAll(`a[href='${location.hash}']`)
-    const linked = location.hash;
-    console.log( item, linked, location);
-
-    let Position = null
+     
     if (item) {
         Position = item.offsetTop;
     }
@@ -29,16 +28,4 @@ const scroll = (location) => {
  * @param {Object} location -
  * @param {Number} [mainNavHeight] - the height of any persistent nav -> document.querySelector(`nav`)
  */
-const scrollToAnchor = (location, mainNavHeight = 0) => {
-  // Check for location so build does not fail
-  if (location && location.hash) {
-    const item = document.querySelectorAll(`a[href='${location.hash}']`).offsetTop
-    console.log(item, location);
-    window.scrollTo({
-      top: item - mainNavHeight,
-      behavior: "smooth",
-    })
-  }
-
-  return true
-}
+ 
