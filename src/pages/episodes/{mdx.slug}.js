@@ -1,15 +1,19 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { MDXProvider } from "@mdx-js/react"
+import { MDXProvider } from '@mdx-js/react'
 import Layout from '../../components/layout'
 import TableOfContents from '../../components/table-of-contents'
-
 import BackgroundImage from "gatsby-background-image"
 import { Link } from "gatsby"
 import "katex/dist/katex.min.css"
 import "../../styles/episode.scss"
-
+import Rate from "../../components/rating-form"
+import Book from "../../components/book" 
+import EpisodeLinks from "../../components/episode-links"
+import Player from "../../components/player"
+import Seo from '../../components/seo'
+const components = { Book }
 const BlogPost = ({ data: {mdx} }) => {
   let sources = null
   if (mdx.frontmatter.backgroundImage) {
@@ -44,14 +48,51 @@ const BlogPost = ({ data: {mdx} }) => {
   return (
     <div>
       <Layout pageTitle={mdx.frontmatter.title}>
+      <Seo
+        title={mdx.frontmatter.title}
+        myFeaturedImage={mdx.frontmatter.featuredImage}
+        description={mdx.frontmatter.description || null}
+      />
+
       {heroBanner}
+
+      <Player audioSrc={mdx.frontmatter.audio}></Player>
+
+      <EpisodeLinks
+        direct={mdx.frontmatter.audio || "/"}
+        apple={
+          mdx.frontmatter.apple ||
+          "https://podcasts.apple.com/gb/podcast/hear-this-idea/id1496501781"
+        }
+        spotify={
+          mdx.frontmatter.spotify ||
+          "https://open.spotify.com/show/442fxr9pe0tbDtqEikODch"
+        }
+        google={
+          mdx.frontmatter.google ||
+          "https://podcasts.google.com/?feed=aHR0cHM6Ly9waW5lY2FzdC5jb20vZmVlZC9oZWFyLXRoaXMtaWRlYQ"
+        }
+      />
+      <details className="episode-rate-dropdown">
+        <summary>Finished listening? Click here to rate the episode.</summary>
+        <Rate
+          episode={mdx.frontmatter.number}
+          redirectUrl={mdx.frontmatter.path}
+          ratingOf="audio"
+        />
+      </details>
+   
+    
+     
       <TableOfContents items={mdx.tableOfContents.items} episodePath={mdx.frontmatter.path} />
       
       <p>{mdx.frontmatter.date}</p>
       
-      <MDXProvider>
+      <MDXProvider  components={components}>
       <MDXRenderer>{mdx.body}</MDXRenderer>
+      
       </MDXProvider>
+      
       <Link className="back" to="/episodes">
         &larr; See more episodes
       </Link>

@@ -1,7 +1,13 @@
 import React from "react"
 import "plyr-react/dist/plyr.css"
 import "../styles/audio-player.scss"
-import "../styles/variables.scss"
+import "../styles/variables.scss" 
+
+  // Hopefully plyr-react will support SSR rendering soon. Until then, here is a kludgy fix.
+  // I should probably switch to loadable/component as I have done for star-picker.
+  // https://github.com/chintan9/plyr-react/issues/668
+  
+const ClientSideOnlyLazy = React.lazy(() => import("./sub-player"))
 
 const Player = function({ audioSrc }) {
   const episodeSrc = {
@@ -30,12 +36,8 @@ const Player = function({ audioSrc }) {
     ],
   }
 
+   
 
-  // Hopefully plyr-react will support SSR rendering soon. Until then, here is a kludgy fix.
-  // I should probably switch to loadable/component as I have done for star-picker.
-  // https://github.com/chintan9/plyr-react/issues/668
-  
-  const ClientSideOnlyLazy = React.lazy(() => import("./sub-player"))
   const isSSR = typeof window === "undefined" || typeof document === "undefined"
   return (
     <div>
