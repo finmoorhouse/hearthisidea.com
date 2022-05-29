@@ -14,19 +14,21 @@ import EpisodeLinks from "../../components/episode-links"
 import Player from "../../components/player"
 import Seo from '../../components/seo'
 const components = { Book }
-const BlogPost = ({ data: {mdx} }) => {
+
+function Episode({ data: {mdx} }) {
+  
   let sources = null
-  if (mdx.frontmatter.backgroundImage) {
+  if (mdx?.frontmatter.backgroundImage) {
     sources = [
-      mdx.frontmatter.backgroundImage.childImageSharp.fluid
+      mdx?.frontmatter.backgroundImage.childImageSharp.fluid
     ]
   }
   let heroBanner
   if (!sources) {
     heroBanner = (
       <>
-        <h1 className="episode-title">{mdx.frontmatter.title}</h1>
-        <h2 className="date">{mdx.frontmatter.date}</h2>
+        <h1 className="episode-title">{mdx?.frontmatter.title}</h1>
+        <h2 className="date">{mdx?.frontmatter.date}</h2>
       </>
     )
   } else {
@@ -135,4 +137,4 @@ query($path: String!) {
   }
 }
 `
-export default BlogPost
+export default Episode
