@@ -14,7 +14,9 @@ exports.onRouteUpdate = ({ location }) => scroll(location)
 
 const scroll = (location) => {
     const item = document.querySelectorAll(`a[href='${location.hash}']`)
-     
+    // const linked = location.hash; 
+
+    let Position = null
     if (item) {
         Position = item.offsetTop;
     }
