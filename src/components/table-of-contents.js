@@ -8,7 +8,7 @@ function renderItems(items, level, episodePath) {
       item =>
       (  <>
          { item.title && 
-            <li key={item.url}> <a href={`${item.url}`} title={item.title}>
+            <li key={episodePath}> <a href={`${item.url}`} title={item.title}>
             <span>{item.title}</span>
           </a>
           
