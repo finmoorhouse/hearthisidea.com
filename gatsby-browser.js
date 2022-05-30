@@ -8,26 +8,27 @@
 // exports.onRouteUpdate = () => {
 //     
 // }
-exports.onRouteUpdate = ({ location }) => scroll(location)
 
-// function that helps with remembering scroll history, continue reading where you left off
+// exports.onRouteUpdate = ({ location }) => scroll(location)
 
-const scroll = (location) => {
-    const item = document.querySelectorAll(`a[href='${location.hash}']`)
-    // const linked = location.hash; 
+// // function that helps with remembering scroll history, continue reading where you left off
 
-    let Position = null
-    if (item) {
-        Position = item.offsetTop;
-    }
-    window.scrollTo({top: item.offsetTop,
-    behavior: "smooth"});
-}
+// const scroll = (location) => {
+//     const item = document.querySelectorAll(`a[href='${location.hash}']`)
+//     // const linked = location.hash; 
 
-/**
- *
- * @desc - a function to jump to the correct scroll position
- * @param {Object} location -
- * @param {Number} [mainNavHeight] - the height of any persistent nav -> document.querySelector(`nav`)
- */
+//     let Position = null
+//     if (item) {
+//         Position = item.offsetTop;
+//     }
+//     window.scrollTo({top: item.offsetTop,
+//     behavior: "smooth"});
+// }
+
+// /**
+//  *
+//  * @desc - a function to jump to the correct scroll position
+//  * @param {Object} location -
+//  * @param {Number} [mainNavHeight] - the height of any persistent nav -> document.querySelector(`nav`)
+//  */
  

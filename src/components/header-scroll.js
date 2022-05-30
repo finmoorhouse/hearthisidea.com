@@ -8,7 +8,7 @@ const HeaderScroll = () => {
     for (i=1;i<myHeaders.length;i++){
     headerList.push(
         <button onClick={jumpToHeader()}>
-        <li >
+        <li key={i}>
             {myHeaders[i].innerHTML}
         </li>
         </button>)

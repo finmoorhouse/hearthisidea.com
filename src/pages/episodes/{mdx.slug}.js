@@ -50,8 +50,7 @@ function Episode({ data: {mdx} }) {
   return (
     <div>
        
-       {
-       mdx && 
+    
       <Layout pageTitle={mdx.frontmatter.title} onTransparent={sources ? true : false}>
   
        
@@ -94,18 +93,20 @@ function Episode({ data: {mdx} }) {
      
       <TableOfContents items={mdx.tableOfContents.items} episodePath={mdx.frontmatter.path} />
       
-      <p>{mdx.frontmatter.date}</p>
       
-      <MDXProvider  components={components}>
-      <MDXRenderer>{mdx.body}</MDXRenderer>
-      
-      </MDXProvider>
+      <div className="writeup">
+        <MDXProvider components={components}>
+          <MDXRenderer>{mdx.body}</MDXRenderer>
+        </MDXProvider>
+      </div>
+      <hr className="rating-hr" />
+      <Rate episode={mdx.frontmatter.number} ratingOf="write-up" />
       
       <Link className="back" to="/episodes">
         &larr; See more episodes
       </Link>
          
-    </Layout>}
+    </Layout>
     </div>
    
   )
