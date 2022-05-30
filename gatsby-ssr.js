@@ -6,10 +6,12 @@
 
 // You can delete this file if you're not using it
 const React = require("react")
-
+// added id to head, this avoids the error in gatsby develop
 exports.onRenderBody = ({ setHeadComponents }) => {
+  
   setHeadComponents([
     <script
+      key="testId"
       dangerouslySetInnerHTML={{
         __html: `
   (function() {
