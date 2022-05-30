@@ -49,7 +49,7 @@ function Episode({ data: {mdx} }) {
   }
   return (
     <div>
-      <Layout pageTitle={mdx.frontmatter.title}>
+      <Layout pageTitle={mdx.frontmatter.title} onTransparent={sources ? true : false}>
       <Seo
         title={mdx.frontmatter.title}
         myFeaturedImage={mdx.frontmatter.featuredImage}
