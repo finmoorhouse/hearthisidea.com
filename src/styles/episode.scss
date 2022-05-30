@@ -1,5 +1,9 @@
 @import "variables.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 h5 {
   opacity: 0.6;
   margin-left: 20px;
@@ -183,7 +187,7 @@ table th {
       margin-left: -20px;
       margin-right: -40px;
       bottom: 4px;
-
+      transform: translateX(0%);
       svg {
         fill: #facd07;
         visibility: hidden;
@@ -220,7 +224,7 @@ table th {
     opacity: 0.1;
     position: absolute;
     top: 0;
-    display: block;
+    display: block; 
   }
 }
 @media all and (min-width: 1000px) {
@@ -231,6 +235,7 @@ table th {
       margin-left: -20px;
       margin-right: -40px;
       bottom: 1px;
+      transform: translateX(0%);
     }
   }
 }
