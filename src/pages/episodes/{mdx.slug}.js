@@ -50,7 +50,7 @@ function Episode({ data: {mdx} }) {
   return (
     <div>
        
-    
+    { mdx &&
       <Layout pageTitle={mdx.frontmatter.title} onTransparent={sources ? true : false}>
   
        
@@ -92,8 +92,7 @@ function Episode({ data: {mdx} }) {
     
      
       <TableOfContents items={mdx.tableOfContents.items} episodePath={mdx.frontmatter.path} />
-      
-      
+ 
       <div className="writeup">
         <MDXProvider components={components}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
@@ -107,6 +106,7 @@ function Episode({ data: {mdx} }) {
       </Link>
          
     </Layout>
+    }
     </div>
    
   )
