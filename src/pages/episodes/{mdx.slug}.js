@@ -49,12 +49,18 @@ function Episode({ data: {mdx} }) {
   }
   return (
     <div>
+       
+       {
+       mdx && 
       <Layout pageTitle={mdx.frontmatter.title} onTransparent={sources ? true : false}>
-      <Seo
+  
+       
+       <Seo
         title={mdx.frontmatter.title}
         myFeaturedImage={mdx.frontmatter.featuredImage}
         description={mdx.frontmatter.description || null}
       />
+  
 
       {heroBanner}
 
@@ -98,13 +104,13 @@ function Episode({ data: {mdx} }) {
       <Link className="back" to="/episodes">
         &larr; See more episodes
       </Link>
-    </Layout>
+         
+    </Layout>}
     </div>
    
   )
 }
-
-export const query = graphql`
+export const pageQuery = graphql` 
 query($path: String!) {
   mdx(frontmatter: { path: { eq: $path } }) {
     body

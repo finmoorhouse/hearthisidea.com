@@ -4,7 +4,7 @@ import React from "react"
 function renderItems(items, level, episodePath) {
 
   return (<ol>
-    {items.length > 0 && items.map(
+    {items?.length > 0 && items.map(
       item =>
       (  <>
          { item.title && 
