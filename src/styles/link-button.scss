@@ -1,5 +1,23 @@
 @import "variables.scss";
 
+.scroll-button {
+    cursor: pointer;
+    z-index: 2;
+    font-size: 15px;
+    position: fixed;
+    bottom: 2vh;
+    right: max(3%, 25px);
+    background-color: $primary-bg; // darken($secondary-bg, 5%);
+    border: 1px solid $accent-color;
+    color: $accent-color;
+    opacity: 1;
+    // border: none;
+    width: 35px;
+    height: 35px;
+    // border-radius: 10px;
+    //box-shadow: 0 0 0 2.5px $primary-bg;
+  }
+  
 .space { 
   justify-content: space-between;
   padding-left: 12px;

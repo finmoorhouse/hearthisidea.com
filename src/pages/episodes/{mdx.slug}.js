@@ -12,8 +12,8 @@ import Rate from "../../components/rating-form"
 import Book from "../../components/book" 
 import EpisodeLinks from "../../components/episode-links"
 import Player from "../../components/player"
-import Seo from '../../components/seo'
-import SeeMore from '../../components/see-more'
+import Seo from '../../components/seo' 
+import ScrollUp from '../../components/see-more'
 
 const components = { Book }
 
@@ -94,7 +94,9 @@ function Episode({ data: {mdx} }) {
     
      
       <TableOfContents items={mdx.tableOfContents.items} episodePath={mdx.frontmatter.path} />
- 
+      
+    <ScrollUp showBelow={600} />
+
       <div className="writeup">
         <MDXProvider components={components}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
@@ -103,13 +105,12 @@ function Episode({ data: {mdx} }) {
       <hr className="rating-hr" />
       <Rate episode={mdx.frontmatter.number} ratingOf="write-up" />
       
-      {/* previous button
+     
       <Link className="back" to="/episodes">
         &larr; See more episodes
-      </Link> */}
+      </Link>
 
-      <SeeMore/>
-
+   
 
          
     </Layout>
