@@ -1,29 +1,26 @@
-import * as React from 'react'
-import { graphql } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { MDXProvider } from '@mdx-js/react'
-import Layout from '../../components/layout'
-import TableOfContents from '../../components/table-of-contents'
+import * as React from "react"
+import { graphql } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXProvider } from "@mdx-js/react"
+import Layout from "../../components/layout"
+import TableOfContents from "../../components/table-of-contents"
 import BackgroundImage from "gatsby-background-image"
 import { Link } from "gatsby"
 import "katex/dist/katex.min.css"
 import "../../styles/episode.scss"
 import Rate from "../../components/rating-form"
-import Book from "../../components/book" 
+import Book from "../../components/book"
 import EpisodeLinks from "../../components/episode-links"
 import Player from "../../components/player"
-import Seo from '../../components/seo' 
-import ScrollUp from '../../components/see-more'
+import Seo from "../../components/seo"
+import ScrollUp from "../../components/see-more"
 
 const components = { Book }
 
-function Episode({ data: {mdx} }) {
-  
+function Episode({ data: { mdx } }) {
   let sources = null
   if (mdx?.frontmatter.backgroundImage) {
-    sources = [
-      mdx?.frontmatter.backgroundImage.childImageSharp.fluid
-    ]
+    sources = [mdx?.frontmatter.backgroundImage.childImageSharp.fluid]
   }
   let heroBanner
   if (!sources) {
@@ -51,105 +48,100 @@ function Episode({ data: {mdx} }) {
   }
   return (
     <div>
-       
-    { mdx &&
-      <Layout pageTitle={mdx.frontmatter.title} onTransparent={sources ? true : false}>
-  
-       
-       <Seo
-        title={mdx.frontmatter.title}
-        myFeaturedImage={mdx.frontmatter.featuredImage}
-        description={mdx.frontmatter.description || null}
-      />
-  
+      {mdx && (
+        <Layout
+          pageTitle={mdx.frontmatter.title}
+          onTransparent={sources ? true : false}
+        >
+          <Seo
+            title={mdx.frontmatter.title}
+            myFeaturedImage={mdx.frontmatter.featuredImage}
+            description={mdx.frontmatter.description || null}
+          />
 
-      {heroBanner}
+          {heroBanner}
 
-      <Player audioSrc={mdx.frontmatter.audio}></Player>
+          <Player audioSrc={mdx.frontmatter.audio}></Player>
 
-      <EpisodeLinks
-        direct={mdx.frontmatter.audio || "/"}
-        apple={
-          mdx.frontmatter.apple ||
-          "https://podcasts.apple.com/gb/podcast/hear-this-idea/id1496501781"
-        }
-        spotify={
-          mdx.frontmatter.spotify ||
-          "https://open.spotify.com/show/442fxr9pe0tbDtqEikODch"
-        }
-        google={
-          mdx.frontmatter.google ||
-          "https://podcasts.google.com/?feed=aHR0cHM6Ly9waW5lY2FzdC5jb20vZmVlZC9oZWFyLXRoaXMtaWRlYQ"
-        }
-      />
-      <details className="episode-rate-dropdown">
-        <summary>Finished listening? Click here to rate the episode.</summary>
-        <Rate
-          episode={mdx.frontmatter.number}
-          redirectUrl={mdx.frontmatter.path}
-          ratingOf="audio"
-        />
-      </details>
-   
-    
-     
-      <TableOfContents items={mdx.tableOfContents.items} episodePath={mdx.frontmatter.path} />
-      
-    <ScrollUp showBelow={600} />
+          <EpisodeLinks
+            direct={mdx.frontmatter.audio || "/"}
+            apple={
+              mdx.frontmatter.apple ||
+              "https://podcasts.apple.com/gb/podcast/hear-this-idea/id1496501781"
+            }
+            spotify={
+              mdx.frontmatter.spotify ||
+              "https://open.spotify.com/show/442fxr9pe0tbDtqEikODch"
+            }
+            google={
+              mdx.frontmatter.google ||
+              "https://podcasts.google.com/?feed=aHR0cHM6Ly9waW5lY2FzdC5jb20vZmVlZC9oZWFyLXRoaXMtaWRlYQ"
+            }
+          />
+          <details className="episode-rate-dropdown">
+            <summary>
+              Finished listening? Click here to rate the episode.
+            </summary>
+            <Rate
+              episode={mdx.frontmatter.number}
+              redirectUrl={mdx.frontmatter.path}
+              ratingOf="audio"
+            />
+          </details>
 
-      <div className="writeup">
-        <MDXProvider components={components}>
-          <MDXRenderer>{mdx.body}</MDXRenderer>
-        </MDXProvider>
-      </div>
-      <hr className="rating-hr" />
-      <Rate episode={mdx.frontmatter.number} ratingOf="write-up" />
-      
-     
-      <Link className="back" to="/episodes">
-        &larr; See more episodes
-      </Link>
+          <TableOfContents
+            items={mdx.tableOfContents.items}
+            episodePath={mdx.frontmatter.path}
+          />
 
-   
+          <ScrollUp showBelow={600} />
 
-         
-    </Layout>
-    }
+          <div className="writeup">
+            <MDXProvider components={components}>
+              <MDXRenderer>{mdx.body}</MDXRenderer>
+            </MDXProvider>
+          </div>
+          <hr className="rating-hr" />
+          <Rate episode={mdx.frontmatter.number} ratingOf="write-up" />
+          <Link className="back" to="/episodes">
+            &larr; See more episodes
+          </Link>
+        </Layout>
+      )}
     </div>
-   
   )
 }
-export const pageQuery = graphql` 
-query($path: String!) {
-  mdx(frontmatter: { path: { eq: $path } }) {
-    body
-    tableOfContents
-    frontmatter {
-      date(formatString: "MMMM DD, YYYY")
-      path
-      audio
-      description
-      number
-      title
-      apple
-      google
-      spotify
-      featuredImage {
-        childImageSharp {
-          fixed(width: 1200) {
-            ...GatsbyImageSharpFixed
+export const pageQuery = graphql`
+  query($path: String!) {
+    mdx(frontmatter: { path: { eq: $path } }) {
+      body
+      tableOfContents
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        path
+        audio
+        description
+        number
+        title
+        apple
+        google
+        spotify
+        featuredImage {
+          childImageSharp {
+            fixed(width: 1200) {
+              ...GatsbyImageSharpFixed
+            }
           }
         }
-      }
-      backgroundImage {
-        childImageSharp {
-          fluid(maxWidth: 1400, quality: 65) {
-            ...GatsbyImageSharpFluid
+        backgroundImage {
+          childImageSharp {
+            fluid(maxWidth: 1400, quality: 65) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
     }
   }
-}
 `
 export default Episode

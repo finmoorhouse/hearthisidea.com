@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import "../styles/link-button.scss"
 
- 
 const ScrollUp = ({ showBelow }) => {
   const [show, setShow] = useState(showBelow ? false : true)
 
@@ -33,7 +32,7 @@ const ScrollUp = ({ showBelow }) => {
           aria-label="To top"
           component="span"
         >
-         	&#8673;
+          &#8593;
         </button>
       )}
     </div>
