@@ -180,6 +180,7 @@ table th {
     }
     .anchor {
       display: block;
+      top: -2px;
       float: left;
       padding-right: 40px;
       position: relative;
@@ -224,18 +225,15 @@ table th {
     opacity: 0.1;
     position: absolute;
     top: 0;
-    display: block; 
+    display: block;
   }
 }
 @media all and (min-width: 1000px) {
   .writeup {
     .anchor {
-      padding-right: 10px;
+      padding-right: 40px;
       left: 10px;
-      margin-left: -20px;
-      margin-right: -40px;
-      bottom: 1px;
-      transform: translateX(0%);
+      background: coral;
     }
   }
 }
