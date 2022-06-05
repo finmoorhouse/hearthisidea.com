@@ -85,7 +85,6 @@
   display: block;
 }
 .episode-link--text {
-  //padding: 30px;
   position: absolute;
   z-index: 3;
 }
@@ -93,7 +92,6 @@
   position: relative;
   box-sizing: border-box;
   width: 100vw;
-  //background: coral;
   left: calc(-50vw + 50%);
   padding: 0 20px;
   margin-top: 35px;
@@ -104,8 +102,6 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0 0;
-  //background: cadetblue;
-  //padding: 0 22px;
   display: grid;
   grid-row-gap: 25px;
   grid-column-gap: 25px;
@@ -158,7 +154,6 @@
   }
 }
 //grid-auto-rows: minmax(150px, auto);
-
 .episode-link--title {
   position: absolute;
   bottom: 0;
