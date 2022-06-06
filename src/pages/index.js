@@ -168,7 +168,11 @@ const IndexPage = () => (
       >
         Claudia
       </a>{" "}
-      for creating full transcripts of each episode.
+      for creating full transcripts of each episode, and to       <a
+        href="https://jonas-kgomo.github.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Jonas Kgomo</a> for helping improve this website.
     </p>
     <h2>Support the show</h2>
     <p className="introduction">
