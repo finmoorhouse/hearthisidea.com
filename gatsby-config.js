@@ -17,7 +17,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-csv`,
-    `gatsby-transformer-json`,
+    `gatsby-transformer-json`, 
     {
       resolve: `gatsby-plugin-plausible`,
       options: {
