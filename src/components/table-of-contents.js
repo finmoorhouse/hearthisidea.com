@@ -30,7 +30,8 @@ const TableOfContents = props => {
       <details open className='episode-table-of-contents'>
         <summary>Table of Contents</summary>
         {renderItems(props.items, 1, props.episodePath)}
-
+        
+      <p className='toc-wordcount'>{props.timeToRead} minute read ({props.wordCount} words)</p>
       </details>
     </div>
 
@@ -38,3 +39,4 @@ const TableOfContents = props => {
 }
 
 export default TableOfContents
+ 

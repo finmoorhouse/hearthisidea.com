@@ -92,6 +92,8 @@ function Episode({ data: { mdx } }) {
           <TableOfContents
             items={mdx.tableOfContents.items}
             episodePath={mdx.frontmatter.path}
+            wordCount={mdx.wordCount.words}
+            timeToRead={mdx.timeToRead}
           />
 
           <ScrollUp showBelow={600} />
@@ -116,6 +118,10 @@ export const pageQuery = graphql`
     mdx(frontmatter: { path: { eq: $path } }) {
       body
       tableOfContents
+      timeToRead
+      wordCount {
+        words
+      }
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
