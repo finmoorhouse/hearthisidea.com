@@ -184,11 +184,11 @@ table th {
       float: left;
       padding-right: 200px;
       position: relative;
-      left: -18px;
+      left: -18px !important;
       margin-left: -20px;
       margin-right: -200px;
       bottom: 4px;
-      transform: translateX(0%);
+      transform: translateX(0%) !important;
       svg {
         fill: #facd07;
         visibility: hidden;
