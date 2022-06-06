@@ -54,7 +54,13 @@ module.exports = {
             },
           },
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-katex`,
+          {
+            resolve:`gatsby-remark-katex`,
+          options: {
+            // Add any KaTeX options to avoid LaTex newline warning 
+            strict: `ignore`
+            }
+          },
         ],
       },
     },
