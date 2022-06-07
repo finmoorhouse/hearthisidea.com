@@ -62,6 +62,7 @@ function Episode({ data: { mdx } }) {
           {heroBanner}
 
           <Player audioSrc={mdx.frontmatter.audio}></Player>
+           
 
           <EpisodeLinks
             direct={mdx.frontmatter.audio || "/"}

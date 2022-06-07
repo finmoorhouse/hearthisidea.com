@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useRef, useState, useEffect} from "react"
 import "plyr-react/dist/plyr.css"
 import "../styles/audio-player.scss"
 import "../styles/variables.scss" 
@@ -37,7 +37,6 @@ const Player = function({ audioSrc }) {
   }
 
    
-
   const isSSR = typeof window === "undefined" || typeof document === "undefined"
   return (
     <div>
@@ -45,7 +44,8 @@ const Player = function({ audioSrc }) {
         <React.Suspense
           fallback={<div className="fallback-player"></div>}
         >
-          <ClientSideOnlyLazy source={episodeSrc} options={playerOptions} />
+          <ClientSideOnlyLazy source={episodeSrc} options={playerOptions}   />
+           
         </React.Suspense>
       )}
     </div>
