@@ -170,10 +170,7 @@ table th {
     max-width: 600px;
   }
 }
-.seek-link {
-  color: rgb(243, 179, 4);
-  background: transparent;
-}
+
 
 @media all and (min-width: 600px) {
   .writeup {
@@ -269,3 +266,14 @@ table th {
   column-width: 300px;
   column-gap: 40px;
 }
+
+.send-link, .main-link {
+  display: none;
+}
+
+.seek-link {
+  color: rgb(225, 165, 0);
+  background: transparent;
+  cursor: alias ;
+}
+ 
