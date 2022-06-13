@@ -1,103 +1,188 @@
-import React, { useState } from "react"
+import React, { useCallback, useLayoutEffect, useState } from "react"
 import "../styles/episode.scss"
 //import { useStaticQuery, graphql } from "gatsby"
 //import Img from "gatsby-image"
 
-//  regex to get the text number field 
-const getTime = (text) => {
-  var EXP = /[\d]*[.]{0,1}[\d]+/g;
-  return text.match(EXP);
-}
-// get format of time HH:MM:SS
-const  getFormat = (text) => {
-  var EXP = /[:\s*(\w+)][\d]*[.]{0,1}[\d]+/g;
 
+const Seeker = React.forwardRef(({ children, ref, seekTime, setSome, btnRef, seekFunction, setFunction, sendChildToParent }) => {
 
-  return text.match(EXP);
-}
+  const playerRef = React.useRef();
+  const sendData = React.useRef();
+  const localRef = React.useRef();
 
-// var SECOND_EXP = /^(?:(?:([01]?\d|2[0-3]):)?([0-5]?\d):)?([0-5]?\d)$/
-
-
-// get person speaking
-const getSpeaker = (text) => {
-  var REXPRESSION = /[A-Z]/gi;
-  return text.match(REXPRESSION);
-}
-const Seeker = React.forwardRef(({ children, ref, some, seekTime, onThing, btnRef, seekFunction }) => {
-  const [seek, setSeeker] = useState(10)
-  const speaker = getSpeaker(children)
-  const time = getTime(children)
-  const timestamp = getFormat(children)
- const localRef = React.useRef(); 
  
-   
+
+
+  // check if button is clicked 
+  const [isClicked, setIsClicked] = useState(false)
+  // set seek
+  const [seeker, setSeeker] = useState(seekTime)
+
   //  convertTime( ['2', '30','23'])  
 
+  //  regex to get the text number field 
+  const getTime = (text) => {
+    var regextime = /[\d]*[.]{0,1}[\d]+/g;
+    return text.toString().match(regextime);
+  }
+  // get format of time HH:MM:SS
+  const getFormat = (text) => {
+    var regformat = /[:\s*(\w+)][\d]*[.]{0,1}[\d]+/g;
+    return text.toString().match(regformat);
+  }
+
+  // get person speaking
+  const getSpeaker = (text) => {
+    var regextitle = /[A-Z]/gi;
+    return text.toString().match(regextitle);
+  }
+
+  const time = getTime(children)
+  const speaker = getSpeaker(children)
+  const timestamp = getFormat(children)
 
   const seekButton = (duration) => {
 
-    let secondsTime = Number(0);
+    // let secondsTime = seeker;
 
-    if (duration?.length == 3) {
+    console.log("SEEE: " + duration?.length + " DURATION" + duration + " SEEKER" + time);
+
+    if (duration?.length === 3) {
       const [hours, minutes, seconds] = duration;
-      console.log(secondsTime);
-      return secondsTime = Number(hours) * 60 * 60 + Number(minutes) * 60 + Number(seconds)
 
+      const secondsTime = Number(hours) * 60 * 60 + Number(minutes) * 60 + Number(seconds)
+      console.log(secondsTime);
+      return secondsTime;
     }
-    else if (duration?.length == 2) {
+    else if (duration?.length === 2) {
 
       const [minutes, seconds] = duration;
-      console.log(secondsTime);
-      return secondsTime = Number(minutes) * 60 + Number(seconds)
 
+      const secondsTime = Number(minutes) * 60 + Number(seconds)
+      console.log(secondsTime);
+      return secondsTime;
     }
     else {
-      return secondsTime = Number(0);
-      // return secondsTime = Numbers(0);
+      const secondsTime = Number(duration)
+
+      return secondsTime;
     }
 
   }
 
-  // setSeeker(seeButton(time))  
+  const handleSeek = useCallback((time) => {
 
 
-  const handleSeek = (time)  => {
-    localRef.current.click();
-    const seekTime = seekButton(time)
-    // console.log(seekTime)
-    onThing(seekTime)
+    setIsClicked(true)
+
+
+    const seekTime = seekButton(
+      time
+    )
+
+    setSeeker(seekTime)
     // 👇️ open   on click of other element
-    // btnRef && btnRef.current && btnRef.current.click();
-    // btnRef.current.click()
-    // seekFunction
-    console.log("clicked on "+ localRef?.current )
-    console.log(seekTime)
+    setFunction(seekTime)
 
-  }
 
-  // setSeeker(handleSeek(time));
+    return seekTime;
+  });
+
+
+
+
+  useLayoutEffect(() => {
+
+
+// const local = localRef, 
+  const  player = playerRef.current, send = sendData.current;
+
+
+    //  document.querySelector('.seek-link').click();
+
+    if (isClicked) {
+
+
+      setTimeout(function () {
+        console.log("sendClicked: " + sendData.current)
+        send.click();
+        // sendData && sendData.current && sendData.current.click();
+        console.log("sendElement:" + send)
+        clearTimeout();
+      }, 0);
+
+      // console.log( playerRef, localRef, sendData)
+
+      setTimeout(function () {
+        player.click();
+        // playerRef && playerRef.current && playerRef.current.click();
+        console.log("playClicked:" + playerRef.current)
+        console.log("playerElement:" + player)
+        clearTimeout();
+        // playerRef.current = false;
+      }, 100);
+
+      setTimeout(function () {
+        // local.click();
+        // localRef && localRef.current && localRef.current.click();
+        console.log("secondClick" + localRef.current)
+        // console.log("localElement"+ local)
+        document.querySelector('.seek-link').click();
+
+        // local.click();
+        clearTimeout();
+      }, 400);
+
+
+
+    }
+
+
+
+  }, [playerRef, sendData, isClicked])
+
+
+
+
 
   return (
 
     <div  >
 
-      <h5 >
+      <h >
 
-        {/* {children} */}
-        {speaker}
-        <button onClick={() => console.log(seekButton(time))} className="seek-link">
-          §{timestamp}
-        </button>
-        <div>Here {some}  </div>
-         {/* <button onClick={() => onThing(3)} className="seek-link"> first  §{timestamp}  </button>  */}
-        {/* <button onClick={() => handleSeek(time)} id="buttonX" ref={btnRef} className="seek-link">  §{timestamp}  </button> */}
-      
-        <button onClick={() => handleSeek(time)}  className="seek-link"> second §{timestamp}  </button>
-       
-        <button onClick={seekFunction} ref={localRef}   className="seek-link">§{timestamp} </button>
-      </h5>
     
+        {speaker}
+
+     
+
+    
+
+        <button isClicked={isClicked} ref={localRef}
+          onClick={(e) => { e.preventDefault(); handleSeek(time) }}
+          className="seek-link">
+            {/* if timeline is undefined, dont show timestamp */}
+
+            {timestamp ? <>§ {timestamp}</> : ""}
+             
+        </button>
+
+        <button isClicked={isClicked} onClick={seekFunction} ref={playerRef} className="main-link">
+        </button>
+      </h>
+
+
+
+      <button ref={sendData} onClick={(e) => {
+        e.preventDefault();
+        sendChildToParent(seeker)
+      }}
+        className="send-link"
+      >
+
+      </button>
+
+
 
     </div>
 
