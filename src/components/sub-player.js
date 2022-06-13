@@ -1,46 +1,45 @@
-import React, { useRef, useEffect, useState } from "react"
+import React, { useRef, useEffect, useState, useCallback } from "react"
 import Plyr from "plyr-react"
 
-const SubPlayer = function ({ source, options }) {
-  // const ref = useRef()
+const SubPlayer = function ({ source, options, seekNumber, buttonref }) {
+
   const ref = useRef()
-  const [currentTime, setCurrentTime] = useState('0.00')
+  const [currentTime, setCurrentTime] = useState(seekNumber)
+
+  // array of states for each speaker
+  // const [speakerState, setSpeakerState] = useState([])
+
+  // current seek point 
+  const [seekPoint, setSeekPoint] = useState(0)
 
 
   useEffect(() => {
-    // const onPlay = (event) => {
-    setInterval(() => {
-      const currentTime = ref?.current?.plyr?.currentTime / 100
-      // const seekTime = ref?.current?.Plyr
-      // console.log(currentTime)
-      // ref.current.plyr.on("ended", (event) => console.log("evented"))
-      setCurrentTime(currentTime.toFixed(1))
-      // setCurrentTime(6)
-      // console.log(ref?.current?.plyr.forward)
-    }, 1000)
+    setCurrentTime(currentTime);
+    // set speaker state
 
-    // }
+    setSeekPoint(seekNumber);
+    // setSpeakerState(speakerState => [...speakerState, seekNumber])
+  }, [seekNumber, currentTime])
 
-  }, [currentTime])
-  console.log("Now" + currentTime)
- 
-  const seekTime = 0.5
-  const seek = (seekTime) => {
-  
-    ref.current.plyr?.forward(seekTime)
-    console.log( ref.current.plyr)
-  }
-  const enterVideo = () => {
-    ref.current.plyr?.play();
-   };
+  const seek = useCallback(() => {
+    const player = ref?.current?.plyr
+    // const nextSeek = speakerState[speakerState.length - 1];
+    // const currentTime = ref?.current?.plyr?.currentTime
+
+    // this is similar to rewind and forward buttons, simultaneously, starts at whatever reference point
+    player?.forward(seekPoint)
+    player?.play() 
+  }, [seekNumber]);
+
+  // the button below is not visible, the button is clicked in the background through reference
 
   return <div>
     <Plyr source={source} type="audio/mp3" options={options} ref={ref} />
-    <button onClick={seek} >
-      Skip to X
+    
+
+    <button onClick={seek} ref={buttonref} style={{ display: "none" }}>
+      seekbutton {seekNumber}
     </button>
-    <button onClick={enterVideo}>fullscreen</button>
-   
 
   </div>
 
