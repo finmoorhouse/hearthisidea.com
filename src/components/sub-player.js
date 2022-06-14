@@ -1,23 +1,21 @@
 import React, { useRef, useEffect, useState, useCallback } from "react"
 import Plyr from "plyr-react"
 
-const SubPlayer = function ({ source, options, seekNumber, buttonref }) {
-
+const SubPlayer = function({ source, options, seekNumber, buttonref }) {
   const ref = useRef()
   const [currentTime, setCurrentTime] = useState(seekNumber)
 
   // array of states for each speaker
   // const [speakerState, setSpeakerState] = useState([])
 
-  // current seek point 
+  // current seek point
   const [seekPoint, setSeekPoint] = useState(0)
 
-
   useEffect(() => {
-    setCurrentTime(currentTime);
+    setCurrentTime(currentTime)
     // set speaker state
 
-    setSeekPoint(seekNumber);
+    setSeekPoint(seekNumber)
     // setSpeakerState(speakerState => [...speakerState, seekNumber])
   }, [seekNumber, currentTime])
 
@@ -28,21 +26,20 @@ const SubPlayer = function ({ source, options, seekNumber, buttonref }) {
 
     // this is similar to rewind and forward buttons, simultaneously, starts at whatever reference point
     player?.forward(seekPoint)
-    player?.play() 
-  }, [seekNumber]);
+    player?.play()
+  }, [seekNumber])
 
   // the button below is not visible, the button is clicked in the background through reference
 
-  return <div>
-    <Plyr source={source} type="audio/mp3" options={options} ref={ref} />
-    
+  return (
+    <div>
+      <Plyr source={source} type="audio/mp3" options={options} ref={ref} />
 
-    <button onClick={seek} ref={buttonref} style={{ display: "none" }}>
-      seekbutton {seekNumber}
-    </button>
-
-  </div>
-
+      <button onClick={seek} ref={buttonref} style={{ display: "none" }}>
+        seekbutton {seekNumber}
+      </button>
+    </div>
+  )
 }
 
 export default SubPlayer
