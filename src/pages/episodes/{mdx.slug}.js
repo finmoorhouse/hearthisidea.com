@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useState, useRef, forwardRef } from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
@@ -14,14 +15,60 @@ import EpisodeLinks from "../../components/episode-links"
 import Player from "../../components/player"
 import Seo from "../../components/seo"
 import ScrollUp from "../../components/see-more"
+import Seeker from "../../components/seeker"
+import SuperLayer from "../../components/player"
 
-const components = { Book }
+
+const FunctionSeek = forwardRef((props, ref, seekFunction) => {
+  const childFn = (paramOne, paramTwo, paramThree) => {
+    console.log("calling child fn... params are: ", paramOne, paramTwo, paramThree);
+  };
+
+  ref.current = childFn;
+
+  return (
+    <button onClick={seekFunction} style={{ display: "none" }}>nkjk</button>
+  );
+})
 
 function Episode({ data: { mdx } }) {
+
+  const btnRef = useRef(null);
+  const seekerRef = useRef(null);
+  const [childData, setChildData] = useState(null);
+  const sendChildToParent = (data) => {
+    setChildData(data); 
+  }
+
+  const components = {
+    Book,
+    strong: (props) => <Seeker sendChildToParent={sendChildToParent} seekFunction={seekFunction} setFunction={setSelect}
+      ref={seekerRef}  {...props} />
+  }
+
+  const setSelect = ((value) => {
+    // console.log("parent click: ", value );
+    return value;
+
+  });
+
+
+ 
+  const seekFunction = () => {
+
+    if (seekerRef?.current) {
+      // seekerRef?.current.click();
+
+      btnRef && btnRef.current && btnRef.current.click();
+      seekerRef.current("valueOne", "valueTwo", "valueThree");
+    }
+  }
+
   let sources = null
   if (mdx?.frontmatter.backgroundImage) {
     sources = [mdx?.frontmatter.backgroundImage.childImageSharp.fluid]
   }
+
   let heroBanner
   if (!sources) {
     heroBanner = (
@@ -61,7 +108,15 @@ function Episode({ data: { mdx } }) {
 
           {heroBanner}
 
-          <Player audioSrc={mdx.frontmatter.audio}></Player>
+          <SuperLayer  ref={btnRef} />
+          <Player audioSrc={mdx.frontmatter.audio} seekNumber={childData} ref={btnRef} />
+          
+           <FunctionSeek ref={seekerRef} seekFunction={seekFunction} />
+
+
+
+
+    
 
           <EpisodeLinks
             direct={mdx.frontmatter.audio || "/"}
@@ -99,7 +154,7 @@ function Episode({ data: { mdx } }) {
           <ScrollUp showBelow={600} />
 
           <div className="writeup">
-            <MDXProvider components={components}>
+            <MDXProvider components={components}  >
               <MDXRenderer>{mdx.body}</MDXRenderer>
             </MDXProvider>
           </div>

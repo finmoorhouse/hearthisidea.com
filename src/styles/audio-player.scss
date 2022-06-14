@@ -47,3 +47,9 @@
 .volume-controls {
   display: none;
 }
+// show only  the second progress bar
+
+.show-once:nth-of-type(even) {
+  display: none;
+ 
+}

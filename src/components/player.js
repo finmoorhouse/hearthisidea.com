@@ -1,15 +1,15 @@
 import React from "react"
 import "plyr-react/dist/plyr.css"
 import "../styles/audio-player.scss"
-import "../styles/variables.scss" 
+import "../styles/variables.scss"
 
-  // Hopefully plyr-react will support SSR rendering soon. Until then, here is a kludgy fix.
-  // I should probably switch to loadable/component as I have done for star-picker.
-  // https://github.com/chintan9/plyr-react/issues/668
-  
+// Hopefully plyr-react will support SSR rendering soon. Until then, here is a kludgy fix.
+// I should probably switch to loadable/component as I have done for star-picker.
+// https://github.com/chintan9/plyr-react/issues/668
+
 const ClientSideOnlyLazy = React.lazy(() => import("./sub-player"))
 
-const Player = function({ audioSrc }) {
+const Player = ({ audioSrc, seekNumber, buttonref }) => {
   const episodeSrc = {
     type: "audio",
     sources: [
@@ -23,6 +23,7 @@ const Player = function({ audioSrc }) {
   const playerOptions = {
     invertTime: false,
     seekTime: 30,
+    autoplay: false,
     controls: [
       "rewind", // Rewind by the seek time (default 10 seconds)
       "play", // Play/pause playback
@@ -36,7 +37,8 @@ const Player = function({ audioSrc }) {
     ],
   }
 
-   
+
+
 
   const isSSR = typeof window === "undefined" || typeof document === "undefined"
   return (
@@ -45,11 +47,29 @@ const Player = function({ audioSrc }) {
         <React.Suspense
           fallback={<div className="fallback-player"></div>}
         >
-          <ClientSideOnlyLazy source={episodeSrc} options={playerOptions} />
+          <ClientSideOnlyLazy source={episodeSrc} options={playerOptions} seekNumber={seekNumber} buttonref={buttonref} />
+
         </React.Suspense>
       )}
     </div>
   )
 }
 
-export default Player
+
+
+// engages as interface for the player
+const SuperLayer = React.forwardRef((props, buttonref) => {
+
+  return (
+    <div className="show-once" >
+
+      <Player {...props} buttonref={buttonref}/>
+
+    
+    </div>
+
+  )
+}
+);
+
+export default SuperLayer ;
