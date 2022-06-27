@@ -10,8 +10,7 @@ const IndexPage = () => (
     <h1>About the show</h1>
     <hr className="line" />
     <p className="introduction introduction_tagline">
-      Hear This Idea is a podcast about ideas that matter — showcasing new
-      thinking in philosophy, the social sciences, and effective altruism.
+      Hear This Idea is a podcast about new thinking in effective altruism.
     </p>
     <p className="introduction">
       The hosts are long-time friends{" "}
@@ -137,14 +136,14 @@ const IndexPage = () => (
         </a>
       </div>
       <h2>Social media</h2>
-      <p>
+      <p className="introduction">
       Guest suggestions, questions, and hate mail should be directed to{" "}
       <span className="obfuscate">
         moc.aedisi<span></span>htraeh@olleh
       </span>
       .
     </p>
-    <p>You can also find us on Facebook and Twitter:</p>
+    <p className="introduction">You can also find us on Facebook and Twitter:</p>
     <div className="listen-container">
       <a
         className="listen"
