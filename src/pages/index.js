@@ -113,22 +113,38 @@ const IndexPage = () => (
         Other Podcast Apps
       </a>
     </div>
-    <h2>Social media</h2>
+    <h2>Feedback</h2>
     <p className="introduction">
       We value feedback of any kind, and you can leave some through our{" "}
       <a
-        href="https://forms.gle/TvDjN1f7wRgGokfy8"
+        href="https://tally.so/r/nPd680"
         target="_blank"
         rel="noopener noreferrer"
       >
-        anonymous feedback form.
-      </a>{" "}
+        feedback form
+      </a>
+      . As a thank you for taking time to leave feedback, you'll be able to{" "}
+      <b>redeem a free book</b> from a list of books that we highly recommend. You're
+      welcome to fill out the form anonymously.</p>
+      <div className="listen-container">
+        <a
+          className="listen"
+          href="https://tally.so/r/nPd680"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Give us feedback 	&#8594;
+        </a>
+      </div>
+      <h2>Social media</h2>
+      <p>
       Guest suggestions, questions, and hate mail should be directed to{" "}
       <span className="obfuscate">
         moc.aedisi<span></span>htraeh@olleh
       </span>
-      . You can also find us on Facebook and Twitter:
+      .
     </p>
+    <p>You can also find us on Facebook and Twitter:</p>
     <div className="listen-container">
       <a
         className="listen"
@@ -168,11 +184,15 @@ const IndexPage = () => (
       >
         Claudia
       </a>{" "}
-      for creating full transcripts of each episode, and to       <a
+      for creating full transcripts of each episode, and to{" "}
+      <a
         href="https://jonas-kgomo.github.io/"
         target="_blank"
         rel="noopener noreferrer"
-      >Jonas Kgomo</a> for helping improve this website.
+      >
+        Jonas Kgomo
+      </a>{" "}
+      for helping improve this website.
     </p>
     <h2>Support the show</h2>
     <p className="introduction">
@@ -183,14 +203,17 @@ const IndexPage = () => (
         rel="noopener noreferrer"
       >
         Apple Podcasts
-      </a>, {" "}
+      </a>
+      ,{" "}
       <a
         href="https://open.spotify.com/show/442fxr9pe0tbDtqEikODch"
         target="_blank"
         rel="noopener noreferrer"
       >
         Spotify
-      </a>, or elsewhere. Written reviews are especially appreciated. You can also <Link to="/donate">tip the show here</Link>.
+      </a>
+      , or elsewhere. Written reviews are especially appreciated. You can also{" "}
+      <Link to="/donate">tip the show here</Link>.
     </p>
     <hr />
     <p className="small-print">

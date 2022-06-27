@@ -173,10 +173,15 @@ html * {
 }
 .listen {
   background: var(--hti-yellow);
-  padding: 13px;
+  padding: 13px 22px;
   margin: 13px;
   font-family: "Open Sans", sans-serif;
   font-size: 22px;
+  border-radius: 3px;
+}
+.listen:hover {
+  outline: 5px solid var(--primary-accent);
+  outline-offset: -5px;
 }
 .listen-container a {
   text-decoration: none;
