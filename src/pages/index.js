@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
+import { StaticImage } from "gatsby-plugin-image"
 import Seo from "../components/seo"
 import "../styles/index.scss"
 
@@ -10,8 +11,26 @@ const IndexPage = () => (
     <h1>About the show</h1>
     <hr className="line" />
     <p className="introduction introduction_tagline">
-      Hear This Idea is a podcast about new thinking in effective altruism.
+      Hear This Idea is a podcast about new thinking in{" "}
+      <a
+        href="https://www.effectivealtruism.org"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        effective altruism
+      </a>
+      .
     </p>
+    <StaticImage
+      className="home-image"
+      src="../images/fandl.jpg"
+      alt="Fin and Luca"
+      placeholder="blurred"
+      layout="fixed"
+      width={700}
+      height={480}
+      quality={90}
+    />
     <p className="introduction">
       The hosts are long-time friends{" "}
       <a
@@ -123,27 +142,30 @@ const IndexPage = () => (
         feedback form
       </a>
       . As a thank you for taking time to leave feedback, you'll be able to{" "}
-      <b>redeem a free book</b> from a list of books that we highly recommend. You're
-      welcome to fill out the form anonymously.</p>
-      <div className="listen-container">
-        <a
-          className="listen"
-          href="https://tally.so/r/nPd680"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Give us feedback 	&#8594;
-        </a>
-      </div>
-      <h2>Social media</h2>
-      <p className="introduction">
+      <b>redeem a free book</b> from a list of books that we highly recommend.
+      You're welcome to fill out the form anonymously.
+    </p>
+    <div className="listen-container">
+      <a
+        className="listen"
+        href="https://tally.so/r/nPd680"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Give us feedback &#8594;
+      </a>
+    </div>
+    <h2>Social media</h2>
+    <p className="introduction">
       Guest suggestions, questions, and hate mail should be directed to{" "}
       <span className="obfuscate">
         moc.aedisi<span></span>htraeh@olleh
       </span>
       .
     </p>
-    <p className="introduction">You can also find us on Facebook and Twitter:</p>
+    <p className="introduction">
+      You can also find us on Facebook and Twitter:
+    </p>
     <div className="listen-container">
       <a
         className="listen"

@@ -8,3 +8,9 @@
   font-weight: 700;
   //Currently this is doing nothing, but I could style it interestingly
 }
+
+.home-image{
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 36px 0px, rgba(255, 227, 67, 0.86) 0px 0px 0px 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 36px 0px, rgba(0,0,0, 0.08) 0px 0px 0px 2px;
+}
