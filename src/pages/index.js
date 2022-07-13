@@ -26,9 +26,8 @@ const IndexPage = () => (
       src="../images/fandl.jpg"
       alt="Fin and Luca"
       placeholder="blurred"
-      layout="fixed"
-      width={700}
-      height={480}
+      layout="constrained"
+      width={1000}
       quality={90}
     />
     <p className="introduction">
@@ -40,15 +39,15 @@ const IndexPage = () => (
       >
         Fin Moorhouse
       </a>{" "}
-      and{" "}
+      (right) and{" "}
       <a
         href="https://www.lucarighetti.com"
         target="_blank"
         rel="noopener noreferrer"
       >
         Luca Righetti
-      </a>
-      . Luca is a Research Fellow at{" "}
+      </a>{" "}
+      (left). Luca is a Research Fellow at{" "}
       <a
         href="https://openphilanthropy.org/"
         target="_blank"
