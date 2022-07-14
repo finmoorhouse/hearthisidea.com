@@ -125,32 +125,30 @@ const Seeker = React.forwardRef(
       }
     }, [playerRef, sendData, isClicked])
 
-    return (
+    const timestampComponent = timestamp ? (
       <div>
-        <h>
-          {speaker}
+        {speaker}
 
-          <button
-            isClicked={isClicked}
-            ref={localRef}
-            onClick={e => {
-              e.preventDefault()
-              handleSeek(time)
-            }}
-            className="seek-link"
-          >
-            {/* if timeline is undefined, dont show timestamp */}
+        <button
+          isClicked={isClicked}
+          ref={localRef}
+          onClick={e => {
+            e.preventDefault()
+            handleSeek(time)
+          }}
+          className="seek-link"
+        >
+          {/* if timeline is undefined, dont show timestamp */}
 
-            {timestamp ? <>({timestamp})</> : ""}
-          </button>
+          {timestamp ? <>{timestamp}</> : ""}
+        </button>
 
-          <button
-            isClicked={isClicked}
-            onClick={seekFunction}
-            ref={playerRef}
-            className="main-link"
-          ></button>
-        </h>
+        <button
+          isClicked={isClicked}
+          onClick={seekFunction}
+          ref={playerRef}
+          className="main-link"
+        ></button>
 
         <button
           ref={sendData}
@@ -161,7 +159,9 @@ const Seeker = React.forwardRef(
           className="send-link"
         ></button>
       </div>
-    )
+    ) : null
+
+    return timestampComponent
   }
 )
 
