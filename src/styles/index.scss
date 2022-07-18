@@ -13,7 +13,23 @@
   border-radius: 6px;
   max-width: 700px;
   //box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 36px 0px, rgba(255, 227, 67, 0.86) 0px 0px 0px 4px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 36px 0px,rgba(0, 0, 0, 0.08) 0px 0px 0px 2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 2px;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+.team-image {
+  border-radius: 6px;
+  max-height: 200px;
+  //box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 36px 0px, rgba(255, 227, 67, 0.86) 0px 0px 0px 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 2px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.team-images {
+  display: flex;
+  margin-bottom: 20px;
 }

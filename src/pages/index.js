@@ -184,6 +184,53 @@ const IndexPage = () => (
       </a>
     </div>
     <h2>The team</h2>
+    <div className="team-images">
+    <a
+      href="https://www.jasoncotrebil.com/en/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <StaticImage
+        className="team-image"
+        src="../images/team/jason.jpg"
+        alt="Jason"
+        placeholder="blurred"
+        layout="constrained"
+        width={200}
+        quality={90}
+      />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/claudia-moorhouse-584077206/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <StaticImage
+        className="team-image"
+        src="../images/team/claudia.jpg"
+        alt="Claudia"
+        placeholder="blurred"
+        layout="constrained"
+        width={200}
+        quality={90}
+      />
+    </a>
+    <a
+      href="https://jonas-kgomo.github.io/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <StaticImage
+        className="team-image"
+        src="../images/team/jonas.jpg"
+        alt="Jonas"
+        placeholder="blurred"
+        layout="constrained"
+        width={200}
+        quality={90}
+      />
+    </a>
+    </div>
     <p className="introduction">
       This show is made possible by our amazing producer and editor{" "}
       <a
