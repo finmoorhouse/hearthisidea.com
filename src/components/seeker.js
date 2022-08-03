@@ -127,7 +127,7 @@ const Seeker = React.forwardRef(
 
     const timestampComponent = timestamp ? (
       <div>
-        {speaker}
+        <span className="speaker-name">{speaker}</span>
 
         <button
           isClicked={isClicked}
