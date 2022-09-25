@@ -134,7 +134,7 @@ const IndexPage = () => (
     <p className="introduction">
       We value feedback of any kind, and you can leave some through our{" "}
       <a
-        href="https://tally.so/r/nPd680"
+        href="https://feedback.hearthisidea.com/listener"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -147,7 +147,7 @@ const IndexPage = () => (
     <div className="listen-container">
       <a
         className="listen"
-        href="https://tally.so/r/nPd680"
+        href="https://feedback.hearthisidea.com/listener"
         target="_blank"
         rel="noopener noreferrer"
       >
