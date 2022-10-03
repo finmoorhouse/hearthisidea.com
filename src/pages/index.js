@@ -261,6 +261,20 @@ const IndexPage = () => (
       </a>{" "}
       for helping improve this website.
     </p>
+    <h2>Amplify grants</h2>
+    <p className="introduction">
+      Over the next few months, we’re running a small grants program for podcasts and other creative media projects that spread ideas to help humanity navigate this century. Consider applying!
+    </p>
+    <div className="listen-container">
+      <Link
+        className="listen"
+        to="/grants"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn more &#8594;
+      </Link>
+    </div>
     <h2>Support the show</h2>
     <p className="introduction">
       The best way to support the show is to leave an honest rating on{" "}
