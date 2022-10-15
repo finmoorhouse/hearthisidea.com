@@ -139,9 +139,17 @@ table th {
   width: 40vw;
   min-width: 280px;
   margin: 50px auto;
+
   img {
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 2px !important;
   }
+}
+.episode-image_variable > img {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 36px 0px,
+  rgba(0, 0, 0, 0.08) 0px 0px 0px 2px !important;
 }
 
 .eiv-400 {
@@ -162,6 +170,10 @@ table th {
 .max-600 {
   width: 80vw;
   max-width: 600px;
+}
+.max-500 {
+  width: 75vw;
+  max-width: 500px;
 }
 .max-400 {
   width: 70vw;
@@ -290,8 +302,8 @@ table th {
   background: rgba($color: rgb(247, 193, 45), $alpha: 1);
   color: white;
 }
-.speaker-name{
-    font-family: "Open Sans";
-    font-weight: bold;
-    font-size: 110%;
+.speaker-name {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 110%;
 }
