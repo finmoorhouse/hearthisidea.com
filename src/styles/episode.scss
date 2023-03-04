@@ -179,6 +179,10 @@ table th {
   width: 70vw;
   max-width: 400px;
 }
+.max-200 {
+  width: 50vw;
+  max-width: 200px;
+}
 
 @media all and (min-width: 960px) {
   .episode-image_small {
