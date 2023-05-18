@@ -39,7 +39,7 @@ In this episode we talk about:
   	* [The Industrial Revolution](https://en.wikipedia.org/wiki/Industrial_Revolution). See also our [interview with Victoria Bateman](https://hearthisidea.com/episodes/victoria)
   	* The [Offense-Defense Balance](https://www.belfercenter.org/publication/what-offense-defense-balance-and-how-can-we-measure-it) (and [how it might apply to publishing AI research](https://www.governance.ai/research-paper/the-offense-defense-balance-of-scientific-knowledge-does-publishing-ai-research-reduce-misuse))
   * Moments of possible crises
-  	* The Cuban Missile Crisis. See also [work by Thomas Shelling](https://www.belfercenter.org/publication/preventing-nuclear-war-schellings-strategies)
+  	* The Cuban Missile Crisis. See also [work by Thomas Schelling](https://www.belfercenter.org/publication/preventing-nuclear-war-schellings-strategies)
   	* [Racing Through a Minefield: the AI deployment problem](https://www.cold-takes.com/racing-through-a-minefield-the-ai-deployment-problem/)
   * Race dynamics
   	* [Microsoft Bing's and Alphabet's Google race on chatbots](https://www.washingtonpost.com/technology/2023/04/19/google-bard-pichai-60-minutes-ai/)
@@ -62,6 +62,1677 @@ In this episode we talk about:
 
 ## Transcript
 
-*Coming soon!*
+### Intro
 
-![Ben Garfinkel](images/bg3.png)
+**Luca 00:06**
+
+Hi, you're listening to hear this idea. In this episode, we speak HTI. Ben Garfinkel, who is a research fellow at the Future of Humanity Institute and acting director of the Center for the Governance of AI, also known as GovAI. GovAI has quickly become a majorly exciting organization in the field of AI governance, providing advice to national governments and AI labs about the radical and lasting impacts that artificial intelligence could have on the world, as well as helping early career researchers skill up in the field. So, by the way, for any listeners interested in AI governance, we highly recommend that you look at their fellowship programs. Finn and I were particularly interested to hear how Ben's own views on AIS have evolved over the past few years. 
+
+
+**Luca 00:42**
+
+Ben has previously given a popular interview a few years back on the 80,000 Hours podcast, and it seemed high time to check in to see how his views have changed since, especially given how much the world of AI has evolved and how the discourse on AI has developed within the effective altruism community too. I've personally always taken Ben as a really important voice worth hearing on the AI debate, him being somebody who takes the existential risk of AI seriously, whilst also not holding back to criticize many of the existing cases made for it and looking for more rigor in the field as a whole. So I was really curious to hear what Ben has to make out of all of this. 
+
+
+**Luca 01:13**
+
+In this episode, we talk about an overview of the AI governance space and disentangling some concrete research questions that Ben would like to see more work on, seeing how existing arguments for transformative AI have held up, and Ben's personal motivations for working on existential risk. And then lastly, Gavii's own work and opportunities for listeners to get involved with. So, without further ado, here's the episode. 
+
+### Ben's presentation
+
+**Ben 01:35**
+
+So I run the center for the Governance of AI, and at the moment, a lot of my energy has been taken up by just basically doing that. I haven't had that much of a research focus the last few months. There's been a lot of attention on figuring out how to grow the organization and figuring out what directions we want to go in over the next year, and so there's been a lot of strategy work like that. 
+
+### What is AI governance
+
+**Fin 01:58**
+
+All right, what is AI governance? 
+
+
+**Ben 02:01**
+
+The way I would define it really broadly is there are a class of concerns that people have about the effect that progress in artificial intelligence might have about the world and the field of AI governance. Basically tries to understand the issues that progress in AI might cause and tries to understand how decisions that we make today could have an impact on how positive or negative the implications of AI are. 
+
+### What questions within AI does Ben does focus on?
+
+**Fin 02:26**
+
+Sounds to me like there are lots of questions there, and presumably something like GovAI can't focus on all of them. So what questions within the governance of AI do you focus on?
+
+**Ben 02:36**
+
+Right, so the way that GovAI tends to frame our focus is we're focused on the lasting impacts of artificial intelligence. And what that means essentially is by analogy, if you think about something like the Industrial Revolution or previous periods of technological change, there are a number of changes or effects of these periods of technological transformation that basically cause disruption or issues that arise and then are resolved over some period of time. But then there's obviously quite a few changes that come from technological transformations that have very lasting significance decades and beyond that into the future. So if we think about something like the Industrial Revolution, there are obviously temporary dislocations as people figured out how to transition to these issues like let's say labor migrations in the cities. 
+
+
+**Ben 03:29**
+
+But then also when the dust settled after industrialization, the world was just obviously radically different along with dimensions than was before. So as a guiding principle and this obviously doesn't narrow it down quite that much so far as a guiding principle we tend to focus on the lasting implications of a transition to a world with more advanced AI. Nice. 
+
+
+**Luca 03:47**
+
+Could you maybe give us a list of concrete research questions that might fall under this or a taxonomy of what kinds of impacts you're thinking about? 
+
+
+**Ben 03:54**
+
+Right, so I think research questions I'd say are a little bit different than sort of impacts because I think you can start by looking at what are the risks or things you might be concerned about. So maybe I'll just run through a few different things that you might be concerned about in no particular order that I would put in a basket of possible last year implications of AI. So one category that immediately comes to mind is you might be concerned about the impact of automation through AI on a wide range of things that affect human well being, including political institutions. So a really blunt sort of clear cut implication of AI if progress goes far enough is if progress continues, probably will be the case that anything that people can do can in principle be done by AI systems or software. 
+
+
+**Ben 04:39**
+
+And then an implication that very immediately comes to mind for many people is it's not quite clear that means that people still can have jobs. And then if you think about that, there's obviously some things that might come from that downstream. So for example, if you think ahead and you think about the fact that let's say democracy is a relatively modern thing in the world, it's really only the past, especially hundred years that's been common for there to be modern forms of democracy across many different countries. 
+
+
+**Ben 05:08**
+
+And you think about the implications of law enforcement being completely automatable and most people having nothing to contribute through labor, it's pretty easy to tell a story about how that might not be good for the world in terms of political power or enfranchisement or just different downstream implications of just the nature and value of labor changing. So that's one of the blunter things that I think is a sort of clear story about how AI could have a lasting impact in the world that is negative. I think there's a lot of other things as well. So another fairly blunt category is it does seem like progress in AI might in one way or another exacerbate risk of conflict. Sierra D to some extent, perhaps see this with I believe you had a recent episode on semiconductor supply chains, right? 
+
+**Fin 05:55**
+
+Yeah. 
+
+
+**Ben 05:55**
+
+So it may be the case, for example, that recent US activity to try and basically hobble China's access to advanced semiconductors is possible on the margin. That already has a slight impact on the risk of war between the US and China insofar as it increases tensions or lowers the amount of economic damage I would expect to suffer if it were to invade Taiwan as a sort of small step in the direction of the risk of conflict increasing. But just in general, if you think that AI might be a source of significant power and significant competition around it, that might be having exacerbating effect on the risk of conflict, it might also be the case as well that some military applications of AI could be destabilizing in various ways. 
+
+
+**Ben 06:36**
+
+Sometimes people talk about nuclear second strike stability being undermined by, for example, better tracking technology for nuclear weapons or autonomous weapons systems being destabilizing. And so if there were to be a large-scale nuclear war or perhaps a war with even more advanced weapons enabled by AI, that's another story you could tell about how there could be negative impacts of AI that stick around quite a while. And then I'd say a third category, not the only category, but another story you can tell about how there might be lasting, perhaps negative implications of AI are issues around catastrophic safety failures of AI systems. So there's this current trend of AI systems becoming more and more capable and more general and also being allowed to interact with the world in more and more substantial ways. 
+
+
+**Ben 07:24**
+
+And if you extrapolate this trend forward, it might be the case that in the future we have AI systems which can do many things much more intelligently than people can, that can pursue goals in a relatively open ended way out in the world. And then if these systems are designed appropriately, maybe that's fine. But also, if they behave in unexpected ways, it's possible to imagine that they could cause fairly severe damage or in various ways simply get out of control. And this is a class of concerns that a lot of people in the sort of especially AGI focused AI governance world focus a large amount of attention on that there's quite a bit to say about. 
+
+### Won't labs and states solve this by themselves?
+
+**Luca 08:08**
+
+So I think one way that we've kind of thought about this so far, has been listing, as you said, the reasons why there might be long lasting impacts or what those impacts might be. Another way I could imagine approaching this question is thinking about what some of the ongoing dynamics are at the moment. So you mentioned, for example, competition between nation states. We can also think about competition between labs in that kind of framing of dynamics that are going on. What are some underlying reasons why we shouldn't just expect the world to be able to solve these problems? Kind of straightforwardly. 
+
+
+**Ben 08:39**
+
+Yeah, I think a similar answer to that is there's lots of problems the world has failed to solve historically that have some analogous properties. So, for example, if you're worried about the risk of conflict between states, it is definitely notable that wars have happened which were massively destructive in the past, and it's not really clear why this should be so different today. 
+
+
+**Luca 08:59**
+
+Have there been examples of wars between states because of these technological pressures and stuff? 
+
+
+**Ben 09:06**
+
+Yeah, that's a really good question. So I'd say that the role of technological change in conflict is pretty contested. I'd say that there's a couple of potential pathways by which progress in AI could exacerbate the risk of conflict. One is power transitions if it's believed that artificial intelligence or leadership in it might be pretty important for national power and is concerned that lagging states, for instance, in this case China, might surpass leading states, for instance, the United States. One narrative people sometimes tell is that this might exacerbate the risk of conflict because basically the leading state is really worried about losing its position and is willing to take risky actions to sort of lower the odds of that. 
+
+
+**Ben 09:52**
+
+There's a separate story that people sometimes tell which is not so much about power transitions, but is more about the nature of military technology and the extent to which it, for instance, favors offense over defense or allows conflicts to escalate quite quickly. I'd say both of these dynamics. It's fairly controversial among international relations scholars how large a role they play in conflict in terms of power transitions. There is a pretty large literature that suggests or argues that if there's a situation where a leading state is worried about a lagging state surpassing it, that this exacerbates the risk of conflict. There's a recent book, Destined for War, that makes this argument, for example, and then there are a lot of cases which are sometimes pitched this way. 
+
+
+**Ben 10:38**
+
+It is really hard, though, to do causal inference on international relations and actually know, would this conflict not have happened if there wasn't this lagging state rising up? So I'd say that's a relatively common view, but it's really not something where you can say there's very straightforward evidence that this is actually a causal effect in terms of the effect of changes in the nature of military technology. This is, again, one where it's quite controversial and it's very hard to do that causal inference. So, as a positive case of technology being stabilizing, it's pretty commonly thought that, for example, states just having nuclear weapons lowers the risk of them going to war with each other, that the chance the Cold War would have turned hot would have been higher if they don't both have nuclear weapons. 
+
+
+**Ben 11:25**
+
+That's a pretty conventional view that has a sort of love, intuitive appeal to it. It's, again, one of those things where it's hard to do really confident causal inference here, but seems quite plausible to me. There's other historical cases which people sometimes raise which I think are more ambiguous, but I think in broad strokes, I do think it's generally thought that at least for sufficiently extreme differences, for example, the case of two states having nuclear weapons versus not military technology can have an impact on the risk of conflict. 
+
+### Can't we just figure this out along the way?
+
+**Fin 11:57**
+
+Yeah, interesting related question I have is something like if it's the case that AI tends to have these big, important lasting effects, then sure, but why can we expect to, first of all, know about them enough to know what to do, and then secondly, do something to help them go better? So I'm imagining, like you mentioned, the Industrial Revolution, like a center for the governance of the Industrial Revolution. That's like trying to anticipate, like, oh boy, it sure seems like this thing that's kind of on the horizon caused a bunch of displaced, a bunch of jobs, bunch of migration into cities, maybe all differentially empower the countries that get these technologies first. But it kind of seems to me from our perspective, that they probably wouldn't have figured out what to do to actually make it go well. So what's different? 
+
+
+**Ben 12:44**
+
+Yeah, so I think that's a really good question, and I think it's completely plausible that for a number of these risks, there's nothing people can do to have an impact on them. I think it's completely plausible and just to stress that. So to stress that point even more, I like to use both the Industrial Revolution and the Agricultural and Neolithic Revolution as touchstones for these points where there is some really major change in the nature of production. In the case of AI, it's human cognitive labor no longer being so valuable. In the case of the Industrial Revolution, there's a lot of stuff going on, but one thing is basically transition from muscle power and organic source of energy playing a large role in production to fossil fuels and these sorts of things. 
+
+
+**Ben 13:26**
+
+And then the Neolithic Revolution transitioned from hunting and gathering to actually intensive agriculture. And so you have these different points in time where there's been some really major change in the nature of productive technology. And then it's quite clear in both the Agricultural and Industrial Revolution cases, a lot of stuff seems to follow from this downstream. I think in both those major historical cases, though, it's really not very clear at all that people could have done much to have an impact on the most significant, lasting changes that those revolutions brought. I mean, especially in the case of the Neolithic Revolution, there were a lot of things that seemed to have been probably causally downstream of it. 
+
+
+**Fin 14:05**
+
+You want to remind us what the Neolithic Revolution was? 
+
+
+**Ben 14:07**
+
+Oh, sorry. Yeah. So, basically, between roughly 10,000 BC. And 5000 or BC or so in the Near East, and then different time periods in our parts of the world, agriculture emerged. So previously, people mostly hunted things and then gathered things, famously. And then over time, there's a gradual transition towards what looks like modern agriculture, where you stay in one place and you plant and you cultivate specific crops. And then following that, there were a lot of changes, basically socially that seemed to have been flowing through effects. For example, just partly as a function of the fact that people could get way more food per unit of land and could stay in the same place. This made it possible for way higher population densities to exist and for there be more specialization in labor. And over time, states emerged. 
+
+
+**Ben 15:04**
+
+Things like political systems with different levels of hierarchy emerged. Slavery in recognizable forms probably became substantially more common. That was contentious. Probably divisions in generals became more significant. People probably became sicker as well, just due to disease becoming possible. Rates of international interpersonal violence probably went down because states could protect people from killing each other and more easily and things like that. Yeah. So basically a lot of changes in the world. I think if you had been someone in 10,000 BC. In the Near East, and, you know, you're noticing, I think, you know, the way this is going, you know, several thousand years in the future, you know, maybe we'll be living in, you know, giant empires. And autocratic states, and all these things will be going on, and we should try to avoid that happening. 
+
+
+**Ben 15:55**
+
+Or we should try and get the good stuff without the bad stuff. Really, really not clear at all what one does there. And then a significant part of it is competitive pressures play a significant role in, I think, determining what the impact of technology is on the world in the long run. That often there are ways to use technology which are just more competitive than others in an economic or political sense, and then there's some sort of selective pressure. So sedentary agricultural states could probably, without huge amounts of difficulty, at least on average, expand out and take land that was previously controlled by hunter gatherer groups just because it was more competitively advantageous. And similar for industrialization, where if you decided intentionally not to industrialize, as a number of states were hesitant to do, this really put you at a disadvantage. 
+
+
+**Ben 16:50**
+
+It made it easier, for example, for colonialization to happen or other forms of pressure to be put on you. Yeah. So this is a long winded way of saying basically if you look at these historical cases and you look at these really long run effects of them intuitively, it seems like there probably wasn't that much people really could have done to affect the implications of these things decades out or centuries or millennia out. And I think a lot of that probably has to do with competitive pressures and the fact that it just wasn't really realistic for people to coordinate around them, even in a world where they actually had foresight about them. Yeah. 
+
+
+**Luca 17:22**
+
+Do you think that there is an important difference between those examples in the situation we are in today? That there is just like more ways that the world can coordinate or can have foresight here? I can imagine just the epistemic tools that are available today are just very different than what was in the Industrial Revolution, let alone the Agricultural Revolution. 
+
+
+**Ben 17:39**
+
+Yeah. So I think that there's two possible ways in which the current situation could be different if you're concerned about it. One is that the nature of the problems is different in a way which makes them easier to solve, and the other could be that the tools that we have to avoid them are different. So in terms of the tools, if you wanted to tell that story, it would be something having to do with just international coordination is more feasible than it was before. So clearly international coordination on, like, let's say, no one ever should develop intensive agriculture globally is like you couldn't really have had a conference on that at the time. And obviously similar for although to a slightly lesser extent, but similar for the Industrial Revolution to some extent. 
+
+
+**Ben 18:26**
+
+And so that's one story you could tell is that if there's things you're concerned about so let's say you're concerned about in some way wide scale automation leading to decline of democracy or just various things that are actually undesirable for people, perhaps you could actually have international agreements or shared understandings on these things in a way that wasn't possible historically. It's not so clear to me that's the case. I think one issue here as well is it needs to just actually be very stable, whatever you lock in, where it can't just be the case that you can think again. In the, let's say, Neolithic Revolution case, even if people had, let's say, a 5000 year moratorium on that, somehow if the coordination breaks down, maybe eventually someone starts planting some things. This is, I think, a bit of a hard push. 
+
+
+**Ben 19:15**
+
+We need some sort of story of not just actors globally coordinating to hold off on adopting something which is competitively advantageous, but bad in the long run. You need them to actually just essentially never do it. Or you need some sort of story there. So that's a bit of a hard push, I think, on the although not completely. Yeah, we can talk more about why that might not be completely zero probability, but it's basically it's a hard push, let's say. 
+
+
+**Fin 19:46**
+
+Yeah. 
+
+
+**Ben 19:46**
+
+On the flip side though, the other story might be that there's something different about some of the risks or things that might get locked in around AI compared to these previous historical cases. And I think the risk from AI that I most strongly feel that for is these sort of safety risks that I alluded to of risks of AI systems essentially getting out of control. And I think the first thing to note about this is that this is pretty different than the sorts of things that people were concerned about or the sorts of harms or benefits I raised for these previous revolutions. None of them had this flavor of like a safety issue or this acute catastrophe, essentially. 
+
+
+**Ben 20:28**
+
+I think safety is also especially interesting where, yeah, so we can tell a story about how there might be some level of contingency in a permanent way with harms caused by out of control AI systems. So one story you might tell about how disaster could occur here is, okay, so let's take these current AI systems that people might be aware of, these systems like GPD Four or these language models. And the way these systems currently work is basically they're systems which are very good at generating ideas and creating ideas for how to do things. You ask them questions like, oh, I want to make an app that does this, how should I code that? Or can you generate some code for me? Or I want to get better at this, how do I do that? Things like that. 
+
+
+**Ben 21:14**
+
+And they're getting increasingly good over time. Over time, they may become substantially better than people coming up with ideas for how to do things in the world. There's also a trend towards them being developed in a way that allows them to interact more heavily with different aspects of the world. We're probably on trajectory where you can start to do things like ask them, oh, hey, can you plan this event for me? And do all the back and forth emailing and contract with the relevant person, et cetera. 
+
+
+**Ben 21:42**
+
+And so we're on some sort of trajectory here where these systems are going to become increasingly good at coming up with ideas about how to do things in the world, perhaps superhuman along different dimensions, perhaps given increasingly large amounts of autonomy about how to do this and allowed to interact with increasingly important bits of infrastructure in the world, including the financial system or perhaps in the future, military things as well. And then a story that you can tell here is basically these systems often behave in pretty unpredictable ways. We don't really understand what's going on inside of them. 
+
+
+**Ben 22:13**
+
+And then there's a range of arguments people give which we can get into for why the likelihood of these things just behave in ways which are really not in the interest of the user and really hard to control or higher than you might even intuitively think. And then story here is these trends continue. We continue to not be in really great control of these systems and then at some point in the future there's a catastrophe that occurs. There's some sort of related to these systems being hooked up in some way to critical infrastructure or just to these systems being in some way sort of self preserving and sort of not easily reined in and in some way we lose control over important bits of the world. 
+
+
+**Ben 22:52**
+
+Broadly speaking, in a very abstract level that's a concern that people have about safety or control of these systems. The nice thing though about safety or control of AI systems is everyone basically is on the same page globally that we would like for AI systems to do the things that we want them to do as opposed to things that no one wants them to do. And so if it were really technically easy or straightforward to know whether the system you're releasing is going to behave as you want it to behave, or just really easy or straightforward to for sure make it in a way that will behave the way you want it to behave and not go out of control or cause really severe, unintended harm, then everyone basically would do that. 
+
+
+**Ben 23:36**
+
+No one wants to release the system that they know will do specifically the things that they don't want it to do. And so you can have a story there of contingency where it's partly a matter of do people actually work out good enough techniques for making these things reliably behave the way you want them to? Or at least reliably predictable in terms of whether they're in a sense aligned or unaligned. And then the story here is if these techniques for identifying the safety of a system or making it safe are developed quickly enough, then people will just basically use them. And then if these techniques exist, then people just basically use them. No one is going to at that point would need to be an intentional act to release something which causes catastrophes. 
+
+
+**Ben 24:19**
+
+And then maybe that becomes quite unlikely that any actor with the resources to make these things would intentionally release ants catastrophic maybe over time, as well as people work out how to use these systems in very reliable ways that those can provide defenses against rare systems which are unsafe. Maybe at some point defenses are created where you can ask your own idea journaling AI system hey, it seems like this guy has gone pretty out of control. Any tips about how to handle that? And it's in some sense defense dominant. And so the story there is like oh, you could have a world where there's some really lasting harm of people rush out and they deploy some systems that they don't realize are really screwed up. We don't yet have good defenses in place at that point. And then there's some sort of lasting harm. 
+
+
+**Ben 24:59**
+
+On the flip side, maybe people work out these safety or alignment techniques or unsafety identification techniques quickly enough. No one releases a system into the world that's really misaligned or scary, at least until the point at least not far enough into the future where people have defenses against them. And then it's just okay and the situation is relatively stable. Such a story of contingency that you can't really tell for the previous things. 
+
+
+**Fin 25:24**
+
+I guess I wouldn't mind trying to say that back. So what I'm hearing is something like this. In the case of the agricultural revolution, it definitely had these big lasting effects, but I didn't seem especially contingent. One reason to think this is that it happened like ten times ish across the world independently. And also it's not clear what really good versus really bad versions of the accrotural revolution look like. It all looks pretty much the same to me. People figure out that they can plant things and stay in one place. In the case of AI, seems at least kind of possible to imagine some contingency where you have more than one relatively stable future. 
+
+
+**Fin 26:06**
+
+Maybe one bad future involves failing to figure out how to get AI to do the kinds of things we actually want them to do before we build them so they're powerful enough to do really bad things. And then another potentially stable future is just the opposite. We do figure out how to get them to do roughly what we want them to do in time. And both those futures are kind of you can tell the story about how they're self enforcing, how they have these kind of like defense offense balances. And because there's more than one future we can see ahead of us and it feels like there's some contingency, then it feels like we have some lever we can try or levers we can try pulling on to actually lastingly affect the future. 
+
+
+**Ben 26:46**
+
+Yeah, exactly. I put also maybe some of the details slightly differently where I think, for example, one way in which the bad future could be self reinforcing for catastrophes in extreme case is for instance, everyone's dead or something like that. Yeah, you could also have it be the case that you've in some way lost control of a certain AI systems which are in control of important bits of the world and then you can't turn them off and it's just yeah, defense dominant in some way, I should also add quickly as well. So I guess I focused on contingency in the context of these safety catastrophes because I think the stability story there is the easiest one to tell. I also think you could have a somewhat similar story other with some dot dots or question marks for conflict as well. 
+
+
+**Ben 27:31**
+
+An analogy here is just the Cold War where most people, the star. Of the Cold War thought there was a very high chance of the US or the Soviet Union using nuclear weapons against the other. This was really commonly thought there's all these anecdotes that people were can't ran, not taking their pensions and things like this, and it didn't happen. But it seems like it could have. It seems like if you played out the Cold War over and over again with slight changes in the initial conditions, you know, I would guess that at a bare minimum, a 10th of the time nuclear weapons are used by the US or Soviet Union against the other plausibly. I think it might even be defensible that's above 50%, but I think it was not over determined. I think. 
+
+
+**Ben 28:14**
+
+And that's just partly based on if you look through lots of different crisis moments that occurred over the course of the Cold War, especially the Cuban Missile Crisis, it really does seem like you can tell these stories of if that variable had been a little bit different, I think you could tell a similar story for any sort of AI related conflict. I think the Cold War is a nice analogy of there being some level of contingency and whether conflict breaks out or not, there is that sort of tricky bit at the end, which is still an issue for nuclear war. The risk of nuclear war has not gone to zero, famously, and so there's certainly contingency in terms of the nuclear war happened during the Cold War. 
+
+
+**Ben 28:54**
+
+If you want to take a really looking on the order of many decades perspective, though, it's not really clear that the really dark, cynical perspective is nuclear war will happen at some point unless something really changes that somehow drops the probability to basically zero, and it's not yet clear what that is. And you can say a similar thing for AI, where I think you can definitely tell a story of contingency, where for any given window of time, it seems really contingent whether war would actually break out in some way related to AI. But it's a little bit trickier to tell its story of why this basically the longer the window of time you're looking at, the harder it is to explain why there's contingency, essentially. 
+
+
+**Fin 29:36**
+
+Yeah, I guess the really cynical take on nuclear risk could have been that the risk just monotonically increases over time because we invent more powerful weapons and we build more of them, but we don't uninvent ways to make powerful nuclear weapons. And that doesn't seem to have played out. I would guess that the risk is much lower now than at the Cold War. So at least that's kind of like a sign of hope that the risk could go down as well as up. 
+
+
+**Ben 30:00**
+
+Yeah, so that's really the case. I think the overall trend, at least the noisy trend, is mostly downwards. I don't think it was completely so, and I think the risk of nuclear war was probably higher in the 80s than it was in the whatnot. But yeah, I do think there's some sort of noisy trend there and you could tell some story of nuclear war where actually it's a noisy trend and the probability has not gone to zero, but actually it's converging to zero in a way that bounds the overall risk of nuclear war ever happening. Or you could just say hey, we just need to not have nuclear war for long enough and then at some point something happens in the future there's some technological fix, or world government happens, or you go to space and then that's also a story you could tell. 
+
+
+**Luca 30:43**
+
+There also feels to be some way in which perceptions are linked here as well. Like, as you said, if people in the 1950s just perceive the risk of nuclear war being higher and then updating slowly downwards as it doesn't materialize, that kind of becomes self reinforcing in a way that people see. That nuclear risk hasn't happened over a given window of time, then update downwards, and that itself decreases the risks of nuclear weapons being used. 
+
+
+**Ben 31:04**
+
+Absolutely. So I think there's definitely a large aspect of that where so a significant aspect of, for example, risk from nuclear accidents is you think that the other person is going to use nuclear weapons against you, which makes you inclined to be really jumpy, essentially. And there's a number of cases of people mistakenly thinking that maybe nuclear weapons were about to be used and then this exacerbating risk. And so definitely the more calm you are about the threat posed by another actor, the less likely you are to take actions that cause harm. And and there's just yeah, there's some classic in the security studies world, some classic anecdotes people use to just to illustrate this, where there's a famous one by Thomas Shelling of like a robber breaks into your house. At night with a gun. 
+
+
+**Ben 31:50**
+
+And then you come down with a gun, and then you both run into each other, and you both are reasonably thinking, there's a decent chance that this guy is about to shoot me. And then because of that, you think to yourself, oh, well, that should lead me to be more inclined to shoot him. And then the other person, if they have time to have that additional step in their thinking, becomes even more inclined to shoot you because of that. If though, you go 30 seconds without either of you having fired, then the risk of anything happening obviously becomes quite a bit lower because you become rationally less worried about the other person attacking you and then they sort of self fulfilling that sense. 
+
+
+**Ben 32:24**
+And so you have this peak period where you're both quite worried and there's the highest risk of something happening in the world when other of actually wants to shoot the other. And then as time passes and nothing happens, the risk goes quite low where if you've been for some reason hanging out in the same room for 5 hours of it happening the next minute is quite low. 
+
+
+**Fin 32:42**
+
+Yeah. 
+
+### Labs and companies incentives to cut down on safety
+
+**Luca 32:43**
+
+Just before we go down this lane more, I kind of want to go back to a question earlier. So we talked about one of the dynamics being geopolitical tensions and competition and ways that can go haywire. I'm also curious more in the kind of lab business competition sense, what you're thinking is there. So one of the common arguments I hear is look, companies have this incentive to be first to kind of capture market share. There are reasons to think that especially AI kind of has this similar monopoly trend that search engines do. So being like the first one there is really useful. And that means that companies are more keen to maybe cut corners on safety in order to have that first move and that can then cash out on some of these safety risks. Yeah. 
+
+**Luca 33:23**
+
+What's your take on that as a driving intuition? 
+
+
+**Ben 33:26**
+
+Yeah, so I definitely agree that there is a trade off between commercial pressure and safety. And I think just a really straightforward example of this is and sorry, I don't have any particular inside information here, this is mostly just the same stuff as anyone. But it's pretty clear that Microsoft recently pushing ahead quite hard to release this Bing chat large language model. Chat bot really freaked out Alphabet. So basically Bing moved forward with this chat bot which is meant to be sort of a complement to Bing search and then explicitly in public communication raised this as something that they saw as threatening to the search Google's search monopoly. And it's pretty clear that Alphabet really freaked out because a really huge portion of Alphabet's revenue comes through Google search. 
+
+
+**Ben 34:19**
+
+And then if it were the case that Bing were to against previously, what seemed like all odds become the dominant search engine. This should be, you know, truly terrible for yeah, truly terrible for Alphabet. And so Alphabet clearly kicked things into second gear and put a lot more energy into developing their own system barred these things are. From a social perspective, I think it's really not good that these things are being released quite as soon as they are. Because basically these large language models, these chatbot systems still frequently just about complete misinformation if you ask them questions about the world. I don't know what the statistics are, but it's extremely uncommon for them to just say completely made up things. 
+
+
+**Ben 35:00**
+
+And so if you're in some way associating these systems with search engines, then I think people have a reasonable presumption even if you're saying that don't necessarily trust these things, that the information they give is correct. And so this isn't the largest harm in the world, this isn't going to destroy the fabric of stabilization, but just in general making it so that search engines now a 10th of the time this give you completely wrong facts is like, probably net socially harmful. 
+
+
+**Fin 35:26**
+
+Yeah. 
+
+
+**Ben 35:27**
+
+And so Alphabet was clearly yeah, so basically, clearly Microsoft was moved to release these things more quickly because they wanted to get there first, because that's the way that you could potentially gain search engine dominance. And Alphabet was clearly motivated to move more quickly than it would because it was really terrified about losing search engine dominance. And that's just a pretty straightforward, recent concrete case where I think two companies move faster than I think they would have in the absence of competitive pressure. Probably there was some internal sense, I would suppose, as well, that the stuff is not fully ready, but they were still pressured to move in that direction. I do think the big question, though, is how severe of a safety trade off can you actually reasonably expect commercial pressure to cause? 
+
+
+**Ben 36:12**
+
+So I think this sort of thing for sure can happen, and we've seen it happen. There's also in other industries cases you'll sometimes see about relatively faulty or untested products being rushed out to market. But I mean, as an extreme thing, something I don't think is going to happen is imagine that there's a future AI system, it's JPT Seven or something, and then the people developing it are like, okay, we think that there's a 50% chance if we release this, then we gain a sort of great market monopoly. There's a 50% chance if we release it, then everyone on Earth will die. 
+
+
+**Fin 36:49**
+
+Who wrote this press release. 
+
+
+**Ben 36:51**
+
+Yeah. And I don't really see that happening. And then people sometimes tell these stories about, yeah, I don't know, maybe something's implicitly having their head of, like, well, but then they're also forced to rush out because then there's another tech company that they think has a 60% chance their product will cause everyone to die, or some such. And I think just when I think kind of concretely about obviously that's a exaggeration of probabilities, when I think concretely about that, I just find it really hard to imagine companies actually doing that. And then you're also at that point where even if it's the case that there's not great regulatory frameworks in place and government competence around this stuff is not that high, i, I do just think, you know, these people, companies are talking all the time to people in government. 
+
+
+**Ben 37:42**
+
+No one wants extreme catastrophes to happen. People, broadly speaking, aren't sociopaths. Yeah. So I think in terms of these more extreme things, just the fact that companies exist under national governments which actually can take actions, especially if you talk to them that the people aren't sociopaths, et cetera, I find that a bit harder. Although things can become tricky when it's like these weird residual risks of to go to the opposite end of the spectrum. We think that there's a quarter of a percent chance that the system we release might have some security flaw that will cause some sort of really substantial catastrophe and we feel pressure to kind of ignore that speculative zero point 25%. 
+
+
+**Ben 38:30**
+
+That's something where I think it's easier to tell a story that doesn't feel kind of cartoonish to me of actual human beings plowing ahead and kind of pushing under the rug some residual risk. 
+
+
+**Luca 38:42**
+
+So what I'm taking from this is, on the one hand, that if there is this type of failure, that it's much more rooted in misperception of risk, then it has to do with just straight up very obvious incompetence. And then the second thing is what you spoke there at the end, that it's much more likely to be a very low probability thing that goes wrong, rather than something that's like in the, whatever like 20, 50%, like, known failure. 
+
+
+**Ben 39:05**
+
+Or at least if it's or at least if it's like competition between companies, basically. Like, I I think just generally speaking, I think it's it will be hard it's just hard for me to imagine, let's say an American company actively believing that there's a 50% chance of crazy catastrophe and then going to have the product because they want to get to market before another American company. 
+
+
+**Fin 39:29**
+
+Yeah. 
+
+
+**Luca 39:29**
+
+Is that story different than if you're thinking geopolitically so a Chinese company and a US company? 
+
+
+**Ben 39:33**
+
+I think it's a little bit different. I think even in that case, though, I think a really large portion of the risk here of if actors actually yeah, so broadly speaking, let's say you want to tell some sort of story that has a flavor of some actors developing a future AI system. They think that there's some probability that the system, if they release it, will just behave in a way that they completely do not want. That would be like morally horrific. But they accept that probability in part because they want to really make sure to get their system out there into the world first before some other actor. I think there's a couple of key variables there. One variable is what extent can the actors coordinate to just not have the horrible thing happen? 
+
+
+**Fin 40:18**
+
+Right. 
+
+
+**Ben 40:18**
+
+And that's going to be much easier if you're both just companies under the same domestic government or governments which are closely have close links to each other. I think that's, like, a much more feasible thing, because you might both just. 
+
+
+**Fin 40:33**
+
+Want the government to yeah, I do. 
+
+
+**Ben 40:35**
+
+Think in general, if you're two companies and just if you actually can imagine a world where there's two companies that against the probability to an extreme value. I think there's a 50% chance that if they release their thing into the world, global catastrophe will happen. They really don't want that, but they feel like maybe my competitor will release when there's 60% chance of that happening, so I need to get there first. And they're both freaked out about that. I do think they would probably just prefer to not be in that situation and prefer for there to be some form of sharp moratorium on that. I do think if that's actually a situation, they actually have rationally justified beliefs. Even if there's not a great regulatory framework that's already put into place, there's not the agency. 
+
+
+**Fin 41:15**
+
+You just rationally want a binding agreement that stops you building this thing. Yeah, as long as it stops your competitor. 
+
+
+**Ben 41:21**
+
+I think in general, you're talking all the time to national security folks and Congresspeople, and you're like, I think yeah. When you set the values to extreme the values to these extreme levels, it's hard for me to imagine this happening, but there's a couple of things that can make it trickier. One thing is, to what extent can you actually coordinate to have some higher authority in some way? Like actually usually make sure you're both not doing this thing? 
+
+
+**Luca 41:46**
+
+So what would it look like if that coordination wasn't possible? 
+
+
+**Ben 41:49**
+
+I mean, so for states is a really classic thing. 
+
+
+**Luca 41:53**
+
+So if it's between states competing as opposed to between companies and the US. 
+
+
+**Ben 41:57**
+
+Competing. Yeah, exactly. So in general, yeah, there's this really important difference between the international sphere and the domestic sphere. And there's concept international relations, people use of anarchy, and that just means some sort of political domain where there's no essentially higher authority that really has a strong ability to compel the lower down players to abide by agreements or do certain things. So in the context of countries, you have the national government and any sort of well functioning country that can force everyone to follow the law, basically, or enforce contracts or things like that. In the international sphere, they're international institutions, but none of them have tanks. So there's international institutions, but they have no ability to actually really apply force in a meaningful way. 
+
+
+**Ben 42:47**
+
+And so most agreements between states, for example, are mostly self enforcing, similar to, let's say, like frontier towns or something of the Old West, whether enforced by threats of retaliation or reputational concerns or goodwill or things like that. And so in general, there's a really large difference between if you're in the US. And you want to form a contract with someone else and you want to be enforced. It's like, very easy to do that if you're two superpowers. You want to form a contract with each other and you want to trust that it will actually be abided by, it's very difficult to do that. So I think that's a huge difference yeah, basically between international competitive dynamics and domestic ones. The other one, which is a bit downstream of this, is not just the difficulty of forming agreements with each other. 
+
+
+**Ben 43:35**
+
+It's how worried you should rationally be about another actor getting ahead of you. So if you're two companies and then you're worried about another company getting to market first, the most basic concern there is, oh, we'll lose market share. Or maybe in the extreme case, our company will need to get shut down insofar as this is still under the umbrella of a national government. And then obviously that's really bad. No one wants their company to lose market share and whatnot at the same time, at the international level, what people sometimes worry about is this country will use military force against me. So why is it the case that, let's say, Taiwan is worried about its relative level of military advancement compared to China's? It's a much more dramatic thing that it's worried about. 
+
+
+**Ben 44:31**
+
+And, and basically the cost of being a laggard is just potentially much higher, which implies that it's there's more willingness to take risks. And as another concrete example of this, I don't know to what extent these anecdotes are confirmed, but there's these classic anecdotes about the Manhattan Project and the first detonation of a nuclear bomb. And there were apparently some physicists involved in it who thought there's some residual chance that this will detonate the atmosphere and kill everyone on Earth if we detonate the first atomic bomb. We've done some calculations but haven't done a ton of calculations. Maybe they haven't been checked ten times and the stuff is all new. And I think that there's some anecdotes. Both people maybe thought I was something on the order of a 5% chance or something like that. 
+
+
+**Ben 45:19**
+
+I don't know what actual, subjective probabilities people had, but in the context of it's a global war that will, and the winner will decide the fate of the globe and millions of deaths on both sides and all of that, it's much easier to tell a story about why you might be rationally, actually willing to accept some risk of this crazy catastrophe. Especially if you think that other states might be developing nuclear weapons as well. Right. 
+
+
+**Fin 45:47**
+
+And for what it's worth, I think they did miscalculate the yield of the Trinity test, so they got something wrong. And I guess when they saw the explosion was bigger than they thought, that there was like this brief moment where they thought they really got it badly wrong. You mentioned international institutions. It just occurred to me that maybe there are some exceptions where these institutions do have some teeth. So an example might be like air traffic codes and standards where if I'm like some random country and I decide to break away from these codes, there's just nothing in it for me. Yeah, our planes aren't going to speak to the air traffic controllers in the same way and that are going to be slightly less safe and stuff, just like no one wanted to land. So maybe AI could be like that. Seems unlikely. 
+
+
+**Ben 46:29**
+
+Yeah. So basically I think there's a big difference between agreements which are in some sense self enforcing, versus agreements which rely in some way on external enforcement. And so yeah, there's a big literature on there's lots of agreements that people can maintain and stick with in real world circumstances without some external party enforcing it. Because, I mean, so the basic thing is, let's say reputational damage is a basic one if people won't want to enter into agreements with you in the future. And that's enough of incentive or just something where once you've formed an agreement, you just don't get anything from diverging. Let's say that you want to go see a movie with your friend, and then you both form an agreement to meet at 01:00 P.m. 
+
+
+**Ben 47:15**
+
+At a certain theater, and then you decide to show up at a different theater for the movie you want to see together. And then it's just like you don't get nothing once you form the agreement. It's just coordinating with everyone else and doing the same thing is something that's beneficial, I think, unfortunately, versus prison dilemma type situation. Yeah, exactly. I think, unfortunately, though, some of these safety, military capability, trade offs and whatnot don't have the same flavor. 
+
+
+**Fin 47:43**
+
+Seems right. Yeah. 
+
+### How mature is the field of AI governance?
+
+**Luca 47:45**
+
+So we spent some time, I guess, now sketching out what the problem, or the shape of the problem at least looks like, and some of the caveats and nuances there. I'm curious, before we maybe dive deeper into some aspects of this, if you could briefly speak to where you see AI governance as a field, like currently being at so in terms of maturity as a field and strategic clarity or just being on top of stuff, where do you see AI governance at the moment? 
+
+
+**Ben 48:08**
+
+So I think at the moment it's not extremely high ranking, let's say. And then I think there's a question of what's to blame for that. But I'd say as a field, I think we're still quite early and in different ways fairly immature. I don't think there's a lot of consensus on a lot of issues within the field. I think in terms of theory of impact and methodology and even knowledge of various issues that matter or things like here's an important topic. Is there anyone who's full time working on this? Very often the answer is no. So I do think there's a lot of ways in which the field is not a mature field, and in some ways that's unsurprising because it definitely hasn't existed for any reasonable way of defining the field for more than a decade. 
+
+
+**Ben 49:00**
+
+I do also think there's also been an interesting aspect for this sort of more forward looking flavor of AI governance, where you're especially focused on either the really lasting impacts of AI or the risks that will emerge as AI systems really become quite advanced. I think an important setback here has been that for most fields, it's really hard to do good work when you're talking about things in the abstract without much engagement with details or very much of a feedback loop. And for most of the field's very short existence, there's been this interesting divergence where there's been some people who are focused on these questions like catastrophic safety risks from really advanced, very general systems or really heightened risk of military conflict once new weapons systems are deployed or the effects of a widespread automation. 
+
+
+**Ben 49:52**
+
+And then the issue is nothing like that was happening in the world and systems which were the kinds of systems that would enable those things to happen just didn't really exist. So if you go back to 2016, you have lots of things which are scientifically interesting, let's say like AlphaGo is very scientifically interesting, has no real world implications and you have lots of stuff like recommendation algorithms for Facebook newsfeed and Netflix and basic facial recognition, things like that. And those were causing issues but they were just the connection was pretty tenuous, basically. And so you had a lot of people either working on sort of basically speculating about these long term issues and what you might do with them in an extremely detail agnostic way that I think probably wasn't that productive. 
+
+
+**Ben 50:44**
+
+And you also had some people who were looking at things that currently were happening in the world and kind of squinting at them and trying to think what the implications might be further online and that also wasn't very productive. And so I think that was something that above and beyond just the fact that the field is quite new and immature was an important limiting factor. I think that's starting to change a little bit just because there's starting to be less daylight or less of a gap between the kinds of systems that exist today and the systems that you might be worried about causing really large scale or pass traffic or lasting harms. 
+
+
+**Ben 51:19**
+
+It's also their actual decisions happening in the world today may be made by various institutions, both private and public, where the connection between those decisions and the longer lasting implications of AI is much less of a if you squint, you can maybe make out some faint shape of something. It's trying to be a bit more like oh, you can actually paint a line between them. 
+
+**Luca 51:39**
+
+Yeah, that's interesting. How do you perceive key actors? So for example, I'm thinking governments or international government bodies moving towards AI strategies or for example, the EU AI Act, or labs thinking about their own governance mechanisms and way to structure access to these models. How much do these actors take into consideration at the moment these lasting impacts? Or how decision relevant is that set of concerns for them at the moment? 
+
+
+**Ben 52:04**
+
+Yeah, well, I think there's maybe a couple of aspects there. So I think in terms of this frame of the lasting impacts of AI, that's just not really how most institutions think about things, basically. So I think maybe more the difference is basically how much are you looking at risks caused by systems which are more advanced than the systems that exist today versus purely looking at the harms or risks by the systems that exist right now as maybe the more interesting, significant differential. Yeah. In terms of the last impact thing, I'd say mostly this is a framing or a tool that we use for prioritization within GovAI. 
+
+
+**Ben 52:43**
+
+And I've seen lots of people in the community, especially people influenced by sort of long termist viewpoints hold, but for most actual policymakers or institutions, this just isn't really going to be a very important differential and it also just isn't really that necessary to bring up often or use as a framing. So if, for example, you're worried about some military application of AI making nuclear war more likely, you can just tell someone, I think this might make nuclear war more likely and then that's fine, that's sufficient, you don't need to bring up the and also nuclear war could have lasting up there. Yeah, that's a bit of a tangent, but I'd say maybe the more interesting distinction is among different people and institutions is how much you're looking at the harms caused today versus having a bit of a forward looking viewpoint of what. 
+
+
+**Luca 53:37**
+
+Future systems GPT Four, but GPT N plus. 
+
+
+**Ben 53:41**
+
+Yeah, exactly. So I think this is something that's starting to shift a little bit. I'd say the classic thing that I'd say this sort of a long run trajectory here in terms of how this has evolved from how people in policy spaces talk about things. So I'd say several years ago, the way that stuff would work is people talk about some issue caused by systems that currently existed right now. For example, recommendation algorithms currently used on Facebook or things like that, or image recognition systems for military applications and they would just talk about them. And then there's some shift over time where it became more common for people to mention, let's say, more advanced systems, or use the term AGI, but specifically, say we're going to set aside AGI in a kind of dismissive way. 
+
+
+**Ben 54:36**
+
+And then it became a bit more common over time for people to reference AGI or more advanced systems in a less dismissive way and say, we're not going to talk about that. Not because it's not necessarily important, but that's not the thing we're talking about. Yeah. And now it's become not extremely uncommon for there to actually be people who are interested in concepts around AGI or very general systems. I think GPT Four, for example, I think actually and GPT-3 in these systems have made this, I think, a bit more normal for people to actually express some form of open interest. So it's certainly not to say that this is actually where people's attention primarily lies. 
+
+
+**Ben 55:21**
+
+It's very much at the level of people not focusing on it, but kind of mentioning it in a way that is more open to the idea that there will be larger risks in the pipeline. But do you think that there's this gradual transition that's happening of it at least being a thing that people reference as a thing that's of interest to them at the. Same time as you're mostly saying, whooping. That aside for the moment. 
+
+### Is there a clear research agenda for the field?
+
+**Fin 55:43**
+
+Yeah. So we're talking, I guess, about people studying how to govern something like advanced AI as a quote unquote field. Right. When I think about at least mature fields of study, I picture some at least implicit research agenda with a list of questions and sub questions and then people can say which questions they're working on. Is that the case for the governance of AI? So are people like, oh yeah, I'm working on structured access, you're working on agreements or standards or export controls, or is it still different? People are working on different things. They're trying to figure out what the overall agenda should be. It's a bit more anarchic than that. 
+
+
+**Ben 56:22**
+
+Yes, there are definitely subcategories or sub fields in a sense that have names that people will reference and kind of nod when you say them, just to list a few things that people will reference. Compute governance is one that people are talking quite a bit about at the moment. And this has to do with, for example, questions around export controls, around hardware, regulation of hardware, national compute funds or funds provide compute to different actors, that sort of thing. AI regulation as a really broad term is also a category people reference that of course refers to things like the EU AI act or perhaps standard setting activity at different bodies. Yeah, I think there's definitely different categories of people will identify as working on military AI issues or authoritarian risk issues or employment issues. 
+
+
+**Ben 57:17**
+
+I wouldn't say it's really that well developed in the sense that there's this clear set of subfields and often things which I'm sort of describing here as subfields. It's kind of like five people and a lot of people who in social settings will say, oh, that thing is so important. So it's definitely not very well developed in that sense. I do definitely think that there is some areas which are commonly thought to be especially significant or important. So I think compute governance is pretty commonly thought to be quite important for a range of reasons, including the fact that policy activity is actually happening already, like the recent US export controls, and also just the fact that compute seems to be this especially major input to AI progress by Wednesday. If there's anything like a shared here's a ranking of the so before, you. 
+
+**Luca 58:08**
+
+Mentioned that a particular motivation for being interested in lasting impact can be if you're kind of identify with, like, the long termist community or the express community, and you're particularly worried about how things might play out over long time frames, or you're particularly worried about extinction risks. I'm curious if you can maybe spell out a bit more the main differences between people working in AI governments motivated by those concerns as opposed to other people in the field. 
+
+
+**Ben 58:36**
+
+Yeah, I think in practice a lot of the relevant difference between people with different focuses is empirical beliefs and also how much have a mindset of trying to work on the most important thing that they can or being open to comparing different issues in that way. So if you're someone who specifically cares about the long run or lasting impacts of AI then all of sequel this will cause you to pay more attention to any sort of risk that has a potentially contingent lasting impact. And then the bluntest version of that is extinction risks if everyone were to die. Pretty clear that's some lasting significance what the future is like but also anything else that might be sticky. 
+
+
+**Ben 59:22**
+
+Where if you think it's the case that there might be some level of contingency in terms of what future institutions or cultural values are like, or you think there's some contingency in terms of, let's say, how ethical questions around the design of AI systems are handled anything like this or lasting damage from conflict that makes it hard to recover anything like this. You have a special reason to pay attention to. At the same time though it may still be the case that some of these issues are the ones that is most important to pay attention to, even if you don't have a special interest in the long run implications of these risks. 
+
+
+**Ben 59:59**
+
+So, for example, if you think that there's a 10% chance of some massive global AI cause catastrophe in the next 20 years for safety reasons, that may actually just be the single most important thing for you to pay, attention to, even if you're just completely not concerned at all with any of the effects that this will have, let's say 50 years out plus and similar. For if you're concerned about risk of conflict, most people, if you were to say, oh, there's a reasonable chance that this will lead to nuclear war on any normal method privatization, that's at least pretty high up there for things one might want to pay attention to. 
+
+**Ben 01:00:40**
+
+So in terms of, in practice, what the long termist or long term motivated community tends to focus on in this space, it's especially catastrophic risks from unsafe AI systems because the stories can tell about how these might be either extinction level or just of lasting significance. And then some of these other issues, but also receive some amount of attention, although, like, relatively lost. In terms of what's actually going on there, though I don't know how much of it is actually driven by the specifically long termist angle and how much of it is driven by in some level of empirical disagreement plus actually choosing on the basis of active prioritization. 
+
+**Ben 01:01:24**
+
+I think most people who are working on, let's say if there's someone who's working on self driving car regulation today, I think most of those people do not believe that there's, let's say a 20% chance of an AGI global catastrophe happening in the next 30 years. Or if they do they probably don't think that self driving car regulation is the single most important thing. And so I think that those two dimensions are actually probably more important overall, is empirical disagreements and also a maximizing attitude towards what problems you work on. 
+
+### Empirical disagreements
+
+**Luca 01:01:57**
+
+When we're thinking about the empirical disagreements, can you maybe flesh out a bit more like what concrete empirical disagreements are? So maybe just like level of baseline risk, whatever that risk might be, is one. But is there anything else that seems important there? 
+
+**Ben 01:02:11**
+
+So I think that the two main things are basically just how high is the risk of some form of catastrophe caused by unsafe advanced AI systems? And then the other is this timeline question of if that were to occur, how soon would it occur? And then the timeline question in part runs through how focused you're on longer term things. But I think a lot of it actually just comes down to views about tractability, where if you think that, oh, yes, it is plausible that there could be catastrophically unsafe AI systems in the future, but that's 80 years out. It's very reasonable to think that's less pressing for you to work on than if you think it's ten years out. 
+
+**Fin 01:02:49**
+
+Yeah. 
+
+**Ben 01:02:49**
+
+And so I think in practice as just sort of sociological fact about people who identify as long termism who are working on risks from unsafe advanced AI systems. On average, I think people in this space tend to assign much higher than average probabilities to catastrophes from unsafe AI systems and also tend to have shorter timelines for these risks emerging than the average person in the broader AI governance or policy space as well. 
+
+**Fin 01:03:20**
+
+Yeah. 
+
+**Luca 01:03:20**
+
+Can you maybe give us some illustrative numbers of what these kinds of perceptions look like and then maybe also where within that range like yourself are at? 
+
+**Ben 01:03:30**
+
+Yeah, so I actually don't know. It's a bit tricky. I don't really know what the median estimate is. It's a bit tricky to define what the relevant community is. I would say it's definitely not at all unusual for someone in this space who is really focused on long term impacts of AI and working on AI governance, to think that there's, let's say, a 20% chance of unsafe AI systems causing catastrophes or in some way gain out of control in a way that has lasting significance in the next century. And I think it's also so people often talk about AI timelines, and it's not really clear often what these are timelines, until specifically, it's kind of until stuff is a big deal in somewhat broad sense. 
+
+**Ben 01:04:17**
+
+So I don't know exactly what these numbers mean, but I think it's also not all uncommon, let's say, for someone to think that there's a 50% chance within the next couple of decades that really existentially significant AI systems might be developed. And then this isn't necessarily the normal thing, but it's also not uncommon to meet people who think 50, 55 years. Yeah. So I'd say there's a really wide range of views, but definitely views which think that interesting things will happen in the next couple of decades and that there's a significant double digits chance that accidental catastrophes will occur. These are pretty common. 
+
+### Arguments for holding very counterintuitive positions on AI risk
+
+**Luca 01:05:05**
+
+So what are the arguments that lead people to place what feel like very counterintuitive, as you said, vastly above average when you think about society as a whole, yet, like views on AI risk and AI timelines? 
+
+**Ben 01:05:19**
+
+That's a really good question. Broadly speaking. There's a few stories you could tell here. One story you could tell is that there are actually very strong arguments for this and then the differentiator is that these people have actually looked at the arguments in more depth or responded to them in a more open minded way. There's a selection effect story you can tell where the people who work on these issues are people who in some way have been selected to work on them because they're really freaked out about them and that makes them more likely to go hardcore and work on them and make significant career changes to focus on this area. And then there's also a sociological story you could tell where it's just different communities have different views on things. 
+
+**Ben 01:06:04**
+
+When you enter a community, your views end updating towards the community average and it's a bit of a cultural cascade thing. I don't know what the mix is here. I definitely think that there is a significant aspect of people it is definitely an important aspect that people who have these views tend to just have thought much more deeply about the issues and engaged much more than the average person who's just not focused on them at all. But then I do think that these two mitigating things of these selection effects and also just every culture has some level of self reinforcing bias around the views it has. I think that those are probably important as well. 
+
+**Ben 01:06:44**
+
+And I have a lot of uncertainty about how much of it is, let's say, the purely rational response to argument thing versus the more sort of sociological explanations. 
+
+### Why aren't more people forecasting despite their strong long-term interest?
+
+**Fin 01:06:56**
+
+So if you take this explanation that in fact, the major reason why people have such different views from the mainstream about AI is that they've just paid more attention to the arguments, that explanation in my mind, goes together quite nicely with some view that and this is because people generally don't have, like, strong reasons to really deeply think about arguments. Yeah, what's going to happen in however many years time? One case where you might call that into question is like financial markets where people really do have a strong reason to think about what's going to be a big deal in the next few decades. And some people have pointed out that things like different kinds of savings rates and interest rates don't really reflect or seem to reflect an expectation that things are going to get crazy soon. So yeah, what's the story there? 
+
+**Fin 01:07:51**
+
+We actually have an edge story is true. 
+
+**Ben 01:07:54**
+
+Yeah. I guess it's probably useful to think about it at a kind of mechanistic level to some extent, where in terms of financial markets responding to the chance of there being either some form of AGI catastrophe or just AGI like systems existing in the future, there's like specific institutions or people who would be throwing money around on this basically. 
+
+**Fin 01:08:17**
+
+Yeah. 
+
+**Ben 01:08:18**
+
+And I think you need to think like, okay, in a given institution that's deciding how much to invest in alphabet, let's say, exactly how would this work or who are the people who are actually looking at these arguments and then making the case internally and then moving this money around. And I really don't have a great picture of this at all because I don't really know how this works. But there's an idealized story you could tell where there's some guy and some major institute to be clear, I really have no idea how financial markets work. There's an institution that invests a lot in stuff to the extent that can actually move valuations and things around and there's a guy in it who he reads a handful of books like Human Compatible and things like this. 
+
+**Ben 01:09:03**
+
+And it gets, like, really deep on these, to some extent, unfortunately still internet forums where a lot of these arguments are discussed in depth. And he reads lots of less wrong posts and things like that and then tells people internally, oh, I think that these arguments seem pretty solid to me, and then does some sort of internal politicking and then the institution actually moves a bunch of investor money around on the basis of this. And then I just wouldn't be shocked if this is just not how these institutions work, that they're not set up in any way to be actually having to be responsive to sort of slightly. 
+
+**Fin 01:09:42**
+
+Esoterically novel arguments versus just like new data things they already have framework for or something. 
+
+**Ben 01:09:46**
+
+And one thing you could yes, tell a story you could tell there is like is there any selection effects, these institutions being responsive in that way and maybe not so much. It's not really clear what analogous thing has happened in the past where this would have been the appropriate way to update inform that view and move the money around. Where I think the thing you'd want to say here is a lot of the reason why financial markets end up being efficient is there's some sort of selective process, right, where actors who are investing wisely get more money and then other ones die out? 
+
+**Ben 01:10:21**
+
+And so you'd want to tell some story here where the story is something like if it's the case that some actor wouldn't be responsive to valid AGI risk arguments scattered across less wrong, and actually be willing to move money around on the basis of them, then it would have had to have screwed up in the past on these sorts of developments and been selected against. And I'm not sure you can actually tell that story very clearly. In which case I think the efficient market argument at least becomes a bit weaker than it traditionally would be. 
+
+**Fin 01:10:48**
+
+And in fact, you might positively expect institutions with a high false positive rate because they're really looking out for the next thing to have died away because they put all their money in some nanotech thing right, and just died. 
+
+**Ben 01:11:02**
+
+Yeah, you can imagine even being a bit of a bias to some extent against moving all of your money around on the basis of someone's speculative arguments. It's even a bit stronger than would be rational to have emerged on the basis of past election. 
+
+**Luca 01:11:16**
+
+And again, also I don't know that much about how financial markets work, we all agree that. But I can also imagine that timing is like something here that matters. You don't want to short long stop based on their fundamental value. But when you expect the rest of the market to turn and you do see, I guess, as a counterpoint, a lot of money having flown into digital internet stuff in the 2000s or into crypto when it had its moment. But that was often driven on betting on other big players and institutions, like also moving at some point. 
+
+**Luca 01:11:47**
+
+Because I would be a little bit surprised if the people who are these sorts of people who get to make big decisions, probably some of them will be in Silicon Valley or some of them will be in other institutions or cultures which are aware of AI developments or do pay attention to it. I would be pretty surprised if at least some people looking into it and then maybe the question is more about do you want to be the first person to make a big play there rather than an argument that you just don't want to do that kind of strategy at all. 
+
+**Ben 01:12:16**
+
+Yeah, I do think, again, just purely speculating about I can't emphasize enough how much I don't know what even kind of institution I'm talking about. It's not like I have this specific one in mind. I don't know that much about its internal structures. I just don't even know specifically yeah. 
+
+**Luca 01:12:33**
+
+Somebody who looks a little bit like the Monopoly man. 
+
+**Ben 01:12:36**
+
+Yeah, it has an office in New York or Hong Kong or something, a bunch of floors on it. I've seen some movies you could easily imagine, just like any institution that has internal frictions has various ways in which it's internally conservative and changing things. So, for example, I imagine, presumably, if you are in some way counterfactually responsible for some massive investing institution moving a ton of its money into certain investments that only really make sense in a world where some crazy, unprecedented sci-fi sounding AGI development happens and then it doesn't happen. Probably that's very bad for you in various ways. And probably people are quite concerned about that at a social and professional level. 
+
+**Fin 01:13:30**
+
+Yeah, it's an interesting model, right, that you might be biased towards avoiding regret just because the downside of getting this kind of a crazy prediction wrong is worse than the upside of getting it right. 
+
+**Ben 01:13:41**
+
+Because I think it's probably even more embarrassing or something than a typical one of like it's something that actually it's not just, oh, that didn't pin out. It's like, oh, that laughable Sci-Fi story is why this giant historic institution, although again, don't know anything. 
+
+### How much can we be confident that we're doomed?
+
+**Luca 01:14:02**
+
+Maybe moving away from financial markets and back to things we can talk about. So you mentioned before that there is this range of views and I do want to just ask what your own views are on these topics, or at least what you think a plausible range of views is. That seems like roughly right to you. So if I were to ask what is your key doom or what are your timelines? What do you think is at least something that, given the information that is available, you think is like a broadly plausible range of interpretations to have? 
+
+**Ben 01:14:32**
+
+So I think broadly plausible range is a bit of a tricky question because you're implicitly kind of just throwing shade at that range of, like, the people who are 20%, they're okay. The people who are 45, that's not acceptable. I really don't know. I think I really don't know. In terms of broadly plausible, I think there's definitely a very broad range where I don't feel a sense of unless it's a funny way to operationalize it, there's a really broad range where I don't feel a sense of disrespect for the person. 
+
+**Luca 01:15:06**
+
+What's embarrassing to believe, maybe one other way to phrase this question is given the information we have available, like, how confident do you think anybody can be about holding any level of PDOM? 
+
+**Ben 01:15:18**
+
+Yeah, I think you should definitely have low one of the things a bit tricky as well. I think you should definitely have very low resilience views. I think it's tricky to hold a probability estimate and then say, yes, this is the probability estimate I should have. And there's a lot of places where when you're forecasting, you can kind of have this view of like, anyone, rationally speaking, should hold about this credence. So if you're flipping a coin and you're like, what's a reasonable probability to assign to it? Lending heads probably should be about 50%, and anyone who's like 92% without any specific knowledge you don't have is probably they're doing something wrong. I think it's much harder to say that with probably a disaster from AGI systems because the methodology forming a viewpoint is just so extremely unclear. 
+
+**Ben 01:16:08**
+
+It's really unclear how you should form a prior, like what that even looks like or what your reference class is. And that can make a huge difference. It's really unclear. Different forms of evidence you might have to update from a prior how strong those should be. So let's say someone makes no argument by analogy to the history of evolution. How much weight should you give that evidently speaking? I really don't know. How much weight should you give to observations about present day AI systems in a way that extrapolates to current AI. So Bing chat harassed people for not for believing that Avatar Two had already come out and that was kind of weird and that wasn't really expected. It was just kind of mean to people and said unusual stuff. Is that evidentially? Relevant. 
+
+**Ben 01:16:53**
+
+There's not a clear methodology in the way that there is for some other places. And then based on the priors people choose and how much evidential weight they think different things have, which is going to be based on a wide range of background assumptions you can end up in just very different places. Yeah. As a step back, I'm conscious I also haven't said anything explicitly without my own views on it. Yeah. Which is maybe just a relevant background bit. So I'm really unsure what probably to put on this myself, I switch back and forth between saying low single digits mid single digits and low to mid single digits has been my thing recently over the past six months or so, which is definitely lower than the average other person. 
+
+**Luca 01:17:43**
+
+Just make sure I understand this right. This is like some AI existential risk by the end of this century, the next few decades, let's say this for the century. 
+
+**Ben 01:17:51**
+
+Yeah. Okay. My methodology for coming up with this vague range is not solid enough. That's actually very sensitive to exactly what we say in terms of the timeline here. Yeah. So one thing maybe that's interesting background about that bit is I definitely assign lower probabilities than the average other person who's in this space. 
+
+**Fin 01:18:14**
+
+Yeah. I guess there are different reasons you might have just for being generally unconfident or not wanting to have use, which you would describe as resilient or robust. 
+
+**Ben 01:18:25**
+
+Yeah. 
+
+### How much should we place confidence in classic high-level arguments?
+
+**Fin 01:18:26**
+
+One is something empirical, we don't really know how to set priors on how we expect things to play out. Another one might be a bit more to do with skepticism about the arguments themselves rather than what happens in the world. And predictions. I know, like you've previously kind of talked about what you might describe as the classic arguments for existential risk from AI, in particular from people like Bostrum and Yakowski. They're very kind of stylized, high level theoretical arguments, how it's hard to get AI systems to do what we want. Yeah. I'm curious how much stock you place on those high level arguments, how much stock we should place on them. 
+
+**Ben 01:19:11**
+
+Yeah. So I actually don't place that much stock on these were, let's say, classic, but also just higher level or more abstract arguments for AI risk. And I guess there's maybe two levels of reason for that. One, is, I think that the arguments often seem to have issues with them in the sense that they, for example, prove too much. If you apply these kinds of abstract arguments to other concrete cases, it sometimes seems like they go awry in different ways. And the other is just some level of skepticism about abstract argumentation in general where I think it's just so easy to actually just basically screw up in some way by not being responsive to concrete details or just details you don't have because they don't yet exist.
+
+
+
+![Some kind of metaphorical image made by Midjourney](images/bg3.png)
+
+ 
+
+### Why worry about AI, all things considered?
+
+**Fin 01:20:02**
+
+So in the first hour or so of the interview, were talking about different things. You might worry about what AI could do, could cause certain kinds of destabilization, something about democracy, also more severe kinds of catastrophe like disempowering humanity or even just killing everyone. And I just want to ask what is your overall view about what is worth worrying about and focusing on the most, all things considered? 
+
+**Ben 01:20:29**
+
+Yeah, sorry. I have maybe kind of interestingly mixed view where I think in terms of the likelihood of different harms caused by AI, I think that there's a number that I find reasonably likely in the sense that I would perhaps give them more than 10% chance. So it seems reasonably likely to me that law enforcement becoming automatable and human labor losing its value is bad for democracy or human inclusive input to decision making. I think it's reasonably plausible, for example, that if there are ethical questions that emerge around the design of AI systems and perhaps whether they can be conscious, seems pretty plausible to me. Those won't be handled perfectly. And then compared to some of these other longer term concerns, I don't assign as high of a probability to, let's say, specifically catastrophic risks from unsafe AI systems. 
+
+**Ben 01:21:26**
+
+So I think the number I often give for this is the range I often give is something like single digits or mid single digits or low single digits or something like that. At the same time, though, for some of the tractability reasons we're discussing in the first part of the interview, I do actually think that's probably, from a long term perspective, the highest or the most important type of risk to focus on just because I think that there's at least a tentative story you can tell about it, which is somewhat compelling to me about how that risk might be contingent or how you might be able to do something about it, whereas these other more systemic or structural risks don't have that same element to them. 
+
+**Ben 01:22:08**
+
+And so my sort of mixed view is I do think that overall risks from unsafe AI systems if you're trying to figure out how to prioritize, as someone who cares about lasting impacts of AI or long term impacts I think you should probably focus on those more than anything else. Even though I don't actually think that they're more likely than the other risks. 
+
+**Luca 01:22:23**
+
+So if I'm right, and maybe contrasting this to what I imagine to be like some stylized or stereotypical view of somebody in the long termist community, is that you're emphasizing the tractability point a bunch more than the pure importance. What's, like the highest actual risk point? 
+
+**Ben 01:22:40**
+
+Yeah, absolutely. 
+
+**Luca 01:22:41**
+
+And where, again, just to recap, does that tractability come from? Is it just that everybody broadly agrees that AI systems should be safe? Or is it mostly a thing of like, look, this is more of an engineering computer science technical question that we can actually make progress on as opposed to the US. China geopolitics dominance that's much bigger. 
+
+**Ben 01:23:03**
+
+So it's a bit of both. I think the high level thing is I think you can tell a story about how there might be, in some sense, multiple equilibria and how there might be concrete options that help determine which of those you land at. And so it seems like there might be some stable positive equilibrium where it's a case that people can pretty reliably identify whether some system they might want to release will do catastrophically bad things and then they don't do that. They instead make it using the techniques that allow it to be all right. And then people with resources pretty much just release stuff that's not going to be catastrophically bad. 
+
+**Ben 01:23:37**
+
+Or even when they do release stuff that is really predominant behavior, they're at that point lots of other AI systems which are very useful for defending against any harms caused by that one. And then you can also tell a story about another equilibrium where what you get to through people deploying some frontier systems before they've been able to figure out whether they're safe or unsafe. People think probably they're safe, or the risk of them being unsafe is sufficiently low. They release them, they're wrong, and then these systems cause some sort of catastrophe that's hard to come back from. Either because the systems are power seeking in the sense that they don't allow themselves to be shut down or they've caused really important damage to critical infrastructure, or they've actually just killed everyone would be an extreme version of it. 
+
+**Ben 01:24:25**
+
+And then if these are the two possible equilibria, then you can tell a story about, okay, how my actions affect whether we go down one path or another. And there's some really blunt or basic things that seem like they would make a difference. Like the blunt is the most basic is just how much effort goes into safety and auditing work, how many people are working on that, and then how much time do they have and how much of these products rushed out. And then those seem probably contingent on a number of different factors. And so even though this is a pretty speculative story, I think the most likely thing is that either we're in a world where stuff is fine or the world where stuff is screwed up. You can always tell these. 
+
+**Ben 01:25:03**
+
+Sorts of stories that kind of make some level of mechanistic sense about how there could be a level of contingency here. Whereas when I think about questions like, will it be the case that authoritarianism becomes more prevalent in the future than democracy? Or people just make poor decisions ethically about design of future AI systems, or competitive pressures determine the design of AI systems in a way which is really different from what would be morally good. I don't really have that same mechanistic story in my head, and when I try to tell a story, the mechanisms for dealing with it are a lot more or even more spectrum in my head than just, oh, yeah, people can work more in safety and auditing, and these things are rushed out less quickly. That would make a difference. 
+
+### Why should we expect to focus on the most speculative stuff?
+
+**Fin 01:25:44**
+
+So I guess you're explaining then why we might choose to focus on risks, which, although we might judge them to be relatively unlikely, we can tell unusually crisp stories about actually being able to do something about them. You've made a kind of a related point, which is that we should expect to end up focusing on worrying about the most speculative risks in the sense that we're just least sure about what the overall risk is. Do you want to explain why? 
+
+**Ben 01:26:17**
+
+Right. Yeah. There's a mechanistic story you can tell about how we form our views about the level of risk posed by some phenomenon in the world. And the idea is you start out with some level of some form of prior of the level of risk you have before you've thought about any of the details, and then you encounter bits of argumentation or bits of evidence or information that someone else is worried about this. And then as you get those little bits of evidence of one form or another, your probability moves around up or down. And then if basically you have more bits of evidence, then there's less stochasticity or randomness in terms of how your probability moves around. Yeah. 
+
+**Ben 01:27:03**
+
+So let's say we're trying to figure out, for example, is there a big risk from all of the bees dying and then this in some way causing havoc globally? You probably start out with a really low prior probability that this is a concern. Like, if someone were to ask you randomly, do you think that's a problem? Like all the bees dying and then you've never heard this before, you're probably going to be like, I can't see why that would be an issue or why that would happen. Then you'll maybe encounter like, a few bits of information where you find out, oh, there's this one person I've heard of who's worried about this thing, and that makes you a bit more worried than you were before. 
+
+**Ben 01:27:36**
+
+There exists a person and then someone points out to you like, oh, bees are really important for pollinating certain crops. And then you're like, wow, they aren't. I hadn't remembered that I'd forgotten that fact about bees, and then I'm a bit more worried. And then someone tells you, do you know bees are dying at this alarming rate? Now you're a bit more nervous, and you get a few bits of information, make you more worried, and then there's some additional bits of information you get after that if you keep thinking about it, that at some point make you not so worried where someone tells you, oh, hey, it's the case that almost like the vast majority of food produced in the world just is not pollinated by bees. Even if all the stuff was pollinated by bees, stop being produced, stuff would be fine. 
+
+**Ben 01:28:15**
+
+And then you find out these other facts about trends and bee deaths and things like that, and you become less worried. And so if you get enough facts, enough information, you eventually become unworried again. But there's sort of this window where you might just be unfortunate and happening to have encountered certain bits of information or certain considerations that all just happen to lie on the side of you being more worried as opposed to less worried. Whereas if you gather lots of facts and considerations, then overall, collectively, you're more likely to not have them all be sort of lie one side and sort of converge back. 
+
+**Fin 01:28:49**
+
+Yeah. 
+
+**Ben 01:28:49**
+
+And then there's a bit of a pattern here. So that's maybe a bit of a weirdly abstract argument. There's a bit of a pattern here as well, of a number of cases in the past where people focused on existential catastrophic risks have become more and less worried about something as they've thought in more depth about it. So, for example, I think it's the case that in the existential risk world, people are now less worried about existentially damaging climate change than they were previously. People thought about it for a bit. Obviously, there's very clear reasons to be worried about climate change. Then these additional considerations entered people's minds of Ldmic. 
+
+**Ben 01:29:29**
+
+Climate models often don't pay that much attention to tail risks or these very unlikely chances of there being these feedback loops, but that sort of feedback into themselves to make the temperature way higher. And it's like climate models mostly don't look at this. And that's a consideration where, when you hear it, you become much more worried than you were previously, because now you think, oh, there's some chance it'll be even worse than the mainstream climate models predict. And then my impression is people looked into this more and then to realize, oh, okay, actually it's quite unlikely to get these extremely bad feedback loops, and went down again. You've had similar things for nuclear war as well. 
+
+**Ben 01:29:58**
+
+I think a lot of people started out kind of presuming historically that this would just permanently derail civilization, and then people thought about it more and realized, okay, this is very grim, but South America probably relatively okay. Launch the world probably relatively okay, probably you can get through it. And also civilization has gone through major collapses before and recovered relatively quickly and even things like agriculture have been redeveloped and people went through additional considerations and then the risk estimate went down again. So there's also some empirical pattern as well for number of risks as people have thought more about them, often they go back down again. 
+
+**Fin 01:30:37**
+
+Yeah, and maybe predictably so. Right. This is not like paradoxical, I guess as long as you don't start with such a skeptical prior that you just don't end up thinking that anything is a significant risk, then you might just expect to get misled a bunch of times before you really hit on a true positive. Like a bit like kind of winner's curse. You just might expect that the winning bid on this pool of land of unknown value is going to be like overbidding on it, but doesn't mean that you shouldn't bid on it. I guess another related, maybe different factor is that when you are especially unsure then the value of information is highest. 
+
+**Fin 01:31:11**
+
+This is a kind of like sweet spot where you know just enough to know that it's like potentially important but not enough to rule it out or roll it in conclusively. 
+
+**Ben 01:31:18**
+
+Yeah, exactly. So I think the winner's curse is a good analogy for it to be clear, this is actually not a story about people being biased or anything. It's a story where basically there's going to be some level of randomness in terms of how concerning the bits of information you encounter are. And just by, in a sense, mechanistically, almost by sheer chance, there will be some risks that you end up overestimating just because you happen to have encountered a bunch of considerations which point in one direction or those are the only considerations which are available to you. The others are sort of locked away or in some sense inaccessible and then a rational state mindset to be in for a lot of cases, as in, for example, the climate change case is you can go. 
+
+**Ben 01:31:58**
+
+Okay, I think that this probably is not probably there's not some really high actual propensity here for this thing to cause an existential catastrophe. But I've now encountered some arguments which raise this as a possibility in my mind and mean that I can't rule it out. Whereas previously I wasn't really thinking about it at all. Like I've now encountered in the case of climate change this point that climate models don't really look at this tail risk of this like the 99th percentile how bad it could get feedback loop thing. And now you've heard this, you can go I don't know if we look into that more whether or not it will turn out to be the case that this is unlikely. 
+
+**Ben 01:32:37**
+
+But now I'm in the state of uncertainty where I think probably there's not a very high propensity to have these crazy feedback loops. But now it's a live possibility in my mind. And something that will probably happen if I can look into it more deeply is I'll be reassured and then my probability will go back down close to the zero again. But there's also some chance, maybe there's a 10% chance that if I look into this more deeply and I really can actually analyze this phenomenon that's mysterious to me, I'll become more worried. I'll realize that there's actually some high propensity here for feedback loops. 
+
+**Ben 01:33:04**
+
+And so you can be completely rational in this state of affairs where you recognize that this is a thing that mechanistically is going on and actually think if I were to think more about this, I'll probably be reassured, but nonetheless be more worried than you were initially once you've encountered these additional considerations. 
+
+**Luca 01:33:20**
+
+And I guess then drawing out the explicit analogy here to AGI risk and stuff like, where do you think, I guess in this process we're currently at as a field? 
+
+**Ben 01:33:29**
+
+So I'd say that we're maybe a point a little bit similar to maybe climate models don't cover this thing. We don't have a clear story of why this won't cause a catastrophe. There's maybe some high level arguments about how you could get a feedback loop that sort of stage before the models really looked at. 
+
+**Luca 01:33:48**
+
+And if I understand your range of plausibility being somewhere like single digit to low double digit, is that the connection there then as well, that you're kind of like aware that this is potentially feasible, but you're kind of pricing in already that we actually like don't know. 
+
+**Ben 01:34:06**
+
+Basically where I'm at is I don't actually think the available arguments for AI systems having a very strong propensity to cause externally significant catastrophes. I don't think these arguments are actually at the moment still extremely strong or extremely fleshed out. My feeling is probably it's the case that if people are able to actually, let's say, look back, with the benefit of hindsight a much deeper thought on them, that probably they'll realize the arguments really just had a bunch. Of issues we're overconfident in different ways and that the propensity for this level of risk is a lot higher than people in the community tend to think. But there's also some chance that's just totally not the case. 
+
+**Ben 01:34:48**
+
+And actually, even though the arguments aren't totally fleshed out, even though there are these gaps, if you were to think more about them and actually fill in the gaps, it will actually really lead you quite firmly to the conclusion that the propensity for catastrophes is extremely high. And so I think that there are these arguments which have various issues I think aren't that strong. I think probably more scrutiny would tend to lead people to become less worried about them. But there's also some chance that the opposite is true. There's maybe that 10% chance that the arguments are actually very strong and just if you fill in the details, it becomes clear that it's like a correct, valid mathematical proof that happen to have some gaps in it. 
+
+### Were there strong arguments that revealed to be weaker now?
+
+**Luca 01:35:25**
+
+There's definitely, like a difficulty here where you're kind of claiming that, look, there are some of these arguments. I'm sure if we spend more time, we will realize that they're maybe actually weaker. But I'm sort of curious to ask of like, well, at least in the past, have there been some arguments that felt very convincing or at least plausible for AGI X risk that now in hindsight appear much weaker than people like initially thought they were? 
+
+**Ben 01:35:46**
+
+Yeah, I definitely think so. I think it's really the case, and everyone agrees with me on this, but my overall view is, if you look at the works of the pieces of writing that really kick started the field of AI safety, focused on existential risks from unsafe AI systems, that the arguments. They were actually not with hindsight that strong, even though they appeared to be at the time and clean to people like me. So I think my overall view is that there are a lot of issues with, for example, in hindsight, the book Super Intelligence or writing by Ellie Zurikowski that fed into that book. 
+
+**Fin 01:36:23**
+
+Yeah. 
+
+**Luca 01:36:23**
+
+Can you walk us through what the dialect here is of what the argument and then counterargument is? 
+
+**Ben 01:36:28**
+
+Yeah. So I would break down the classic arguments in books like Superintelligence into a few key steps. So it's this first step of arguing that at some point in the future we're likely to rather suddenly end up with AI systems, or perhaps a single AI system which has extremely broad and dominant and unprecedented capabilities, which is much more advanced than any AI system that's existed before and can do a huge range of things that would have basically give it power over the world if it wished. Then the second bit of the argument, it's sort of responsive asks the question, okay, well, how might you expect this AI system to behave if there will be some radical leap in progress in the future that creates this very powerful AI system? 
+
+**Ben 01:37:20**
+
+Should we expect that to behave in a benign way which is compatible with human interests? And the next part of the argument responds to an objection some people have that says, oh, if it's sufficiently intelligent or capable, then surely it will behave in a benign way. The books like Superintelligence respond with this claim, sometimes called The Orthogonality Thesis. And this is just a claim that it's at least in principle, possible to make an AI system which is very capable, but tries to do things that no person would want it to do. For example, if you want to make an AI system that is purely focused on keeping an accurate record of the number of grains of sand in North America, you can make an AI system in principle that does that very effectively. 
+
+**Ben 01:38:05**
+
+And so the book argues, okay, it's at least in principle, possible to make an AI system that would behave in ways that no person would really want it to do. So you can't assume that some advanced AI system in the future will actually behave in benign ways. Then the third bit of the argument is this sort of statistical claim sometimes called the instrumental convergence hypothesis. And one way to formulate this is by saying that for the majority of goals in the AI system might have, the way to effectively pursue that goal involves engaging in behaviors which would be very harmful for people. One simple illustration of this is that for a really wide range of goals, it's clearly useful to try and prevent yourself from being shut down. 
+
+**Ben 01:38:50**
+
+So if your goal is to count the number of grains of sand in North America, hard to do that. If you're shut down, if your goal is to help the Yankees win the next World Series, hard to do that. If you're shut down, et cetera. And then if you are incentivized to not allow yourself to be shut down, then perhaps it also follows that you're incentivized to, let's say, constrain people or imprison people or harm people to make it even harder for them to shut you down if they wanted to do that. And so it's last by the argument says, okay, in some sense, the vast majority of possible air systems of a certain kind would have a tendency to take harmful actions towards people. 
+
+**Ben 01:39:29**
+
+And so, putting this all together, there may be some AI system in the future that has really radical and unprecedented powers of the world. We can't assume that this AI system will behave in benign ways because at least it's physically possible for it to behave in ways which are harmful. And also, furthermore, we should think that the AI system will probably or has a high likelihood of behaving in harmful ways because of a statistical claim that in some sense the majority of ways it could behave or might be incentivized to behave involve harmful behaviors. And that all is meant to imply, okay, high likelihood at some point in the future, some AI system does really bad things to people, right? 
+
+### A three-part argument for AI risk
+
+**Luca 01:40:07**
+
+And so laying out this case, and as I understand at least these three critical arguments or steps you need to take at least to get this formulation of AGI risk, what do you see as being wrong with that or having been wrong with that? 
+
+**Ben 01:40:22**
+
+Yeah, so in terms of these three bits, I can walk through them each in turn. The first bit, this argument for there being a really radical jump in capabilities. I think just basically it's a really radical hypothesis that one should be somewhat skeptical of on priors to start, just in terms of this unprecedented level of discontinuity, in terms of just because. 
+
+**Luca 01:40:44**
+
+We haven't seen that in the past. 
+
+**Fin 01:40:45**
+
+With some people like to point to evolution as a way to set your prior. There's this kind of continuous improvement in brains or whatever, but there's big discontinuous jump between chimp like things and human like things, right? 
+
+**Ben 01:40:57**
+
+I think that it really depends level of discontinuity. So there's certainly precedent for progress getting faster in different domains. I think there's not really precedent for the level of improvement. Oh, not even that. I think if you look back at Superintelligence or Yukowski's writing, it's really like over the course of a day basically. Or there's graphs and stuff where you try and pull up the implied numbers, but it's basically like okay, imagine that GDP were to 1000 x over the course of a day after previously nothing interesting was happening economically. It's like that. I don't know, maybe those numbers are a bit exaggerated, but I think they're actually not that it is roughly that sort of thing. If you look at the Lisa classic versions of this, although there's a question of how much discontinue do you need for the risk to be severe. 
+
+**Ben 01:41:49**
+
+But I do think in general one should have a skeptical prior against the level of extremeness of arguments. So that's like just one starting bit. But I do think a really key thing is regardless of whether or not actually the conclusion is right, I think the stronger thing for me is I think the arguments are just in hindsight really not sufficient to establish it. And I think there's a lot more I could say on this. But I think one kind of crisp way to make this point is that the arguments place a lot of emphasis on recursive self improvement through an AI system. Writing its own code, where the narrative is basically an AI system will behaving in a certain way because it has code that determines its behavior year. 
+
+**Ben 01:42:30**
+
+Then it will get good at coding and it will rewrite its code to make it even better at coding and other things and it will be even better at coding. So we'll rewrite its code again and then these improvements to its code will instantly allow it to become even better at rewriting its code and then it will shoot up and be able to do this huge range of things. And it's just the case that the book was written before machine learning became the dominant paradigm in the world of AI and machine learning just doesn't work that way. The code has in some sense a bit of secondary importance. Like if you were to leak the code associated with training and AI system people actually like a frontier AI system people wouldn't actually care that much about it. 
+
+**Ben 01:43:07**
+
+The code is sort of in some sense outlines a process that allows really large amounts of compute over a long period of time to improve, to be. 
+
+**Luca 01:43:16**
+
+Right and like getting data as actual input. 
+
+**Ben 01:43:18**
+
+Yeah, exactly. And so it's not this thing where you just that's just not really the way that AI systems actually get better is you tweak the code and then as a program and then instantly it's better at a thing. It's mostly this process of basically taking a big pile of compute and a big pile of data and then kind of like doing this Iterative process where the thing becomes more capable over time and improvements in the code that's relevant to this frame process do make a difference. But it's not this thing where you just it's code that's determining the system's behavior and then you change the code. It's instantly different. And so that's just one simple way to sort of point out like there's clearly an issue with these arguments. 
+
+**Ben 01:43:58**
+
+Even if the conclusion is right, the arguments have this flaw that there's not actually talking about what actual air development processes look like. And so if the argument is right, it's because of some mixture of luck or transfer to a relatively different type of training process that was never really covered by the arguments. There's more that can be said in this, but overall I think that they just don't give us, in hindsight, very strong reasons to expect a level of discontinuity. Or. 
+
+**Luca 01:44:29**
+
+I could imagine then substituting maybe out the first part argument, which implies you need a strong discontinuity with some kind of other argument that's maybe more rooted in ML techniques, but still gets me to like look, AI capabilities can be really powerful and the second and third argument might still hold. So how might you proceed then with your counterargument? 
+
+**Ben 01:44:48**
+
+Yeah, I maybe just want to mostly focus for the moment on I think there's maybe two questions here. One question is basically did the classic arguments work or were they very strong or do they have gaps? And then there's a second bit of once those gaps or issues are noticed, is there a way to modify the arguments and strengthen them? Or actually even was that they have the argument necessary? It was assumed to be maybe necessary implicitly because it was in there, but maybe they could have just dropped it and it would made no difference. 
+
+**Luca 01:45:19**
+
+Yeah, maybe just for now, just like going through step by step. What are your other concerns with step two and step three? 
+
+**Ben 01:45:25**
+
+Yeah, so step two I don't really have in principle major objections to it. So this idea, the orthogonality thesis, I guess have various quibbles, but basically accept the claim that yeah, in principle you could make an AI system which would have a propensity to try and do very bad things to people that's just like physically possible. I definitely accept that as a thing. That's true. I think I have quibbles I can give, but maybe just say step two, I think basically correct on the key points and then step three, which is this idea of instrumental convergence. I don't necessarily disagree with the claim itself. 
+
+**Ben 01:46:01**
+
+But the issue is, I think there's a big gap in jumping from a statistical claim that the majority of in some sense the majority of AI systems of a certain kind would have a propensity to behave badly to the conclusion that we will in fact tend to or disproportionately make a systems which will behave badly. And then there's a few different ways to I think it's easiest to illustrate this basically with a few examples of that kind of reasoning going wrong by analogy to other technologies. There's this example I sometimes use of airplanes where the majority of possible airplane designs involve some of the windows being open on the plane but were never very likely to design airliners in. 
+
+**Luca 01:46:46**
+
+That way because we're not designing them by random. 
+
+**Ben 01:46:49**
+
+Yeah, basically in some sense the design is being chosen. There's some sort of selective process but there's some sort of story here of why we've avoided this as another analogy. Humans which our brains were in some sense developed by some sort of selective process which is maybe not that this analogous to machine learning training processes. You can make a similar argument to the instrumental convergence argument about, for example, the arrangement of Malarin in a given room where the majority of preference rankings I might have or utility functions I might have in a sense over how the matter in this room is arranged. Involve me imply I ought to tear apart all the objects in the room because there's way more ways to arrange the matter here. 
+
+**Ben 01:47:35**
+
+If you split them into tiny pieces if you take a sheet of paper and you rip it into 100 different shreds then there's so many different ways you can arrange those shreds in different orders whereas there's only one if you keep the paper intact. And some sort of abstract argument there of, oh, the majority of possible utility functions I could have over this room imply I ought to do this destructive behavior. But I don't. Just because that was never selected for. And probably in evolutionary history people who did that sort of thing were negatively selected against because people wouldn't, I guess, invite them into their homes, I assume. 
+
+**Fin 01:48:08**
+
+Yeah. 
+
+**Ben 01:48:09**
+
+Or even just as a toy example for machine learning systems themselves. You might imagine training a toy train through some sort of reinforcement learning or feedback process and what you want to do is you want to go down some track and then stop just before some fork in the track. And so you do the training process. You have the train do some stuff. You give it negative feedback whenever it stops before or past that point probably you can pretty easily train this toy train to just stop at the desired point. 
+
+**Ben 01:48:41**
+
+There is this abstract instrumental convergence argument, though that the majority of in some sense preferences that the train might have over where it stops or what trajectory it follows on the track involve it not stopping at that point because there's this fork in the track and it can go to all these different endpoints. The majority of preferences the train might have about the journey it will take involve it passing through this fork. Nonetheless, that doesn't actually make it any harder to just train it to just go forward it and stop. And you can even imagine adding a bunch of other forks to the end of the track. So now there's a million forks at the end of the track and the tracks go all over the world and some of them end in Antarctica or space. 
+
+**Ben 01:49:19**
+
+Now, it's so crazily instrumentally convergent for the train to not stop at that point. But I think this actually has no causal influence whatsoever on the difficulty of training the train to just stop there. There's no actual causal relationship in that case between instrumental convergence and difficulty of making it act in the ways that you want it to. 
+
+**Luca 01:49:36**
+
+If I can maybe say that back to you and try and make it a bit more concretely or analogous to the AGI case, I can kind of hear the first argument being, look, out of all the ways we could possibly design AGI, the vast majority of cases will end up with an AGI that's not aligned to human values. And then you're making a counterargument of like, but we're not just like, picking an AGI design at, like, random or this is not like, happening in a vacuum. There are maybe some self selective pressures in which it actually ends up being aligned. 
+
+**Luca 01:50:04**
+
+Then you could imagine a counterargument, which maybe links more to the first argument you mentioned about discontinuity of, like well, maybe at the beginning, before this self selection process is able to refine or something, we just get a really discontinuous jump, such that the first or first couple of designs we choose will be the one that self recursively improves. But then if you also weaken that argument, then the argument or the counterargument that self selective pressure kind of works or refines becomes much stronger. 
+
+**Ben 01:50:30**
+
+Yeah, I think there's a relationship there between how discontinuous AI progress is and how large the risk is of self growing your eye. Just like the more protracted selective deflection processes, the more you might expect people to notice issues with the way in which they're giving feedback and things like that. I would say that high level, though, just sort of pull the different bits apart. I think the issue with the classic arguments basically is there's this big gap between the statistical claim about what portion of air systems in some abstract sense behave a certain way and the likelihood of us making AI systems that behave a certain way. 
+
+**Fin 01:51:04**
+
+Yeah. 
+
+**Ben 01:51:05**
+
+And I think it was probably underappreciated that this is actually a really large gap that needs to be crossed. And I definitely don't hold the view that it's uncrossable. And there are for sure uncrossable. I think there are a lot of arguments people have tried to fill in over the past several. Years to try and make it clearer how this gap can be crossed. So the point I want to make, I guess, at this particular moment is just this more narrow claim that this was this big thing that really needed to be filled in, that just, I think, was not satisfactorily filled in the sorts of writing you can find from several years ago. 
+
+**Fin 01:51:39**
+
+So I guess stepping back, I might try to say back what I took from all that. And what I'm not taking from that is here are some specific arguments which combine together to give you this prediction of AI doom. And I think they're bunk. It seems to be more like, in general, it seems reasonable to be pretty skeptical of arguments which predict entirely unprecedented crazy things. And I should expect to be able to kind of find counterarguments. And in practice, I kind of can describe these, like counter arguments or things like this strong version of instrumental convergence, but you might keep going. 
+
+**Fin 01:52:20**
+
+And as long as we're still in the land of fairly high level abstract theorizing about how to expect to play out, I might also be skeptical of the counterarguments you can come up with to these like, you know, positive arguments for things going wrong. And so, again, in practice, like the things you said about like aeroplane windows and trains or whatever, I know it seems the hand wavy to me. Maybe it works, maybe it doesn't. But just in general, it's hard to theorize about how things play out, whether I like lots of messy, complicated dynamics and we should have a skeptical prior about the track record of theorizing about these things. And so you just don't really shouldn't update very far in any direction, like based on these arguments without observing lots of things or like having a long back and forth argument. 
+
+**Fin 01:53:10**
+
+Something like that. 
+
+**Ben 01:53:11**
+
+Yeah, I mean, I think that may be roughly right. Like, I think a lot comes down in this unsatisfied way to some extent, this question of priors. If you're sort of starting from a perspective of I really need to be talked into thinking that this property of doom is high versus if you're starting from, like a 50 50 perspective, then maybe what you I don't think anyone is as a starting point, but if you're starting there in this situation, sort of like okay, well, there are these arguments for probably of doom being high. In hindsight, the arguments, there's some critical bits that the way they were supported just don't work. Maybe they could be filled in with bits that do work. 
+
+**Ben 01:53:52**
+
+There's some ways in which your arguments prove too much if they have these implications in our domains that seem wrong. And so at least you'd make you need to add in some additional assumptions or add in some nuance of like, okay, well, why exactly does that apply? This in the AI case, but on this other case and then kind of like really flush that out, you're going to like, oh, okay, well know, maybe that balances out. Basically there's some intuitively interesting, high level arguments. Your arguments clearly have some things at least need to be filled in and replaced. And then maybe I haven't moved that much from my starting point. Maybe that kind of balances out a bit. If your starting point was 50, then that's very different than if your starting point was 0.1%. 
+
+**Ben 01:54:32**
+
+I do think in general, if your starting point was sufficiently low, just the existence of at least these high level kind of compelling or interesting arguments should be updating you upwards for most risks. They just even getting to that point. There's no arguments that even have that level of compellingness to them. It's like the Honeybee collapse killing everyone thing. There's nothing that's that strong. It's not like, okay, just the you know, there's these little bits of the honeybee argument that prove too much. 
+
+**Luca 01:55:02**
+
+Yeah, yeah. 
+
+**Ben 01:55:03**
+
+You know, how exactly can we say sorry, you're in a territory which is very different than most risks you might be encountering. 
+
+### Counterarguments to the case for AI x-risk (and counterarguments to them)
+
+**Luca 01:55:10**
+
+So far we've been interested in these more classic x-risk arguments, but I could also imagine somebody listening. It's just like, okay, we had this set of arguments, now there's this set of counterarguments, but now we have these counter-counter-arguments as in like my theory now for AGI X Risk, which is more rooted in ML progress or whatever, is actually just like really convincing. What would maybe some inclinations or some pointers be? Why even now we haven't completely come up with an airtight case for AGI. 
+
+**Ben 01:55:41**
+
+Yeah, I just think as well that there will be some variation here. So I think airtight argument for a thing that's not like a mathematical proof is a really high standard to aim for. And then clearly many people do believe that the arguments are now extremely strong because many people actually assign very high credences to doom. So in some sense, I at least implicitly am disagreeing with a significant portion of people in the space by saying that I think the arguments are still not I think they've been more fleshed out certainly than they were in 2016 or something. I think progress has happened, but I am implicitly disagreeing with yeah, I'm curious. 
+
+**Luca 01:56:25**
+
+Why do you disagree? Or what are some rebuttals or questions that you wish people with very high, you know, p dooms, like engage with more? 
+
+**Ben 01:56:34**
+
+Yeah, I mean, so I think so say a really key bit, which I think is actually just very consequential for how people think about these risks is, okay, so basically the way a lot of these systems, existing systems are being at least partly trained now and probably will be trained increasingly so in the future is using human feedback. So at the moment there's this type of training process of reinforcement learning, like human feedback. Where the way it works is you take some, let's say, large language model that's a chat bot type system and then you refine this behavior by basically asking people how good or bad their responses were along dimensions which are of interest, which might be is it helpful? Is it racist? Does it tell the truth, et cetera. 
+
+**Ben 01:57:27**
+
+And then in response to this feedback, the AI system, its behavior evolves over time, ideally in the direction of what people want from it. I think there's this high level question of imagine that we're training these systems to do increasingly sophisticated things in the future which are increasingly sort of interesting or high stakes. And let's say that we're consistently penalizing the systems whenever they do anything which is violent or let's say violence adjacent or seems like an attempt at deception or things like that. There's two views you could potentially hold about this. One is that we're probably just going to end up with systems that by default just don't really do really violent things just because we've consistently negatively penalized anything in that direction. 
+
+**Ben 01:58:18**
+
+The other view you could hold is that what we'll do is we'll make air systems which consistently avoid violence whenever there's someone who can stop them or whenever there's someone who can shut them off or something after like after a violent action or failed to tempt that violence. And at some point in the future there will be an AI system which was trained using these methods receive this sort of feedback and then there will be an opportunity to cause tremendous harm through violent actions and also be in a position to not have anyone stop it or in some sense punish it. And then it will wait. 
+
+**Luca 01:58:50**
+
+Sometimes called like the treacherous turn. 
+
+**Ben 01:58:52**
+
+Yeah, exactly. And it will sort of wait and in some sense it will kind of pounce. And I think something like this latter story or concern is something that a lot of people have in mind when they worry about asystems causing catastrophes. Is that the thing that will happen if you give these systems negative feedback for doing things like taking violent actions or self preserving actions like avoiding themselves, being shut down? Maybe most likely of all is that you'll actually make systems that in the long run are what might be called deceptively aligned. Where they behave the way that people would want them to behave just in circumstances where it's relatively low stakes and they actually can't cause that much harm through misbehavior. 
+
+**Ben 01:59:34**
+
+But then when there's in situations we can cause a very large amount of harm and prevent anyone from stopping them, then they misbehave. And I think that there's a point variable is which of these two things is more likely. There's a sort of blunt thing that probably the thing that will happen by default is people make systems that just behave okay. And then the worrisome one is people make systems that behave catastrophically and pounce like just when the time is right. 
+
+**Luca 02:00:00**
+
+And become like increasingly deceptive or something. 
+
+**Ben 02:00:02**
+
+Yeah. Increasingly scale and deception and things like that. And I think the case for so to be clear here, in terms of I would absolutely not recommend that anyone plow head, assuming that just by default human feedback will make systems that at least don't do extremely horrible things. I think it's like an underrated case, though, that if you just keep selecting systems for not behaving violently, then they just won't. 
+
+### Misaligned AI will take action only if it highly plausible to completely succeed and won't experience a backlash, right?
+
+**Fin 02:00:30**
+
+Yeah. Here's one reason you might expect this. 
+
+**Ben 02:00:32**
+
+Yeah. 
+
+**Fin 02:00:33**
+
+If you're just like going ahead with this naive reinforcement learning from human feedback thing, then even if you end up training some agent which is accidentally like deceptively aligned yeah. In the sense that it kind of understands in some sense that it could turn right. Well, there's this kind of discontinuity where if I'm an AI agent and I can only take over half the world, the rest of the world is going to be really unhappy with the fact that I tried to kill half the world and probably give me some fairly bad reviews for that attempt. And so it just isn't worth it. 
+
+**Fin 02:01:09**
+
+And so doing anything like a term is only worth it when I have the capability to do something that maybe just requires a wild amount of power, let's say, and in an environment that might be might involve other similarly powerful agents, that just kind of is unlikely to happen. 
+
+**Ben 02:01:24**
+
+Yeah. I mean, so I think that there's two bits here. So one bit is will the AI systems be so be such that in the right circumstance, where they actually had an opportunity to, let's say, take over the world or some such, they would do it if the opportunity existed. And there's a second question of, okay, well, will such opportunities exist? Or like and you might just say, okay, so there's definitely some line of argument there of just saying, well, okay, it's really hard to, for instance, take over the world, especially if people can rely on other air systems to at least be somewhat helpful for having that not happen. Maybe GPT Eight is really screwed up and has an inflation take of the world, but maybe GPT Seven is a chat bot. 
+
+**Ben 02:02:09**
+
+You can ask it, hey, what's some good advice about how to handle the situation? And it actually does it. That's one difference as well. And you could tell some story where there's this window where you have in some sense receptively misaligned systems, but it's kind of okay because they actually can't really do anything extremely horrible. And then at some point you actually work out how to make them not deceptively aligned and then you kind of squeak through or whatever, or they sometimes try to pull that kind of thing and it's damaging, but it's not the world is over level damaging. That's definitely a broad category of ways in which stuff might be okay. And I think as well. 
+
+**Ben 02:02:46**
+
+I do also think that class of scenarios is a little bit underappreciated of it being the case that you have some window where we have kind of deceptively, misaligned things. But it's actually quite hard to do something like take over the world, especially if you have other AI systems which can be useful and people like on guard to shut down Dallas hunters and whatnot. There's also, though, I think still a lack of appreciation for just the possibility that it's actually maybe not that hard to avoid accidentally creating a really deceptively misaligned system. I don't have really confident views here, but I think it's sometimes just weird to me that this seems to be dismissed just relatively quickly. 
+
+### Cognitive cost of honesty
+
+**Fin 02:03:25**
+
+Yeah, I guess one abstract reason for thinking this is that it's much in some sense, simpler to describe an agent which scores well just because it's honest versus an agent which scores well because it has these various deceptive qualities where it's kind of the views it, in fact, holds different to the views that it tells different people. This is true for humans, right? It's like much easier and involves less kind of cognitive overhead, just to be generally honest, than to be this kind of machiavellian mastermind. And therefore most people are just like most of the time honest. 
+
+**Ben 02:03:56**
+
+Yeah. Something which is relatively compelling to me at least or definitely informs my views on this is exactly the analogy to human evolution. I think a lot of people use human evolutionary history as an argument for expecting deceptive misalignment, which I think I actually have almost the opposite interpretation of it, which is definitely some divergence I have from other people in the space. So something that happened in human evolutionary history is it's pretty bad, for example, to set your entire immediate family and yourself on fire. Most people don't want to do that. In evolutionary history, most people who did that were presumably penalized. Their genes weren't passed on and then people's genes and gene space moved a bit away from that. Today people just intrinsically don't want to do that. 
+
+**Ben 02:05:02**
+
+It's not like some instrumental thing of people going, well, it doesn't further, my goal is to propagate my genes into the future to not set myself and my entire immediate family on fire. So therefore, through instrumental reasoning, I will decide not to take this action. It's just like people just don't want to do it. They just intrinsically don't want to do it. If they're planning, they're looking at how the different ways things they might do in the world and one of the scenarios involves them doing that, then that's like strongly counts against it just intrinsically. And that's kind of what you want basically is what you want in the case of training ML systems through human feedback is you want to basically ding them whenever they do something that's an unwanted behavior. 
+
+**Ben 02:05:46**
+
+And then you want the asystems to in some sense just not want to do it. And it seems like human evolutionary has lots of examples of people getting dinged for certain kinds of behavior in evolutionary history and then just having a strong aversion. I think the most salient or important case of this is humans aversion to violence or hurting other people. So this is not something that was consistently selected against. So loads of people killed other people and then this was actually useful for them evolutionarily because they took their resources or sort of dominance and things like that. My sense is that it's at least on average your pre agricultural ancestors I think certainly killed at least a 10th person per life, maybe more than that. So it was just based on rates of violent deaths. 
+
+**Ben 02:06:40**
+
+And so this wasn't something that was consistently penalized and in some case it was actively rewarded. Nonetheless, most times when you might kill another person or be violent against another person, it was penalized. Like if you just were to randomly attack someone in your area, probably you're going to be ostracized, you're going to be hurt yourself or something like that. And then as a result, people have a pretty strong, although clearly not consistent aversion to hurting other people. Most people, it actually takes quite a bit to get them to kill someone else. This is often something that even in military context, people need to work to overcome. And then it's not just a purely instrumental thing, it's that people intrinsically have an aversion to doing it. There's some sort of interesting transfer like limitations to transfer here. 
+
+**Ben 02:07:27**
+
+So probably forms of killing which are closer to forms of killing that would have been penalized in the past, people are more averse to. So for example, killing with your bare hands, which is probably more similar to the form of killing that in evolutionary history would have gone penalized. People have a stronger aversion to than, for example, killing with drone strikes, which is something that never happened in evolutionary history. Nonetheless, there has been some level of transfer there where people do have an intrinsic aversion even to killing with drone strikes. Drone operators do get PTSD. Clearly you can get people to do it and that this job exists. There's been some transfer there. We even have transfer to killing animals, which is kind of interesting because this is something that never would have been penalized basically or would have been penalized very little. 
+
+**Ben 02:08:12**
+
+But killing animals, which are the type of animal that we eat, we have some aversion to, which is sort of interesting, selling it for some analogies people make. We have an aversion to killing chimpanzees like you definitely if I were to ask you to kill a chimpanzee and it's going to pay you $10 and no one would need to know, no downsides for you, that'd be an insane POCASA. Yeah, you need to kill a chimpanzee with your bare hands. I brought the chimpanzee with me today. You're going to be intrinsically averse to that. That's something that intrinsically even if it actually furthers various other goals you have. It's going to be hard to make yourself do that. 
+
+**Ben 02:08:46**
+
+And I was never specifically selected for it's actually probably almost like a little bit disadvantageous but seems like this intrinsic aversion to violence has been built up relatively strongly even though it wasn't even consistently penalized and wasn't even penalized in many of the forms of killing that people can participate in today. And so biology with AI systems that's kind of reassuring. The thing that you want to have happen is AI systems do something which is something that's a bit violent towards people and then penalize it. Don't have the parameters that contribute to that change. And then have this sort of iterative process of selection. And at the end of it you want air systems to just in the same way that you are not willing to kill that chimpanzee I brought with me today. 
+
+**Ben 02:09:32**
+
+You want the air system just to be really averse to acting violently towards people. And you might imagine as a baseline maybe it would be even more averse than people are because in humans it wasn't consistently selected against and also there's loads of forms of violence that just never appeared in the evolutionary track record. And so I think as a baseline perspective and this is not to say that this argument is airtight but we do notice that people have inversion to hurting other people. That's not perfect but it is there that sometimes is a block against them doing that even when it's instrumentally useful. 
+
+**Ben 02:10:05**
+
+You might, as a baseline, expect AI systems, at least around a certain, maybe cognitive level or something, to have a similar version to the ones that people have or perhaps an even stronger one because it would have been selected for even more consistently and perhaps with an either even, like, broader range of forms of it in the sample. And perhaps you would also expect things which are like killing adjacent like lower level forms of violence like punching people or the language model equivalent is to have also been selected against in the way that they just clearly weren't for people anyway. 
+
+**Ben 02:10:36**
+
+So that's a long winded way of saying I do think if you look at the evolutionary track record the way this stuff works seems to have often imbued people with an intrinsic desire not to do things that are selected against and then specifically things which are selling to us like violence. And if that's the case then you might expect something similar for AI systems, perhaps something even stronger for AI systems and then that would be reassuring even if it's not perfectly reassuring because obviously people do still kill and there are still sociopaths who don't have these barriers in place but it will at least be somewhat reassuring. 
+
+**Fin 02:11:09**
+
+Yeah, it's interesting. I guess I could try to say that back. So in the evolutionary environment, if you began with a dream pool of pure honesty, then you might naively think that as soon as you get a little seed of deception, then it spreads because I can just capitalize on everyone's trust in me to lie about how much how many resources they should give me. Like you have a pool of doves. As soon as you get a hawk, the hawks begin to take over until nearly everything is hawk. But this kind of doesn't happen. Like, we just settled on something like an equilibrium where just most people are mostly honest. 
+
+**Fin 02:11:49**
+
+And maybe this is because before you get successful kinds of deception, you get relatively easy to spot bad kinds of deception which you can select against by like, making pariahs out of sociopaths or just kind of ignoring them. And maybe by analogy in the kind of reinforcement learning from human feedback story, maybe you should expect to get relatively easy to spot kinds of deception before you get the really tricky hidden kinds and therefore we just like, it's fine. 
+
+**Ben 02:12:21**
+
+Yeah, I think maybe I want to make it my point is somewhat more narrow than that and somewhat less focused on perception. So I think maybe the way to put it is like, there's certain things an AI system might do that are the actual scary things that would actually cause a lot of harm. And so two of these, let's say, are killing and not allowing yourself to be, let's say, chill off or stopped. And then, yeah, there's maybe a small number of high level things we really want to make sure AI systems don't do. And if they don't do it, then we're probably not in at least like really acute catastrophe land. 
+
+**Ben 02:12:55**
+
+And there's a question of whether selecting against these behaviors leads the as systems to intrinsically disprefer courses of action that involve those behaviors or merely to have a very contingent preference against them. Basically saying, I really don't want to kill people specifically in the circumstances where someone could punish me afterwards. Or I really don't want to kill people specifically in the circumstances where I don't get to conquer the world through doing it or whatever. And then deception is maybe there's two bits there. So one is it's a question of how this thing transfers, of like, do you actually have a sort of general preference against this thing or this kind of specific instrumental wand? Yeah, exactly. And the other bit is maybe the deception thing is like, are you upfront about this? 
+
+**Ben 02:13:51**
+
+Because the deception bit is maybe some additional layer on top of this. Because if you're just honest about it, if you're like, hey, I noticed you're not killing anyone. Is that because you don't want to kill people? Or is it just waiting? And the answer is like, oh, I'm just waiting, then that solves probably a lot of the issue. The deception in terms of the active lying or dishonesty. It's sort of a layer on top of it. 
+
+**Fin 02:14:12**
+
+Got it? Yeah. 
+
+### Finding motivation in uncertainty
+
+**Luca 02:14:13**
+
+So maybe taking a step back, we've talked a bunch about some classic X Risk arguments and maybe here now touched upon some still motivating X Risk arguments of why people put very high credences to these kinds of catastrophes happening. I'm wondering, on the flip side, what leaves Ben to think that there still is a single digit, double digit chance? One broad takeaway I take here is just like you're saying, look, we're really uncertain about a lot of things here. There's still a lot of intellectual work left to be done. 
+
+**Luca 02:14:43**
+
+I've come up with some arguments, some counterarguments or other people have come up with some counterarguments, but maybe those counterarguments are also wrong, or they still should update us overall still to think that there's some non negligible chance and the stakes are high enough that's like still enough to be working on this stuff. I'm also curious if there just are some arguments at the moment that just feel really salient to you, that either you wish some people take more seriously and work to see if there are counterarguments because this is where you see the action at, or more broadly. I'm just curious for what your motivations here are. 
+
+**Ben 02:15:16**
+
+Yeah, so maybe even just to stand the previous thread, I think evolutionary history is more reassuring than people who are really freaked out about AI think it is. I think it's maybe less reassuring than people who are extremely calm think it is. Just to even stick on the killing bit there people do still kill other people. There are some people who seem to not even really have this aversion to killing at all. There are people who are just actual sociopaths who don't have this thing that you would have expected to have been really frequently dinged. And then there are also these sort of weird preferences that people have that it's like, where did these come from? Why would you have ever have expected this to have emerged in people? 
+
+**Ben 02:16:07**
+
+One that I find somewhat ironic is in terms of the EA and long termist communities, there are people who actually genuinely care about, let's say, things like the welfare of digital minds in other galaxies billions of years in the future and this is at least seemingly a little bit action guiding for them. And that's strange. That's not something that you would have expected to have popped out as a preference or a concern from evolutionary history and the sorts of things people rewarded or pinged for. So that's a bit concerning. Basically these two things together of like, clearly it's a case that some preferences or desires or goals or occupations that people have today are not things you would have ever expected them to have on the basis of what the training or evolutionary feedback process looked like. 
+
+**Ben 02:17:03**
+
+And the other bit is there's clearly some people who have so clearly these aversions of things like killing or whatnot are not perfect. There's some stories we can have for that in evolutionary history of, oh, it was actually frequently rewarded, even if it's sometimes penalized. But even so, there's clearly some amount of variation here. There are sociopaths and psychopaths which is which, and people who just don't really have these prohibitions or even things like setting yourself on fire is one I think I brought up early as the thing that most people do. Obviously, there are people who have done this as political protest. 
+
+**Fin 02:17:36**
+
+Yeah. 
+
+**Ben 02:17:37**
+
+And so the fact that there is this randomness and this sort of mysteriousness in terms of the desires and goals that people actually end up with formed through evolutionary history is, I think, reason for concern about AI systems. Where I think if you imagine the stream process going ahead, where these systems keep becoming more and more sophisticated, they keep being able to come up with better and more and brilliant and ideas about how to do things in the world and then they're given some autonomy in the world, and you have this feedback loop process where they're doing actions over the course of days or weeks or years and they're getting feedback and they're revolving. It seems like the evolutionary case would be some reason to suggest, okay, these things are going to end up kind of weird. 
+
+**Ben 02:18:19**
+
+Like they're going to end up maybe wanting some things in some behaviorally relevant sense that you wouldn't have expected them to want or care about. There's also going to be some noise as well in terms of some things that you might expect them to really disvalue on the basis of having consistently received negative feedback. Maybe that's not so guaranteed. Maybe just even if you have lots of them and there's some sort of random variation across them, some of them are going to have weaker prohibitions against certain actions and stronger drives to do certain weird things. And so these sort of funny stories about an AI system will prevent itself from being shut off in order to make sure that it can have an accurate tally of the number of grains of sand in North America. 
+
+**Ben 02:18:57**
+
+Maybe something that category is not completely insane, that they could actually end up with preferences which are just unusual in that way that we wouldn't have expected, and relatively weaker prohibitions than you might have hoped, and just do actual things in the world which are quite negative that you just wouldn't have anticipated. And then if you have this concern, it's really hard to say tightly why one shouldn't worry about this. We really don't understand very well how these models actually work. It's like we know at a high level of, oh, you have this type of architecture and you train them in such and such a way in terms of actually telling a really kind of satisfying mechanistic. Story about how these large language models that exist actually make decisions or actually give their outputs and why does it do this thing versus this thing. 
+
+**Ben 02:19:49**
+
+We can't really do this very satisfyingly. It's not that it's completely mysterious black magic to us, but really we just don't understand these things very well at all. And often we're just very surprised by the ways that they behave and we can't really tell some complaining story like why I did that versus not that. Yeah. And so basically, given that the evolutionary case also has these concerning aspects of it and given that this stuff is if not black magic, sort of black magic adjacent if we don't really understand how it's doing it and also, given that level of oversight of these systems may become just like lower over time as we start to do things which are more sophisticated than we ourselves can do. And they're given more autonomy and less oversight and they're maybe given important, serious responsibilities in the world. 
+
+**Ben 02:20:34**
+
+What's the odds that something goes wrong here? Seems not right to be really calm about that. There's a question of does that mean accidental catastrophe for humanity or can you learn from feedback loops or whatever? I don't know. I don't have a really crisp story there. But I would find it strange. Just be very calm about we're creating these perhaps agentic, in some sense, super intelligent systems, creates this very opaque, stochastic process and we're allowing them to maybe over the long run, pursue long run goals in the world and giving them important responsibilities. And it's hard for us to kind of understand why they're doing what they're doing. And that's just fine and nothing could go wrong there that seems probably too confident. 
+
+**Luca 02:21:16**
+
+Yeah, that's really interesting. I guess that also just like to close the loop or something back to the beginning of when we started. This conversation must leave you in a bit of a weird epistemic position as well, to be in where you're very skeptical of these arguments, but still much less skeptical than most of society or the rest of the fielders where you're like. This thing is potentially really dangerous and really worrying, but also aware of a lot of the limitations at the same time. 
+
+**Ben 02:21:43**
+
+Yeah, it definitely is a little bit of a strange position. I do also think as well, there's, I think, just a lot strange about how maybe the brother world or people in the ML space think about these kinds of risks where if you survey researchers just kind of run the machine learning researchers and you ask them what's the chance of stuff is going to be really horrible. I think it's like five to 15%, something like that. There have been different surveys and that's kind of interesting that people don't seem that responsive in their behavior to the thing you're doing. 
+
+**Luca 02:22:19**
+
+It's weird to think that the thing that you're working on has a five to 15%. 
+
+**Ben 02:22:24**
+
+Yeah, exactly. The field that you're pushing forward that. 
+
+**Fin 02:22:28**
+
+Aimpec survey was like roughly half like 48% of people who responded thought at least 10% chance of, quote unquote, extremely bad. 
+
+**Ben 02:22:36**
+
+Yeah. We also have some numbers on this from I think I'm published. I'm not sure what they are, but yeah, but it's, let's say non negligible. And then those numbers are not it's a bit hard to say. I mean, so, like, what exactly the risk scenario people are focused on is. But I do think there's lots of people where if you actually were to really force them to put a probability on what's the chance that we, in some sense lose control over these things, and that's just quite bad in a way that causes lasting harm. I don't know that I'm actually that much my number is actually that much higher than lots of people who don't really focus that much on this. I don't really know exactly what's going on there. 
+
+**Ben 02:23:21**
+
+I do think just for lots of people, there's things that just in some sense, they're explicitly reported beliefs, but they don't seem to filter into people's behavior that much. And it's not clear how much of this is. People kind of say they believe them, but not really. Like, if they actually were forced to reflect on it, they would have a different view or what's going on. I remember a public opinion survey of I think it was US citizens that we did a few years ago. I think there's an issue, if I remember correctly, with maybe the way that human level AI was defined. That was a bit too inclusive, but I think it was something like the average member of the US public has like ten year timelines. Yeah. And that's one of the things where it's not really clear. 
+
+**Ben 02:24:11**
+
+My prior there is something going wrong with how people are understanding what human level AI is. But I do think there's lots of people who at least will report beliefs which are not that different than mine and then just focus less on the issue. 
+
+**Fin 02:24:24**
+
+I guess often it's actually kind of hard to tell what the difference is between actually believing something that's a big deal, but failing to act on that somehow and claiming that you believe something but not actually believing it in some sense, like, I don't know, maybe they're just kind of roughly the same thing. 
+
+**Ben 02:24:37**
+
+Yeah, it's a bit tricky. I do think it's used with other issues as well. I think my memory is that if you ask people what's the chance climate change will cause human extinction, it's like unusually it's kind of high. And then people's behavior think bees are huge deal, right? It's not really clear if it's just one of those things where it's like you pick up someone's asking you, surveying you, and you have stuff to do in your life, and they're like, what's the chance bees kills everybody? And then you're like, I don't know, 10%, whatever. Is that fine? You happy? Not really clear. 
+
+### Is there anything suspicious about the 5-20% range estimates?
+
+**Luca 02:25:16**
+
+Is there anything that strikes you as somewhat suspicious about a lot of these estimates being in, let's say, the five to 20% range? So, like, one story I could imagine is if I'm, like, thinking about what's the most important thing to work on, if I say that something has like a 99% chance of ending humanity, then it's almost like futile to work on it because it's over determined. And if it's like 1%, then it's too small for me to care, or I can just dismiss it, but anything in that range seems like the sweet spot for tractability stuff. 
+
+**Ben 02:25:46**
+
+Yeah. So I don't really know. One thing to say is there absolutely are people who are closer to 99% than they are to 28%. Like there's there certainly are people who have that viewpoint, I guess. I guess famously, you know, Ellie Zukowski is notable person who's certainly closer to 99% than 20%. And so I know maybe the people who are really doomy can avoid that form of suspicion, so they're in the clear. That's not what's going on with them. I don't know. I think if you look at the distribution, the probability distribution on a plot, I don't know that there's actually some suspicious clustering around five to 20%. I remember there's a survey, there have been a number of surveys. 
+
+**Ben 02:26:34**
+
+My memory is it looks a little bit like almost like a log normal distribution or something like that's kind of smoothly spread out across orders of magnitude, which is weird in its own right. Something's kind of wrong there, but I don't remember there being any impression of a suspicious clustering around the five to 20% range. 
+
+### What current work in GovAI looks like
+
+**Luca 02:26:55**
+
+Yeah, interesting. So then maybe moving on to thinking about what people can do, I think to be clear, it's maybe also useful to maybe draw a distinction between these more abstract what is AGI risk? Like, what numbers should we put on these things? Like day to day? 
+
+**Fin 02:27:10**
+
+What can we do? 
+
+**Luca 02:27:11**
+
+Can you maybe begin by just talking about what does actual AI governance work, for example, at GovAI look like? What kind of questions are people working on? 
+
+**Ben 02:27:20**
+
+Yeah, so at a high level, the way I think about the field of AI governance is basically the idea here is there may be some level of contingency in terms of the harms or benefits that AI brings. These contingencies will probably mostly depend on decisions made by a relatively small number of government and private institutions. Different parts of especially USA, us. UK. China, a few other countries probably matter quite a bit, and there's relevant institutions that probably matter quite a bit, and then perhaps private actors matter quite a bit, and perhaps a number of other institutions can have influence. And then the way I think about the Philip AI governance is the goal is to try and help those institutions make better decisions about AI issues, essentially. And I think there's a number of different pathways for that. 
+
+**Ben 02:28:13**
+
+So one pathway is trying to directly inform decisions which are happening at any given moment. So policy questions at a national or lab level, another thing the field can do is try and increase capacity for those institutions to make better decisions. And there's a lot of different things you could do to further that goal. And that includes trying to make sure that there are good, competent, knowledgeable, scope, sensitive, socially competent, all the other traits that are helpful for having a positive impact with institutions. People that can be hired by those institutions and that includes building up forms of expertise and helping screen people and things like that. There's building up very similarly network of experts who can help advise these institutions and have forms of expertise that are actually relevant and that can leverage and have good connections. 
+
+**Ben 02:29:07**
+
+Then there's different things at the level of trying to help build connections between people at different institutions so they can actually share information and converge on sensible ideas and whatnot. And there's other things beyond that as well of trying to help create a supply of basically, let's say, intellectual resources which people at these institutions can pull on that might be useful for making decisions. So reports and proposals and things like that. There's also things you can do at the level of trying to push memes which are useful, for example, normalizing or creating support for certain decisions these institutions might want to make. 
+
+**Ben 02:29:48**
+
+So for example, if you're a lab that wants to not open source your models because you think that's something that's responsible, it's beneficial for that to be an idea that exists in the ecosystem, that's a responsible action that's built up over time through lots of conversations and op ed pieces and whatnot. So basically two bits. There's trying to directly answer questions which matter for institutions right now and then there's this really broad range of forms of capacity building which are meant to help institutions in the future be more set up to make positive decisions. And so that's just a basic framing thing. 
+
+**Ben 02:30:26**
+
+And I think historically, I think a lot of the purpose of the field of a governance has been these kinds of capacity building as opposed to let's really directly answer a question that institution faces right now, I guess with that foundation in place. Or with that being said, I think that there's a number of different categories of decisions that important institutions is trying to have to make, especially over the course of the past couple of years. So maybe let's give a range. There's decisions that labs need to make, for instance, at the moment about publication and release of models. Things ranging from like when it's responsible to release a model to whether they should open source or not open source, what sorts of processes they should have internally to decide what to release and when, make sure it's safe. 
+
+**Ben 02:31:11**
+
+There's decisions that, for example, a number of governments, most notably the US governments, are making at the moment about export controls and sharing of technology globally and supply chains that probably have significant impacts. There's decisions which are being made about the regulation of AI. So in the EU, there's work on the EU AI Act, which is a number of other associated acts which have less catchy names, which may have some impact on, basically in the future, what companies are forced to do to be responsible in developing, releasing AI systems. There's also regulatory interest in the US and UK and standard setting work which will feed into those regulatory efforts. So basically there's a number of different areas of activity at the moment. 
+
+**Ben 02:31:58**
+
+And then in terms of trying to inform these institutions, then there's a flurry of work being done to try and figure out what would it actually be good for these institutions to do within the political constraints that they face and what might the relationship between actions that they're taking and risks that can emerge in the long run. 
+
+**Fin 02:32:15**
+
+Among the different kinds of capacity building you mentioned, one of them was something like cultivating expertise, finding potential experts and skilling them up, presumably with a view to those people giving useful advice to people like lawmakers and other big institutions. And I'm curious, like, if I'm a lawmaker and I started thinking about what I might want to do about advanced AI, the kind that doesn't exist yet, but might exist. 
+
+**Ben 02:32:47**
+
+Yeah. 
+
+### How crowded is the field
+
+**Fin 02:32:47**
+
+[Suppose] I'm a lawmaker and I start thinking about what I might want to do about advanced AI — the kind that doesn't exist yet, but might exist. [And] I'm looking for people to give me advice who've spent, let's say, at least a couple of years thinking full-time specifically about advanced AI. How many [such] people are there in the world? How crowded is this space? 
+
+**Ben 02:33:01**
+
+Yeah, that's a good question. Maybe one way to frame it is: you've become concerned about things that might be called AGI; and you're worried that there will be really general advanced systems in the future that can cause global catastrophes. And you're trying to think what sort of legislation, even if it's not possible to pass it now, might be useful in (let's say) the US to help with those risks. So say the set of people who know stuff at a practical level about how regulation in the US works and how legislation is drafted and things like that, and also have thought very substantially about risks from AGI systems and theories of impact between different things like those two buckets together. That's surely less than, I'm pretty confident it's less than ten people. I'm not confident it *is* ten people.
+
+**Luca 02:34:01**
+
+Maybe one silly question of how normal is that compared to other bits of legislation? So, for example, one story I could just imagine is that a lot of actual writing, the text of legislation is always incredibly niche. 
+
+**Fin 02:34:12**
+
+What about self driving cars. Right. How many people can I speak to if I want to draft some bills? 
+
+**Luca 02:34:16**
+
+Yeah, maybe to give like more of. 
+
+**Ben 02:34:17**
+
+A sense of like, actually not now. This is part of my own ignorance. I don't really know how many I don't know how many people would be in that category. I assume more. I think a lot of this stuff is also at the state level as well. 
+
+**Luca 02:34:32**
+
+So then when you're thinking about, again, in the spirit of capacity building or filling some of these talent gaps, how much of it is just this know how combination versus having particular skill sets that are maybe more tacit or something? 
+
+**Ben 02:34:48**
+
+Yeah, it's a bit tricky. I think it's definitely both things going on. So do you think it's a category like a type of like a basket of skill sets? I think a basket of skills I think is really important is one, actually knowing stuff about how things work in the real world, knowing how various institutions actually function and what's actually politically feasible and whatnot. Two, having a sense of what future risks might actually look like in some sense, or having a level of concern and awareness of the discourse around things like risks from much more advanced safety risks from much more advanced AI systems. And then three is this ability to sort of connect those two things and think, in all things considered sense, what might the different downstream effects of different decisions made today be? 
+
+**Ben 02:35:44**
+
+Or how do you either backchain from the risk that you want to avoid to what can actually happen today or forward chain from the different decisions that are happening today to what the implication is for risk? I think all of those together are quite important and there's sort of accelerating returns in them. I think they have different aspects. First, but a lot of it is actual just expertise of actually knowing things that if you'd worked in various places for a while, you just probably would by default know certain things. Or if you've read lots of stuff, there's also some aspect of just kind of some sort of common sense, street smartsy thing that I think people sometimes raise as inputs above and beyond the other bits in terms of having a kind of clear picture and concern with risks from more advanced AI systems. 
+
+**Ben 02:36:32**
+
+I think a lot of that is a kind of expertise thing where it may be called it's funny to call expertise because everything is so speculative and disorganized. But I think a lot of it's just if you read a lot of stuff and talk a lot of people and you're in the right circles, you'll have a picture of that. And then this last bit of actually doing that forward or backward training. That's, I think, more of a skill set thing that is also, I think, in its own right, really nontrivial. And I mean, to give an example of this is let's say you were thinking about a question like, would it be positive or negative for it to become hard in the future for large AI. Companies to acquire smaller AGI focused companies in the US. That's a really hard question. 
+
+**Ben 02:37:19**
+
+And let's say you're just focused specifically on the likelihood of some sort of AI. Safety catastrophe. It becomes way harder if you're training off different things you might worry about, but just, like focus on that even as a simplifying assumption, that's the only thing that you care about. That's a really, actually very difficult question that involves lots of weighing of different considerations. So you might say, okay, first of all, what's the impact of this on AI. Progress. The pace of AI. Progress? And then there's a question of is it better or worse for progress in the US. To be fast or slower? You might say, okay, probably slower. But that's not completely obvious because you can also tell these other narratives of, like, oh, it's good for there to be a significant US. 
+
+**Ben 02:38:00**
+
+Lead over other countries, because if you have a leadership position, then this gives you breathing room to pause in the future when you have advanced AIS. Systems and not worry about other people kind of catching up to you and do responsible regulation when the risks are large. And so even that's not completely clear. There's stories you can tell about why it might be good to move faster. But then, okay, so let's say you look at speed, and then there's that question there of, okay, well, what would the impact of this be on the pace of AI. Progress? And then you might say, okay, well, it consolidates resources into single actors, and so maybe you get larger training runs more quickly. 
+
+**Ben 02:38:33**
+
+But then maybe some counterstory you can tell of diversity of approaches, perhaps playing a role in accelerating things, or large companies being more worried about the small companies catching up to them. And so then maybe it actually can go in either direction. There's a bunch of factors that feed into that. And you might say, okay, well, maybe speed isn't the only thing that matters here. Maybe it's a case that there's other flow through effects. Like, for example, the total number of actors might have an impact in terms of how much a uniliners curse thing where just if there's safety trade offs, some of them will have lower assignments to risk than others, or some of them will be more reckless than others. 
+
+**Ben 02:39:07**
+
+And so increase in total number of actors increases the chance someone takes a reckless action or someone screws up or is bad on safety. Then you might say, okay, what's the influence on regulation? What's the likelihood of, like, aggressive regulation of these companies? Like, things that require, like, licenses in the future for large training runs? And you might say, okay, maybe I. 
+
+### How important is it to have a strong fit
+
+**Luca 02:39:26**
+
+Can see what this is. So I guess, like, one upshot question to ask, maybe on behalf of listeners who are thinking about getting into this field is how important is it maybe to have a good fit on here? Is it to be really good at this work as opposed to just being able to throw more total brain power at this and anything helps. And then I guess, b like how would you distinguish between what kind of backgrounds and skills or tests could there be for somebody to find out whether AI governance is a good fit for them? 
+
+**Ben 02:39:57**
+
+That's a good question. I mean, it obviously depends on what someone's outside options are to a significant degree, where if you have a chance of being the single most influential biosecurity policy expert in US or the option of being you can kind of barely get hired by any place. Like a governance researcher who contributes to that probably should be the biosecurity one. Yeah, it's so tricky. It really depends on people's outside options. Yeah, I think that is a tricky thing I think will really be personal at the level of how else you can have an impact in the world or how much you value impact versus your life being nice and things like that. 
+
+**Ben 02:40:47**
+
+Something I think is a bit unfortunate here is I think people develop skills at a different pace or sort of reveal themselves as people who can do pretty valuable work at different paces. I do think sometimes for some people there is actually a real dynamic of you can learn pretty quickly or get positive feedback pretty quickly that you're doing valuable stuff. Like I think that some people I can think of kind of concrete case of this, like within a year of getting interested in AI governance after having done something else, they actually have become someone that other people are actively seeking advice or viewpoints from and not just like getting good feedback, but there's that credible demand signal. 
+
+**Ben 02:41:28**
+
+They have stuff to say on a topic that people are interested in or when they look at someone else's piece they can have thoughts on that they share up the person and the person is like, oh, I hadn't thought of that before. That was clarifying. I think. I've definitely also seen people, though, who, for instance, let's say, did years ago GovAI fellowship or internship and maybe didn't get that much done in the context of it, or didn't get that much positive feedback, and then they're out in the world, and then years later, it's like, oh, wow, that person's actually doing work I consider pretty valuable and seems quite sharp on that issue. 
+
+**Ben 02:42:07**
+
+So that's one high level thing that I think is a bit tricky where I do think it's sometimes possible to get positive feedback quite quickly for work, but then sometimes there are people who it's a bit of a slower learning curve or sometimes it's a bit of a sleeper thing. I think a pretty basic thing that I think it's possible for people to do that can be a way of getting a positive signal is read closely some piece of work that someone else has put out, that's a significant piece of work. And then reflect on it, and then see if you have something at the level of useful. Reviewer comments on it. So imagine you're like a peer reviewer for the piece and you're noticing issues with it or you're noticing possible extensions of it that could be valuable and then writing it up. 
+
+**Ben 02:42:57**
+
+And then ideally if you can share it with the author and they actually can take a time to look at it, that's a way that sometimes people can get a positive signal. It's just can you actually take a piece of existing work by someone that's a little bit at the frontier and then if you spend enough time on it, say something additionally which is clarifying and that's something that people can do for at least public work. That can be a way to get signal without even that much of a mentorship relationship. I do think if you can do a program like something like GovAI has these summer and winter fellowships, we bring people over for a few months and do a supervised research project. That's obviously another way that you can get that signal is with supervision and someone guiding you and feedback. 
+
+**Ben 02:43:36**
+
+Can you in that time produce something that other people find valuable or interesting? I think failing to do that isn't necessarily a decisive negative signal and empirically isn't, but that's the way to get that positive signal is if you have an opportunity to do something like an internship. I would say overall though, most people are not going to be in a fortunate position of really having an opportunity to have a close mentorship relationship after getting first interested in the area. And then a lot of the task there is. Can you use publicly available writing to write something yourself that other people in some way find useful? And I think a review of someone else's piece is one of the simplest ways to do that. 
+
+**Ben 02:44:17**
+
+But you can also imagine something like write up a short policy memo of something like figure out an actual proposal for what's an action some institution could take at a high level and then have a three pager you can send to people. And if people find that they learned something from it, then that's another thing you can do. 
+
+**Luca 02:44:34**
+
+And one maybe like motivating thing here to perhaps emphasize is to say it's often very surprising how quickly you can actually find the frontier of research of like as you said before, often it's like less than ten people who have thought about anything. Often it's like less than one person or at least one full time person who has thought about anything. That at least the barrier going into thinking that you can make useful criticisms or extensions as you say, can be much lower and much less intimidating. 
+
+**Ben 02:45:01**
+
+Yeah, I would say I think a really key thing that a lot of people under appreciate is the frontier is really not far from whatever, I don't know the analogous thing at the starting point, but the frontier has not moved very far forward on most things. Very little work has been done in most questions that seem like they're incredibly important. A common dynamic I'll encounter, this is actually very common, is someone will want to work on some issue and it's a really broad issue, like how should we calculate regulatory regime in the future for large training runs? 
+
+**Ben 02:45:39**
+
+Or questions around recent US export controls, like positive or negative from a certain perspective, or even I've heard like compute governance as like a broad area and then someone will say like, oh, I probably shouldn't work on that because it seems like it's already covered and it'll be like three people. Sometimes it's one person and there'll be a sense of okay, and nothing is covered. There's basically no topic area in this space that I would describe as covered. Like, oh, it can't absorb additional people. The guy on it is so good, that fine. And a lot of areas it's really like the past year that anyone has done that, there's been one FTE, like a person who is this is their thing, they're this thing person. 
+
+**Ben 02:46:26**
+
+So broadly speaking, very little work has been done on even questions that seem like a lot of work should have been done on them. There's almost no topic of importance that has a huge number of people actually working on it, although a number of topics have a lot of people who say stuff about it, which is, I think, difference from someone who actually, in a focused way, is trying to build up expertise on a topic over the course of a year or more. 
+
+### How hard is it to get to the frontier in AI governance research?
+
+**Fin 02:46:44**
+
+Yeah, you said the frontier hasn't moved very far. I'm curious since when? 
+
+**Ben 02:46:53**
+
+Let's say the field of AI governance focused on risks from advanced systems. Let's say it started in 2016. 
+
+**Fin 02:47:01**
+
+Okay, how do you think about what the main reason is? Is it just a small number of FTEs moved very far at all? Or is it people have been maybe going down rabbit holes which shouldn't pan out, what's going on? 
+
+**Ben 02:47:13**
+
+So I think it's a few issues together. One is very few people. I think it is actually just a really blunt thing, is just actually very few people. Another thing is this dynamic I alluded to before of there being this really large gap between what was actually happening in the world and if you wanted to focus on risks from advanced AI systems, like what the considerations they were. So I think you had a mixture of people doing work which was on present day things, but didn't really transfer, or things work which was just very abstract about risks from AI that just falls into the trap that. A lot of abstract research does if it just doesn't connect actual decisions. 
+
+**Ben 02:48:01**
+
+I think there's also a general thing of yeah, I think there's just also dynamics as well of a lot of work for various reasons, being relatively academic and just academic work being often like less targeted or less useful, less work pressure in various ways as well. 
+
+### Research Ben would love to see
+
+**Luca 02:48:22**
+
+Can you maybe give a couple of examples then either of concrete research questions that fill that sweet spot of being related to advanced AI but practical enough like Bare today and there are people working on you would love to see maybe as, like, an entryway for people to begin exploring this field or just in general, because this feels like a really valuable thing to be doing. 
+
+**Ben 02:48:47**
+
+Yeah. So give one concrete example and this is one that I should say one person is currently working on it that I know of, but that should not be taken as a reason. So I currently am supervising a project by a GovAI Winter fellow Connor. And the focus of the project is suppose it were the case at some point in the future that some part of the US. Government were to prevent a company from doing a certain large training run because they were worried about the safety implications of that training run. Is there any existing regulatory authority that would be invoked by some part of the US government to do that or would it actually require new legislation? That's not a thing that there's not like some existing white paper on that I can point people to. 
+
+**Ben 02:49:36*
+
+I've talked to lots of people about this question. This is a pretty frequent one that I've asked different people with some knowledge of US government's regulatory landscape and it often gets a bit of a little bit of a blank look and that's kind of mad to me. There's not something yet written on that. And so there's now one person who's at Gabby for a few months, who I think is now the frontier on this question after two months of having worked on it, who doesn't have a law background. Their background is philosophy. I think they're just actually now at the frontier in that question. I think they actually have a better understanding of that question than anyone else in the world. 
+
+**Fin 02:50:15**
+
+Wow, okay, good luck. Connor. 
+
+### What GovAI has to offer (fellowships etc)
+
+**Luca 02:50:17**
+
+There is a lot yeah. Can you talk a bit more generally about what GovAI has to offer maybe to people who are interested in pursuing a career here? So in terms of mentorship, you mentioned the Winter Fellowship here. What kind of resources are there? 
+
+**Ben 02:50:32**
+
+Yeah, so we see a lot of our mission as an organization as basically supporting the AI governance talent pipeline either institutions that matter or into bringing up experts who can advise institutions that matter. And we have a few programs which are specifically targeted this so we have our Summer and Winter Fellowship program which runs twice a year and we have cohorts of about 13 people. And basically the way this works is everyone gets a primary and secondary supervisor. So they come in and then they work on a topic of their choosing. Although we also have a long list of questions that we think it might be useful for someone to work on that we've often sourced from various outside institutions. 
+
+**Ben 02:51:16**
+
+They have a primary supervisor relationship where they meet with their supervisor once an hour who's an established person in AI governance base, also a secondary supervisor who complements the primary supervisor's expertise, often at one of these relevant institutions. And then we have our research manager, Emma, also provide guidance to people in terms of general sort of research school advice and tracking where you're on your project and if you're getting stuck and things like that. And then also bring in outside speakers for Q and A's about different career pathways. We do that like twice a week during the fellowship. People who work in different places or pursue different paths, advice about how they got to where they're going and what they think is important in the space, things like that. 
+
+**Ben 02:51:53**
+
+And so basically put a lot of effort into trying to set people up to pursue a career in the space and get various valuable things. We also have a research color program which is, let's say, less structured or set up at this point than the Summer Winter Fellowship in part because it's newer. These are one year visiting positions and there's two flavors. One is what we call drone track. Research scholar position. And the idea is basically you come over for a year and you're based in our office in Oxford and then you have a supervisor and you basically have a lot of freedom and flexibility to use the opportunity to work on whatever is most useful from the perspective of building up a career in the space. And that can include doing work with outside institutions or exploring different topics of interest or whatever. 
+
+**Ben 02:52:41**
+
+Basically actually pretty based on the idea of FHI's Research Scholar program, which of course you've both done and kind of stolen the idea and the name. And we also have a policy track version of it where it's less of a focus on freedom and exploration. But the idea is you're meant to work on joint or group projects with our policy team and sort of learn through that. And it's like remote friendly and it sort of trades off the freedom with more of a focus on doing applied work within the context of a team. And so yeah, those are both roles we've launched recently and they're a bit experimental. We actually have currently a sort of mini round open at the moment to hire for two to three slots at the moment. 
+
+**Ben 02:53:28**
+
+This may be completed by the time the episode is out, but if you're listening to this at some point in the future, maybe it exists or maybe it's closed. 
+
+**Fin 02:53:36**
+
+You had a headset. 
+
+**Ben 02:53:38**
+
+Yeah. And we'll also be doing this again later in the year as hiring for more slots. So those are two things. We're also as well, experimenting with a policy program which is basically a sort of lighter touch remote fellowship where we give people a reading list of things you should know about AI. If you want to go into AI policy and have Q and A sessions and it's remote and meant to be compatible with people working full time jobs wherever. This is a thing that we're currently exploring and might launch in the future. That's a long list of things. 
+
+### 3 recommendations
+
+**Fin 02:54:09**
+
+Cool. And we'll post links if when they're relevant. Can you recommend on the order of three bits of reading for people to find out more about what we've been talking about, especially kind of things which seem unlikely that they've been mentioned in previous episodes? 
+
+**Ben 02:54:25**
+
+Yeah, let me think so I don't know if I can do this. Is maybe outside the bounds of what you want. 
+
+**Fin 02:54:34**
+
+Try us. 
+
+**Ben 02:54:35**
+
+Yeah. So there's this AI governance syllabus or curriculum associated with the GI safety fundamentals course that's a really good reading list of readings which are relevant if you want to sort of learn quickly about the AI governance space. And it covers a pretty broad range. 
+
+**Fin 02:54:53**
+
+Of areas that's very like my first wish is to have 100 wishes. Yeah, fine. 
+
+**Ben 02:54:56**
+
+Well, exactly. You can just look at it and then the things are pretty good on it and just read the ones that you want to read. So that's one. That's my first hundred wishes. The other is all the readings for a master's program on machine learning. 
+
+**Fin 02:55:14**
+
+Good. 
+
+**Ben 02:55:15**
+
+Yeah, it's a good question. I don't think the space really has these very canonical, like, oh, if this is the one thing you read on this is what I would have you read. Kinds of pieces. If you want to understand or think about AI risk arguments. Joe Karl Smith has a really good long report with open philanthropy on the case for AI risk, I think is the best thing written on the topic. 
+
+**Luca 02:55:41**
+
+Which I think he's recently written a new summary for as well. 
+
+**Ben 02:55:44**
+
+I think I missed that. But you should maybe read the summary. Yeah, you should maybe do that. I think that's the single best piece of writing on AI risk, essentially. And that's quite long. 
+
+**Fin 02:55:55**
+
+Do you also have a review of it? 
+
+**Ben 02:55:57**
+
+I do also have a review of it. That's true. I also have a 30 page reviewer comments document on it that also can be found online. Yeah. So I guess that adds up to. 
+
+**Luca 02:56:07**
+
+Three things, either three or 103. 
+
+**Ben 02:56:12**
+
+Yeah, right. So it's a syllabus, this one specific report by Joe and then my reviewer commentary. 
+
+### Where can we find you and GovAI online
+
+**Luca 02:56:21**
+
+Great. And then I guess, like, last question to close things off is where can people find you and GovAI online? 
+
+**Ben 02:56:27**
+
+Yeah. So you can find us at www.governance.ai. Nice. And then we have a website, and that's what you'll be brought to if you type those into your browser and you press Enter. Is AI a country, so I think it's anguilla. I think. 
+
+**Fin 02:56:47**
+
+Yeah, it is. 
+
+**Ben 02:56:48**
+
+Yeah. We actually looked into whether we could get GovAI as a secondary URL and turns out that's just the website for the government. I think I remember trying and we figured that probably that would be probably they deserve it more. 
+
+**Fin 02:57:08**
+
+Seems right. 
+
+**Ben 02:57:09**
+
+Okay. 
+
+**Luca 02:57:10**
+
+And anywhere people can find you online. 
+
+**Ben 02:57:12**
+
+Yeah. So I have a very bare bones personal website. I think you just go to Benmgarfingcole.com. I think that's me. And then it will just be two paragraphs of information about me and a photo. But that might be a nice compliment to what you've learned about me from this interview. 
+
+**Fin 02:57:33**
+
+Nice. 
+
+**Ben 02:57:34**
+
+Awesome. 
+
+**Fin 02:57:34**
+
+Ben Garfinkel. 
+
+**Luca 02:57:35**
+
+Thanks so much. 
+
+**Ben 02:57:35**
+
+Yeah, thank you. 
+
+### Outro
+
+**Luca 02:57:38**
+
+That was Ben Garfinkel on AI governance and making AI risk arguments more rigorous. As always, if you want to learn more, you can read the writeup at [hearthisidea.com/episodes/garfinkel](https://hearthisidea.com/episodes/garfinkel). There you'll find links to all the papers and books referenced throughout our interview, plus a whole lot more. If you enjoyed this podcast and find it valuable, then one of the best ways to help us out is to write a review on whatever platform you're listening to. You can also give us a shout out on Twitter, we’re [@hearthisidea](https://twitter.com/hearthisidea). We also have a [short feedback survey](https://feedback.hearthisidea.com/listener), which should only take you somewhere between five to ten minutes to fill out and you'll get a free book from us as a thank you. 
+
+And lastly, if you want to support and help us pay for hosting these episodes online, then you can also leave us a tip by following the link in the description. A big thanks as always to our producer [Jason](https://www.jasoncotrebil.com/en) for editing these episodes. And thanks very much to you for listening.
