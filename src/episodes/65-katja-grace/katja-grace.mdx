@@ -76,4 +76,1064 @@ In this episode we talk about:
 
 ## Transcript
 
-*Coming soon!*
+### Intro
+
+**Fin 00:06**
+
+Hello, you're listening to Hear This Idea. And in this episode, we spoke with Katja Grace. Katja runs AI Impacts, which is a research project trying to incrementally answer decision relevant questions about the future of artificial intelligence. She also blogs at World Spiritsocpuppet.com, which I recommend reading. And recently, Katja was in Time magazine writing about how AI is not an arms race. There were two posts which Lucra and I were especially excited to talk about. The first is on counterarguments to the basic AI X Risk case, which I guess lays out what Katja sees as the main high level argument for thinking that AI X Risk is high. And then it goes through just a really thoughtful list of potential holes in that argument and reasons for thinking that catastrophe might not be the default outcome. 
+
+### What are Katja and AI Impacts working on?
+
+**Fin 00:55**
+
+So we talk about that in the first half of the conversation. And then we talk about a post Katja wrote called Let's Think About Slowing Down AI, which goes through a bunch of considerations on that question and which preempted the FLI Open letter on pausing large AI training runs, which you've probably seen. So Katja shared her thoughts on that letter and gave some other updates since she wrote the post. I think Katja is a really unusually clear and inquisitive voice on these big picture questions about AI. So Lucra and I got a ton out of this chat, and I hope you do, too. Okay. Here's. Katja grace. Okay, so just as a first question, can you tell us what you're working on right now? 
+
+
+**Katja 01:36**
+
+I don't currently have a main project. Various things are going on. Maybe the thing I've been thinking about most lately is whether it's actually good to try and slow down AI, or more specifically, what that should look like, because there's a difference between slowing down the start of training runs or slowing down releases. 
+
+
+**Fin 01:59**
+
+Yeah, nice. And looking forward to actually talking about that. But just another high level question. You run something called AI Impacts. Can you just tell us what that is? 
+
+
+**Katja 02:10**
+
+Yeah, it's a project which is at Miri. The Machine Intelligence Research Institute. But it's pretty separate. We're basically trying to answer high level questions, decision relevant questions about what will happen with the future of AI. So things like, when will AI be able to do crazy things? Is it likely to destroy the future of humanity? Then what kinds of systems might we expect? Will things happen very abruptly or gradually? That sort of thing. Usually we research much easier questions, and it's sort of like a hierarchy of questions where often we're answering questions more like, exactly how fast did cotton gins get better? Was Eli Whitney's cotton gin crucial. Impressive. Or was it similar to the ones beforehand as kind of input to the question of technology in general? 
+
+
+**Katja 03:12**
+
+How fast does it like, how often is it jumpy as input to should we expect this particular future technology to be jumpy so yeah, it's a lot of empirical stuff. 
+
+### The AI Vignettes Project
+
+**Fin 03:24**
+
+Another thing I appreciate from the website last time I was poking around it and I can't remember exactly what this is called, but you have some database of people trying to imagine concrete scenarios that are AI relevant, actually trying to tell the stories. And I think that's very cool. 
+
+
+**Katja 03:40**
+
+Thank you. It's called our vignettes project. We sometimes have workshops where various people try to do that at once, like write a concrete story about something that might happen with the idea that people might then critique one another's and be like, wait, that isn't plausible, and try and keep going until it is plausible. Though often we get sort of sidetracked at the writing the story bit and then haven't had huge amounts of critique. 
+
+### Counterarguments to the basic AI x-risk case
+
+**Luca 04:06**
+
+Maybe to start diving into the conversation. It's just asking how worried should we be about AGI in the first place? And you have written this great blog post called Counterarguments to the Basic X Risk Case, and I maybe just want to begin by asking you to summarize what you try to do in that piece and maybe also ask what led you to want to write that blog post in the first place. 
+
+
+**Katja 04:31**
+
+Yeah, I guess what I'm trying to do in that piece is part of my larger effort to just be clear on what the arguments are and evaluate whether I think they're good. How I came to be doing that is more than ten years ago, when I came across people worrying about these things, I was trying to do what seemed like the most important thing, which, I guess at the time was. I think I was interested in developing world aid, maybe in sustainability, which I guess was a precursor to x risk in my mind. Because I had the impression from undergrad that if things were unsustainable, then the world would end. And so I ran into AI Risk people and they were sort of like, no, you should be concerned about AI Risk instead. 
+
+
+**Katja 05:26**
+
+So actually, for ages I've been trying to be very clear about what the arguments are and to have got sidetracked and done all kinds of other things instead of background, ongoing projects. And I guess I felt like there hasn't been enough clarity on why one should think these things. So, yeah, my hope was to try and be very careful about that. I think at this point, other people have done a better job of that than a better job of laying out the arguments than I was more annoyed about at the time. I maybe started trying to lay things out in the Wiki, for instance. I think Joe Carl Smith's thing is more careful and goes through the argument, but I guess I still feel like there's more being disagreeable to be done that should be there. 
+
+
+**Katja 06:23**
+
+So yeah, I guess I was hoping to put all of that together in a blog post, just partly to make it easier to make these wiki pages. It seemed good to get some feedback from the world by putting some more spicy and interesting bits into a blog post. And I guess it went relatively well and I still haven't actually finished making the wiki pages. 
+
+
+**Luca 06:48**
+
+And there's something I really like about searching for arguments in favor of something. It's really useful to engage with arguments against something, even if it is just to help clarify why or what exactly it is that you find convincing about something. But maybe to ask before we dig into separate specific counterarguments that you raised, could you give us a quick rundown or a very quick summary of the blog post overall? Maybe like less form or something? 
+
+
+**Katja 07:18**
+
+The basic argument is something like this: if we have very smart AI, at some point it will probably have goals in the sense of it'll be trying to achieve particular things in the world. And then if it has these goals, probably these goals will be bad for various reasons. I'm not going to do all the supporting things in the argument here, just sort of at the high level, probably they'll be bad. And then if we have these kinds of very smart agents trying to bring about things in the world and the things that bring about are bad, that's likely to be very bad, I would say is the highest level argument. And so I guess the counterarguments are sort of arranged according to that. 
+
+
+**Katja 08:08**
+
+Like there are reasons you might not think that superhuman AI systems will be goal directed and reasons you might think that their goals aren't as likely to be terribly bad as all that, and reasons you might doubt that even if there were smart agents around with bad goals, that would be the end of the world. 
+
+### Will goal-directed AI systems’ goals be bad?
+
+**Fin 08:31**
+
+Well, let's jump into the arguments and let's begin with that first claim in the basic case, which is something like, well, we might expect superhuman AI systems, if they're built, might expect them to have goals in a way which could end up being bad. And yeah, what do you have to say about that? How might you push back on that? 
+
+
+**Katja 08:57**
+
+Yeah, I think there are various reasons for expecting them to have goals. I think maybe a big one is that goals just seem very useful if you can use various tools to try and bring about something you want, that's more annoying than if you can somehow say the thing you want to a system and it can just try and bring that about and use whatever is available to it. So you might think, well, people are just going to try and do this a lot. It would be very hard to avoid having call directed agents or goal directed systems, which I call agents. But I think one way to push back against that is like goal directedness is sort of unclear what we're talking about. There are lots of different kinds of behavior that are kind of like that, sort of more like a spectrum. 
+
+
+**Katja 09:56**
+
+The arguments about why this would be very dangerous sort of go through it being something like a utility maximizer, which is to say, having a particular utility function that it's trying to maximize, and potentially doing really crazy things to bring that about for systems that copy human behavior or something. So you can expect that they'll behave in a roughly human way. You can still have something that's a pretty goal directed in the sense that you might be interested in economically. Like if when you ask it to make an appointment, it does have the patterns of behavior that try and bring about you having an appointment. Like it sort of systematically knows what it should like, look at a calendar and figure out what else is going on and try and call a person you're interested in. 
+
+
+**Katja 10:55**
+
+I think that sort of looks like a goal directed from an economically valuable perspective, but it's not clear that it's trying to maximize anything in particular, so it's not clear that it's the dangerous thing. 
+
+
+**Luca 11:10**
+
+One useful distinction I like here. Correct me if I'm maybe interpreting this wrong from your blog post, but is noting that there can be a really big difference between telling an AI maximize the number of paperclips in the world, which, famously, you can see kind of going to all sorts of wrong and weird places, as opposed to telling an AI. Act like a really smart CEO of a paperclip company, and then that behavior can still spur a lot of really useful actions. But because you're asking it to kind of imitate, as you mentioned before, a smart human, it still kind of bounds the types of actions that they would be likely to be doing in more kind of sensible ish. 
+
+
+**Luca 11:52**
+
+Looking ways while still kind of also telling you what it is that you should be doing if you're trying to make a more profitable paperclip company. 
+
+
+**Katja 12:01**
+
+Yeah, that seems like a good example. I think the way this still potentially goes very badly is like a kind of thing that humans do or CEOs do, is actually try and think about how to maximize the number of paperclips or try to think about how to make their thinking more goal directed in ways humans definitely do that some amount, though it doesn't seem like they're getting much more goal directed extremely rapidly, I guess, on these kind of topics. Another thing I think is interesting is that if you're concerned that there's like economic pressure for making these things, I think there are economic incentives to have things that are not maximally agentic. And I guess maybe it's easier to think about in a case where someone isn't the head of a company. 
+
+
+**Katja 12:52**
+
+But if a system is sort of acting as a part of a larger company, say with humans, if you employ someone, you want them to know what their role is and stick to doing that and not mess around with other parts of the company or other things that might affect the company. And so I think that's a way in which the economic incentives are not obviously for maximal agency. 
+
+
+**Fin 13:23**
+
+Yeah, that sounds sensible. So to try saying that back the thought is that there might be incentives against systems which behave like they're maximizing something obvious. Because in the actual world we often prefer that people don't just act as if they're maximizing. Something. And that's because that kind of behavior could look a little dangerous or reckless or involve these kinds of uncertainties where we'd actually prefer something that's a little more bounded and predictable. Maybe one way that I might think about pushing back is just at a very high level. It seems almost like a trivial case that in the long run we should expect systems with long run goals to do best and be selected for, right? And so as long as there's any such systems then they might eventually proliferate. Does that make sense? 
+
+
+**Katja 14:20**
+
+Makes sense as a claim plausibly makes sense as what will happen? I think somewhat unclear because I guess the claim is like there's a selection effect for things that try to stick around longer and I agree that there is a selection effect for that. I think it's not clear how strong that selection effect is relative to other effects going on which I guess at a more abstract level is often a kind of easy or like a kind of criticism I have of thinking about this kind of thing. I think it's sort of easy to notice an effect and be like oh, that's what will happen and forget to do this step of like but other like what else will affect this thing? Is this going to be the main deciding factor in this other parameter? 
+
+
+**Luca 15:19**
+
+So maybe outside of the selection effect what other pressures or the like do you see also going on I guess. 
+
+
+**Katja 15:28**
+
+What kind of I mean I think I've just been talking now more about the kind of situation where economic pressures matter. I think humans are still in control of what is created to a decent extent. So then I think which systems are particularly valuable for humans is a big selection effect. You might look at animals and be like, all right. Animals that have really long term goals are more likely to survive. So we should mostly just see animals with long term goals but then, in fact, really delicious animals are selected for a lot and that's kind of a thing happening at a different level. And cows don't have super long term goals, that kind of thing. 
+
+### Will superhuman AI systems be goal-directed?
+
+**Fin 16:14**
+
+And like humans that want to have big families, we should expect to be selected for. But it just isn't the case that most people on Earth really want to have big families still. So maybe this seems as low as well as weak. Cool. So, okay, we're talking about this claim that AI systems look likely to have goals in a way which could be very bad if those goals are bad. Now let's talk about that next claim, which is the worry that the goals will be bad or in some sense having goal directed AI systems could end up doing bad things. Yeah, I don't know why you want to start on that. 
+
+
+**Katja 16:50**
+
+Yeah, maybe this is the one where I feel most hopeful. I guess it seems reasonably plausible to me that you end up without terrible goals. So I guess the traditional thought and why it might be very bad is sort of like well, even if you try to get human goals, what you get will be slightly different from human goals. At least I think there are a few different thoughts here. One of them is like, you won't get exactly human goals and then that the value to humans of goals that are in some sense very similar to human goals falls off very quickly. So if you get it slightly wrong, it's a disaster is one kind of thought. 
+
+
+**Katja 17:41**
+
+But the other thought is that if you try to train a thing to have certain goals, it will end up with very different goals and be sort of trained to understand its situation and realize that it should deceive you and act as though it has the goals you want while it just has sort of arbitrarily different goals. So that's a different story for how you end up with very bad goals. 
+
+### Understanding human values vs sharing them
+
+**Fin 18:07**
+
+Yeah. Can you say more about this idea that people like to say that in some sense the values that we care about or that we would judge to be good for the future are extremely fragile or complex such that it's easy to kind of miss them, but I don't know why. It seems like lots of people have pretty different values, but they all seem roughly fine. So yeah, what's the thinking going on? 
+
+
+**Katja 18:31**
+
+I think yeah, this is a part of the argument that I'm particularly confused about, I think. So I could just misunderstand where other people are at. I think I was looking at the Elie Azer Yudkowski blog post about this a long time ago called Values of Fragile. I think the line of thought is something like, well, if you tried to write down human values and you just missed out the concept of boredom, then maybe you just get a thing repeated all the time and that would be pretty terrible, even if it was a pretty good thing or something. Which I think is maybe debatable. Also clearly debatable. I guess I pushed back on this in my blog post, thinking this is not the kind of error that you make, though. 
+
+
+**Katja 19:24**
+
+This is not like a minor divergence from human values or it's not the kind of error that I expect AI systems to make. I think this is sort of the equivalent to if you asked an AI system to make a human face for it to just miss out the nose or something, rather than the face being subtly different from a human face. If you had to write down human values from memory, like in words, indeed you might do a relatively bad job. But also if I had to write down what a human face is like in words, I might do a relatively bad job of recreating a thing that's not horrifying to look at. 
+
+
+**Luca 20:05**
+
+Maybe if you could just elaborate on that point then. So if AIs don't get human values because a human wrote them down somewhere, how do you think that AIs then come to learn human values in a way that is more robust and means that they don't make even these bigger mistakes? 
+
+
+**Katja 20:22**
+
+I guess I think the kind of AI systems we have, in fact, that train on lots of examples of things just generally tend to get subtle things right? Like being able to learn detailed things that we couldn't have written down. Well, I guess it seems like a particularly promising overall genre of AI for learning a complicated, messy thing. 
+
+
+**Fin 20:52**
+
+Yeah, one analogy here might be so in the kind of, let's say the earlier conversations about this thought that values or wishes are in some sense very fragile or complex. Yeah, you get all these stories, like when you kind of make a wish and then you leave out some key thing and then it goes wrong, like Sorcerer's Apprentice type things. So it's like take me to the cafe as quickly as possible and if it gets that, you want to get there alive and then it kills you because that's the quickest way. But when I think about the systems we have that are built around this kind of deep learning regime, trained on lots of examples, and it seems to be able to understand nuance quite well when I talk to Chat GPT, it tends to never make these errors, at least understanding. 
+
+
+**Fin 21:43**
+
+Even when I don't specify exactly what I want, it kind of gets it. And maybe that's like a hopeful bit of evidence. 
+
+
+**Katja 21:49**
+
+Yeah, I think that's the kind of thing I'm thinking of. It's more like if the genie had to just watch you have a good trip to the cafe a large number of times and then just do that again. 
+
+
+**Luca 22:01**
+
+You mentioned an analogy to machine learning and face generators. I know that this point got kind of some discussion in the comments, especially about what it means to be maximally facelike. Could you explain maybe first why you tell an ML to make the most maximum facelike face? Why does that question have bearing to the conversation here and then maybe what was going on in the comment section there? 
+
+
+**Katja 22:30**
+
+Yes, I don't know if I read all of the comments on this question. My claim was that the fact that current systems can make extremely accurate looking faces that many people can't distinguish from real faces, at least without some thought, is evidence that AI systems can also probably do relatively well at learning values as we're just discussing. And the response to that is something like if okay, but these faces that we're seeing that are very accurate, they're sort of like drawn from a distribution or something and if you try to maximize the face likeness then it actually looks less facelike. And I think I don't actually quite know what the relevance of that is, but I think it might be something like, well, we're going to use these AI systems to maximize things. 
+
+
+**Katja 23:36**
+
+And so if their maximizing behavior looks very crazy, that's still a bad sign, even if, when non maximizing, they could make a thing that was a lot like what you wanted. Yeah, I feel like I haven't thought this through. Well, I'm somewhat confused. If the maximized thing does not look at all like what you wanted and a different thing does, then it seems like the thing you're likely to use is the thing that does look like what you want. So then I'm a bit unsure how this maximizing ends up being used. 
+
+
+**Luca 24:11**
+
+So I should also say with the caveat that I might be making conceptual mistakes here or something. But I think the maximally facelike thing makes me think about it is that you can have a lot of really good image classifiers which if you show various pictures of animals, they can tell you oh, this is a dog or this is a cat. But if you then try to maximize what is the most doglike picture or the most cat like picture, which it will give the very bigger certainty to that this is in fact a dog or what have you, then I think in many cases you often get these kind of like, hallucinating, weird kind of like pictures or what have you. 
+
+
+**Luca 24:51**
+
+So in a sense that for most points about use this thing looks sensible, but when taken to the absolute extreme, then it doesn't. And maybe when you can still check that the only real uses are the sensible human aligned uses, you're kind of in the clear. But as soon as the system gets powerful enough to escape her or to maximize according to its own accord, then you can start getting into these more trippy and weird and possibly bad futures. 
+
+
+**Katja 25:19**
+
+Yeah, I think that makes more sense to me. If there's some story of or if the idea is humans will be using it for the thing that looks roughly like what humans would want, but then there's like a new regime where it escapes or something and does and maximizes things, then I see how that would be concerning. 
+
+
+**Fin 25:39**
+
+Yeah, okay, there's a few more angles on this general question we're talking about, which is will the goals be bad? 
+
+
+**Katja 25:45**
+
+Yeah. 
+
+
+**Fin 25:45**
+
+So I take it that we are talking about will an AI be able to understand human goals or human values? And then there's this extra question as you framed it, which is, even given that AI systems can understand our goals, maybe there's an extra challenge about getting them to care or care in just the right way. So I don't know if you have extra thoughts about that kind of separate part of the question, but this is. 
+
+
+**Katja 26:17**
+
+Like the concern that they will not at all learn to have your values, but merely to trick you. 
+
+
+**Fin 26:24**
+
+We were talking about reasons to expect AI, especially ML systems, to in some sense understand our values, in the sense of being able to predict the things that we say we like and predict our feedback. But often people point out that's not the real challenge. The challenge is getting these systems to share those values or to just care about those things in some robust sense. And maybe there are some extra problems with that. 
+
+
+**Katja 26:57**
+
+Yeah, it seems right. And in particular this problem where if during training the system comes to understand the situation, I guess, and enough to know what your values are that it should pretend to have, and whatever values it does have at that time is that it should do what you want it to do so that it gets to survive. I think this is the kind of scenario that people imagine that causes it to end up not having the right values at all. I don't know the details of this enough to comment qualifiedly. A thing that I think about wondering about is if you're training a system like this, and partway through the training it has something like some goals and an understanding of the world. The usual argument is like, it should do what you want so that you don't destroy it. 
+
+
+**Katja 28:07**
+
+But I don't know that makes sense to me because I think in training you're going to destroy it either way in some sense. Like you're going to modify its weights a bit. If you liked what it did, you'll modify its weights a bit. If you didn't like what it did, you'll modify them a bit in a different way. And so it seems like thinking of this as if it's surviving or not doesn't actually make sense unless it's like at the very end of training, it seems like the question has to be would it prefer one set of weight changes to the other? Seems like sort of pragmatically for it to reason about which set of weight changes it would prefer. 
+
+
+**Katja 28:49**
+
+From its perspective of having just woken up in training and understanding it has to understand its situation pretty well to even strategize about this. How does it come to know which weight changes are good? It has to understand the working of its own mind or something. And also, even if it can, I guess it's not immediately obvious to me that the one where it does the thing that you wanted it to do is better for it. I guess one thing that makes me wonder a little about that or you might think it's better because then maybe you'll change things less because it's more like what you wanted or something. Maybe training will end sooner, so whatever gets out will be closer to what it's currently like. So maybe it's like that. 
+
+
+**Katja 29:46**
+
+But also if its own values are now irrelevant to its behavior, I guess that seems like it might imply something about how much its values or the parts of the system that are encoding its values get changed going forward if they're not relevant at all. 
+
+
+**Fin 30:07**
+
+Okay, nice. I'll try summarizing that section. Yeah. So we are talking about, given that AI systems, powerful systems are goal directed in some worrying sense, will the goals just be really bad? One reason to think that they might be fine is that we have reasons to expect a system that even now seems decently good at understanding even fairly complex goals and values and wishes that we have. And then there's something like a kind of second question which is even given that the systems kind of understand what we want, maybe there are stories where they still don't end up in some sense sharing those values or just caring about that at all. One story is this kind of deceptive alignment thing. 
+
+
+**Fin 31:03**
+
+Maybe during training it has this kind of awareness of what's going on which means that it kind of outwardly projects that it cares about the things we want it to care about until it makes this kind of this turn or something. And then yeah, it's funny because you were saying a lot of stuff that I hadn't really heard before, and I don't know how to summarize it, but it just sounded like that's kind of I don't know, when you try to think about how that works, maybe some interesting technical and kind of philosophical questions pop up. And that would be yeah. Useful to think a bit more about. 
+
+
+**Katja 31:36**
+
+I feel like another important thing is that the systems that we actually seem to be using are these large language models. I feel like the concerns that there have been are maybe somewhat different in a world of large language models. Yeah, pretty unclear. I mean, it seems like they don't actually have goals, probably and if in the end they're acting ironically because they're sort of role playing an agent but they're kind of doing it aloud if we don't think there's that much going on separate from their own narrated like okay, and then what I should do is blah. And then I think we should maybe less imagine that they're deceptively aligned or something. It seems like they would have to be running a whole separate like what should I be? 
+
+
+**Fin 32:31**
+
+Right? Like I'm. Wearing this mask, but there's like a thing that's wearing the mask that's also reasoning about what it wants and what it's doing. That's kind of not what's going on. It's just like you're picking from some big distribution of masks. 
+
+
+**Katja 32:42**
+
+It seems like the systems we have at the moment are much better at reasoning when we sort of prompt them to reason aloud carefully, or they do things better when their train of thought is prompted to be away. Which I think suggests that it would be hard for them to be running some separate train of thought that they weren't able to see, at least if they were sort of similar to the current systems. 
+
+
+**Luca 33:10**
+
+One question I had originally maybe lined up for later, but maybe makes sense to ask now is one thing that I think I definitely take from a lot of these counterarguments is reasons to be skeptical why the current paradigm of AI maybe doesn't seem as threatening as the basic case for X Risk says it is. But I think one thing that I also hear is that people are very worried about some kind of recursive AI improvement. Maybe language models are what lets you train the next generation of AI. But that generation of AI can look very different. It just creates, like, different types of systems, such that even if we might get a positive update, things are less scary now because of the current systems. 
+
+
+**Luca 33:51**
+
+The fact that we might be able to build even weirder or even scarier systems in the future is still a really scary thing, even if it is harder to predict. So I guess one way to turn that into a question, which I would be curious for. Your answer is how serious to take this runaway? Or thinking that because AI progress is just quick in general, that things might just look very different than what we're observing today? As opposed to taking a large update on whatever the current techniques are. 
+
+
+**Katja 34:20**
+
+Yeah, I think yeah, that seems like a pretty real concern that things go very fast somehow. Especially I think of some sort of feedback intelligence explosion where the AI is improving. If the AI systems are pretty smart, they presumably also see these kinds of alignment problems that we're concerned about. So I don't know how they respond to them. It seems like if they're indeed very troubling and the main reason we're going fast is for lack of coordination or something, you might hope that they do better. But maybe if they're already implicitly, like somewhat misaligned, but not that dangerous, but then they do better at implementing an aligned version of whatever they're doing, then we ultimately hate it. Yeah, I guess I haven't thought through this that well, there are some thoughts. 
+
+
+**Luca 35:14**
+
+Yeah, I think definitely the more that the threat seems to be fuzzy and reliant on unknowns and maybe also things that are in the future, the harder it also seems to know what right now, in this moment, are good and robust interventions. It feels a lot easier to align the current set of systems than it does some unknown type of system in the future. 
+
+
+**Katja 35:35**
+
+Yeah, that seems right. I feel like if you sort of have to look, I feel like it's hard to think of anything perhaps that seems like it would be robustly good for a long time or something, or that doesn't sound somehow dangerous in the long term. I worry about sort of conflating things that are definitely going to kill us soon with things where it's hard to see exactly how they will go well in the long term. I don't know when that would also be true of just capitalism or something. 
+
+### Could superhuman AI easily overpower humanity?
+
+**Fin 36:18**
+
+Okay, let's talk about another section of the post. And this section is about, I guess, this assumption that once we get truly superhuman AI, then that will be more or less sufficient to overpower humanity in a way which is, like, lasting and bad. Yeah. What reasons might you think of to push back against that? 
+
+
+**Katja 36:52**
+
+I guess it seems pretty unspecified from truly superhuman intelligence, like how much intelligence is going toward what here. I guess maybe since I wrote this post, I've been thinking about things in terms of, like, there's some amount of cognitive labor going toward different things. An important thing happening with AI is there's just going to be a giant new pile of cognitive labor available, and it's also going to be distributed differently from the cognitive labor currently in the world, which is somewhat nicely allocated to different humans. So we sell it some, but everyone has an allotment of it that they get to spend on their purposes. 
+
+
+**Katja 37:42**
+
+And so it seems like the question of when, under what circumstances does the world get taken over by some new systems or something, I'm inclined to think of it as how much cognitive labor is getting allocated to some set of goals relative to some other set of goals. It's not quite equivalent, but if more cognitive labor is going toward making X happen than making Y happen, and we're tentatively ignoring all the other resources one might spend on things and treating cognitive labor as, like, most of what's going on, then I might think that ultimately X happens instead of Y happens. So if there is superhuman intelligence and it's misaligned, then does that naturally get us that there is more cognitive labor going toward some X than whatever it is that humans want? So some ways that might not be true. 
+
+
+**Katja 38:55**
+
+We haven't actually said how much of the misaligned AI there is, or it seems like we could also have other AI that's not agentic. That is also like a form of cognitive labor going toward various goals. If you have humans and they're using various tools, a human plus some tools is probably not as effective as an agentic system that kind of has those capabilities built into its head. Like, you know, there's some inefficiency from using systems outside of yourself often, but I think it's less clear that the AI systems just have a huge advantage. And I feel like it depends on how much computing is going toward running those systems versus running the tools. Maybe the tools are things that include things that try to keep the other systems in check. 
+
+
+**Katja 39:58**
+
+Or if these misaligned AI systems are being used by the humans to do things they want but they're not perfectly aligned, then it still seems like effort is going toward the human goals. And not all of the misaligned AI system effort is going toward forwarding the misaligned goals necessarily. For instance, if they have to do what humans want in order to be run so that in the long run maybe they can take over the world or something, that still means they're not allocating most of their current thinking to that goal. 
+
+
+**Fin 40:35**
+
+Yeah, nice. I mean, I might try saying that thought back to make sure I'm getting it. So it is the case that there are some humans who try to take over the world, but they tend to fail. And the reason isn't that they're especially less smart than other humans, it's that there aren't many of them and there are lots of humans who don't want the world to be taken over by those people. And similarly, you can imagine if there is some AI system that wants to take over the world, but it's not quite powerful enough on its own. Well, that's good, but it's only kind of tentatively good because you might point out that if it became a thousand times more powerful along some dimension, then suddenly it's dangerous again and it has a good shot. 
+
+
+**Fin 41:20**
+
+But if it were the case that there are also at the same time some, let's say, AI assisted tools or just other ways of preventing things or people from taking over the world and they got better in step with taking over the world AIs, then that regime is like at a very abstract level, more robust to everything getting better to scale. And so maybe things are just kind of indefinitely fine as AI systems get better in general. Is that roughly the idea? Yeah. 
+
+
+**Katja 41:53**
+
+I don't know if I'd say indefinitely better, but I guess it would be infinitely better. It's sort of like not necessarily a long term solution, but I think often it's good to not look for solutions to things if you think that you're going to be able to find another solution next round. 
+
+
+**Fin 42:14**
+
+Well, it's not definite at least. 
+
+
+**Luca 42:18**
+
+So one point that you made, I guess closer towards the end of your post was asking whether these or whether the basic argument for x risk maybe proves too much and you kind of previously alluded to in the long run, nothing works perfect. Like, what about capitalism? I think maybe in a similar way here you have this nice analogy to corporations. Do you mind briefly spelling that out? 
+
+
+**Katja 42:41**
+
+Yeah rather I don't mind. It seems like corporations are like a corporation is smarter than a human in many ways at least for many things that you might want to do. It's easier for a corporation to do them than a human. A corporation has a lot more cognitive power at its disposal even for things where a particular human might be good. The corporation can maybe find the best human in it and use that. So you might think if you take this AI risk argument you're like well if there were things that were smarter than humans they would necessarily have the wrong goals and then if they were smarter than humans and had the wrong goals they would be able to destroy humans and take over the world or something. It's interesting to say well why doesn't this apply to corporations then? 
+
+
+**Katja 43:43**
+
+Because it sort of looks like it should because they seem to be smarter than humans. Like well do they have their own goals? Seems like probably or like I mean I think they are specifically trying to maximize profit in some official sense. But if you also just looked at their behavior and were understood as a sort of somewhat incoherent version of a maximizer of something, are they maximizing human values? I think for any particular corporation the answer is probably no. And yet they don't take over the world and destroy humanity. I think one answer is well they actually do take over the world and destroy humanity. Just very slow going and it hasn't happened yet. In which case you might say, yeah. 
+
+
+**Katja 44:40**
+
+And having this AI available will at least speed up the process a lot and make it possible for corporations in particular to get a lot of cognitive labor to spend on things that are not good for humanity and find loopholes or things they can get away with to take value from humans. 
+
+
+**Fin 45:03**
+
+Yeah I guess one kind of fun question here is something like in the absence of at least antitrust measures will there just eventually be one company? Because there are these returns to scale which is why companies exist in the first place at least roughly. And then you might just think well no because also there are all these diminishing returns like productivity tends to scale less than linearly with the number of people at no company and stuff because it's really hard to parallelize different people thinking to combine together to make one big really coherent agentic thing. I guess several questions about whether AI systems would be similar but at least like notable. 
+
+
+**Katja 45:53**
+
+Yeah I feel like the analogous question does seem interesting to think about there. Should you expect if there's sort of competitive pressures or something, should you expect AI systems to be arbitrarily large or many smaller systems? 
+
+### Why still worry about AI risk?
+
+**Luca 46:11**
+
+So we've talked a lot about kind of like counterarguments to the basic case for X Risk, but I guess evidently you still work on AI X Risk yourself. And I'm curious, maybe to ask from the other side as well, what is it? Maybe on the counterarguments or maybe the more basic logic of what about X Risk you still find Motivating and why you choose to work on it? 
+
+
+**Katja 46:38**
+
+Yeah, I think these counter arguments are like none of them are sort of knocked down. They're mostly like, well, this could be bad or less bad. And I don't know, last time I sort of calculated things somewhat and guessed somewhat, I came up with like 19% chance of the world being destroyed, which is still pretty bad. And I think I'd maybe go upwards since then or something that might just be visceral fear. Looking at what people do on Twitter, I think I'm usually thinking about what will happen if assuming that humans have human values and try to make things go well, can we achieve it? And I let's think about to what extent are people just going to actively try and destroy things because it will be entertaining or something. 
+
+
+**Katja 47:43**
+
+And I guess things similarly, if I had been thinking about COVID in the abstract ahead of time, if you'd been like, oh yeah, there'll be like a pandemic and they'll be pretty bad in ways. I think the thing I wouldn't have expected is just like people being unwilling to wear masks or something at the point where it's fairly costly for them to get it, or it taking maybe years for people to wear N 95 masks instead of really basic masks. I think in my abstract assessment, I would have been like, oh yeah, and obviously on day two, everyone will be wearing a few 100s or something, whereas I think most people were still not aware of a few 100s throughout the thing. 
+
+
+**Katja 48:35**
+
+And I guess somehow that kind of detail of what people actually do, I feel like probably just makes things worse in expectation and I'm probably not taking that into account enough. 
+
+### The basic case for slowing down AI
+
+**Fin 48:49**
+
+Okay, well, on that note, let's talk about slowing down AI. So you recently wrote about why we might start thinking about slowing down AI, why that could be good. And maybe your first question is just to ask you to just lay out that basic case. Why could it help to slow this stuff down? 
+
+
+**Katja 49:10**
+
+Well, I think just if you have a thing that you think might kill you, I think it's a most basic level, it's good to have more time. Even if you didn't have some sort of process that might lead to it not killing you, just having longer to maybe find something is good. But I think we probably do have processes. I think people are working on alignment. I think beyond that, also, some of the badness comes from things being abrupt progress where one party of some sort, either an AI system or people suddenly get a lot of control of the situation relative to others. I guess that's one source of risk. I think another thing is that if we watch things rolling out more slowly, it's possible to see more problems arising or get hints that something is dangerous and then do something about it. 
+
+
+**Katja 50:23**
+
+Seems like this is a big, complicated thing and there are probably a lot of places to make things slightly better, or at least in many worlds I think there are. It's possible that it's just like, well, there'll be a very fast intelligence explosion at some point and then we're doomed or something. But in these more incremental worlds, that could go either way. It's just good to have more time to pay more attention to whether particular systems look risky in ways or to spend more time looking for ways that they might be doing something bad. 
+
+
+**Luca 51:02**
+
+Yeah. You mentioned at the top of the interview that one of the things you're thinking about is actually what slowing down AI looks like. And I can imagine it conjures up lots of different images of what people mean by it when they use the phrase. Could you maybe disentangle and give a couple of examples. Like what kinds of interventions you're currently thinking about here? 
+
+
+**Katja 51:24**
+
+Yeah, so I guess one kind of intervention that comes up is like labs agreeing to not train or release the next large language model, kind of as suggested by this FLI letter, since I guess people around are discussing whether that's a good idea or not. And a concern there is that the thing that actually matters for AI progress is basically how much hardware there is or how cheap it is. Some sort of underlying curve of like, how big would the next model be if you built it right now? And so then a thought is, well, if you didn't build GPT Five, you haven't actually slowed down the real AI progress at all. You've just stopped getting to see it right. 
+
+
+**Fin 52:32**
+
+And you made it more lumpy as well when it does happen, which could be right. 
+
+
+**Katja 52:35**
+
+Yeah. So maybe it's bad in that way, and maybe it's bad because you don't know what's happening. I think that's not the only concern. People around me I've heard about this, a different kind of one, is like if you slowed down releasing things, that sort of changes how much money the different companies have. And you would prefer for there to be a leader who's more ahead of the other companies because then they'll feel like they're less in an arms race. And then when they actually get very close, then maybe they'll pause because they're less in an arms race. I guess I'm somewhat skeptical of that. That sounds like a pretty doomy kind of scenario in that I don't necessarily expect an AI company that's most ahead to pick an ideal moment to pause that. 
+
+
+**Katja 53:38**
+
+Well, and then to actually do it if they're, like, right on the cusp of having AI that would allow them to take over the world or something, or not to do it for very long. I think if you did successfully have a six month pause, it's pretty plausible that's longer than the pause you would get on the cusp of AG from a company voluntarily allowing other companies to catch up with them. But I don't know a lot about this. Maybe I'm naive. I'm definitely naive. I guess an intervention that's tempting to me is the kind of meta intervention that just causes a lot of people to understand this situation and be worried about it. I sort of expect different people in different situations to see opportunities near them to make the situation better. 
+
+
+**Katja 54:29**
+
+And I think it's often better to inform a lot of people who are well intentioned and are holding different levers that you can't see than to try and figure out in detail what should happen. But that's kind of a speculative take. 
+
+
+**Fin 54:48**
+
+Yeah. Nice. Okay, so as I see it, the case for slowing down something which seems maybe really dangerous is quite obvious. So maybe we can talk about reasons it could be a bad idea, like it could actually do harm. And the first one you mentioned, which is, well, maybe it has something to do with armor's dynamics. I guess there are different ways that could be spelled out. Like, one thing that comes to mind is something like, okay, you might in general expect the more conscientious, careful actors to be more receptive to these calls to slow down. Which just means that you're, like, differentially hurting the actors that you'd actually prefer to kind of win the race in some sense because they would do the best job with deploying the really powerful AI. 
+
+
+**Fin 55:37**
+
+Yeah, I guess first, are there any other versions of this, like, arms race worry? And then we can maybe talk about how you think about it? 
+
+
+**Katja 55:44**
+
+I think that seems like most of it. Maybe some also just, I guess randomly, if you happen to like your culture's values better than another culture's values, it seems like there's some amount of not just like, some people being more careful than others, but just, like, surprisingly, I hope I win instead of them. 
+
+
+**Fin 56:11**
+
+Right. 
+
+
+**Katja 56:12**
+
+Type reasoning. Yeah. 
+
+
+**Luca 56:17**
+
+One question here is maybe, like, drawing a distinction. I think a lot of this conversation has been focusing around implicitly, maybe labs or companies racing against each other. It feels less clear to me of having very big cultural differences there than situations where it's like the US. Military and the Chinese military are racing against each other and they're taking all sorts of geopolitical angles as well. Do you find the arms race story more plausible in the corporate versus country story? Or how much of your arms race concern is driven by one narrative over the other? 
+
+
+**Katja 56:56**
+
+Maybe I think I'm skeptical of both narratives. And maybe I'm skeptical for different reasons. I think they're somewhat the same reasons. Like, one reason I'm skeptical of the whole arms race description for either case is that if there's a pretty high risk that you're going to die, I think the situation or like, if the winner gets to like, kill everyone and that's what happens, that's not actually a normal arms race. Like, it's pretty unclear that the thing you're incentivized to do, even if the other person is racing, is to also race. Especially, I think once you take into account that if things are slower or if you manage to do more safety research before the thing happens, that also makes their winning entry less likely to destroy the world. Yeah. It's quite plausibly in your interest. 
+
+
+**Katja 57:54**
+
+Even if they're going as fast as possible. To go as slow as possible, I think. 
+
+
+**Fin 57:58**
+
+Yeah. And to fully share all of your stuff you've learned about how to make this thing safe yeah. In a way where she wouldn't share the kind of how to make these things really powerful. 
+
+
+**Katja 58:09**
+
+Yeah. It seems like people are thinking more complicated things there, at least. Like maybe if the other side knew how to align the thing, then they would build it and take over the world. Whereas if they don't know how to align it, they might be scared because it will kill them. Seems like things can be more complicated, but yeah, broadly, it seems like not actually an arms race properly if you're at least somewhat concerned about it killing everyone. I think it's easy to sort of forget that people being on the side of good or something or like people being concerned isn't necessarily going to buy you almost anything. 
+
+
+**Katja 59:02**
+
+If you're worried about these kinds of AI x risks of the yudkowsky and variety, like having the people be really nice or something who is pressing the button to make this happen doesn't help you. But then, even if you were in a situation where it was an arms race, I think the thing you should try and do is coordinate out of that. There probably is a lot of opportunity for agreeing to both not do a thing and then, like, policing whether you're doing it. And I don't know. I think, as Recline noted recently, it seems like China is not sort of regulating AI a decent amount and doesn't actually appear to be doing their best to beat America in an AI race or something in that sense. So it seems good to keep an eye on what's empirically happening. 
+
+
+**Fin 01:00:08**
+
+Yeah. Nice. I guess there are also historical precedents for people kind of falsely believing that they are in a race and that being the thing that made them speed up. 
+
+
+**Katja 01:00:17**
+
+Yeah, I guess. It also seems to me like people are just very quickly jumping to the narrative that they're in a race or something. Like, even if the situation doesn't look that race. Like, I feel like people have for a while been kind of interpreting things as AI arms race more than it seems to me as interesting warranted. 
+
+### How could slowing down AI be harmful
+
+**Fin 01:00:39**
+
+Yeah. Okay, so that's one reason that you might be skeptical of slowing down AI being a good thing, but we've discussed that probably, quite possibly, it's more complicated than that, the arms race. Are there any other reasons why slowing down AI could be positively harmful or dangerous? 
+
+
+**Katja 01:01:01**
+
+Yes, I guess, as we also discussed a little bit, if you mostly manage to slow down more, like, the consequences of AI and weren't slowing down, the more basic process of AI improving, that could be worse. 
+
+### Have people successfully slowed down dangerous tech in the past?
+
+**Fin 01:01:27**
+
+Okay, I guess another just, like, natural response to the suggestion that everyone slow down AI for, like, a period of months is just that sounds incredibly hard, especially for a technology like this, which just seems obviously very economically valuable and valuable in other ways for the people who are building it. So one question here is, are there any precedents, like, have people done anything like this in the past where they've more or less delayed or even stalled, like, entire kinds of technologies? 
+
+
+**Katja 01:01:58**
+
+Yeah, I mean, I think if you look around, there is a lot of valuable stuff that's going very slowly because of concerns we have, like, I don't know, all of medicine or I think maybe during the pandemic, I was paying more attention to this than usual. Purportedly, the vaccines took quite a lot longer than they could have if they were willing to cut corners in various ways. I think often similar people who are saying, like, oh, it's impossible to stop AI progress because it's very valuable, are complaining about the FDA and how incredibly hard it is to do valuable things sometimes because of what seemed to be, like, incredibly minor concerns about things. 
+
+
+**Luca 01:02:51**
+
+Yeah, maybe this is naive, but does it not also work the other way or something like, oh, a lot of people who want to slow down AI also think that a bunch of good things have historically been slowed down? Or maybe a more nuanced way of asking this as a question would be, outside of good technologies having been slowed down, have there been concrete examples of what would have plausibly been very risky technologies having been slowed down or something? So not COVID vaccines, but something more like, oh, this could have been really bad. 
+
+**Katja 01:03:26**
+
+Do we ever successfully slow down things that were actually dangerous? 
+
+
+**Luca 01:03:30**
+
+Yeah. As opposed to, like, oh, people are just, like, overly cautious. 
+
+
+**Fin 01:03:36**
+
+That's fine. I don't mind everyone being overly cautious. 
+
+
+**Katja 01:03:39**
+
+Right. But I think actually an interesting example here that I happen to have looked into a bunch is the Osiloma Conference on Recombinant DNA, which I often have in mind as a nice case study where I think in the end, it was unclear that anything they're doing or I think I don't know how dangerous. Anything they're doing was. But the basic story there was it was an early kind of genetic engineering time, and a kind of experiment that some people were doing was take cancer causing genes and put them in E. Coli. So gut bacteria and the reasons, I think, for doing this were, like, I know that there were various reasons that E. Coli is the usual thing to do things with, and putting cancer causing genes and things is convenient for reasons. But at some point, someone's like, wait, if we make E. 
+
+
+**Katja 01:04:39**
+
+Coli that causes cancer, that could actually be, like, a sort of global disaster because E. Coli just spreads between, wait, we shouldn't be doing this. And some scientists there called for a moratorium on some class of research, and they did have a moratorium successfully, in spite of, I think, many of the scientists being opposed, where the set of views there at the time was kind of interesting. There was one guy who said something like, the thing you do in science is, like, go in the jungle, and maybe the tiger eats you, but we, you know, we got to go there and get eaten by the tiger. I'm not quoting him perfectly. Yeah, this is dangerous, but it's science being represented. 
+
+
+**Katja 01:05:36**
+
+But a bunch of people on the side of we should pause this, and then they paused it, and they had this Siloma conference that is famous, and they basically, I think, came up with classes of research and had specific instructions for what you should do if you're doing that class of research. Like, yes, these experiments are not very dangerous, but you should do them. You're not allowed to use mouth cadets and suck the stuff into your mouth or whatever. The state of safety at the time was, like, quite lacking on various fronts, and I think they had, like, a top category that you just weren't allowed to do at all. 
+
+
+**Fin 01:06:21**
+
+Do you know when this was? 
+
+
+**Katja 01:06:22**
+70S? 
+
+
+**Fin 01:06:24**
+
+Okay, cool. 
+
+
+**Katja 01:06:25**
+
+Yeah. 
+
+**Fin 01:06:26**
+
+It occurs to me that maybe we are kind of biased against noticing examples of technologies which have been successfully slowed down or entirely stalled, because these things are absences by definition. Right. They're things that don't happen. Like, in the same way that it would be easier for me to notice if someone had added a new book to my bookshelf than taking away a book from my bookshelf right. 
+
+
+**Katja 01:06:51**
+
+Or failed to add a book to your bookshelf. 
+
+
+**Fin 01:06:53**
+
+Right. The development of novel recreational drugs is, like, totally a thing that lots of people could be doing right now. 
+
+
+**Katja 01:07:02**
+
+Yes, I think that's a good one. 
+
+
+**Fin 01:07:05**
+
+Yeah. 
+
+
+**Katja 01:07:06**
+
+All sorts of genetic things are somewhat notable, especially with humans. 
+
+
+**Fin 01:07:12**
+
+Yeah. 
+
+
+**Luca 01:07:14**
+
+There's maybe also a useful point of the conference here, and it just has been a really useful precedent to establish that scientists can do this, that even if there isn't a specific concern or even if that isn't the main concern that you. Think ultimately the risks of gene editing and things could come from, or at least not the biggest risks. Establishing norms like this early is a really useful precedent to then get more cooperation to happen later on. I'm thinking here as well of examples like CRISPR and stuff today. I think in large part attitudes around science are still being really shaped by things that happened back in the 1970s. 
+
+
+**Katja 01:07:49**
+
+Yeah, interesting. I do think it might be useful to try and slow things down before you're really at the point where you definitely need to slow them down for reasons of kind of like getting practice and getting some systems in place for doing that and being like not knowing that you can do that. I think at the moment a lot of people are like, oh, that's very implausible, but if we'd done it once already for a bit, you would know that it was possible. I also think it's easier to slow these things down probably somewhat ahead of when there are particular people who would get like piles of money next year if they did it at the point where it's sort of more abstract, who exactly is going to benefit? My guess is that it's just a lot easier to slow things down. 
+
+
+**Fin 01:08:41**
+
+So, yeah, one reason for slowing things down early is, like, you get this experience for next time, like practice. But you might also worry that if you're slowing things down before they're, like, seriously worrying, then there's some boy who cried wolf type dynamic where they get slowed down and then for the next few years, nothing really terrible happens. And then people trust less the calls to slow things down again when, like, you know, when there's another opportunity to do that. Does that make sense? Another way of framing that is like you have just some fixed amount of social capital to spend down and maybe you just want to keep the powder dry for when it matters rather than burn all your trust on this training run. 
+
+
+**Katja 01:09:31**
+
+Yeah, I think that's probably a somewhat wrong model. My guess is that if you successfully slowed things down there's a good chance that you have more rather than less ability to slow things down. Partly, I guess, the reasons I said but on the, like do you have a fixed social capital budget and you're burning that? I think social capital is more like making a bet where if it goes well then you actually have more social capital and that you can use next time. And I think if you manage to slow things down at the moment, it's not clear to me that you would lose the bet. I think for one things are likely to continue to look very scary. 
+
+
+**Katja 01:10:19**
+
+Like I think if you manage to slow things down at the moment, you would be right about whether the things are scary. I think, and especially for the I mean, I think the things that people actually want from AI systems, like, we're arguing about is AI definitely going to kill us or not? Is it going to get us what we want and not cause terrible things to happen? That's a much higher bar, and I think it's very likely to be clear that we're not on the road to that over the next few years and for dangerous things to happen. 
+
+
+**Katja 01:10:57**
+
+If you wanted to, like, when an AI system is making a decision about your life, for you to be able to know that it was made well or know why it was made or something, which is the kind of bar that often people want, that's I think totally out of the question at the moment. And so you need to slow down and do a lot more work on the transparency of these things to get anywhere near there. So I think there's a good chance that you would win your social capital bet, and I think it's more like a bet. 
+
+**Luca 01:11:32**
+
+I guess one point here would be that we've seen some actions already, so we've seen the FLI letter calling for a moratorium. You've talked previously about just, like, generally spreading awareness and getting people to think about these things could be a really useful way for people to take contextual and kind of like local actions. I can imagine that there's another really big list of things to do, all the way from protesting to doing more media stuff and the like. And even if we're not sure which of these actions are good on that, it would maybe be useful to spell out a couple of actions that people should be looking into more detail now and kind of thinking hard about, like, oh, is this a good way to achieve this goal or a bad way to achieve this goal? 
+
+
+**Luca 01:12:13**
+
+And I'm curious if you've got, like, a list that you would be keen for people to explore further, even if that's not necessarily implementing. 
+
+
+**Katja 01:12:22**
+
+I think not off the top of my head. One intervention I think is interesting and should be explored further, though, is this is a wild proposal. What if America just slowed down a lot unilaterally, and didn't worry about the arms race with China? How does that land with China? I feel like there's a way in which if you're China and you see America do that, it's very clear they're not trying to win an arms race with you. I think it's like a very good, costly signal that they're genuinely concerned about it and really believe there's a big risk. I think it's, like, quite plausible that you also worry a lot about it at that point. And so I sort of wonder about that sort of thing when I think about China and the US. Arms race. 
+
+
+**Katja 01:13:22**
+
+A natural thing to try and do is like some sort of diplomacy where you, like, both promise that you won't rush ahead, but somehow that's still framed as like, oh, yeah, it would be in our interest to rush ahead. 
+
+
+**Fin 01:13:32**
+
+Right. 
+
+
+**Katja 01:13:34**
+
+Let's not do that. It seems like an alternate thing to consider is just being like, clearly it's not in our interest. We're stopping. Yeah. 
+
+
+**Fin 01:13:43**
+
+I wonder what would have happened to the US. Just decided not to build nukes, like, very openly, incredibly, during the Cold War, and maybe it could have been okay. 
+
+
+**Katja 01:13:54**
+
+But nukes, it's sort of like, clear what you're getting or something. I feel like it, yeah, right. Yeah. I don't know, I guess if the other side just clearly wasn't building nukes, like, wow, there's something I don't understand about this situation. 
+
+
+**Fin 01:14:09**
+
+Like, in the case of AI, you're, like, informing the other party about how risky you think it is the case of nuke, because it's obvious, like, that's what they're built for or something. 
+
+
+**Katja 01:14:18**
+
+Yeah. 
+
+
+**Luca 01:14:19**
+
+One thing that comes to mind is engineering. The weather, I think, got a bunch of attention early on in the Cold War, partly as a weapon, but also partly just like an economic thing. But I think no country really ended up pursuing it in a way, and I think in part because of ways that it could backfire and that these systems are just very chaotic. And I don't know if there would have happened if there would have been an arms race in a world where countries did pursue it, but at least that seems to be something that kind of was able to avoid that dynamic. 
+
+
+**Katja 01:14:52**
+
+Yeah. Right. 
+
+
+**Luca 01:14:54**
+
+And you do have a story there where somebody playing with the weather in their country is clearly going to affect another country as well. So there's this way that you could have gone, oh, we don't really want to do this, but if we don't do it, the other side, well, then our weather is going to be screwed over, so it's best for us to kind of race ahead. 
+
+### The FLI letter on pausing large AI training runs
+
+**Fin 01:15:10**
+
+Yeah, cool. Let's talk about this FLI letter if you're down too. So you wrote about slowing down AI, like, December last year, and then more recently, there's just been this open letter from FLI, the Future of Life Institute, and then lots of impressive people signed it. I mean, just an initial question is like, what do you think about the letter? Did he sign it? 
+
+
+**Katja 01:15:33**
+
+I did sign it, yeah. After thinking some about these things, I think if it fails but gets a bunch of attention, I think that would be helpful for the next iteration of trying to pause things. I think you might have some concerns. I think if you were writing such a letter, you might have some concern that it wouldn't get enough attention and it would make it seem like such a thing wasn't going to work or something. But I think at the point you're deciding whether to sign it, those considerations are already out of the picture. And it's just like, given that this thing exists, do you want it to get more support? 
+
+
+**Fin 01:16:15**
+
+When you were thinking about whether to sign it, which criticisms of that letter stood out to you? 
+
+**Katja 01:16:24**
+
+Yeah, I think mostly things that we've already discussed, like that maybe especially that it might cause or it might stop particular AI companies being further in the lead or something and therefore make the race faster after the pause and ultimately not lead to much slowdown. Where I think my disagreement with that ends up being something like or maybe aside from things we might have said feel like if you could only decide between a six month pause and no pause. Maybe it's better to be in the world where one company is, like, further ahead and maybe they pause at the end or something. But I think both of those are pretty bad and we should shoot for a scenario that's more like pausing substantially. 
+
+**Katja 01:17:19**
+
+And I think pausing a bit is pretty likely to get you to pause the world substantially, whereas never try to pause in case you end up in the only pause slightly world seems doomy. 
+
+
+**Luca 01:17:31**
+
+One point of discussion that the FLI letter seemed to really kick up was questions about whether it is best to try and shift the overton window as much as possible through these kind of like big shifts and big announcements that get a lot of headline and get a lot of media attention as opposed to trying to incrementally shift the mood. How has the FLI letters, maybe reception changed your thinking or influenced your thinking on that topic at all? 
+
+
+**Katja 01:18:00**
+
+By incrementally shifting things, you mean what would that look like? 
+
+
+**Luca 01:18:05**
+
+Yeah, I mean, that's a great question. And maybe a question I'm more curious to kind of, like, hear your answer to, but I could imagine it being more in the form of speaking individually to people at AI. Labs or making very nuanced cases for we're not telling you to have a moratorium, but maybe you should think about slowing down a little bit. Maybe not six months, maybe only a little bit or maybe less kind of costly actions like sharing all AI safety research across labs or something like that. 
+
+
+**Katja 01:18:37**
+
+Yeah, I think if the thing that you actually want to happen is very far in a direction from what's going to happen by default, my guess is that it's better to try and get there in large jumps or sort of like ask for the thing you actually want or something close to there. Especially if like, you know, time is pretty tight, I guess overton Window type things where things seem out of the realm of possibility in that kind of scenario. I think it's like you get something from suggesting things that are outside of the current window. I think it often helps move the window if you like. 
+
+
+**Katja 01:19:29**
+
+Look, what I'm actually thinking of is this thing that currently seems totally wild to you whereas if you try and just move a little bit within the window all the time, maybe that doesn't actually shift the window. So then you have trouble moving very far. Yeah, maybe. 
+
+
+**Luca 01:19:44**
+
+One question is before seeing how the FLI letter was received by society as a whole, how far out the overton window did you see it as being? Or did you think that this actually was something closer to an incremental step? And then how has the media's or society's reaction to the letter changed your mind on maybe doing even more ambitious things in the future? 
+
+**Katja 01:20:11**
+
+I think my sense previously was that a lot of people are actually pretty open to concerns about AI risk and that people in the AI X Risk community are often wrong about that because they talk more to people who are very near the AI X race community, like other intellectuals who have some reason to disagree. And if you just talk like I don't know, I had a lively discussion about this with a woman showing me makeup I could wear in Sephora one time. She was pretty concerned about AI risk essentially. 
+
+**Fin 01:20:57**
+
+Like if I speak to someone, for instance, in my tech bubble, but who isn't in the bubble of people who cares about X Risk, maybe the reason they're not in that smaller bubble is that they've decided that they don't really weigh the arguments right. Whereas that doesn't really apply to most people. 
+
+**Katja 01:21:14**
+
+Yeah. And they might just also be more in a mode of it mattering to their social identity whether they believe these arguments or not. Whereas if you're just doing an entirely different thing, like you're trying to run a shop or something, or just like do I wish that there were smarter than human agents around? No. Does this sound dangerous? Yes. I think prior to this was more like a hypothesis I had where I sort of argued for that some, but it seemed pretty plausible that I was wrong. And I think maybe the reception has caused me to think more. A lot of people do see the danger of this pretty easily. I think it's somewhat hard for me to see the reception. 
+
+
+**Katja 01:22:04**
+
+I think it's been more clear to me lately that I don't know, looking at things on Twitter, say, or talking to people, it's just very much of a bubble or different bubbles even. But it's hard to see what's happening even just like in other parts of the Bay Area tech conversation about things. 
+
+**Fin 01:22:24**
+
+I mean, there's some like public polling, right? Office, the general public. 
+
+**Katja 01:22:27**
+
+Yeah, that's fair. 
+
+**Fin 01:22:29**
+
+Tells a similar story. 
+
+
+**Katja 01:22:30**
+
+Yeah. 
+
+### Nudging AI publication norms
+
+**Fin 01:22:33**
+
+Nice. One thing I was meaning to mention while we're talking about slowing down AI is well, one way you could do that is you could try to nudge norms around publishing research. So if you take cancer research right. The presumption is just to publish it for obvious reasons and to share it, and that's probably true of most of science, but there are cases where that's not the presumption. So like the Manhattan Project might be an example where there are obvious security reasons not to share your research with the world. 
+
+
+**Katja 01:23:11**
+
+Yeah. 
+
+
+**Fin 01:23:12**
+
+And currently it looks like the presumption in the AI context is towards open access publishing most research results, or even just announcing them, even if you don't publish the details, which is like, what the big labs do. And yeah, I'm just curious if you have thoughts on whether it might be good to try to explain why shambling those knobs could be a good idea. 
+
+
+**Katja 01:23:38**
+
+Yeah, I think it's not obvious. It seems like indeed, if you share knowledge about how to do things less, then that probably slows down progress overall. If there are various people working on a thing. I think if you don't, if you don't say that you I think if you say that you did a thing but don't say how to do it, that probably also encourages other people to do it. Like often it's easier to do a thing if you know that it can be done. 
+
+
+**Katja 01:24:12**
+
+Yeah, I think also the effect where if you publicly say that you did a thing, then the world knows about that thing being possible and that they should maybe worry about it and sort of knows where we're up to, is, I think it's helpful for safety for people to be appropriately worried about what is currently possible. And so it's nice to get feedback about that. And I guess also in terms of releasing things, while the things aren't dangerous, it seems like there are upsides to things being released if just people become appropriately worried about them, but also maybe trying to modify the world to make it more able to deal with the existence of those things. 
+
+
+**Fin 01:25:04**
+
+Yeah, that's a great point. I guess it's just very complicated. Right? Like while the things you're releasing aren't actually wildly dangerous, then you can learn from them. That's a reason for sharing them with the world. Also people can just learn from the fact that things are possible and maybe that gets people more concerned in good. 
+
+
+**Katja 01:25:21**
+
+Ways with say, GPD Four. People are trying to build things out of GPD Four that might be more alarming in ways if you just hadn't released GPD Four, they couldn't do those things. And so maybe like if you didn't release some models, you would be like a jump later on, but also you wouldn't have got these intermediate things that are built out of them which might also cause trouble somehow as well as these other considerations. 
+
+### How is(n't) AI like natural selection?
+
+**Fin 01:25:53**
+
+Okay, cool. So that was a conversation about slowing down AI. If you're down, we just have a bunch of somewhat less well organized fun questions. Cool. So yeah, here's one. If we go back to thinking about the basic arguments or arguments for worrying about Aix risk. Often people refer to this analogy with natural selection in the case of humans. And I know you've written about this, so yeah, like, curious how you think about that analogy and like, whether you think it works ultimately. 
+
+**Katja 01:26:33**
+
+I think there are different things that people say about the analogy with humans. But I think the thing you're alluding to is like, the thought that evolution in some sense was running a training process with life on Earth. And the thing that evolution wanted us to do in some sense was like, spread our genes. And it seems like humans did well at that for a bit, but they also have come up with all kinds of ways to not have children and have fun anyway. So you might say, well, they're misaligned and we should infer from that. 
+
+**Katja 01:27:20**
+
+It's like some evidence that if we try to make AI systems by selecting the ones that do the things that we want, will they actually do the things we want in the long term, or will they tentatively do them and then later on find ways around those things? Or quickly find ways around those things or other ways to get the things? And I guess I don't have a strong take on this. My thought about it was that it's not clear that what evolution wants is spreading genes. It seems like a sort of natural selection in the broadest sense. What it wants is things that exist, things that are more likely to come into existence, things that are likely to stick around once they exist, things that make copies of themselves. 
+
+**Katja 01:28:17**
+
+To the extent we're just talking about like a selection effect for existing things, which I guess seems like the generalization of natural selection to me. And it seems like, yeah, the goal that the things created should have if they were going to be aligned is to exist. And I don't think that humans do have existing as their primary goal, but I do think that they care about it surprisingly much and that it's plausible that humans will manage to exist for a long time. And many humans are trying to do that. Maybe we'll have a space faring civilization and manage to be the creatures that are the main thing going on in the universe in the long term, or some version of us, there's some complication with what is it for us to continue existing. 
+
+**Katja 01:29:17**
+
+There are different things that could exist, but it seems plausible that humans have some aspect of them that will exist, just a huge amount. In which case I might be like, wow, this was a surprising success for evolution. And somehow through all kinds of initially humans were existing by successfully having children and maybe we stopped having children at all and do different things, but throughout that we're still trying to exist. At that point, I'm more like, wow, this is surprising this shouldn't have worked. 
+
+
+**Luca 01:30:02**
+
+Could you maybe draw if there's then any takeaway that you would, like, want to apply to how AI or AI experts plays into this? 
+
+**Katja 01:30:11**
+
+I guess I'm not that inclined to draw conclusions about the object level argument as much as to draw conclusions about how to reason about this stuff in general. It seems often good to try and drill down and be very careful about the argument you're making and look really carefully at empirically what's going on and whether your sort of abstract argument does match the empirical world. I think often things are just, like, more confusing and surprising when you do that than it seemed like. 
+
+### Why don't humans trade with ants?
+
+**Luca 01:30:48**
+
+Yeah, it's a useful lesson that maybe also takes us to the next kind of, like, disorganized question we have, which is asking in relation to your blog post on why don't we trade with ants? Like, what's the lesson there? 
+
+**Katja 01:31:07**
+
+Yeah, I think with that argument, I probably even less think it changes the AI story. My concern here is just that we're making the wrong argument. I think often people say something like, well, AI will not trade with us. It will just sort of ignore us and kill us. Well, we don't trade with ants. It will be like that, and I think ultimately pretty plausibly, the AI will not trade with us. It will just kill us or something. But I think it's not at all for the same reasons that we don't trade with ants. I think the reason we don't trade with ants is largely that we can't communicate with them and maybe also that they might not be capable of being well behaved in the right way. We can communicate with monkeys, but they're just quite disobedient. 
+
+**Katja 01:32:04**
+
+But ants, I think the implicit thought when people say, we don't trade with ants is like, well, they're kind of useless and small, and there's no reason we would care about them. But I think if we could communicate with them, there are just, like, a lot of valuable things they could do in terms of moving around small things, surveilling, cleaning things, et cetera. 
+
+### George Saunders
+
+**Fin 01:32:29**
+
+Nice thought. I like that. Okay, here's another random question. Why should people consider reading George Saunders? 
+
+**Katja 01:32:41**
+
+I feel like there's some sort of deep answer to that question that I can't remember the answer to. I got really into George Saunders a little while back. I read one of his essays, and I liked it so much, I tried to write a blog post about it, but then I read another one that I liked even more, and so I kept having to edit my blog post, and I ended up just not even publishing it because it was hard to even finish explaining what I thought of these essays. And at this point, I can't actually remember what my nuanced take was there. 
+
+**Fin 01:33:14**
+
+What were the essays? 
+
+**Katja 01:33:15**
+
+I guess first of all, yeah, maybe the first one I read, I can't remember if this is making it into my blog post, but this was a good one. Was the brain dead megaphone then? I can't remember exactly what they're called. But there's one about this is Buddha Boy who claims to meditate for ages. He went to investigate that situation. He spent. 
+
+**Fin 01:33:42**
+
+The incredible Buddha boy. 
+
+**Katja 01:33:43**
+
+Yeah, that's it. There's another one where he just, like, spends a week or something in a kind of crazy sounding homeless encampment, which partly largely just gets credit for being just, like, a wild thing to do to write an essay about, because it sounded pretty intense. I think that the one that I liked most in the end. I think it's called Thank You, Esther Forbes, which is about, I guess, a crush he had on a nun as a boy and how that led him to read a book and then about what's up with writing. Well, I think one thing that's notable about George Saunders, though, one reason to read George Saunders is I'm quite bad at reading things. My mind wanders very easily. My favorite books I haven't finished, necessarily. I'm just really bad at finishing books. 
+
+**Katja 01:34:49**
+
+And George Saunders, for me, is, like, really a page turner still, which might make him the most page turner. And I might have thought, okay, it's probably, like, very shallow then. It's very just optimized. It's like clickbait or something. But I think it often still seems genuinely deep and interesting. That's kind of incredible. 
+
+**Fin 01:35:24**
+
+It's not like a straight trade off between being profound and actually wanting to read. It just nice to know. 
+
+**Katja 01:35:32**
+
+Yeah, it hardly feels like a trade off at all. I think the thing about thank You, Esther Forbes is, like it's, like, partly pretty funny, his description of having a crush on this nun, because it's just very on point. And there's a way that you can be right and therefore not superficial in a way that's just sort of hilarious. 
+
+**Fin 01:35:57**
+
+Right. 
+
+**Katja 01:35:58**
+
+That's the way these things are not a trade off. 
+
+### Why "World Spirit Sock Puppet"?
+
+**Fin 01:36:00**
+
+Yeah. Okay. Well, my next question is, why is your blog called World Spirit Sock Puppet? 
+
+**Katja 01:36:07**
+
+Well, it's entertaining to me. I, so far, I think, haven't managed to explain it to anyone else in a way that gets a response more enthusiastic than okay, but I'll try. So personal identity seems to me like there's not an important way in which being one person is different from being another person. Like, there's not some fundamental metaphysical difference between, like, if we asked, what if I woke up tomorrow as you and you as me? I think there's no answer to whether that happened. There are some experiences. There are physical creatures. One upshot of that is you might just think of all of the humans as one person who just wakes up as each human, one after another or something, or as, like, one conscious creature. And so I guess I often call that the world spirit. 
+
+**Katja 01:37:09**
+
+I think I haven't actually read the relevant philosophy about this. This is more kind of like joking around with friends. Sometimes I think of myself as like the world spirit or just part of the world spirit in a sense. And then sock puppets online are like when one entity has a whole lot of identities that they have a whole lot of different apparent people commenting, maybe supporting each other in an argument online or something to look like more people than they are. So I like to imagine that the world spirit has a bunch of sock puppets, that all the blogs are world spirit sock puppets. And we're there online arguing about being like, yeah, we should do whatever's for the greater good or something. And then another world spirit sock puppet appears and it's like, yeah. 
+
+**Katja 01:38:01**
+
+I also think what's best for the world is good. 
+
+**Fin 01:38:06**
+
+We're such loggerheads, but ultimately I'm the left hand and you're the right hand at the same time. 
+
+**Katja 01:38:10**
+
+Exactly. It's just like a huge fake discourse that the world's very deserving. 
+
+**Fin 01:38:15**
+
+I find that more delightful than just like, okay, that's positively great. Nice. Yeah. 
+
+### Resources, further research, and ways to learn more
+
+**Luca 01:38:24**
+
+Awesome. So moving on to final questions then, which we like to ask kind of all our guests before wrapping up. The first one is what are some things that people could read if they'd like to learn more about what we've been talking about here? Are there any key posts either by yourself or by other people that you would like to suggest people check out? 
+
+**Katja 01:38:43**
+
+I think on arguments about AI, der Carl Smith's very long account of the argument is a good one if you like things being arguments with probabilities on different points and subarguments and stuff, which it's possible I like more than most people, but if you came here, maybe what you want, I guess. I hope that AI impact pages are helpful on that also soon, but I think they're not that great yet. I think on slowing down AI, I actually don't know of a good summary of I would like it if there was a good account of the I. 
+
+**Fin 01:39:26**
+
+Mean, like the table of contents to your post. 
+
+**Katja 01:39:30**
+
+Well, I feel like since I wrote the post, there have been a different set of considerations that people are talking about. Is it just the underlying hardware progress that matters, say, or do you not get that much? Like if you slow down, will that cause things to go faster in the future? So you don't get that much slowing down? There's sort of like a whole new crop of arguments and I think I don't know of a good written account of what's going on with those yet. I might try to write it. I think also I'm actually just not very well read in general. As I mentioned, I'm not very good at reading. I'm very good at daydreaming while reading. So to anyone who's actually written such things, I'm sorry that I don't know about it. 
+
+**Luca 01:40:10**
+
+Then also to any such people, please do reach out and then we'll add anything that listeners send in also to the write up. But maybe your comment there is like a useful prompt or a useful segue to the next question I wanted to ask, which is, are there any particular research questions or things in the world that you would be really excited to see and you would want to encourage kind of early career researchers and effective altruists to be working on? 
+
+**Katja 01:40:41**
+
+I think I am at the moment very interested in the question of should we be trying to slow down AI in particular ways and what are good ways to do it, where good ways means both things that are tractable but also different kinds of things you do might have different effects, as we discussed. I think that sort of thing is good. I think the question of what to do if you're an early career researcher is different from what to do if you're a later career researcher, though. So I think if you're an early career researcher, it's good to do things where people can tell more whether you successfully did it or are less trusting of your judgment. 
+
+**Katja 01:41:20**
+
+If you've been around for a while, then it's easier to write something that's like, here are what I think are ten good policy ideas and that's interesting to people, whereas if you just arrived yesterday, then they have to be like very clearly good policy ideas perhaps for that to get attention. 
+
+**Luca 01:41:41**
+
+I'm probably doing a deep dive into just one of these policy areas to really spell out why it might be a good idea or why it might be a bad idea. Could like, maybe be something useful to concretely act on. 
+
+**Katja 01:41:52**
+
+Yeah, I think that's probably right, that even as an early career researcher, you can do research that people can tell is good, just detailing the considerations or I think looking at case studies of similar things, like digging up evidence about things and adding it to the conversation, it's often good. 
+
+**Fin 01:42:13**
+
+Nice. Another question is AI impact hiring? 
+
+**Katja 01:42:22**
+
+I think we don't currently have a hiring round, but I think we're sort of always open to it. We're probably more open to it if we got some funding soon. 
+
+**Fin 01:42:37**
+
+Nice. Cool. And then the last question is just how can people find you online? 
+
+**Katja 01:42:42**
+
+Yeah. Worldspiritsockpuppet.com or aiimfacts.org. 
+
+**Fin 01:42:49**
+
+It's not a busy Google. It's not filled out with a lot of other results when you Google that. 
+
+**Katja 01:42:53**
+
+Yeah, it's actually not, I think. Yeah. 
+
+**Fin 01:42:57**
+
+Cool. 
+
+**Katja 01:42:58**
+
+I guess if you like substack, there's a substack version that's separate. 
+
+**Fin 01:43:02**
+
+Nice. Great. Okay. Catch you, Grace. Thank you so much. 
+
+**Katja 01:43:05**
+
+Thank you. 
+
+### Outro
+
+**Fin 01:43:06**
+
+That was Katja Grace on Counterarguments to AI X Risk and the Case for Slowing down AI. If you find this podcast valuable in some way, then probably the most effective way to help is to write an honest review. Wherever you're listening to this we'd really you can also follow us on Twitter. We are hearing this idea. Lastly, I'll mention that we still have a feedback form on our website, which you'll receive a free book for filling out. Okay, as always, a big thanks to our producer Jasmine for editing these episodes. And thank you very much for listening. 
