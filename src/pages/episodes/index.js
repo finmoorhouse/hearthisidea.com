@@ -61,7 +61,7 @@ const EpisodesPage = ({ data }) => {
     ))}
    </div>
    <h6 className="center-text">
-    Seeing {indexOfLastPost} Podcasts of {allPodcasts}
+    First {indexOfLastPost} of {allPodcasts}
    </h6>
   </Layout>
  );
