@@ -1,70 +1,74 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 import Seo from "../../components/seo"
 import PostLink from "../../components/episode-link"
-import Layout from "../../components/layout" 
+import Layout from "../../components/layout"
 import "../../styles/episode-links.scss"
-//import Filters from "../components/episode-list-filters"eo from "../components/seo"
+
 const EpisodesPage = ({ data }) => {
-  // Filter stuff --
-  // const [activeCategories, setActiveCategories] = useState({
-  //   philosophy: true,
-  //   economics: true,
-  //   psychology: true,
-  //   animals: true,
-  //   ea: true,
-  //   longtermism: true,
-  // })
-  // const handler = thing => {
-  //   let newObject = activeCategories
-  //   //var keys = Object.keys(activeCategories)
+ const postsPerPage = 10; // Number of episodes to show per page
+ const [currentPage, setCurrentPage] = useState(1); // Current page number
 
-  //   newObject[thing] = !activeCategories[thing]
+ // Filter your posts and create PostLink components for the current page
+ const Metadata = data.allEpisodesJson.edges;
+ let MetadataDict = Object.assign(
+  {},
+  ...Metadata.map(x => ({
+   [x.node.number]: { align: x.node.align, color: x.node.color },
+  }))
+ );
 
-  //   setActiveCategories({ ...newObject })
-  //   console.log(newObject)
-  //   console.log(activeCategories)
-  // }
-  // const updateFilters = topic => {
-  //   console.log("Filters updated." + topic)
-  //   handler(topic)
-  // }
+ const posts = data.allMdx.edges
+  .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+  .map(function (edge) {
+   let MetaObject = MetadataDict[edge.node.frontmatter.number.toString()];
+   let align = "center";
+   if (MetaObject) {
+    align = MetaObject["align"];
+   }
+   return <PostLink key={edge.node.id} post={edge.node} align={align} />;
+  });
 
-  const Metadata = data.allEpisodesJson.edges
-  let MetadataDict = Object.assign(
-    {},
-    ...Metadata.map(x => ({
-      [x.node.number]: { align: x.node.align, color: x.node.color },
-    }))
-  )
-  const Posts = data.allMdx.edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .filter(function(edge) {
-      // This is currently a dumpster fire!
-      //let MetaObject = MetadataDict[edge.node.frontmatter.number.toString()]
-      return true
-    })
-    .map(function(edge) {
-      let MetaObject = MetadataDict[edge.node.frontmatter.number.toString()]
-      let align = "center"
-      if (MetaObject) {
-        align = MetaObject["align"]
-      }
-      return <PostLink key={edge.node.id} post={edge.node} align={align} />
-    })
-  return (
-    <Layout>
-      <Seo title="Episodes" />
-      <h1 className="centered-text">Episodes</h1>
-      <hr className="line centered-text" />
-      {/* <Filters parentFunction={updateFilters} activeTopics={activeCategories} /> */}
-      <div className="episode-list--grid_container">
-        <div className="episode-list--grid">{Posts}</div>
-      </div>
-    </Layout>
-  )
-}
-export default EpisodesPage
+ // Pagination logic
+ const totalPages = Math.ceil(posts.length / postsPerPage);
+ const indexOfLastPost = currentPage * postsPerPage;
+ const indexOfFirstPost = indexOfLastPost - postsPerPage;
+ const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+ const allPodcasts = totalPages * postsPerPage
+
+ const paginate = pageNumber => setCurrentPage(pageNumber);
+
+ return (
+  <Layout>
+   <Seo title="Episodes" />
+   <h1 className="centered-text">Episodes</h1>
+
+   <hr className="line centered-text" />
+   <div className="episode-list--grid_container">
+    <div className="episode-list--grid">{currentPosts}</div>
+   </div>
+
+   {/* Pagination controls */}
+   <div class="paginator" >
+
+    {Array.from({ length: totalPages }).map((_, index) => (
+     <button className={` ${currentPage === index + 1 ? "pagination" : "paginationactive"
+      }`}
+      key={index} onClick={() => paginate(index + 1)}>
+      {index + 1}
+     </button>
+    ))}
+   </div>
+   <h6 className="center-text">
+    First {indexOfLastPost} of {allPodcasts}
+   </h6>
+  </Layout>
+ );
+};
+
+export default EpisodesPage;
+
 export const pageQuery = graphql`
   query {
     allMdx(
@@ -101,4 +105,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
