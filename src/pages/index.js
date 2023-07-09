@@ -10,16 +10,8 @@ const IndexPage = () => (
     <Seo title="About" />
     <h1>About the show</h1>
     <hr className="line" />
-    <p className="introduction introduction_tagline">
-      Hear This Idea is a podcast about new thinking in{" "}
-      <a
-        href="https://www.effectivealtruism.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        effective altruism
-      </a>
-      .
+    <p className="introduction">
+      Hear This Idea is a podcast about ideas that matter.
     </p>
     <StaticImage
       className="home-image"
