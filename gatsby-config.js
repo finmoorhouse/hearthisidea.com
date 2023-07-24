@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Hear This Idea`,
-    description: `New thinking in effective altruism.`,
+    description: `An interview podcast about ideas that matter.`,
     author: `Fin Moorhouse and Luca Righetti`,
     url: `https://www.hearthisidea.com`,
     twitterUsername: `@hearthisidea`,
