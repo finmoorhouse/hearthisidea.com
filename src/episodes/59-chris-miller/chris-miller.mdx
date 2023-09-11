@@ -40,7 +40,7 @@ Over the next few episodes we will be exploring the potential for catastrophe ca
 In future episodes, we will explicitly talk about existential risks posed by artificial intelligence and the geopolitics of advance computing. But if you want to skip ahead, we suggest reading…
 
 - Blog posts by [Stephen Clare](https://forum.effectivealtruism.org/posts/c6RnqjBd3BAkqsknB/the-us-expands-restrictions-on-ai-exports-to-china-what-are) and [Aogora](https://www.lesswrong.com/posts/oBTkthd7h8sDpkiu2/analysis-us-restricts-gpu-sales-to-china) (and Gwern’s [comment](https://www.lesswrong.com/posts/oBTkthd7h8sDpkiu2/analysis-us-restricts-gpu-sales-to-china?commentId=xS8fc82cLd83y6pbb)) on what US export controls could mean for existential risk specifically
-- Mauricio Baker’s “[Takeaways on US policy careers](https://forum.effectivealtruism.org/posts/z9hzAB9mfgcpXmcze/takeaways-on-us-policy-careers-part-1-paths-to-impact-and)”
+- “[Takeaways on US policy careers](https://forum.effectivealtruism.org/posts/z9hzAB9mfgcpXmcze/takeaways-on-us-policy-careers-part-1-paths-to-impact-and)”
 
 And if you want to go really into the weeds of semiconductors:
 
